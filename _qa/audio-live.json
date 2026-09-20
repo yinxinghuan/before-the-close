@@ -1,11 +1,11 @@
 [
   {
-    "url": "http://127.0.0.1:5226/",
+    "url": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
     "decoded": true,
     "advancing": true,
     "mute": true,
     "resumeMovementUnlock": true,
-    "time": 0.713353,
+    "time": 0.718887,
     "paused": false,
     "ready": 4,
     "volume": 0.18

@@ -1,0 +1,71 @@
+{
+  "verifiedAt": "2026-09-20T07:11:36.273Z",
+  "sourceCommit": "9ef64e5b42dbbb59401307889925c5857e5b5857",
+  "sameBundle": true,
+  "results": [
+    {
+      "base": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
+      "bundle": "./assets/index-CIPwHveU.js",
+      "sha256": "97a37588606a4490783c580c4cb2fa8fbeb7144b108c65bc97e9b0f546207ce5",
+      "assets": [
+        {
+          "path": "art/hero.png",
+          "status": 200,
+          "bytes": 232611
+        },
+        {
+          "path": "audio/music.mp3",
+          "status": 200,
+          "bytes": 740523
+        },
+        {
+          "path": "poster.png",
+          "status": 200,
+          "bytes": 1144985
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.txt",
+          "status": 200,
+          "bytes": 4875
+        }
+      ]
+    },
+    {
+      "base": "https://yinxinghuan.github.io/before-the-close/",
+      "bundle": "./assets/index-CIPwHveU.js",
+      "sha256": "97a37588606a4490783c580c4cb2fa8fbeb7144b108c65bc97e9b0f546207ce5",
+      "assets": [
+        {
+          "path": "art/hero.png",
+          "status": 200,
+          "bytes": 232611
+        },
+        {
+          "path": "audio/music.mp3",
+          "status": 200,
+          "bytes": 740523
+        },
+        {
+          "path": "poster.png",
+          "status": 200,
+          "bytes": 1144985
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.txt",
+          "status": 200,
+          "bytes": 4875
+        }
+      ]
+    }
+  ],
+  "health": {
+    "ok": true,
+    "game": "before-the-close",
+    "release": "2026-09-20-r1",
+    "persistence": "browser-session"
+  },
+  "platformCatalog": {
+    "githubRegistered": true,
+    "miniAppMigration": "blocked: native Mac UI locked; no credentials or unrelated surfaces accessed"
+  }
+}

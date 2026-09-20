@@ -923,24 +923,48 @@
       "sha256": "4f109c414e208d500566aca7006af31ca2fd416255dd6b2cdb984ec1f6f10610"
     },
     {
+      "path": "public/art/portrait-0-thumb.png",
+      "sha256": "7620792e8db7fe24cabaae71fbdb00bc5b159c1a539de4fd18195688749d204b"
+    },
+    {
       "path": "public/art/portrait-0.png",
       "sha256": "e7b146f1b19b747836223ce98962de01006cf25967dde9b2c7baa2f9bf1d1bfc"
+    },
+    {
+      "path": "public/art/portrait-1-thumb.png",
+      "sha256": "f56c4501831ce267097d6bd12972533e860c0773bdee934c27af270bda3a653f"
     },
     {
       "path": "public/art/portrait-1.png",
       "sha256": "d90c777ed3092f458eb95aa27b14cbb26e12984519437623602695a858a3ebdf"
     },
     {
+      "path": "public/art/portrait-2-thumb.png",
+      "sha256": "3fd6755919ec2789bedf4fce7d40f42d81ecd3801c8d9199b82b3b608e943ee2"
+    },
+    {
       "path": "public/art/portrait-2.png",
       "sha256": "597d7623022ecc417b328c35866123137f9ab28ec28cdf297de1ddf623c826df"
+    },
+    {
+      "path": "public/art/portrait-3-thumb.png",
+      "sha256": "9ee05b8bf3b11cf9a0fb226b4a3a4fbbc2d25aa3675ea30abf6f2d770a65ef70"
     },
     {
       "path": "public/art/portrait-3.png",
       "sha256": "8bbd583267c60f9ec2d3c4e5a7cb420bc0c2b110bf4b8ab87798d568ebb5d33b"
     },
     {
+      "path": "public/art/portrait-4-thumb.png",
+      "sha256": "750a1195a839a432d8ad2fef2c064ce87a07efdaa79c4b2fd2c54df193992fa8"
+    },
+    {
       "path": "public/art/portrait-4.png",
       "sha256": "fc21125640ba7f81d2b3dd08515774e269a8c031a7ed4c3a2d52213f2cddcd8f"
+    },
+    {
+      "path": "public/art/portrait-5-thumb.png",
+      "sha256": "ff404db229e3035cdecaba40993c86820095d7d55335ada02375f01d8952b2e1"
     },
     {
       "path": "public/art/portrait-5.png",
@@ -979,5 +1003,5 @@
       "sha256": "0cd567b01427c506411988c011fd74ab4d73e4cb6458df3080baf3f31432211b"
     }
   ],
-  "transforms": "prepare-art.py: connected background removal, one-pixel alpha erosion, uniform scale, head/foot alignment, full-frame right mirror. music: original materials/music-source.mp3, gain -4dB, 0.3s fade-in, 1s fade-out. Documents are rendered UI text, not image-generated financial facts."
+  "transforms": "prepare-art.py: connected background removal, one-pixel alpha erosion, uniform scale, head/foot alignment, full-frame right mirror. music: original materials/music-source.mp3, gain -4dB, 0.3s fade-in, 1s fade-out. Documents are rendered UI text, not image-generated financial facts. 96px portrait thumbnails derived uniformly from accepted platform close-ups; zoom retains originals."
 }

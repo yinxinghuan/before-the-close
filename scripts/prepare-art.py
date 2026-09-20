@@ -76,3 +76,6 @@ if (root/'analyst-walk.png').exists() and (out/'npcs.png').exists():
   for facing in [1,2]:
    part=tile if facing==1 else tile.transpose(Image.Transpose.FLIP_LEFT_RIGHT);cell=Image.new('RGBA',(128,128));cell.alpha_composite(part,((128-part.width)//2,16));sheet.paste(cell,(col*128,(4+facing)*128))
  sheet.save(out/'npcs.png')
+# Runtime portrait thumbnails avoid loading a full close-up for a 48px control.
+for path in out.glob('portrait-[0-9].png'):
+ Image.open(path).resize((96,96),Image.Resampling.LANCZOS).save(out/(path.stem+'-thumb.png'))

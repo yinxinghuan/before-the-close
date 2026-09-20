@@ -1,0 +1,23 @@
+import type {Pair,PersonId,RecordId} from './content';import {walkable,type Point,type Rect,type World} from './spatial/world';
+export type SceneId='fund'|'office'|'records'|'client';
+export type Entity={id:string;kind:'person'|'record'|'door'|'committee';label:Pair;at:Point;approach:Point;person?:PersonId;record?:RecordId;to?:SceneId};
+export type Prop={asset:string;x:number;y:number;width:number;obstacle?:Rect};
+export type Room={id:SceneId;title:Pair;subtitle:Pair;floor:number;props:Prop[];entities:Entity[]};
+const prop=(asset:string,x:number,y:number,width:number,block=true):Prop=>({asset,x,y,width,obstacle:block?{x:x-width*.42,y:y-22,w:width*.84,h:24}:undefined});
+const desk=(x:number,y:number)=>prop('furniture-0',x,y,88);
+const plant=(x:number,y:number)=>prop('furniture-3',x,y,44);
+const chair=(x:number,y:number)=>prop('furniture-1',x,y,32);
+const file=(id:RecordId,label:Pair,x:number,y:number):Entity=>({id,kind:'record',record:id,label,at:{x,y},approach:{x:x-7,y:y+24}});
+const npc=(person:PersonId,x:number,y:number):Entity=>({id:person,kind:'person',person,label:['交谈','Talk'],at:{x,y},approach:{x:x-7,y:y+36}});
+const door=(id:string,to:SceneId,label:Pair,x:number,y:number):Entity=>({id,kind:'door',to,label,at:{x,y},approach:{x:x<60?38:x>580?574:x-7,y:y<100?92:y>570?566:y-5}});
+export const rooms:Record<SceneId,Room>={
+fund:{id:'fund',title:['远舟资本','FAR SHORE CAPITAL'],subtitle:['周五 · 16:40','FRIDAY · 16:40'],floor:0,props:[desk(174,278),chair(176,334),desk(440,205),chair(445,248),prop('furniture-2',120,135,116),plant(557,142),plant(80,509),prop('office-extra-0',466,490,124),chair(415,390),chair(482,395)],entities:[file('memo',['投委会摘要','Committee brief'],174,278),npc('partner',460,315),npc('analyst',268,386),{id:'committee',kind:'committee',label:['投委会席位','Committee seat'],at:{x:466,y:490},approach:{x:459,y:525}},door('fund-office','office',['去栖云公司','To Qiyun'],606,430)]},
+office:{id:'office',title:['栖云 · 开放办公区','QIYUN · WORKSPACE'],subtitle:['周五 · 17:20','FRIDAY · 17:20'],floor:1,props:[desk(156,211),chair(164,263),desk(365,210),chair(372,263),desk(151,391),chair(159,443),desk(470,445),chair(480,495),prop('furniture-2',480,135,120),plant(570,280),plant(73,505),prop('furniture-2',286,537,106),prop('office-extra-2',260,138,78),plant(562,540)],entities:[file('contract',['客户合同','Customer contract'],156,211),file('forecast',['现金预测','Cash forecast'],151,391),npc('founder',365,365),door('office-fund','fund',['回远舟资本','To Far Shore'],32,430),door('office-records','records',['去资料会议室','To data room'],606,320),door('office-client','client',['去客户现场','To customer site'],340,596)]},
+records:{id:'records',title:['栖云 · 资料会议室','QIYUN · DATA ROOM'],subtitle:['周五 · 18:05','FRIDAY · 18:05'],floor:3,props:[desk(181,230),chair(188,280),prop('furniture-2',422,150,130),desk(436,374),chair(443,425),prop('furniture-2',155,476,114),plant(563,498),plant(75,137),prop('office-extra-1',82,335,42),prop('office-extra-2',320,133,76)],entities:[file('payment',['银行回单','Bank receipt'],181,230),file('appendix',['补充协议','Supplement'],422,150),file('cash',['付款排期','Payment schedule'],436,374),file('channel',['渠道说明','Channel disclosure'],155,476),npc('finance',307,326),door('records-office','office',['回开放办公区','To workspace'],32,320)]},
+client:{id:'client',title:['远禾 · 门店运营现场','YUANHE · OPERATIONS'],subtitle:['周五 · 19:10','FRIDAY · 19:10'],floor:2,props:[prop('office-extra-3',158,227,100),chair(164,280),prop('furniture-2',460,171,124),desk(460,397),chair(469,450),prop('furniture-2',147,487,115),plant(546,513),plant(70,127),prop('office-extra-2',490,275,68),prop('office-extra-1',83,369,40)],entities:[file('rollout',['上线清单','Deployment list'],158,227),file('acceptance',['验收意见','Acceptance note'],460,171),file('reference',['复购记录','Renewal record'],460,397),npc('client',298,337),door('client-office','office',['回栖云公司','To Qiyun'],340,86)]}
+};
+export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(r=>[r.id,{interior:{x:34,y:88,w:572,h:488},spawn:{x:310,y:492},obstacles:[...r.props.flatMap(p=>p.obstacle?[p.obstacle]:[]),...r.entities.filter(e=>e.kind==='person'&&e.id!=='analyst').map(e=>({x:e.at.x-12,y:e.at.y-10,w:24,h:14}))]}]))};
+export const spawn=(id:SceneId):Point=>({...world.scenes[id].spawn});
+
+// Choose approach from the same furniture collision layout used at runtime.
+for(const r of Object.values(rooms))for(const e of r.entities.filter(e=>e.kind==='record')){const candidates=[e.approach,{x:e.at.x-7,y:e.at.y+58},{x:e.at.x+64,y:e.at.y-5},{x:e.at.x-78,y:e.at.y-5}];e.approach=candidates.find(p=>walkable(world,r.id,p))||e.approach}

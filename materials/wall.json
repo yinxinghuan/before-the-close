@@ -1,0 +1,30 @@
+{
+  "id": "wall",
+  "size": {
+    "width": 1024,
+    "height": 256
+  },
+  "prompt": "A straight horizontal modular office wall asset, orthographic RPG pixel art. One long warm grey painted wall with walnut skirting at bottom, a narrow darker warm grey top cap visible along top edge. FRONT ELEVATION straight parallel horizontal top and bottom, no corner, no windows, no doors, no items, no side wall, no text. Wall occupies full width and height. Consistent soft upper left lighting, realistic subtle paint grain, muted modern office, elegant understated details. Total height divided top cap 15 percent, painted face  seventy percent, lower skirting 15 percent.",
+  "requestId": "bb38e4c0-4a9b-4b7f-9e70-ef80397ea343",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T05:53:40.606Z",
+  "task": {
+    "task_id": "mt_d5d813e950952b7409b71cd809d3e95c",
+    "request_id": "bb38e4c0-4a9b-4b7f-9e70-ef80397ea343",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789883621566,
+    "updated_at": 1789883624550,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883624119578.png",
+      "width": 1024,
+      "height": 256,
+      "format": "png"
+    },
+    "timing_ms": 1350
+  },
+  "saved": "materials/wall.png",
+  "sha256": "628f3de823436984e1edd42a35818cb09c38dd5d9039bc03165f2076f131af7d",
+  "finishedAt": "2026-09-20T05:53:48.467Z"
+}

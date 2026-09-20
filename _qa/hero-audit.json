@@ -1,0 +1,22 @@
+[
+  {
+    "case": "actual-multi-frame",
+    "passed": true,
+    "auditExit": 0
+  },
+  {
+    "case": "same-source-cell",
+    "passed": true,
+    "auditExit": 1
+  },
+  {
+    "case": "forged-crop-hash",
+    "passed": true,
+    "auditExit": 1
+  },
+  {
+    "case": "partial-reflection",
+    "passed": true,
+    "auditExit": 1
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "id": "analyst-walk",
+  "size": {
+    "width": 768,
+    "height": 512
+  },
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885060957913.png"
+  ],
+  "prompt": "Exactly TWO full-body LEFT-FACING walking sprites of the same young East Asian male analyst from reference, short black hair round glasses pale blue shirt navy trousers black shoes. Same elevated orthographic RPG camera and pixel art. Both strict left side profile, head nose and shoes facing LEFT. Left cell: near leg forward to left, far leg behind to right, near arm backward. Right cell: far leg forward to left, near leg behind to right, near arm forward. Clear opposite support legs and opposing arm swing, SHORT relaxed walking stride, not running. Same size and foot baseline. Two evenly spaced full figures only on plain pale cream background, no shadow, no text, no third character.",
+  "requestId": "3168f4d5-8592-4366-ab5e-946aa36b7cb1",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:31:11.258Z",
+  "pendingTask": {
+    "task_id": "mt_903c79337e5f645a08d0ad8d064abb5b",
+    "request_id": "3168f4d5-8592-4366-ab5e-946aa36b7cb1",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885872639,
+    "updated_at": 1789885876084,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885875720142.png",
+      "width": 768,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 2842
+  },
+  "task": {
+    "task_id": "mt_903c79337e5f645a08d0ad8d064abb5b",
+    "request_id": "3168f4d5-8592-4366-ab5e-946aa36b7cb1",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885872639,
+    "updated_at": 1789885876084,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885875720142.png",
+      "width": 768,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 2842
+  },
+  "saved": "materials/analyst-walk.png",
+  "sha256": "9d6ba11de22a5de2a8e553245f6eaa623e192583be82d4c721b84284b23f249c",
+  "finishedAt": "2026-09-20T06:31:19.171Z"
+}

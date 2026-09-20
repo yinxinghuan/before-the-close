@@ -1,0 +1,387 @@
+{
+  "version": 2,
+  "status": "accepted",
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "sourceService": "AlterU Media Service",
+  "partialLimbReflectionAllowed": false,
+  "sheet": {
+    "path": "public/art/hero.png"
+  },
+  "frames": [
+    {
+      "row": 0,
+      "column": 0,
+      "sourcePath": "materials/hero-front-v3.png",
+      "sourceRect": [
+        4,
+        4,
+        252,
+        508
+      ],
+      "sourceFrameSha256": "c7b0c13b99b9aa8ab47fb31f15c5a173911f08c810caed2e3e4369f58b488144",
+      "sourceSha256": "cff325376f3bb3de0352f168271e47b934a62e187c1283c53fae03e1268c0d7d",
+      "requestId": "0996e1fa-d679-40cb-b5c0-8b4861872330",
+      "taskId": "mt_6b0a797a87a1a282e24057dfa03c1044",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        70,
+        32,
+        188,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.0,
+      "visibleHeight": 216
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "sourcePath": "materials/hero-front-v3.png",
+      "sourceRect": [
+        260,
+        4,
+        508,
+        508
+      ],
+      "sourceFrameSha256": "19118290ba745a165aa3c9efdfbe1bf1b24f8a3d7322751429dea7d30afe2770",
+      "sourceSha256": "cff325376f3bb3de0352f168271e47b934a62e187c1283c53fae03e1268c0d7d",
+      "requestId": "0996e1fa-d679-40cb-b5c0-8b4861872330",
+      "taskId": "mt_6b0a797a87a1a282e24057dfa03c1044",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        85,
+        32,
+        171,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.0,
+      "visibleHeight": 216
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "sourcePath": "materials/hero-front-v3.png",
+      "sourceRect": [
+        516,
+        4,
+        764,
+        508
+      ],
+      "sourceFrameSha256": "81f97accb5d8585ba134dc1d68c8478fb27c037eaeb891384b4b940c15bd1463",
+      "sourceSha256": "cff325376f3bb3de0352f168271e47b934a62e187c1283c53fae03e1268c0d7d",
+      "requestId": "0996e1fa-d679-40cb-b5c0-8b4861872330",
+      "taskId": "mt_6b0a797a87a1a282e24057dfa03c1044",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        67,
+        32,
+        186,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.0,
+      "visibleHeight": 216
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "sourcePath": "materials/hero-side-v3.png",
+      "sourceRect": [
+        4,
+        4,
+        252,
+        508
+      ],
+      "sourceFrameSha256": "502fa9ee829bcb9a4a0618e9fed67e7d30b8c88ad1344c34659375e8eff0be6a",
+      "sourceSha256": "4b840f2f1f1560f3543b20955594633c0324b82874ac9044e390ebfe5d9b14a0",
+      "requestId": "ec05dc65-f1c7-403c-8854-424c130974de",
+      "taskId": "mt_b3bd879f40916f80824f411160ca85d9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        82,
+        32,
+        179,
+        248
+      ],
+      "footY": 248,
+      "headX": 127.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "sourcePath": "materials/hero-side-stand.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceFrameSha256": "05d8a4393c22349eada7b24a1239b944841167b8f0524b2db13d6863dc39230b",
+      "sourceSha256": "6dc9992fb6c1f480e175ea6250977e87bd7f537dbee696f8e9a06b464c47098e",
+      "requestId": "73efd09c-218c-49a5-9a78-b0b4221137d3",
+      "taskId": "mt_0069b847dbe38f40ead2e0b4fb898eb8",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        106,
+        32,
+        150,
+        248
+      ],
+      "footY": 248,
+      "headX": 127.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "sourcePath": "materials/hero-side-v3.png",
+      "sourceRect": [
+        516,
+        4,
+        764,
+        508
+      ],
+      "sourceFrameSha256": "e0aab6bf1fbf52a0433288d30a840cf58ac969473de320c8b3d19db07cafccd0",
+      "sourceSha256": "4b840f2f1f1560f3543b20955594633c0324b82874ac9044e390ebfe5d9b14a0",
+      "requestId": "ec05dc65-f1c7-403c-8854-424c130974de",
+      "taskId": "mt_b3bd879f40916f80824f411160ca85d9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        82,
+        32,
+        175,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "sourcePath": "materials/hero-side-v3.png",
+      "sourceRect": [
+        4,
+        4,
+        252,
+        508
+      ],
+      "sourceFrameSha256": "502fa9ee829bcb9a4a0618e9fed67e7d30b8c88ad1344c34659375e8eff0be6a",
+      "sourceSha256": "4b840f2f1f1560f3543b20955594633c0324b82874ac9044e390ebfe5d9b14a0",
+      "requestId": "ec05dc65-f1c7-403c-8854-424c130974de",
+      "taskId": "mt_b3bd879f40916f80824f411160ca85d9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        77,
+        32,
+        174,
+        248
+      ],
+      "footY": 248,
+      "headX": 127.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "sourcePath": "materials/hero-side-stand.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceFrameSha256": "05d8a4393c22349eada7b24a1239b944841167b8f0524b2db13d6863dc39230b",
+      "sourceSha256": "6dc9992fb6c1f480e175ea6250977e87bd7f537dbee696f8e9a06b464c47098e",
+      "requestId": "73efd09c-218c-49a5-9a78-b0b4221137d3",
+      "taskId": "mt_0069b847dbe38f40ead2e0b4fb898eb8",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        106,
+        32,
+        150,
+        248
+      ],
+      "footY": 248,
+      "headX": 127.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "sourcePath": "materials/hero-side-v3.png",
+      "sourceRect": [
+        516,
+        4,
+        764,
+        508
+      ],
+      "sourceFrameSha256": "e0aab6bf1fbf52a0433288d30a840cf58ac969473de320c8b3d19db07cafccd0",
+      "sourceSha256": "4b840f2f1f1560f3543b20955594633c0324b82874ac9044e390ebfe5d9b14a0",
+      "requestId": "ec05dc65-f1c7-403c-8854-424c130974de",
+      "taskId": "mt_b3bd879f40916f80824f411160ca85d9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        81,
+        32,
+        174,
+        248
+      ],
+      "footY": 248,
+      "headX": 126.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "sourcePath": "materials/hero-back-v3.png",
+      "sourceRect": [
+        4,
+        4,
+        252,
+        508
+      ],
+      "sourceFrameSha256": "b9ae5b0f94cbf6d3a95dbec647ba5af93d791b4f7c410d8619a61b4070c43fef",
+      "sourceSha256": "abf17aeb089a368237e0bc005ed2bfbed375fbb675f264d8d839833b28d527f6",
+      "requestId": "64e0ea21-3035-4899-b7d0-eff42675646d",
+      "taskId": "mt_432ffbb6cc1c39212cf4d1fae3373e09",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        94,
+        32,
+        171,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "sourcePath": "materials/hero-back-v3.png",
+      "sourceRect": [
+        260,
+        4,
+        508,
+        508
+      ],
+      "sourceFrameSha256": "8e2b07a250d5170058b0cb68b0ef069baa7695720c46d6f93c4dcf05ef6d3c21",
+      "sourceSha256": "abf17aeb089a368237e0bc005ed2bfbed375fbb675f264d8d839833b28d527f6",
+      "requestId": "64e0ea21-3035-4899-b7d0-eff42675646d",
+      "taskId": "mt_432ffbb6cc1c39212cf4d1fae3373e09",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        90,
+        32,
+        168,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.5,
+      "visibleHeight": 216
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "sourcePath": "materials/hero-back-v3.png",
+      "sourceRect": [
+        516,
+        4,
+        764,
+        508
+      ],
+      "sourceFrameSha256": "8eae447af6b46070d332f82955c4b15195747d22b7e3958cc78ccce90c287b16",
+      "sourceSha256": "abf17aeb089a368237e0bc005ed2bfbed375fbb675f264d8d839833b28d527f6",
+      "requestId": "64e0ea21-3035-4899-b7d0-eff42675646d",
+      "taskId": "mt_432ffbb6cc1c39212cf4d1fae3373e09",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        86,
+        32,
+        163,
+        248
+      ],
+      "footY": 248,
+      "headX": 128.5,
+      "visibleHeight": 216
+    }
+  ],
+  "review": {
+    "contactSheet": "public/art/hero.png",
+    "runtime": "doc/evidence/platform-layout-final-fund-390x844.png",
+    "motionEvidence": "_qa/hero-motion.mjs; retained local four-direction frame sequence",
+    "scope": "agent visual review; final player preference review remains separate",
+    "notes": "v4 and individual front candidates rejected for altered proportions / repeated phase. Final v3 retains compact top-down proportions; slightly broad front arm swing is non-blocking stylistic feedback, not a one-pass generation claim."
+  }
+}

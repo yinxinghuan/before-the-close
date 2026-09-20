@@ -1,0 +1,30 @@
+{
+  "id": "music",
+  "kind": "music",
+  "duration": 45,
+  "prompt": "Background instrumental for a contemporary financial investigation at dusk. Restrained elegant minimal noir chamber music, warm felt piano, muted pizzicato cello, subtle brushed percussion, 76 BPM, calm analytical curiosity with quiet human tension, gentle continuous development, low energy, clean restrained ending, no vocals no speech no cinematic impacts.",
+  "requestId": "a247fe04-ead4-4a8b-b945-84a0d2453afb",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:25:54.832Z",
+  "task": {
+    "task_id": "mt_941fac6f1f8302b4acc7f387a9266298",
+    "request_id": "a247fe04-ead4-4a8b-b945-84a0d2453afb",
+    "type": "audio",
+    "status": "succeeded",
+    "created_at": 1789885555959,
+    "updated_at": 1789885559769,
+    "media": {
+      "type": "audio",
+      "kind": "music",
+      "url": "https://cdn.aiwaves.tech/prodsv/telegram/audio/music/20260920/a54c20c4c92143198b3e051019e08b63.mp3",
+      "duration_seconds": 45,
+      "format": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 2
+    },
+    "timing_ms": 1642
+  },
+  "saved": "public/audio/music.mp3",
+  "sha256": "c6ef4e71e37b3a43d73077588a77d8de4c90a33c8085ef5246b3bd7118e47d6e",
+  "finishedAt": "2026-09-20T06:26:05.470Z"
+}

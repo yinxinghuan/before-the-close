@@ -1,0 +1,46 @@
+{
+  "id": "poster-title",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Square premium pixel art videogame cover. EXACT title text at top in giant cream serif letters: \"BEFORE THE CLOSE\". NO other text anywhere. Dark navy glass office at blue dusk. Below the title, an adult East Asian investment manager woman, short black bob haircut, fitted navy pantsuit, ivory blouse, holding a cream folder in the right half. Walnut desk with papers at left, city skyline outside windows. Human drama, warm desk light, sophisticated restrained dark navy and copper palette. Title sits in top 20 percent with three words in TWO lines BEFORE THE then CLOSE. Clear correctly spelled typography. 1024 square pixel art illustration.",
+  "requestId": "0ae3ef0f-048f-44c9-8fca-ff791c5dffc7",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:48:49.899Z",
+  "pendingTask": {
+    "task_id": "mt_8e116a61477f6edbd2aa030161e226fe",
+    "request_id": "0ae3ef0f-048f-44c9-8fca-ff791c5dffc7",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789886931047,
+    "updated_at": 1789886945725,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789886944473557.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 2712
+  },
+  "task": {
+    "task_id": "mt_8e116a61477f6edbd2aa030161e226fe",
+    "request_id": "0ae3ef0f-048f-44c9-8fca-ff791c5dffc7",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789886931047,
+    "updated_at": 1789886945725,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789886944473557.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 2712
+  },
+  "saved": "materials/poster-title.png",
+  "sha256": "0cd567b01427c506411988c011fd74ab4d73e4cb6458df3080baf3f31432211b",
+  "finishedAt": "2026-09-20T06:49:14.323Z"
+}

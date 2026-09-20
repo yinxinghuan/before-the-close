@@ -1,0 +1,30 @@
+{
+  "id": "step",
+  "kind": "sfx",
+  "duration": 1,
+  "prompt": "One single soft leather business shoe footstep on office carpet, close dry microphone, short quiet dull contact, no extra steps, no music, no voice, no ambience.",
+  "requestId": "ead9f32a-7601-4549-a1c3-da69b051da53",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:25:54.833Z",
+  "task": {
+    "task_id": "mt_a22e99b14e8704342ddd1c7f42f9f663",
+    "request_id": "ead9f32a-7601-4549-a1c3-da69b051da53",
+    "type": "audio",
+    "status": "succeeded",
+    "created_at": 1789885555914,
+    "updated_at": 1789885558418,
+    "media": {
+      "type": "audio",
+      "kind": "sfx",
+      "url": "https://cdn.aiwaves.tech/prodsv/telegram/audio/sfx/20260920/19767d2ecdc943a887fa4fc94a0fac64.mp3",
+      "duration_seconds": 1,
+      "format": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 2
+    },
+    "timing_ms": 649
+  },
+  "saved": "public/audio/step.mp3",
+  "sha256": "ee3c0162b9d00bf24635d439a7e869af93901d639a89db94053f135db4dffa97",
+  "finishedAt": "2026-09-20T06:26:01.763Z"
+}

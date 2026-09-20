@@ -1,0 +1,30 @@
+{
+  "id": "furniture",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Premium detailed pixel-art adventure game sprite, muted contemporary office colors, crisp dark outlines, consistent soft upper-left light, orthographic oblique top-down RPG view looking down about 35 degrees, parallel projection without vanishing point. Game assets sheet exactly 2 by 2 cells, four completely separate objects centered with wide cream solid background margins, no floor shadows. Upper left walnut rectangular working desk with a CLOSED laptop, paper and desk lamp firmly resting on its surface; front and back edges of desktop exactly same length, parallel horizontal edges, side edges parallel vertical on image. Upper right compact dark teal ergonomic office swivel chair rotated 45 degrees in parallel projection. Lower left low broad walnut credenza with books and small espresso machine on top. Lower right potted tall indoor plant in square stone planter. No room, no floor, no text, no perspective convergence. All furniture seen from same 35 degree elevated camera as an RPG actor.",
+  "requestId": "8b518ff3-c295-41d4-a981-fa657c92dd76",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T05:53:27.029Z",
+  "task": {
+    "task_id": "mt_56d85cc1f048fa1192fb8d4d01050c98",
+    "request_id": "8b518ff3-c295-41d4-a981-fa657c92dd76",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789883608508,
+    "updated_at": 1789883612122,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883611646930.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 1799
+  },
+  "saved": "materials/furniture.png",
+  "sha256": "dbfb3a8b6c90d62cbcfd4759ce3fb92b889a49a7c1f4ccb6a427ad9e530fb8aa",
+  "finishedAt": "2026-09-20T05:53:40.032Z"
+}

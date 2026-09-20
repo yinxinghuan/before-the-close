@@ -1,0 +1,30 @@
+{
+  "id": "npc-analyst",
+  "size": {
+    "width": 768,
+    "height": 768
+  },
+  "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian man age 27, short neat black hair, round glasses, light blue shirt with navy trousers and black shoes. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level.",
+  "requestId": "0e698610-2c12-4e88-b887-97a6b90630bc",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:17:37.053Z",
+  "task": {
+    "task_id": "mt_73719a553ed43a4754c2f149ae00ed19",
+    "request_id": "0e698610-2c12-4e88-b887-97a6b90630bc",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885058285,
+    "updated_at": 1789885061162,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885060957913.png",
+      "width": 768,
+      "height": 768,
+      "format": "png"
+    },
+    "timing_ms": 1145
+  },
+  "saved": "materials/npc-analyst.png",
+  "sha256": "632251782c5959630d5e24a44fe6c75e6f34597e9006fa87bca726837b58f19c",
+  "finishedAt": "2026-09-20T06:18:32.094Z"
+}

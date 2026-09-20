@@ -1,0 +1,30 @@
+{
+  "id": "hero-side-v3",
+  "size": {
+    "width": 768,
+    "height": 512
+  },
+  "prompt": "Detailed pixel art JRPG sprite sheet, consistent elevated orthographic TOP DOWN camera looking down 45 degrees, see the TOP of head, shoulders and shoes. Character has compact sturdy 4.5-head-tall adult RPG proportions, NOT tall fashion illustration. Short black bob-haired adult East Asian woman in dark navy pantsuit, ivory blouse, brown shoes. Solid pale warm cream background, NO shadows. Exactly three full body figures in a horizontal row, same proportions and foot baseline, generous margins, no lines or text. All face LEFT, noses and both shoes point LEFT. Left image NEAR leg forward to left, FAR leg back to right, near hand BACK. Middle image neutral standing feet side-by-side and arms down. Right image FAR leg forward to left, NEAR leg back to right, near hand FORWARD. Same true side profile all three, short natural steps.",
+  "requestId": "ec05dc65-f1c7-403c-8854-424c130974de",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:12:27.608Z",
+  "task": {
+    "task_id": "mt_b3bd879f40916f80824f411160ca85d9",
+    "request_id": "ec05dc65-f1c7-403c-8854-424c130974de",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789884748951,
+    "updated_at": 1789884751253,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789884751013272.png",
+      "width": 768,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 718
+  },
+  "saved": "materials/hero-side-v3.png",
+  "sha256": "4b840f2f1f1560f3543b20955594633c0324b82874ac9044e390ebfe5d9b14a0",
+  "finishedAt": "2026-09-20T06:12:37.243Z"
+}

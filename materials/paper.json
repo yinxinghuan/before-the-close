@@ -1,0 +1,30 @@
+{
+  "id": "paper",
+  "kind": "sfx",
+  "duration": 1,
+  "prompt": "One crisp paper document page turn on a desk, close dry microphone, short delicate rustle, no music, no speech, no prolonged noise.",
+  "requestId": "fd6b857f-94d9-4ea7-950f-893e683cc341",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:26:01.764Z",
+  "task": {
+    "task_id": "mt_e28c5fa5e5d243b90be2639a814483a0",
+    "request_id": "fd6b857f-94d9-4ea7-950f-893e683cc341",
+    "type": "audio",
+    "status": "succeeded",
+    "created_at": 1789885562449,
+    "updated_at": 1789885563398,
+    "media": {
+      "type": "audio",
+      "kind": "sfx",
+      "url": "https://cdn.aiwaves.tech/prodsv/telegram/audio/sfx/20260920/0cef3e5755d743ba80bf96d765a05a6d.mp3",
+      "duration_seconds": 1,
+      "format": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 2
+    },
+    "timing_ms": 481
+  },
+  "saved": "public/audio/paper.mp3",
+  "sha256": "9405860f2906e02985e142f9208d7af1af164f2183337bff94fcc37a5d1631e9",
+  "finishedAt": "2026-09-20T06:26:05.206Z"
+}

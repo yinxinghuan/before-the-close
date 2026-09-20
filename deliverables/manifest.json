@@ -1,0 +1,30 @@
+{
+  "version": "1.45",
+  "skills": [
+    "build-spatial-story-game",
+    "build-stateful-story-game",
+    "alteru-media-service",
+    "game-interface-workflow",
+    "game-design-review",
+    "game-art-direction",
+    "game-ui-design",
+    "game-feel",
+    "game-visual-qa",
+    "game-docs",
+    "ui-foundation",
+    "ui-style-library"
+  ],
+  "archives": [
+    {
+      "path": "build-spatial-story-game-v1.45.zip",
+      "sha256": "9c769abed241746773b59a0cbb1ca37e9ccfe88f8b166cccf44d2fe3a96ec709",
+      "bytes": 4878967
+    },
+    {
+      "path": "spatial-rpg-handoff-v1.45.zip",
+      "sha256": "44dc39edb43d0a18d4b7839e29588147c81bbf58749d7511cbb63be7d0518904",
+      "bytes": 15520827
+    }
+  ],
+  "independentAgentBlindTest": false
+}

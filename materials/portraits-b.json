@@ -1,0 +1,46 @@
+{
+  "id": "portraits-b",
+  "size": {
+    "width": 1024,
+    "height": 512
+  },
+  "prompt": "Premium detailed pixel-art portrait illustration for a modern financial drama, realistic adult facial proportions, warm soft left light, muted slate blue background. Head and shoulders centered in each cell, no text or frames. Exactly two square portraits side by side. LEFT: East Asian woman 35, black ponytail sage green blazer beige blouse, pragmatic warm expression. RIGHT: East Asian woman 30 short black bob navy blazer ivory blouse, thoughtful investment manager.",
+  "requestId": "876d32ec-017d-4cf0-9c32-97b6584dc4ea",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:30:11.836Z",
+  "pendingTask": {
+    "task_id": "mt_57963781c0472868397aa6cbd5885dec",
+    "request_id": "876d32ec-017d-4cf0-9c32-97b6584dc4ea",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885813260,
+    "updated_at": 1789885817188,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885816096223.png",
+      "width": 1024,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 920
+  },
+  "task": {
+    "task_id": "mt_57963781c0472868397aa6cbd5885dec",
+    "request_id": "876d32ec-017d-4cf0-9c32-97b6584dc4ea",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885813260,
+    "updated_at": 1789885817188,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885816096223.png",
+      "width": 1024,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 920
+  },
+  "saved": "materials/portraits-b.png",
+  "sha256": "a1a4a2a03449ed1d0e2f71fd017f945b0449d1b4c82105e50511262a90ee97f1",
+  "finishedAt": "2026-09-20T06:30:23.937Z"
+}

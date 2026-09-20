@@ -1,0 +1,52 @@
+[
+  {
+    "file": "public/audio/door.mp3",
+    "duration": 1.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "volume": [
+      "[Parsed_volumedetect_0 @ 0x7fa33671e640] mean_volume: -39.4 dB",
+      "[Parsed_volumedetect_0 @ 0x7fa33671e640] max_volume: -16.6 dB"
+    ]
+  },
+  {
+    "file": "public/audio/step.mp3",
+    "duration": 1.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "volume": [
+      "[Parsed_volumedetect_0 @ 0x7f9453204480] mean_volume: -45.1 dB",
+      "[Parsed_volumedetect_0 @ 0x7f9453204480] max_volume: -19.4 dB"
+    ]
+  },
+  {
+    "file": "public/audio/music.mp3",
+    "duration": 45.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "volume": [
+      "[Parsed_volumedetect_0 @ 0x7fb053907000] mean_volume: -18.2 dB",
+      "[Parsed_volumedetect_0 @ 0x7fb053907000] max_volume: 0.0 dB"
+    ]
+  },
+  {
+    "file": "public/audio/door-sound.mp3",
+    "duration": 1.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "volume": [
+      "[Parsed_volumedetect_0 @ 0x7fa97390e080] mean_volume: -39.4 dB",
+      "[Parsed_volumedetect_0 @ 0x7fa97390e080] max_volume: -16.6 dB"
+    ]
+  },
+  {
+    "file": "public/audio/paper.mp3",
+    "duration": 1.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "volume": [
+      "[Parsed_volumedetect_0 @ 0x7fbda6307840] mean_volume: -35.6 dB",
+      "[Parsed_volumedetect_0 @ 0x7fbda6307840] max_volume: -13.8 dB"
+    ]
+  }
+]

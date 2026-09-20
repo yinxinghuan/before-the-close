@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "releaseTarget": "playable",
+  "gameProfile": {
+    "sessionShape": "chapter",
+    "expectedMinutes": 25,
+    "crossSessionContinuity": true,
+    "crossDevice": false,
+    "directMovement": true,
+    "physicalNpc": true,
+    "conversation": true,
+    "inventory": true,
+    "compareBranches": true,
+    "sharedDevice": false,
+    "creativeSilence": false
+  },
+  "modes": {
+    "journeys": "multiple",
+    "persistence": "local-session",
+    "conversation": "authored"
+  },
+  "capabilities": {
+    "opening": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "exploration": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "loadingRecovery": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "audioLayers": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/audio-live.json",
+        "_qa/audio-analysis.json"
+      ]
+    },
+    "persistence": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "closure": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "npcWorldLife": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/recovery-audio.json"
+      ]
+    },
+    "stagedConversation": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "conversationHistory": {
+      "state": "implemented",
+      "evidence": [
+        "doc/qa-report.md",
+        "_qa/playthrough.mjs"
+      ]
+    },
+    "inventoryVisuals": {
+      "state": "implemented",
+      "evidence": [
+        "src/main.tsx",
+        "doc/evidence/platform-layout-findings-390x844.png"
+      ]
+    },
+    "distanceFootsteps": {
+      "state": "implemented",
+      "evidence": [
+        "_qa/recovery-audio.json"
+      ]
+    }
+  },
+  "decisions": {
+    "journeys": "Independent journeys allow evidence and decision comparison.",
+    "persistence": "The chapter resumes in the same deployment session; cross-device play is not promised.",
+    "conversation": "Authored replies preserve character intent; generated dialogue is not a product requirement.",
+    "release": "Playable complete chapter with all final art; auditory taste and new-player comprehension not yet externally verified."
+  }
+}

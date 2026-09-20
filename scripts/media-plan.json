@@ -1,0 +1,306 @@
+[
+  {
+    "id": "hero",
+    "size": {
+      "width": 768,
+      "height": 1024
+    },
+    "prompt": "Premium detailed pixel-art adventure game sprite, muted contemporary office colors, crisp dark outlines, consistent soft upper-left light, orthographic oblique top-down RPG view looking down about 35 degrees, parallel projection without vanishing point. Character animation sheet EXACT 3 columns by 4 rows, evenly spaced 256px square cells, neutral solid warm cream background. Same full-body adult East Asian woman investment manager in every cell, short dark bob hair, charcoal navy pantsuit, pale ivory blouse, brown business shoes, lean realistic adult proportions, no handbag. Entire character visible with generous margins, feet same baseline within each cell. Row1 facing SOUTH toward viewer: left-foot-forward walking, neutral standing feet together, right-foot-forward walking. Row2 facing WEST: left support stride, neutral side standing, opposite right support stride. Row3 facing EAST: first stride, neutral standing, opposite stride. Row4 facing NORTH away showing back of head: first stride, neutral standing, opposite stride. Exactly twelve separate full figures. Opposite walk poses actually exchange support legs and opposing arm swing; same torso and head size. No labels, no shadows, no grid lines, no furniture."
+  },
+  {
+    "id": "furniture",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Premium detailed pixel-art adventure game sprite, muted contemporary office colors, crisp dark outlines, consistent soft upper-left light, orthographic oblique top-down RPG view looking down about 35 degrees, parallel projection without vanishing point. Game assets sheet exactly 2 by 2 cells, four completely separate objects centered with wide cream solid background margins, no floor shadows. Upper left walnut rectangular working desk with a CLOSED laptop, paper and desk lamp firmly resting on its surface; front and back edges of desktop exactly same length, parallel horizontal edges, side edges parallel vertical on image. Upper right compact dark teal ergonomic office swivel chair rotated 45 degrees in parallel projection. Lower left low broad walnut credenza with books and small espresso machine on top. Lower right potted tall indoor plant in square stone planter. No room, no floor, no text, no perspective convergence. All furniture seen from same 35 degree elevated camera as an RPG actor."
+  },
+  {
+    "id": "floor",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Texture atlas 2 by 2 equal square cells, top-down straight orthographic flat floor textures for modern office 2D game. Upper left warm light grey carpet tile, upper right blue grey commercial carpet tile, lower left pale warm stone square tiles, lower right medium warm oak planks horizontal. Premium muted pixel art, gentle use wear, low contrast fine detail, seamless inside each quadrant, no borders between cells, absolutely no furniture or objects, no walls, no shadows or perspective."
+  },
+  {
+    "id": "wall",
+    "size": {
+      "width": 1024,
+      "height": 256
+    },
+    "prompt": "A straight horizontal modular office wall asset, orthographic RPG pixel art. One long warm grey painted wall with walnut skirting at bottom, a narrow darker warm grey top cap visible along top edge. FRONT ELEVATION straight parallel horizontal top and bottom, no corner, no windows, no doors, no items, no side wall, no text. Wall occupies full width and height. Consistent soft upper left lighting, realistic subtle paint grain, muted modern office, elegant understated details. Total height divided top cap 15 percent, painted face  seventy percent, lower skirting 15 percent."
+  },
+  {
+    "id": "hero-front",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883612970705.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Redesign the reference character as detailed pixel art for a classic top-down orthographic 2D RPG. Same short black bob-haired adult woman, navy pantsuit ivory blouse brown shoes, ALL figures facing south towards viewer, face visible. Camera elevated 35 degrees showing top of head and shoulders, NOT eye-level fashion illustration. Produce exactly THREE full body figures in one horizontal row evenly spaced, each fits one 256x512 cell, centered, same size and feet baseline, blank solid pale cream background. LEFT figure left leg forward and right arm forward walking. CENTER neutral stationary pose feet together and arms down. RIGHT figure right leg forward and left arm forward walking, genuinely exchange supporting legs. Subtle short natural walking strides. All THREE face identical south towards viewer, face visible. No grid lines, no text, no floor, no cast shadow. Generous spacing. Preserve identity across three poses."
+  },
+  {
+    "id": "hero-side",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883612970705.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Redesign the reference character as detailed pixel art for a classic top-down orthographic 2D RPG. Same short black bob-haired adult woman, navy pantsuit ivory blouse brown shoes, ALL figures facing west LEFT, strict left profile, nose points LEFT in every pose. Camera elevated 35 degrees showing top of head and shoulders, NOT eye-level fashion illustration. Produce exactly THREE full body figures in one horizontal row evenly spaced, each fits one 256x512 cell, centered, same size and feet baseline, blank solid pale cream background. LEFT figure left leg forward and right arm forward walking. CENTER neutral stationary pose feet together and arms down. RIGHT figure right leg forward and left arm forward walking, genuinely exchange supporting legs. Subtle short natural walking strides. All THREE face identical west LEFT, strict left profile, nose points LEFT in every pose. No grid lines, no text, no floor, no cast shadow. Generous spacing. Preserve identity across three poses."
+  },
+  {
+    "id": "hero-back",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883612970705.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Redesign the reference character as detailed pixel art for a classic top-down orthographic 2D RPG. Same short black bob-haired adult woman, navy pantsuit ivory blouse brown shoes, ALL figures facing north AWAY from viewer, only back of head and jacket back, NO face. Camera elevated 35 degrees showing top of head and shoulders, NOT eye-level fashion illustration. Produce exactly THREE full body figures in one horizontal row evenly spaced, each fits one 256x512 cell, centered, same size and feet baseline, blank solid pale cream background. LEFT figure left leg forward and right arm forward walking. CENTER neutral stationary pose feet together and arms down. RIGHT figure right leg forward and left arm forward walking, genuinely exchange supporting legs. Subtle short natural walking strides. All THREE face identical north AWAY from viewer, only back of head and jacket back, NO face. No grid lines, no text, no floor, no cast shadow. Generous spacing. Preserve identity across three poses."
+  },
+  {
+    "id": "hero-front-v3",
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Detailed pixel art JRPG sprite sheet, consistent elevated orthographic TOP DOWN camera looking down 45 degrees, see the TOP of head, shoulders and shoes. Character has compact sturdy 4.5-head-tall adult RPG proportions, NOT tall fashion illustration. Short black bob-haired adult East Asian woman in dark navy pantsuit, ivory blouse, brown shoes. Solid pale warm cream background, NO shadows. Exactly three full body figures in a horizontal row, same proportions and foot baseline, generous margins, no lines or text. All face SOUTH toward bottom of screen. Left image LEFT foot forward and right arm forward. Middle image neutral standing both feet together. Right image RIGHT foot forward and left arm forward. Front view short stride, visible top of black hair."
+  },
+  {
+    "id": "hero-side-v3",
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Detailed pixel art JRPG sprite sheet, consistent elevated orthographic TOP DOWN camera looking down 45 degrees, see the TOP of head, shoulders and shoes. Character has compact sturdy 4.5-head-tall adult RPG proportions, NOT tall fashion illustration. Short black bob-haired adult East Asian woman in dark navy pantsuit, ivory blouse, brown shoes. Solid pale warm cream background, NO shadows. Exactly three full body figures in a horizontal row, same proportions and foot baseline, generous margins, no lines or text. All face LEFT, noses and both shoes point LEFT. Left image NEAR leg forward to left, FAR leg back to right, near hand BACK. Middle image neutral standing feet side-by-side and arms down. Right image FAR leg forward to left, NEAR leg back to right, near hand FORWARD. Same true side profile all three, short natural steps."
+  },
+  {
+    "id": "hero-back-v3",
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Detailed pixel art JRPG sprite sheet, consistent elevated orthographic TOP DOWN camera looking down 45 degrees, see the TOP of head, shoulders and shoes. Character has compact sturdy 4.5-head-tall adult RPG proportions, NOT tall fashion illustration. Short black bob-haired adult East Asian woman in dark navy pantsuit, ivory blouse, brown shoes. Solid pale warm cream background, NO shadows. Exactly three full body figures in a horizontal row, same proportions and foot baseline, generous margins, no lines or text. All face NORTH away to top of screen. Only back of head and suit back visible, NO faces. Left image left shoe forward and right shoe behind. Middle image neutral feet together. Right image right shoe forward left shoe behind."
+  },
+  {
+    "id": "hero-side-stand",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789884751013272.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "One single full-body sprite only. The LEFT-FACING woman from the LEFT of the reference, same short black bob, navy pantsuit ivory blouse brown shoes, compact adult pixel-art RPG proportions. Standing completely still in STRICT LEFT SIDE PROFILE: nose points LEFT, shoulders side-on, both shoes point LEFT placed together side by side on ground, arms resting straight at sides. NOT front view. No stride, no walking. Elevated orthographic top-down camera looking down 35 degrees, see head top. One character centered, solid pale cream background, no shadow, no other views, no labels."
+  },
+  {
+    "id": "npc-partner",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian woman age 46, shoulder-length dark brown hair, tailored cream blazer with dark charcoal trousers, black low heels. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level."
+  },
+  {
+    "id": "npc-analyst",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian man age 27, short neat black hair, round glasses, light blue shirt with navy trousers and black shoes. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level."
+  },
+  {
+    "id": "npc-founder",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian man age 40, short black hair slightly grey temples, rolled-sleeve white shirt, charcoal trousers, brown shoes. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level."
+  },
+  {
+    "id": "npc-finance",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian woman age 39, dark hair in low bun, muted burgundy cardigan over grey blouse, dark trousers, black shoes. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level."
+  },
+  {
+    "id": "npc-client",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian woman age 35, dark ponytail, sage green casual blazer over beige top, dark trousers, tan shoes. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level."
+  },
+  {
+    "id": "portraits",
+    "size": {
+      "width": 1024,
+      "height": 1536
+    },
+    "prompt": "A polished hand-painted pixel illustration character portrait sheet, exactly 2 columns and 3 rows of square head-and-shoulders portraits on muted slate blue backdrops. Consistent grounded contemporary Chinese financial drama. Top left: woman 46 shoulder length dark brown hair cream blazer, composed thoughtful expression. Top right: man 27 short black hair round glasses light blue shirt, attentive. Middle left: man 40 rolled sleeve white shirt slight grey temples, tired confident. Middle right: woman 39 dark low bun burgundy cardigan grey blouse, measured serious. Bottom left: woman 35 ponytail sage green blazer beige top, pragmatic warm. Bottom right: woman 30 short black bob navy blazer ivory blouse, intelligent thoughtful. All portraits centered in each cell, same realistic adult art direction, soft warm left light, no text, no frames, no exaggerated villain expressions."
+  },
+  {
+    "id": "office-extra",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Four independent contemporary office props, exactly 2x2 cells with generous margins. Upper left: long rectangular blue-grey office meeting table with slim steel legs, closed notebooks and a small conference speaker firmly on top, table aligned horizontal front/back edges same length. Upper right: tall narrow dark metal filing cabinet with tidy ring binders. Lower left: freestanding wheeled whiteboard covered with faint illegible process chart and tiny sticky notes, strong grounded stand. Lower right: a modern cafe service counter with small black point-of-sale terminal and stacked paper cups on top, horizontally aligned rectangular countertop. No floor, no rooms, no people. Each object isolated."
+  },
+  {
+    "id": "window",
+    "size": {
+      "width": 1024,
+      "height": 512
+    },
+    "prompt": "One wide horizontal corporate office window, front orthographic elevation, parallel straight frame, four equal panes, city office buildings at warm blue dusk with small amber lights. Premium muted pixel art, dark brushed metal narrow frames, no perspective convergence, no wall outside window, no room, no floor, no text. Entire rectangular window fills image with 12 pixel cream margin."
+  },
+  {
+    "id": "door",
+    "size": {
+      "width": 512,
+      "height": 768
+    },
+    "prompt": "Single contemporary walnut office door with narrow frosted glass panel, slim dark bronze frame and silver lever handle, premium pixel art RPG sprite, orthographic front elevation viewed slightly from above with a small visible top cap. Parallel vertical frame edges. No wall, no room, no floor or shadow, no text. Door closed. Centered on solid pale cream background, full object visible with generous margins."
+  },
+  {
+    "id": "music",
+    "kind": "music",
+    "duration": 45,
+    "prompt": "Background instrumental for a contemporary financial investigation at dusk. Restrained elegant minimal noir chamber music, warm felt piano, muted pizzicato cello, subtle brushed percussion, 76 BPM, calm analytical curiosity with quiet human tension, gentle continuous development, low energy, clean restrained ending, no vocals no speech no cinematic impacts."
+  },
+  {
+    "id": "step",
+    "kind": "sfx",
+    "duration": 1,
+    "prompt": "One single soft leather business shoe footstep on office carpet, close dry microphone, short quiet dull contact, no extra steps, no music, no voice, no ambience."
+  },
+  {
+    "id": "paper",
+    "kind": "sfx",
+    "duration": 1,
+    "prompt": "One crisp paper document page turn on a desk, close dry microphone, short delicate rustle, no music, no speech, no prolonged noise."
+  },
+  {
+    "id": "door-sound",
+    "kind": "sfx",
+    "duration": 1,
+    "prompt": "A single soft modern office door latch click followed by a quiet damped closing thud, close dry microphone, no music, no voices."
+  },
+  {
+    "id": "poster",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Premium editorial pixel-art game cover, square composition, contemporary financial mystery. A thoughtful East Asian woman investment manager with short black bob hair and navy suit holds a cream document folder in a warmly lit glass office at blue dusk. Walnut desk with evidence papers, distant office windows, tasteful subtle gold light. Strong cinematic composition with subject in right half and generous dark negative space upper left for later title UI, no rendered text or letters, no logos, no fantasy, sophisticated human drama, art direction consistent with a detailed 2D pixel RPG."
+  },
+  {
+    "id": "portraits-v2",
+    "size": {
+      "width": 1024,
+      "height": 1536
+    },
+    "prompt": "A polished hand-painted pixel illustration character portrait sheet, exactly 2 columns and 3 rows of square head-and-shoulders portraits on muted slate blue backdrops. Consistent grounded contemporary Chinese financial drama. Top left: woman 46 shoulder length dark brown hair cream blazer, composed thoughtful expression. Top right: man 27 short black hair round glasses light blue shirt, attentive. Middle left: man 40 rolled sleeve white shirt slight grey temples, tired confident. Middle right: woman 39 dark low bun burgundy cardigan grey blouse, measured serious. Bottom left: woman 35 ponytail sage green blazer beige top, pragmatic warm. Bottom right: woman 30 short black bob navy blazer ivory blouse, intelligent thoughtful. All portraits centered in each cell, same realistic adult art direction, soft warm left light, no text, no frames, no exaggerated villain expressions."
+  },
+  {
+    "id": "portraits-a",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Premium detailed pixel-art portrait illustration for a modern financial drama, realistic adult facial proportions, warm soft left light, muted slate blue background. Head and shoulders centered in each cell, no text or frames. Exactly 2 columns by 2 rows, four different people. Top left East Asian woman 46 shoulder length dark brown hair cream blazer, thoughtful composed expression. Top right East Asian man 27 short neat black hair round glasses light blue shirt, attentive. Bottom left East Asian man 40 short black hair slightly grey temples white shirt open collar, tired confident expression. Bottom right East Asian woman 39 dark hair in low bun burgundy cardigan grey blouse, calm measured expression."
+  },
+  {
+    "id": "portraits-b",
+    "size": {
+      "width": 1024,
+      "height": 512
+    },
+    "prompt": "Premium detailed pixel-art portrait illustration for a modern financial drama, realistic adult facial proportions, warm soft left light, muted slate blue background. Head and shoulders centered in each cell, no text or frames. Exactly two square portraits side by side. LEFT: East Asian woman 35, black ponytail sage green blazer beige blouse, pragmatic warm expression. RIGHT: East Asian woman 30 short black bob navy blazer ivory blouse, thoughtful investment manager."
+  },
+  {
+    "id": "analyst-walk",
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885060957913.png"
+    ],
+    "prompt": "Exactly TWO full-body LEFT-FACING walking sprites of the same young East Asian male analyst from reference, short black hair round glasses pale blue shirt navy trousers black shoes. Same elevated orthographic RPG camera and pixel art. Both strict left side profile, head nose and shoes facing LEFT. Left cell: near leg forward to left, far leg behind to right, near arm backward. Right cell: far leg forward to left, near leg behind to right, near arm forward. Clear opposite support legs and opposing arm swing, SHORT relaxed walking stride, not running. Same size and foot baseline. Two evenly spaced full figures only on plain pale cream background, no shadow, no text, no third character."
+  },
+  {
+    "id": "poster-final",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885659763924.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Preserve the reference financial mystery pixel-art cover, dark navy dusk office, elegant woman investment manager holding a folder. Add a large beautiful crisp ivory Chinese title 交割之前 in the upper left/top 20 percent, with a small uppercase English subtitle BEFORE THE CLOSE beneath it. Move the woman slightly down if needed so typography has breathing room and no overlap with face. The four Chinese characters must be exactly 交割之前. Strong readable cover typography at thumbnail size. Keep square format, beautiful narrative premium game cover, not a screenshot. No other text."
+  },
+  {
+    "id": "poster-release",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885659763924.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Keep the reference beautiful financial mystery pixel art cover, same woman and city office scene. Add ONLY the large English title BEFORE THE CLOSE in three lines at the UPPER LEFT TOP QUARTER, elegant ivory serif typography, readable at 160px thumbnail. No Chinese characters, no other text. Preserve woman face and folder. Professional square narrative adventure game cover."
+  },
+  {
+    "id": "hero-front-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789884751529563.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Correct the reference three-frame female RPG walking sprite strip. Keep identical navy pantsuit, ivory shirt, short black bob, elevated orthographic camera, pixel style, size. Three full body FRONT/SOUTH-facing figures side by side on flat warm cream, generous margins. First and third are walking with SMALL natural opposing arm swings CLOSE to the torso, arms pointing down, NOT outward or spread wings. First: her right arm slightly forward, left slightly behind and left foot forward. Third swaps those support legs and arm positions. Middle remains standing. Both walking silhouettes narrow, hands close to thighs. No reaching arms, no T pose. Exactly three full-body front-view sprites, feet aligned, no shadows."
+  },
+  {
+    "id": "poster-title",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Square premium pixel art videogame cover. EXACT title text at top in giant cream serif letters: \"BEFORE THE CLOSE\". NO other text anywhere. Dark navy glass office at blue dusk. Below the title, an adult East Asian investment manager woman, short black bob haircut, fitted navy pantsuit, ivory blouse, holding a cream folder in the right half. Walnut desk with papers at left, city skyline outside windows. Human drama, warm desk light, sophisticated restrained dark navy and copper palette. Title sits in top 20 percent with three words in TWO lines BEFORE THE then CLOSE. Clear correctly spelled typography. 1024 square pixel art illustration."
+  },
+  {
+    "id": "hero-front-a",
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Detailed pixel art full body RPG sprite, ONE adult East Asian woman with short black bob hairstyle, navy fitted pantsuit and ivory blouse, brown oxford shoes. Orthographic elevated top down camera looking down 40 degrees with clearly visible TOP of head and shoulders, same proportions as classic detailed JRPG adult, compact five-head tall. Facing directly SOUTH toward bottom of screen while walking a small normal step. Her LEFT leg is forward and her RIGHT arm swings gently forward, left arm hangs behind body. Both arms hang DOWN CLOSE TO HIPS, hands touching the silhouette of thighs, elbows straight, narrow relaxed silhouette. No hands away from body, no arms spread, no T pose. Entire body from hair to shoe soles, centered on flat warm cream background, no shadow, generous margin, no text or grid."
+  },
+  {
+    "id": "hero-front-b",
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Detailed pixel art full body RPG sprite, ONE adult East Asian woman with short black bob hairstyle, navy fitted pantsuit and ivory blouse, brown oxford shoes. Orthographic elevated top down camera looking down 40 degrees with clearly visible TOP of head and shoulders, same proportions as classic detailed JRPG adult, compact five-head tall. Facing directly SOUTH toward bottom of screen while walking a small normal step. Her RIGHT leg is forward and her LEFT arm swings gently forward, right arm hangs behind body. Both arms hang DOWN CLOSE TO HIPS, hands touching the silhouette of thighs, elbows straight, narrow relaxed silhouette. No hands away from body, no arms spread, no T pose. Entire body from hair to shoe soles, centered on flat warm cream background, no shadow, generous margin, no text or grid."
+  }
+]

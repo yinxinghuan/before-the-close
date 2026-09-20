@@ -1,0 +1,30 @@
+{
+  "id": "door-sound",
+  "kind": "sfx",
+  "duration": 1,
+  "prompt": "A single soft modern office door latch click followed by a quiet damped closing thud, close dry microphone, no music, no voices.",
+  "requestId": "c07524e7-6276-4f41-a211-56df1d76102f",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:26:05.207Z",
+  "task": {
+    "task_id": "mt_869d31b674177c881b71a801b951f78b",
+    "request_id": "c07524e7-6276-4f41-a211-56df1d76102f",
+    "type": "audio",
+    "status": "succeeded",
+    "created_at": 1789885566375,
+    "updated_at": 1789885567374,
+    "media": {
+      "type": "audio",
+      "kind": "sfx",
+      "url": "https://cdn.aiwaves.tech/prodsv/telegram/audio/sfx/20260920/be73b85d5eb74ba3963a2b75dd9c99ae.mp3",
+      "duration_seconds": 1,
+      "format": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 2
+    },
+    "timing_ms": 471
+  },
+  "saved": "public/audio/door-sound.mp3",
+  "sha256": "71bddc12446e3f50e3645881aaefe9a8021bfeca07a9082398f419eee0f7a7b9",
+  "finishedAt": "2026-09-20T06:26:10.512Z"
+}

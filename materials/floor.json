@@ -1,0 +1,30 @@
+{
+  "id": "floor",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Texture atlas 2 by 2 equal square cells, top-down straight orthographic flat floor textures for modern office 2D game. Upper left warm light grey carpet tile, upper right blue grey commercial carpet tile, lower left pale warm stone square tiles, lower right medium warm oak planks horizontal. Premium muted pixel art, gentle use wear, low contrast fine detail, seamless inside each quadrant, no borders between cells, absolutely no furniture or objects, no walls, no shadows or perspective.",
+  "requestId": "f6fb5318-52b8-467d-a2d4-dd180f2814df",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T05:53:40.033Z",
+  "task": {
+    "task_id": "mt_a7b994bc0d2a7a5a5f19e77218a14928",
+    "request_id": "f6fb5318-52b8-467d-a2d4-dd180f2814df",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789883621247,
+    "updated_at": 1789883624437,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883624037095.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 1676
+  },
+  "saved": "materials/floor.png",
+  "sha256": "de88616049872537453320ca5bd2eac23209d0a4b9851d75b68f1ef5f1f9cd42",
+  "finishedAt": "2026-09-20T05:53:50.455Z"
+}

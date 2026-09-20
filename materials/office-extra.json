@@ -1,0 +1,46 @@
+{
+  "id": "office-extra",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Four independent contemporary office props, exactly 2x2 cells with generous margins. Upper left: long rectangular blue-grey office meeting table with slim steel legs, closed notebooks and a small conference speaker firmly on top, table aligned horizontal front/back edges same length. Upper right: tall narrow dark metal filing cabinet with tidy ring binders. Lower left: freestanding wheeled whiteboard covered with faint illegible process chart and tiny sticky notes, strong grounded stand. Lower right: a modern cafe service counter with small black point-of-sale terminal and stacked paper cups on top, horizontally aligned rectangular countertop. No floor, no rooms, no people. Each object isolated.",
+  "requestId": "8555a6fb-d807-49f2-b795-f530eedf4732",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:27:20.786Z",
+  "pendingTask": {
+    "task_id": "mt_6295a68e3e9bd2a56deddcc6dc0dcccc",
+    "request_id": "8555a6fb-d807-49f2-b795-f530eedf4732",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885642114,
+    "updated_at": 1789885644394,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885644045580.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 1461
+  },
+  "task": {
+    "task_id": "mt_6295a68e3e9bd2a56deddcc6dc0dcccc",
+    "request_id": "8555a6fb-d807-49f2-b795-f530eedf4732",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885642114,
+    "updated_at": 1789885644394,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885644045580.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 1461
+  },
+  "saved": "materials/office-extra.png",
+  "sha256": "05dac41a6fcc85f06e4999d748af30a1611121e97621e4d8e038f4fde8600f5e",
+  "finishedAt": "2026-09-20T06:27:28.712Z"
+}

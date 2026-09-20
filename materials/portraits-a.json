@@ -1,0 +1,46 @@
+{
+  "id": "portraits-a",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Premium detailed pixel-art portrait illustration for a modern financial drama, realistic adult facial proportions, warm soft left light, muted slate blue background. Head and shoulders centered in each cell, no text or frames. Exactly 2 columns by 2 rows, four different people. Top left East Asian woman 46 shoulder length dark brown hair cream blazer, thoughtful composed expression. Top right East Asian man 27 short neat black hair round glasses light blue shirt, attentive. Bottom left East Asian man 40 short black hair slightly grey temples white shirt open collar, tired confident expression. Bottom right East Asian woman 39 dark hair in low bun burgundy cardigan grey blouse, calm measured expression.",
+  "requestId": "4d9e5d2c-ad32-4f7d-b0ab-a5c42cbb3c33",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:30:11.836Z",
+  "pendingTask": {
+    "task_id": "mt_2b296ca8c423050170b4c088723a2230",
+    "request_id": "4d9e5d2c-ad32-4f7d-b0ab-a5c42cbb3c33",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885813169,
+    "updated_at": 1789885816138,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885815687956.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 1711
+  },
+  "task": {
+    "task_id": "mt_2b296ca8c423050170b4c088723a2230",
+    "request_id": "4d9e5d2c-ad32-4f7d-b0ab-a5c42cbb3c33",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885813169,
+    "updated_at": 1789885816138,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885815687956.png",
+      "width": 1024,
+      "height": 1024,
+      "format": "png"
+    },
+    "timing_ms": 1711
+  },
+  "saved": "materials/portraits-a.png",
+  "sha256": "6459cc60dbab495110c6aeb319d11696ad58957422ce700bdb93e610a97564a9",
+  "finishedAt": "2026-09-20T06:30:20.763Z"
+}

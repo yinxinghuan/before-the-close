@@ -1,0 +1,46 @@
+{
+  "id": "npc-finance",
+  "size": {
+    "width": 768,
+    "height": 768
+  },
+  "prompt": "High quality muted detailed pixel-art 2D RPG, orthographic elevated top-down camera 40 degrees, parallel lines no vanishing point, compact adult 4.5-head body proportions. No floor shadow. Solid warm cream background. Exactly FOUR separate full-body stationary character sprites in a 2x2 grid. Same person in all 4 cells: East Asian woman age 39, dark hair in low bun, muted burgundy cardigan over grey blouse, dark trousers, black shoes. Upper LEFT faces SOUTH toward bottom of screen (face visible). Upper RIGHT faces WEST LEFT side profile. Lower LEFT faces EAST RIGHT side profile. Lower RIGHT faces NORTH away (back of head only). All stationary, feet together arms resting down, same size, each centered in its own cell, clear margins, no dividing lines, no text. Show tops of heads and shoulders, NOT fashion eye-level.",
+  "requestId": "efe48dde-b1b6-452c-8874-6aaf24fdcd81",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:20:56.865Z",
+  "task": {
+    "task_id": "mt_cfcbeb76cb6544d7af5bed33808c35fb",
+    "request_id": "efe48dde-b1b6-452c-8874-6aaf24fdcd81",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885257865,
+    "updated_at": 1789885260485,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885260071991.png",
+      "width": 768,
+      "height": 768,
+      "format": "png"
+    },
+    "timing_ms": 935
+  },
+  "pendingTask": {
+    "task_id": "mt_cfcbeb76cb6544d7af5bed33808c35fb",
+    "request_id": "efe48dde-b1b6-452c-8874-6aaf24fdcd81",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885257865,
+    "updated_at": 1789885260485,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885260071991.png",
+      "width": 768,
+      "height": 768,
+      "format": "png"
+    },
+    "timing_ms": 935
+  },
+  "saved": "materials/npc-finance.png",
+  "sha256": "f5ce5bfb04f6ab492a2d7f622222cbba6502842259455cf7fcedd1f976cce69c",
+  "finishedAt": "2026-09-20T06:27:16.691Z"
+}

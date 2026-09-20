@@ -1,0 +1,46 @@
+{
+  "id": "door",
+  "size": {
+    "width": 512,
+    "height": 768
+  },
+  "prompt": "Single contemporary walnut office door with narrow frosted glass panel, slim dark bronze frame and silver lever handle, premium pixel art RPG sprite, orthographic front elevation viewed slightly from above with a small visible top cap. Parallel vertical frame edges. No wall, no room, no floor or shadow, no text. Door closed. Centered on solid pale cream background, full object visible with generous margins.",
+  "requestId": "e0db4474-c354-4723-af0b-c6057f8f54eb",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:27:28.713Z",
+  "pendingTask": {
+    "task_id": "mt_536f440b24bab351d97dd754418e51ce",
+    "request_id": "e0db4474-c354-4723-af0b-c6057f8f54eb",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885649523,
+    "updated_at": 1789885652444,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885652120154.png",
+      "width": 512,
+      "height": 768,
+      "format": "png"
+    },
+    "timing_ms": 616
+  },
+  "task": {
+    "task_id": "mt_536f440b24bab351d97dd754418e51ce",
+    "request_id": "e0db4474-c354-4723-af0b-c6057f8f54eb",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885649523,
+    "updated_at": 1789885652444,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885652120154.png",
+      "width": 512,
+      "height": 768,
+      "format": "png"
+    },
+    "timing_ms": 616
+  },
+  "saved": "materials/door.png",
+  "sha256": "bb03487380a0abfcc88239b3164577a51138a37eb537fe0cd2a9193a254f5df2",
+  "finishedAt": "2026-09-20T06:27:36.840Z"
+}

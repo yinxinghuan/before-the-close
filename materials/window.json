@@ -1,0 +1,46 @@
+{
+  "id": "window",
+  "size": {
+    "width": 1024,
+    "height": 512
+  },
+  "prompt": "One wide horizontal corporate office window, front orthographic elevation, parallel straight frame, four equal panes, city office buildings at warm blue dusk with small amber lights. Premium muted pixel art, dark brushed metal narrow frames, no perspective convergence, no wall outside window, no room, no floor, no text. Entire rectangular window fills image with 12 pixel cream margin.",
+  "requestId": "f6b03964-46ee-468c-831a-167851ae708a",
+  "sessionId": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+  "startedAt": "2026-09-20T06:27:25.169Z",
+  "pendingTask": {
+    "task_id": "mt_364d80ca659f4e7def6121ed016606ce",
+    "request_id": "f6b03964-46ee-468c-831a-167851ae708a",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885649507,
+    "updated_at": 1789885650779,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885650446714.png",
+      "width": 1024,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 827
+  },
+  "task": {
+    "task_id": "mt_364d80ca659f4e7def6121ed016606ce",
+    "request_id": "f6b03964-46ee-468c-831a-167851ae708a",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1789885649507,
+    "updated_at": 1789885650779,
+    "media": {
+      "type": "image",
+      "url": "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789885650446714.png",
+      "width": 1024,
+      "height": 512,
+      "format": "png"
+    },
+    "timing_ms": 827
+  },
+  "saved": "materials/window.png",
+  "sha256": "48c3aefa4eef08e9e97a91f6c9482d9c005cd811de1f03761171f7abd6b2d886",
+  "finishedAt": "2026-09-20T06:27:34.269Z"
+}

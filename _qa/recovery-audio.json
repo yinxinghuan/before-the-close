@@ -1,0 +1,25 @@
+{
+  "patrol": true,
+  "actualDistanceAndMute": true,
+  "audioBeforeReload": [
+    {
+      "src": "http://127.0.0.1:5226/audio/music.mp3",
+      "volume": 0.18,
+      "time": 1029.7999999821186
+    },
+    {
+      "src": "http://127.0.0.1:5226/audio/step.mp3",
+      "volume": 0.55,
+      "time": 2674.4000000059605
+    },
+    {
+      "src": "http://127.0.0.1:5226/audio/step.mp3",
+      "volume": 0.55,
+      "time": 2907.5999999940395
+    }
+  ],
+  "journeyIsolation": true,
+  "pauseBranch": "UI with explicit prerequisite fixture",
+  "corruptSaveRecovery": true,
+  "audio": []
+}

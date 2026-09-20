@@ -1,0 +1,122 @@
+[
+  {
+    "id": "partner",
+    "facing": 0,
+    "sourceCell": 0,
+    "mirror": false
+  },
+  {
+    "id": "partner",
+    "facing": 1,
+    "sourceCell": 1,
+    "mirror": false
+  },
+  {
+    "id": "partner",
+    "facing": 2,
+    "sourceCell": 1,
+    "mirror": true
+  },
+  {
+    "id": "partner",
+    "facing": 3,
+    "sourceCell": 3,
+    "mirror": false
+  },
+  {
+    "id": "analyst",
+    "facing": 0,
+    "sourceCell": 0,
+    "mirror": false
+  },
+  {
+    "id": "analyst",
+    "facing": 1,
+    "sourceCell": 1,
+    "mirror": false
+  },
+  {
+    "id": "analyst",
+    "facing": 2,
+    "sourceCell": 1,
+    "mirror": true
+  },
+  {
+    "id": "analyst",
+    "facing": 3,
+    "sourceCell": 3,
+    "mirror": false
+  },
+  {
+    "id": "founder",
+    "facing": 0,
+    "sourceCell": 0,
+    "mirror": false
+  },
+  {
+    "id": "founder",
+    "facing": 1,
+    "sourceCell": 1,
+    "mirror": false
+  },
+  {
+    "id": "founder",
+    "facing": 2,
+    "sourceCell": 1,
+    "mirror": true
+  },
+  {
+    "id": "founder",
+    "facing": 3,
+    "sourceCell": 3,
+    "mirror": false
+  },
+  {
+    "id": "finance",
+    "facing": 0,
+    "sourceCell": 0,
+    "mirror": false
+  },
+  {
+    "id": "finance",
+    "facing": 1,
+    "sourceCell": 1,
+    "mirror": false
+  },
+  {
+    "id": "finance",
+    "facing": 2,
+    "sourceCell": 1,
+    "mirror": true
+  },
+  {
+    "id": "finance",
+    "facing": 3,
+    "sourceCell": 3,
+    "mirror": false
+  },
+  {
+    "id": "client",
+    "facing": 0,
+    "sourceCell": 0,
+    "mirror": false
+  },
+  {
+    "id": "client",
+    "facing": 1,
+    "sourceCell": 1,
+    "mirror": false
+  },
+  {
+    "id": "client",
+    "facing": 2,
+    "sourceCell": 1,
+    "mirror": true
+  },
+  {
+    "id": "client",
+    "facing": 3,
+    "sourceCell": 3,
+    "mirror": false
+  }
+]

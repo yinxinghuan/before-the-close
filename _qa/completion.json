@@ -1,0 +1,18 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "dragFeedback": true,
+    "centerDeadZone": true,
+    "releaseRecenters": true,
+    "livePositionRestored": true
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "dragFeedback": true,
+    "centerDeadZone": true,
+    "releaseRecenters": true,
+    "livePositionRestored": true
+  }
+]

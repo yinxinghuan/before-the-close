@@ -1,5 +1,5 @@
 {
-  "version": "1.45",
+  "version": "1.46",
   "skills": [
     "build-spatial-story-game",
     "build-stateful-story-game",
@@ -19,6 +19,16 @@
       "path": "build-spatial-story-game-v1.45.zip",
       "sha256": "9c769abed241746773b59a0cbb1ca37e9ccfe88f8b166cccf44d2fe3a96ec709",
       "bytes": 4878967
+    },
+    {
+      "path": "build-spatial-story-game-v1.46.zip",
+      "sha256": "005c9e4f72e47815e49d16a06e5fbc2b0efc933e4380b88731e8452aef2df7cc",
+      "bytes": 4879426
+    },
+    {
+      "path": "spatial-rpg-handoff-v1.46.zip",
+      "sha256": "e9a610b70350be0bfe7fe3ef77da31b6367db3c511040fa5302c7aadfb771858",
+      "bytes": 15521286
     },
     {
       "path": "spatial-rpg-handoff-v1.45.zip",

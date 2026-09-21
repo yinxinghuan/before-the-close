@@ -1,17 +1,17 @@
 {
-  "verifiedAt": "2026-09-20T12:42:20.425Z",
-  "sourceCommit": "36fb2c94bfe03cc4c3d9a20093b1265976bea9fb",
+  "verifiedAt": "2026-09-21T10:06:14.637Z",
+  "sourceCommit": "7921ec28e9f816de7c9a7db510f4860585995428",
   "sameBundle": true,
   "results": [
     {
       "base": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
-      "bundle": "./assets/index-BJTnMSNw.js",
-      "sha256": "36dff131baeb6d27ad2af66b5bfac1cd92de1c6bb0e0e898aa0fa0942677a469",
+      "bundle": "./assets/index-DnSVKy-y.js",
+      "sha256": "ec5cef3854091f0019b227ac32749672f0e1a1c0b2da7ca77c8139df651d0245",
       "assets": [
         {
           "path": "art/hero.png",
           "status": 200,
-          "bytes": 232611
+          "bytes": 292540
         },
         {
           "path": "audio/music.mp3",
@@ -32,13 +32,13 @@
     },
     {
       "base": "https://yinxinghuan.github.io/before-the-close/",
-      "bundle": "./assets/index-BJTnMSNw.js",
-      "sha256": "36dff131baeb6d27ad2af66b5bfac1cd92de1c6bb0e0e898aa0fa0942677a469",
+      "bundle": "./assets/index-DnSVKy-y.js",
+      "sha256": "ec5cef3854091f0019b227ac32749672f0e1a1c0b2da7ca77c8139df651d0245",
       "assets": [
         {
           "path": "art/hero.png",
           "status": 200,
-          "bytes": 232611
+          "bytes": 292540
         },
         {
           "path": "audio/music.mp3",
@@ -61,7 +61,7 @@
   "health": {
     "ok": true,
     "game": "before-the-close",
-    "release": "2026-09-20-r1",
+    "release": "2026-09-21-r2",
     "persistence": "browser-session"
   },
   "platformCatalog": {

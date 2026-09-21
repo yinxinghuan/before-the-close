@@ -9,18 +9,11 @@ try{
  await page.getByText('NORTHLINE CAPITAL / CASE 01',{exact:true}).waitFor();
  await page.getByRole('button',{name:'Take your badge. Begin.'}).click();
  await page.locator('.bc-world-loading').waitFor({state:'detached'});
- await page.keyboard.down('ArrowUp');
- await page.waitForTimeout(2800);
- await page.keyboard.up('ArrowUp');
- await page.keyboard.down('ArrowRight');
- await page.waitForTimeout(1900);
- await page.keyboard.up('ArrowRight');
- await page.waitForTimeout(300);
- const primaryText=await page.locator('.bc-primary').innerText();
- if(!primaryText.includes('Partner by the window')){
-  console.log(JSON.stringify({primaryText,save:await page.evaluate(()=>alteruLocalStorage.getItem('before-the-close'))}));
- }
- assert.match(primaryText,/Partner by the window/);
+ const partner=page.locator('[data-entity="partner"]');
+ await partner.focus();
+ await partner.press('Enter');
+ await page.waitForFunction(()=>document.querySelector('.bc-primary')?.getAttribute('data-active')==='true'&&document.querySelector('.bc-primary')?.textContent?.includes('Partner by the window'),null,{timeout:20000});
+ assert.match(await page.locator('.bc-primary').innerText(),/Partner by the window/);
  await page.locator('.bc-primary').click();
  await page.getByRole('button',{name:'Introduce yourself'}).click();
  await page.waitForTimeout(520);

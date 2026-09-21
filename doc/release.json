@@ -1,54 +1,68 @@
 {
-  "verifiedAt": "2026-09-21T14:13:28Z",
-  "sourceCommit": "5d376400eb015d44e8c955acd775a536a32471e6",
-  "releaseId": "before-the-close-rpgjs-r4",
+  "verifiedAt": "2026-09-21T18:12:00.156Z",
+  "sourceCommit": "bf1c32c5286b7dee4bc6b9cc8c5ef6f856d265e8",
   "sameBundle": true,
-  "bundle": {
-    "path": "./assets/index-s7_T5hDq.js",
-    "sha256": "ac8533e6b19738528ae4928b76a9c5677483e319d7f7e818b9ba918724f14467",
-    "bytes": 1373172
-  },
-  "deployments": [
+  "results": [
     {
-      "kind": "primary",
-      "url": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
-      "releaseMarker": true
+      "base": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
+      "bundle": "./assets/index-BQmucnad.js",
+      "sha256": "b5e39e5e377a43cb02b90be94131661aef525401d41086076ba6c95ea0ce5df5",
+      "assets": [
+        {
+          "path": "art/hero.png",
+          "status": 200,
+          "bytes": 285378
+        },
+        {
+          "path": "audio/music.mp3",
+          "status": 200,
+          "bytes": 740523
+        },
+        {
+          "path": "poster.png",
+          "status": 200,
+          "bytes": 1144985
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.txt",
+          "status": 200,
+          "bytes": 4652
+        }
+      ]
     },
     {
-      "kind": "pages-mirror",
-      "url": "https://yinxinghuan.github.io/before-the-close/",
-      "releaseMarker": true
+      "base": "https://yinxinghuan.github.io/before-the-close/",
+      "bundle": "./assets/index-BQmucnad.js",
+      "sha256": "b5e39e5e377a43cb02b90be94131661aef525401d41086076ba6c95ea0ce5df5",
+      "assets": [
+        {
+          "path": "art/hero.png",
+          "status": 200,
+          "bytes": 285378
+        },
+        {
+          "path": "audio/music.mp3",
+          "status": 200,
+          "bytes": 740523
+        },
+        {
+          "path": "poster.png",
+          "status": 200,
+          "bytes": 1144985
+        },
+        {
+          "path": "THIRD_PARTY_NOTICES.txt",
+          "status": 200,
+          "bytes": 4652
+        }
+      ]
     }
   ],
-  "representativeAsset": {
-    "path": "art/hero.png",
-    "status": 200,
-    "bytes": 289238,
-    "sha256": "a10acf55b62213af5ea60b09c0f15eb34fab9d4b6fefbc9a3ffb0125c4dff17f"
-  },
   "health": {
     "ok": true,
     "game": "before-the-close",
-    "release": "2026-09-21-r4",
+    "release": "2026-09-22-r7",
     "persistence": "browser-session"
-  },
-  "checks": {
-    "tests": "12/12",
-    "playthrough": [
-      "390x844",
-      "320x568"
-    ],
-    "gait": "up stride-0/stand/stride-2 in actual Pixi renderer",
-    "systemLocale": [
-      "zh-CN",
-      "en-US"
-    ],
-    "secretAudit": "pass",
-    "apiBaseAudit": "pass",
-    "storageAudit": "pass",
-    "mediaIntegrationAudit": "pass",
-    "skillPackageAudit": "pass",
-    "remixZip": "pass"
   },
   "platformCatalog": {
     "alreadyPublished": true,

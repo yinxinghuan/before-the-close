@@ -1,0 +1,430 @@
+{
+  "version": 1,
+  "status": "accepted",
+  "rooms": [
+    {
+      "id": "fund",
+      "envelope": {
+        "mode": "thick-orthographic",
+        "assets": {
+          "floor": "floor-fund-v2",
+          "northWall": "fund-north-wall-layer",
+          "sideWall": "fund-side-wall-layer",
+          "southForeground": "fund-south-foreground-layer"
+        },
+        "dimensions": {
+          "northFaceHeight": 64,
+          "sideThickness": 10,
+          "southForegroundHeight": 92
+        },
+        "layerOrder": [
+          "north",
+          "side",
+          "actors",
+          "south"
+        ],
+        "corners": {
+          "northWest": "side-over-north",
+          "northEast": "side-over-north",
+          "southWest": "south-over-side",
+          "southEast": "south-over-side"
+        },
+        "features": {
+          "north": [
+            "cap",
+            "face",
+            "trim",
+            "floor-shadow"
+          ],
+          "side": [
+            "cap",
+            "inner-seam"
+          ],
+          "south": [
+            "cap",
+            "face",
+            "trim"
+          ]
+        }
+      },
+      "furniture": [
+        {
+          "id": "fund-furniture-0",
+          "zone": "fund-zone-0",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8964,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "fund-furniture-1",
+          "zone": "fund-zone-1",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 12180,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "fund-furniture-2",
+          "zone": "fund-zone-2",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 5320,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "fund-furniture-3",
+          "zone": "fund-zone-3",
+          "orientation": "diagonal-45",
+          "role": "accent",
+          "collision": "rects",
+          "footprintArea": 2088,
+          "sourceService": "AlterU Media Service"
+        }
+      ],
+      "evidence": [
+        {
+          "viewport": "390x844",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-fund-left-390x844.png",
+            "_qa/ui/platform-layout-r7-fund-right-390x844.png"
+          ]
+        },
+        {
+          "viewport": "320x568",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-fund-left-320x568.png",
+            "_qa/ui/platform-layout-r7-fund-right-320x568.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "office",
+      "envelope": {
+        "mode": "thick-orthographic",
+        "assets": {
+          "floor": "floor-office-v2",
+          "northWall": "office-north-wall-layer",
+          "sideWall": "office-side-wall-layer",
+          "southForeground": "office-south-foreground-layer"
+        },
+        "dimensions": {
+          "northFaceHeight": 64,
+          "sideThickness": 10,
+          "southForegroundHeight": 92
+        },
+        "layerOrder": [
+          "north",
+          "side",
+          "actors",
+          "south"
+        ],
+        "corners": {
+          "northWest": "side-over-north",
+          "northEast": "side-over-north",
+          "southWest": "south-over-side",
+          "southEast": "south-over-side"
+        },
+        "features": {
+          "north": [
+            "cap",
+            "face",
+            "trim",
+            "floor-shadow"
+          ],
+          "side": [
+            "cap",
+            "inner-seam"
+          ],
+          "south": [
+            "cap",
+            "face",
+            "trim"
+          ]
+        }
+      },
+      "furniture": [
+        {
+          "id": "office-furniture-0",
+          "zone": "office-zone-0",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8840,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "office-furniture-1",
+          "zone": "office-zone-1",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8064,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "office-furniture-2",
+          "zone": "office-zone-2",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8424,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "office-furniture-3",
+          "zone": "office-zone-3",
+          "orientation": "diagonal-45",
+          "role": "accent",
+          "collision": "rects",
+          "footprintArea": 1748,
+          "sourceService": "AlterU Media Service"
+        }
+      ],
+      "evidence": [
+        {
+          "viewport": "390x844",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-office-left-390x844.png",
+            "_qa/ui/platform-layout-r7-office-right-390x844.png"
+          ]
+        },
+        {
+          "viewport": "320x568",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-office-left-320x568.png",
+            "_qa/ui/platform-layout-r7-office-right-320x568.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "envelope": {
+        "mode": "thick-orthographic",
+        "assets": {
+          "floor": "floor-records-v2",
+          "northWall": "records-north-wall-layer",
+          "sideWall": "records-side-wall-layer",
+          "southForeground": "records-south-foreground-layer"
+        },
+        "dimensions": {
+          "northFaceHeight": 64,
+          "sideThickness": 10,
+          "southForegroundHeight": 92
+        },
+        "layerOrder": [
+          "north",
+          "side",
+          "actors",
+          "south"
+        ],
+        "corners": {
+          "northWest": "side-over-north",
+          "northEast": "side-over-north",
+          "southWest": "south-over-side",
+          "southEast": "south-over-side"
+        },
+        "features": {
+          "north": [
+            "cap",
+            "face",
+            "trim",
+            "floor-shadow"
+          ],
+          "side": [
+            "cap",
+            "inner-seam"
+          ],
+          "south": [
+            "cap",
+            "face",
+            "trim"
+          ]
+        }
+      },
+      "furniture": [
+        {
+          "id": "records-furniture-0",
+          "zone": "records-zone-0",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8856,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "records-furniture-1",
+          "zone": "records-zone-1",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 4964,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "records-furniture-2",
+          "zone": "records-zone-2",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 7488,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "records-furniture-3",
+          "zone": "records-zone-3",
+          "orientation": "diagonal-45",
+          "role": "accent",
+          "collision": "rects",
+          "footprintArea": 3456,
+          "sourceService": "AlterU Media Service"
+        }
+      ],
+      "evidence": [
+        {
+          "viewport": "390x844",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-records-left-390x844.png",
+            "_qa/ui/platform-layout-r7-records-right-390x844.png"
+          ]
+        },
+        {
+          "viewport": "320x568",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-records-left-320x568.png",
+            "_qa/ui/platform-layout-r7-records-right-320x568.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "client",
+      "envelope": {
+        "mode": "thick-orthographic",
+        "assets": {
+          "floor": "floor-client-v2",
+          "northWall": "client-north-wall-layer",
+          "sideWall": "client-side-wall-layer",
+          "southForeground": "client-south-foreground-layer"
+        },
+        "dimensions": {
+          "northFaceHeight": 64,
+          "sideThickness": 10,
+          "southForegroundHeight": 92
+        },
+        "layerOrder": [
+          "north",
+          "side",
+          "actors",
+          "south"
+        ],
+        "corners": {
+          "northWest": "side-over-north",
+          "northEast": "side-over-north",
+          "southWest": "south-over-side",
+          "southEast": "south-over-side"
+        },
+        "features": {
+          "north": [
+            "cap",
+            "face",
+            "trim",
+            "floor-shadow"
+          ],
+          "side": [
+            "cap",
+            "inner-seam"
+          ],
+          "south": [
+            "cap",
+            "face",
+            "trim"
+          ]
+        }
+      },
+      "furniture": [
+        {
+          "id": "client-furniture-0",
+          "zone": "client-zone-0",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8424,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "client-furniture-1",
+          "zone": "client-zone-1",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 8736,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "client-furniture-2",
+          "zone": "client-zone-2",
+          "orientation": "axis-aligned",
+          "role": "anchor",
+          "collision": "rects",
+          "footprintArea": 6864,
+          "sourceService": "AlterU Media Service"
+        },
+        {
+          "id": "client-furniture-3",
+          "zone": "client-zone-3",
+          "orientation": "diagonal-45",
+          "role": "accent",
+          "collision": "rects",
+          "footprintArea": 2000,
+          "sourceService": "AlterU Media Service"
+        }
+      ],
+      "evidence": [
+        {
+          "viewport": "390x844",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-client-left-390x844.png",
+            "_qa/ui/platform-layout-r7-client-right-390x844.png"
+          ]
+        },
+        {
+          "viewport": "320x568",
+          "renderer": "actual",
+          "corners": true,
+          "southOcclusion": true,
+          "paths": [
+            "_qa/ui/platform-layout-r7-client-left-320x568.png",
+            "_qa/ui/platform-layout-r7-client-right-320x568.png"
+          ]
+        }
+      ]
+    }
+  ]
+}

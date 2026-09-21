@@ -10,6 +10,10 @@ _qa 保存机械与真实浏览器路径脚本；doc/evidence 保存可交付截
 故事事实仅由冻结 reducer 的 domain effects 写入。探索坐标与旅程目录属于产品壳；不另建一套剧情库存。结局不可改签，decisionSnapshot 保留签署时已核实的依据。未知人物在首次可见介绍后加入档案。历史最近60轮，地图不传送玩家。
 四房间 640×640；人物占地 14×10，主角和 NPC 的显示框统一为 80×80。共享布局生成碰撞和已验收接近点；组合家具使用多个落地 footprint，透明角落和椅子之间的空隙保持可走。BFS 路线逐像素检查边，落点还必须在 65 像素互动半径内；移动速度 108 世界像素/秒。实际位移驱动步态与 25 像素一步音。分析师在 44 像素岗位范围巡游，其余角色值守；接近 105 像素停步转向。
 RPGJS/CanvasEngine 持有地面、墙、家具、人物和前景纹理，移动帧只更新位置、姿态与镜头；不再逐帧用 Canvas2D 重画高分辨率全场景。手机镜头显示约 296–430 世界像素宽，按人物脚点水平跟随；逻辑高度保持 640。UI 内部适配 320×568 与 390×844。步态按 52 世界像素一循环，减少低帧率时跳过支撑相；正式资源 URL 带 release ID，防止 WebView 沿用旧图集缓存。首次手势播放 45 秒平台音乐，前后台切换暂停恢复，右上全局静音。文案使用中英 Pair 与 `tx`，不依赖在线模型。
+
+`scripts/build-map-layers.mjs` 现在分别组装北墙、侧墙与南侧前景层：基础层绘制北墙后绘制侧墙，前景层最后绘制南墙；南墙在 `world.ts` 中有相同的碰撞带，办公室按门洞拆成左右两段。`scripts/assemble-axis-furniture.py` 从四个已接纳的平台 2×2 运输图中逐格裁切、清除连通背景，并写入方向与来源清单。`doc/scene-visual-contract.json` 记录每室墙体尺寸、角点关系、家具方向占比与双尺寸证据。
+
+主角运行图集仍由 `scripts/assemble-hero-v6.py` 确定性生成；正式 opposite contact 必须在 `doc/actor-pose-plan.json` 指向其 seed contact 的平台 task。运行顺序固定为 contact、stand、opposite、stand，右向由侧向姿态族整帧镜像关系派生。release `before-the-close-rpgjs-r7` 用于使 WebView 获取本轮人物、家具和四类独立地图层。
 存档通过部署UUID隔离的alteruLocalStorage，本浏览器多旅程，不承诺跨设备。首次进入跟随 `navigator.languages`：中文系统用中文，其余系统用英文；用户手动切换后记录 `localeMode: manual` 并尊重该选择，系统语言变化只更新 system 模式。每1.5秒及pagehide存位置；坏档保留原值，经用户明确动作备份后重开。后台无账号数据或共享经济系统。
 ## 4. 扩展点
 改故事编辑 `content.ts` 和 `state.ts` 条件；加场景先改 `world.ts`、生成带 objectgroup 的 TMX 与底/前景层，再跑路径和真实显示树测试。新物件需同步多块 footprint、接近点和脚点深度；不按透明画布外框猜碰撞或尺度。改主角先通过 `hero-assembly.json` 检查及真实四向连续帧复验，不能只换静态 PNG。

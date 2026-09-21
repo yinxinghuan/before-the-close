@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "status": "accepted",
+  "actorId": "ava-morgan",
+  "sourceService": "AlterU Media Service",
+  "generatedDirections": {
+    "down": {
+      "stand": {
+        "sourcePath": "materials/ny-hero-down-stand-v6.png",
+        "requestId": "be1db87f-e455-4c52-a82e-fb41a66b8aec",
+        "taskId": "mt_59c70ee11da8d21ccda70082cb410641",
+        "sha256": "8b3d0514877baf05e2b385900cdf861f9ae196793e79ee9b39f51ff620cc90d3"
+      },
+      "seedContact": {
+        "sourcePath": "materials/ny-hero-down-left-support-v6.png",
+        "requestId": "e3cfd876-7329-4c7d-b580-cc179e7bcc21",
+        "taskId": "mt_cd3d8a2fffb5e42f4ce73959c9d68fbc",
+        "sha256": "1b60af07b75309e75140e17d1a93df17ec112227eed9acd2373015c76e25573d"
+      },
+      "oppositeContact": {
+        "sourcePath": "materials/ny-hero-down-opposite-family-r2.png",
+        "requestId": "57d426a3-d388-4734-9649-cf5204f6725b",
+        "taskId": "mt_0e6798401257b8e0de46ecab845de158",
+        "sha256": "db39037a6c5cb13d21ae59c45b10c66450a4c8fc142386c0a5bf6a609da0959b",
+        "referenceTaskId": "mt_cd3d8a2fffb5e42f4ce73959c9d68fbc"
+      }
+    },
+    "side": {
+      "stand": {
+        "sourcePath": "materials/ny-hero-right-stand-v7.png",
+        "requestId": "bc49563f-721d-4d32-b107-6632c573c881",
+        "taskId": "mt_8266b44052bd47fd2b8a55e9388314fe",
+        "sha256": "2d9a3cdac752528bd0b305cb6c6773df7279dafe5f70812906f6ffcef9dfbe52"
+      },
+      "seedContact": {
+        "sourcePath": "materials/ny-hero-right-near-support-v7.png",
+        "requestId": "68400c6a-2025-4562-a48a-fdd3fd018d92",
+        "taskId": "mt_6fdfc24d1a773d0458a619b0f803191b",
+        "sha256": "5f96667cb4dfb27dba9c4546e22ac52330a2dbbea188847e0a646afd58dd1250"
+      },
+      "oppositeContact": {
+        "sourcePath": "materials/ny-hero-side-opposite-family-r2.png",
+        "requestId": "5eaf5ab5-bee2-486f-8f6f-8f990565bcdd",
+        "taskId": "mt_ad2407fb32fa37c10df14a4461b8ed20",
+        "sha256": "0fa6474cdfe7da40e510b968332996daa1f315b70a4a14f97c27e77474eeb047",
+        "referenceTaskId": "mt_6fdfc24d1a773d0458a619b0f803191b"
+      }
+    },
+    "up": {
+      "stand": {
+        "sourcePath": "materials/ny-hero-up-stand-v6.png",
+        "requestId": "fcce6a0b-5524-4077-bdef-3fdeb6a303e2",
+        "taskId": "mt_deaa8dacf8df3d1955d3c424b8fc77d3",
+        "sha256": "ae7d17aab0808c3b4de3a696b1b8ed5543da843321ea545e442406b30bfa3617"
+      },
+      "seedContact": {
+        "sourcePath": "materials/ny-hero-up-right-support-v6.png",
+        "requestId": "d5fe665f-0e38-4192-b38a-d722b3ae0c38",
+        "taskId": "mt_63a5a8cb8b37e3be93a622c9bfd4d60f",
+        "sha256": "e65a94cdab464885d2444f36d5292ad439412e0c02a44492f6550c0f67eb2020"
+      },
+      "oppositeContact": {
+        "sourcePath": "materials/ny-hero-up-opposite-family-r1.png",
+        "requestId": "2872c93a-ef72-40be-965d-f20df91d1a10",
+        "taskId": "mt_166fba9e736d8528bc69501b2e96db28",
+        "sha256": "ff629ab0ed4964217baedb932de891b80b8e609d0f2645e9f1c4b7025240ad4b",
+        "referenceTaskId": "mt_63a5a8cb8b37e3be93a622c9bfd4d60f"
+      }
+    }
+  },
+  "derivedDirection": {
+    "direction": "right",
+    "from": "side",
+    "transform": "mirror-full-frame"
+  },
+  "evidence": [
+    {
+      "viewport": "390x844",
+      "direction": "down",
+      "renderer": "actual",
+      "cycle": "contact-stand-opposite-stand",
+      "paths": [
+        "_qa/ui/platform-layout-r6-down-stride-0-390x844.png",
+        "_qa/ui/platform-layout-r6-down-stride-1-390x844.png",
+        "_qa/ui/platform-layout-r6-down-stride-2-390x844.png"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "direction": "side",
+      "renderer": "actual",
+      "cycle": "contact-stand-opposite-stand",
+      "paths": [
+        "_qa/ui/platform-layout-r6-side-stride-0-390x844.png",
+        "_qa/ui/platform-layout-r6-side-stride-1-390x844.png",
+        "_qa/ui/platform-layout-r6-side-stride-2-390x844.png"
+      ]
+    },
+    {
+      "viewport": "390x844",
+      "direction": "up",
+      "renderer": "actual",
+      "cycle": "contact-stand-opposite-stand",
+      "paths": [
+        "_qa/ui/platform-layout-r6-up-stride-0-390x844.png",
+        "_qa/ui/platform-layout-r6-up-stride-1-390x844.png",
+        "_qa/ui/platform-layout-r6-up-stride-2-390x844.png"
+      ]
+    },
+    {
+      "viewport": "320x568",
+      "direction": "down",
+      "renderer": "actual",
+      "cycle": "contact-stand-opposite-stand",
+      "paths": [
+        "_qa/ui/platform-layout-r6-down-stride-0-320x568.png",
+        "_qa/ui/platform-layout-r6-down-stride-1-320x568.png",
+        "_qa/ui/platform-layout-r6-down-stride-2-320x568.png"
+      ]
+    },
+    {
+      "viewport": "320x568",
+      "direction": "side",
+      "renderer": "actual",
+      "cycle": "contact-stand-opposite-stand",
+      "paths": [
+        "_qa/ui/platform-layout-r6-side-stride-0-320x568.png",
+        "_qa/ui/platform-layout-r6-side-stride-1-320x568.png",
+        "_qa/ui/platform-layout-r6-side-stride-2-320x568.png"
+      ]
+    },
+    {
+      "viewport": "320x568",
+      "direction": "up",
+      "renderer": "actual",
+      "cycle": "contact-stand-opposite-stand",
+      "paths": [
+        "_qa/ui/platform-layout-r6-up-stride-0-320x568.png",
+        "_qa/ui/platform-layout-r6-up-stride-1-320x568.png",
+        "_qa/ui/platform-layout-r6-up-stride-2-320x568.png"
+      ]
+    }
+  ]
+}

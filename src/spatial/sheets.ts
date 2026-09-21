@@ -18,16 +18,20 @@ export function npcSheet(id:PersonId){
 }
 
 const dimensions:Record<string,[number,number]>={
- 'fund-furniture-0':[373,330],'fund-furniture-1':[395,367],'fund-furniture-2':[389,319],'fund-furniture-3':[432,418],
- 'office-furniture-0':[433,405],'office-furniture-1':[395,432],'office-furniture-2':[416,311],
- 'records-furniture-0':[372,330],'records-furniture-1':[376,358],'records-furniture-2':[366,377],'records-furniture-3':[392,326],
- 'client-furniture-0':[376,344],'client-furniture-1':[395,363],'client-furniture-2':[394,319],'client-furniture-3':[379,331],
+ 'fund-furniture-0':[393,327],'fund-furniture-1':[410,324],'fund-furniture-2':[387,359],'fund-furniture-3':[237,276],
+ 'office-furniture-0':[371,341],'office-furniture-1':[441,301],'office-furniture-2':[409,372],'office-furniture-3':[140,287],
+ 'records-furniture-0':[332,278],'records-furniture-1':[367,393],'records-furniture-2':[392,346],'records-furniture-3':[259,353],
+ 'client-furniture-0':[377,383],'client-furniture-1':[415,352],'client-furniture-2':[331,390],'client-furniture-3':[187,318],
 };
 export const propGraphic=(prop:Prop)=>'prop-'+prop.asset;
 export function propSheet(prop:Prop){const [width,height]=dimensions[prop.asset],scale=prop.width/width;return{id:propGraphic(prop),image:asset(`./art/${prop.asset}.png`),width,height,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[.5,1],scale)}}}
 export const frontGraphic=(scene:SceneId)=>'front-'+scene;
 export const baseGraphic=(scene:SceneId)=>'base-'+scene;
+export const northGraphic=(scene:SceneId)=>'north-'+scene;
+export const sideGraphic=(scene:SceneId)=>'side-'+scene;
 export function baseSheet(scene:SceneId){return{id:baseGraphic(scene),image:asset(`./map/${scene}-base.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
+export function northSheet(scene:SceneId){return{id:northGraphic(scene),image:asset(`./map/${scene}-north.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
+export function sideSheet(scene:SceneId){return{id:sideGraphic(scene),image:asset(`./map/${scene}-side.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
 export function frontSheet(scene:SceneId){return{id:frontGraphic(scene),image:asset(`./map/${scene}-front.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,1],1)}}}
 
-export const spatialSheets=[...Object.values(rooms).flatMap(room=>room.props.map(propSheet)),...(Object.keys(people) as PersonId[]).map(npcSheet),...(Object.keys(rooms) as SceneId[]).flatMap(scene=>[baseSheet(scene),frontSheet(scene)])];
+export const spatialSheets=[...Object.values(rooms).flatMap(room=>room.props.map(propSheet)),...(Object.keys(people) as PersonId[]).map(npcSheet),...(Object.keys(rooms) as SceneId[]).flatMap(scene=>[baseSheet(scene),northSheet(scene),sideSheet(scene),frontSheet(scene)])];

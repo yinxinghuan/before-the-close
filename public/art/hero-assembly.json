@@ -64,11 +64,11 @@
     {
       "row": 0,
       "column": 2,
-      "sourcePath": "materials/ny-hero-down-right-support-v6.png",
-      "sourceFrameSha256": "80b12472acf5f4c68a3b4323e9e91f482b6938ea562e23a4afcd772d307b9649",
-      "sourceSha256": "a4671bf88e5c5dd46c9ffe56ae64e2dbf4f5063c5a91191ca00db321c5040089",
-      "requestId": "b1c952ed-b0dd-4675-8424-ff5b38d4c1a6",
-      "taskId": "mt_6de112435cd45e3a3ef206e522b0e4e4",
+      "sourcePath": "materials/ny-hero-down-opposite-family-r2.png",
+      "sourceFrameSha256": "b216d66878327cbddeef2381b69cae9d8ff2539385229b2ebd07549c77da2249",
+      "sourceSha256": "db39037a6c5cb13d21ae59c45b10c66450a4c8fc142386c0a5bf6a609da0959b",
+      "requestId": "57d426a3-d388-4734-9649-cf5204f6725b",
+      "taskId": "mt_0e6798401257b8e0de46ecab845de158",
       "operations": [
         "remove-connected-background",
         "scale-uniform",
@@ -77,7 +77,7 @@
       "bbox": [
         76,
         32,
-        182,
+        180,
         248
       ],
       "footY": 248,
@@ -132,11 +132,11 @@
     {
       "row": 1,
       "column": 2,
-      "sourcePath": "materials/ny-hero-right-far-support-v7.png",
-      "sourceFrameSha256": "b037b0e33b404f90c5c13521dc740a897fa9cc5111542b1399e9fc21b8b92d9d",
-      "sourceSha256": "83119358b9a2353a85f24ea52c420f61b757be859283b60eb198a3de54f860b5",
-      "requestId": "65118fdf-7e38-4e93-bbdd-47e3ed5f5029",
-      "taskId": "mt_770bc2e97159105a38a498545d520e61",
+      "sourcePath": "materials/ny-hero-side-opposite-family-r2.png",
+      "sourceFrameSha256": "638377e236fc08b4d54db3b096f6b3efc319df2b0fdf325dac25337c181ea00f",
+      "sourceSha256": "0fa6474cdfe7da40e510b968332996daa1f315b70a4a14f97c27e77474eeb047",
+      "requestId": "5eaf5ab5-bee2-486f-8f6f-8f990565bcdd",
+      "taskId": "mt_ad2407fb32fa37c10df14a4461b8ed20",
       "operations": [
         "remove-connected-background",
         "scale-uniform",
@@ -144,9 +144,9 @@
         "mirror-full-frame"
       ],
       "bbox": [
-        74,
+        77,
         32,
-        178,
+        182,
         248
       ],
       "footY": 248,
@@ -199,20 +199,20 @@
     {
       "row": 2,
       "column": 2,
-      "sourcePath": "materials/ny-hero-right-far-support-v7.png",
-      "sourceFrameSha256": "b037b0e33b404f90c5c13521dc740a897fa9cc5111542b1399e9fc21b8b92d9d",
-      "sourceSha256": "83119358b9a2353a85f24ea52c420f61b757be859283b60eb198a3de54f860b5",
-      "requestId": "65118fdf-7e38-4e93-bbdd-47e3ed5f5029",
-      "taskId": "mt_770bc2e97159105a38a498545d520e61",
+      "sourcePath": "materials/ny-hero-side-opposite-family-r2.png",
+      "sourceFrameSha256": "638377e236fc08b4d54db3b096f6b3efc319df2b0fdf325dac25337c181ea00f",
+      "sourceSha256": "0fa6474cdfe7da40e510b968332996daa1f315b70a4a14f97c27e77474eeb047",
+      "requestId": "5eaf5ab5-bee2-486f-8f6f-8f990565bcdd",
+      "taskId": "mt_ad2407fb32fa37c10df14a4461b8ed20",
       "operations": [
         "remove-connected-background",
         "scale-uniform",
         "align-head-and-foot"
       ],
       "bbox": [
-        79,
+        75,
         32,
-        183,
+        180,
         248
       ],
       "footY": 248,
@@ -221,20 +221,20 @@
     {
       "row": 3,
       "column": 0,
-      "sourcePath": "materials/gait-study-up-left-01.png",
-      "sourceFrameSha256": "bbec5b80b94f391ef3b4d75620fa1812924222e05f1de2d8bc0001825b3c769c",
-      "sourceSha256": "cf6e0303b34617a5ddd2a37dd7659c0f1f56016d2f4d515e59aaa2df9e1f3879",
-      "requestId": "caf9178e-f8bc-460b-b46e-1eba6fa7dc98",
-      "taskId": "mt_5b36b7dd1c2824e29eab798fe0efd79d",
+      "sourcePath": "materials/ny-hero-up-opposite-family-r1.png",
+      "sourceFrameSha256": "99f0ec9ad13abee320c52efe11e4c2efa6465ef8ac2dcd004a18abd8e61d4fc8",
+      "sourceSha256": "ff629ab0ed4964217baedb932de891b80b8e609d0f2645e9f1c4b7025240ad4b",
+      "requestId": "2872c93a-ef72-40be-965d-f20df91d1a10",
+      "taskId": "mt_166fba9e736d8528bc69501b2e96db28",
       "operations": [
         "remove-connected-background",
         "scale-uniform",
         "align-head-and-foot"
       ],
       "bbox": [
-        82,
+        79,
         32,
-        176,
+        179,
         248
       ],
       "footY": 248,
@@ -284,11 +284,5 @@
       "footY": 248,
       "visibleHeight": 216
     }
-  ],
-  "acceptedEvidence": [
-    "_qa/gait-study-contact-sheet.png",
-    "_qa/ui/platform-layout-up-stride-0-390x844.png",
-    "_qa/ui/platform-layout-up-stride-1-390x844.png",
-    "_qa/ui/platform-layout-up-stride-2-390x844.png"
   ]
 }

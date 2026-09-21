@@ -49,3 +49,10 @@ doc/evidence 保存四场景、两尺寸对话、地图、资料、头像、结�
 - 采用候选 01：先以已通过的相反支撑帧为 edit 参考，再交换屏幕前后脚。`_qa/gait-browser.mjs` 现真实向上移动，读取 Pixi 显示树并确认 `stride-0 / stand / stride-2` 对应后向图集 0/256/512，同时保存三张 390×844 真实 renderer 画面。
 - 步态距离从 36 调整为 52 世界像素，使三个姿态在实际帧率下均有清晰停留；release ID 加入所有空间资源 URL，避免客户端继续使用旧图集缓存。
 - `_qa/locale.test.ts` 覆盖 zh/en/fr 识别；`_qa/locale-browser.mjs` 用 zh-CN 与 en-US 浏览器上下文验证首次入口跟随系统。旧存档无 `localeMode` 时迁移为 system；用户手动切换后保持 manual。
+
+## 2026-09-22 r7 美术技能回灌
+
+- `validate-actor-pose-plan.mjs doc/actor-pose-plan.json` 通过：向下、侧向、向上各有独立 stand、seed contact、opposite contact，opposite 明确引用 seed task；390×844 与 320×568 共 6 组实际 renderer 循环证据。
+- `validate-scene-visual-contract.mjs doc/scene-visual-contract.json` 通过：4 个房间均有独立地面、北墙、侧墙、南前景层；四角顺序、墙帽/立面/墙脚/阴影和双尺寸证据齐全。
+- 四室使用 3 件正轴主家具 + 1 件斜角点缀；第一轮仍偏斜视的平台候选和三张错误 opposite 姿态均未进入运行资源。
+- `npm test` 12/12；`_qa/rpg-smoke.mjs` 确认 RPGJS 实际加载 r7 主角、16 件家具、5 名 NPC，以及四室各自独立的 base / north / side / front 共 16 张地图层；`_qa/playthrough.mjs` 在两尺寸重新真实走完全部人物、资料、四个门和投委会结局，南墙碰撞与门洞未阻断路线。

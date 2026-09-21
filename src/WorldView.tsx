@@ -4,7 +4,7 @@ import {people,tx,type Locale} from './content';
 import {rooms,world,type SceneId,type Entity} from './world';
 import {findPath,walkable,type Point} from './spatial/world';
 import {createRpgSpace,type Space} from './spatial/rpg-space';
-import {baseGraphic,frontGraphic,heroSheet,propGraphic,spatialSheets} from './spatial/sheets';
+import {baseGraphic,frontGraphic,heroSheet,northGraphic,propGraphic,sideGraphic,spatialSheets} from './spatial/sheets';
 import {footstep} from './audio';
 
 export type WorldHandle={move:(x:number,y:number)=>void;go:(point:Point)=>void;approach:(entity:Entity)=>void;position:()=>Point};
@@ -23,6 +23,8 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
   const personEvents=(roomId:SceneId)=>rooms[roomId].entities.filter(entity=>entity.person).map(entity=>({id:'person-'+entity.id,x:entity.at.x,y:entity.at.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic('npc-'+entity.person!);this.animationName.set('stand');residents.current[roomId][entity.id].event=this;this.syncChanges()}}}));
   const mapEvents=(id:string)=>{const roomId=id as SceneId,room=rooms[roomId];return[
    {id:baseGraphic(roomId),x:0,y:0,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(baseGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
+   {id:northGraphic(roomId),x:0,y:0,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(northGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
+   {id:sideGraphic(roomId),x:0,y:0,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(sideGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
    ...room.props.map(prop=>({id:propGraphic(prop),x:prop.x,y:prop.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(propGraphic(prop));this.animationName.set('stand');this.syncChanges()}}})),
    ...personEvents(roomId),
    {id:frontGraphic(roomId),x:0,y:640,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(frontGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},

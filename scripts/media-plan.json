@@ -1089,5 +1089,229 @@
       },
       "studyMethod": "stand_reference_negative",
       "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Generate a north-facing left-support walking keyframe. Reject an idle stance: feet may not share one baseline, shoes may not overlap, legs may not be parallel and symmetric. LEFT shoe must lead toward top, RIGHT shoe must trail toward bottom, with a natural opposite arm swing."
-    }
+    },
+{
+  "id": "ny-fund-axis-furniture-pack-v2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965188175249.png"
+  ],
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Create a clean exactly 2 by 2 separated game asset sheet, matching the reference restrained premium pixel art, steep overhead orthographic parallel projection, pixel density and New York workplace identity. CRITICAL ORIENTATION CONTRACT: the first THREE quadrants are axis-aligned B-view furniture. Their long front and back edges are perfectly horizontal and equal length; their left and right edges are perfectly vertical and parallel; no rotation, no diamond footprint, no vanishing point. The fourth quadrant alone may rotate 45 degrees. Every quadrant contains one complete group centered on solid pale cream with wide empty margins, no overlap. TOP LEFT: wide walnut investment desk with two monitors, folders and one tucked task chair. TOP RIGHT: long rectangular committee table with four chairs arranged square to its edges. BOTTOM LEFT: low walnut credenza with deal tombstones, cyan dashboard and plant. BOTTOM RIGHT: one compact rust lounge chair rotated 45 degrees as the only diagonal accent. Keep all small items visibly resting on their supporting surfaces. Consistent real-world scale for compact adult RPG characters. No people, readable text, logo, floor, wall, room background, cast shadow, white outline or isometric diamond room."
+},
+{
+  "id": "ny-office-axis-furniture-pack-v2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789966450781303.png"
+  ],
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Create a clean exactly 2 by 2 separated game asset sheet, matching the reference restrained premium pixel art, steep overhead orthographic parallel projection, pixel density and New York workplace identity. CRITICAL ORIENTATION CONTRACT: the first THREE quadrants are axis-aligned B-view furniture. Their long front and back edges are perfectly horizontal and equal length; their left and right edges are perfectly vertical and parallel; no rotation, no diamond footprint, no vanishing point. The fourth quadrant alone may rotate 45 degrees. Every quadrant contains one complete group centered on solid pale cream with wide empty margins, no overlap. TOP LEFT: paired sit-stand engineering bench with four monitors and two tucked task chairs. TOP RIGHT: long low straight modular sofa with square coffee table. BOTTOM LEFT: straight mobile whiteboard beside a narrow adapter workbench. BOTTOM RIGHT: one compact task chair rotated 45 degrees as the only diagonal accent. Keep all small items visibly resting on their supporting surfaces. Consistent real-world scale for compact adult RPG characters. No people, readable text, logo, floor, wall, room background, cast shadow, white outline or isometric diamond room."
+},
+{
+  "id": "ny-records-axis-furniture-pack-v2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789966462797780.png"
+  ],
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Create a clean exactly 2 by 2 separated game asset sheet, matching the reference restrained premium pixel art, steep overhead orthographic parallel projection, pixel density and New York workplace identity. CRITICAL ORIENTATION CONTRACT: the first THREE quadrants are axis-aligned B-view furniture. Their long front and back edges are perfectly horizontal and equal length; their left and right edges are perfectly vertical and parallel; no rotation, no diamond footprint, no vanishing point. The fourth quadrant alone may rotate 45 degrees. Every quadrant contains one complete group centered on solid pale cream with wide empty margins, no overlap. TOP LEFT: rectangular document review table with four chairs square to its edges. TOP RIGHT: long locked archive cabinet wall with boxes and cyan access panel. BOTTOM LEFT: straight finance workstation with monitor, calculator and tucked chair. BOTTOM RIGHT: one compact records cart rotated 45 degrees as the only diagonal accent. Keep all small items visibly resting on their supporting surfaces. Consistent real-world scale for compact adult RPG characters. No people, readable text, logo, floor, wall, room background, cast shadow, white outline or isometric diamond room."
+},
+{
+  "id": "ny-client-axis-furniture-pack-v2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789966459736743.png"
+  ],
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Create a clean exactly 2 by 2 separated game asset sheet, matching the reference restrained premium pixel art, steep overhead orthographic parallel projection, pixel density and New York workplace identity. CRITICAL ORIENTATION CONTRACT: the first THREE quadrants are axis-aligned B-view furniture. Their long front and back edges are perfectly horizontal and equal length; their left and right edges are perfectly vertical and parallel; no rotation, no diamond footprint, no vanishing point. The fourth quadrant alone may rotate 45 degrees. Every quadrant contains one complete group centered on solid pale cream with wide empty margins, no overlap. TOP LEFT: long POS integration test bench with terminals, scanner and printer. TOP RIGHT: wide deployment planning desk with two monitors and tucked chair. BOTTOM LEFT: straight equipment cabinet beside stacked logistics totes. BOTTOM RIGHT: one compact operator chair rotated 45 degrees as the only diagonal accent. Keep all small items visibly resting on their supporting surfaces. Consistent real-world scale for compact adult RPG characters. No people, readable text, logo, floor, wall, room background, cast shadow, white outline or isometric diamond room."
+},
+{
+  "id": "ny-fund-axis-furniture-pack-v3",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Premium restrained detailed pixel-art 2D RPG furniture asset sheet, exactly 2 columns by 2 rows on solid pale cream, one separated complete group per cell, consistent scale and wide margins. Camera is elevated but located DUE SOUTH of every object with ZERO left-right yaw. This is a front-aligned orthographic B-view, NOT isometric and NOT three-quarter. For the first three cells, every width edge is perfectly HORIZONTAL and every depth edge recedes perfectly VERTICAL on the image; left and right sides are symmetric; no diagonal footprint, no diamond, no visible right-side bias, no perspective convergence. Show top surfaces by looking down 50 degrees, but do not rotate objects. Only bottom-right may rotate diagonally. TOP LEFT: wide walnut investment desk with monitor, folders and a chair tucked directly behind it. TOP RIGHT: long rectangular committee table with four chairs square to its four sides. BOTTOM LEFT: low walnut credenza with deal tombstones, cyan dashboard and plant. BOTTOM RIGHT: one compact rust lounge chair turned diagonally as the accent. New York professional workplace, walnut, charcoal, midnight navy, restrained cyan accents, parallel projection. Objects on desks physically touch their tops. No people, readable text, room, floor, wall, cast shadow, labels, grid line or white outline."
+},
+{
+  "id": "ny-office-axis-furniture-pack-v3",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Premium restrained detailed pixel-art 2D RPG furniture asset sheet, exactly 2 columns by 2 rows on solid pale cream, one separated complete group per cell, consistent scale and wide margins. Camera is elevated but located DUE SOUTH of every object with ZERO left-right yaw. This is a front-aligned orthographic B-view, NOT isometric and NOT three-quarter. For the first three cells, every width edge is perfectly HORIZONTAL and every depth edge recedes perfectly VERTICAL on the image; left and right sides are symmetric; no diagonal footprint, no diamond, no visible right-side bias, no perspective convergence. Show top surfaces by looking down 50 degrees, but do not rotate objects. Only bottom-right may rotate diagonally. TOP LEFT: paired sit-stand engineering bench with monitors and two chairs tucked directly behind. TOP RIGHT: long straight low modular sofa with a rectangular coffee table. BOTTOM LEFT: mobile whiteboard facing the viewer beside a narrow adapter bench. BOTTOM RIGHT: one compact task chair turned diagonally as the accent. New York professional workplace, walnut, charcoal, midnight navy, restrained cyan accents, parallel projection. Objects on desks physically touch their tops. No people, readable text, room, floor, wall, cast shadow, labels, grid line or white outline."
+},
+{
+  "id": "ny-records-axis-furniture-pack-v3",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Premium restrained detailed pixel-art 2D RPG furniture asset sheet, exactly 2 columns by 2 rows on solid pale cream, one separated complete group per cell, consistent scale and wide margins. Camera is elevated but located DUE SOUTH of every object with ZERO left-right yaw. This is a front-aligned orthographic B-view, NOT isometric and NOT three-quarter. For the first three cells, every width edge is perfectly HORIZONTAL and every depth edge recedes perfectly VERTICAL on the image; left and right sides are symmetric; no diagonal footprint, no diamond, no visible right-side bias, no perspective convergence. Show top surfaces by looking down 50 degrees, but do not rotate objects. Only bottom-right may rotate diagonally. TOP LEFT: rectangular document review table with four chairs square to its four sides. TOP RIGHT: long locked archive cabinet with boxes and cyan panel. BOTTOM LEFT: straight finance workstation with monitor and chair tucked directly behind. BOTTOM RIGHT: one compact records cart turned diagonally as the accent. New York professional workplace, walnut, charcoal, midnight navy, restrained cyan accents, parallel projection. Objects on desks physically touch their tops. No people, readable text, room, floor, wall, cast shadow, labels, grid line or white outline."
+},
+{
+  "id": "ny-client-axis-furniture-pack-v3",
+  "size": {
+    "width": 1024,
+    "height": 1024
+  },
+  "prompt": "Premium restrained detailed pixel-art 2D RPG furniture asset sheet, exactly 2 columns by 2 rows on solid pale cream, one separated complete group per cell, consistent scale and wide margins. Camera is elevated but located DUE SOUTH of every object with ZERO left-right yaw. This is a front-aligned orthographic B-view, NOT isometric and NOT three-quarter. For the first three cells, every width edge is perfectly HORIZONTAL and every depth edge recedes perfectly VERTICAL on the image; left and right sides are symmetric; no diagonal footprint, no diamond, no visible right-side bias, no perspective convergence. Show top surfaces by looking down 50 degrees, but do not rotate objects. Only bottom-right may rotate diagonally. TOP LEFT: long POS integration test bench with terminals scanner and printer. TOP RIGHT: wide deployment desk with monitors and chair tucked directly behind. BOTTOM LEFT: straight equipment cabinet beside stacked logistics totes. BOTTOM RIGHT: one compact operator chair turned diagonally as the accent. New York professional workplace, walnut, charcoal, midnight navy, restrained cyan accents, parallel projection. Objects on desks physically touch their tops. No people, readable text, room, floor, wall, cast shadow, labels, grid line or white outline."
+},
+{
+  "id": "ny-hero-down-opposite-family-v1",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "One single complete full-body pixel RPG sprite on solid pale cream. This is an EDIT of the accepted reference, not a redesign. SOUTH-facing contact pose opposite to the reference. Preserve exact Ava identity, compact three-head body, chestnut bob, copper blazer, ivory shirt, indigo trousers, brown loafers, camera, scale and shading. Exchange the support legs and restrained opposing arm swing: if the reference has the left foot forward, put the right foot forward, and vice versa. Keep head and torso centered and level. Face remains SOUTH. One figure only, full hair and shoes visible, no shadow, text, furniture or extra view."
+},
+{
+  "id": "ny-hero-side-opposite-family-v1",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964919274202.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "One single complete full-body pixel RPG sprite on solid pale cream. This is an EDIT of the accepted reference, not a redesign. RIGHT-facing strict profile contact pose opposite to the reference. Preserve exact Ava identity, compact three-head body, chestnut bob, copper blazer, ivory shirt, indigo trousers, brown loafers, camera, scale and shading. Exchange near and far support legs and opposing arms while travel, nose, torso, knees and both shoes still point RIGHT. Keep head and torso centered and level. One figure only, full hair and shoes visible, no shadow, text, furniture or extra view."
+},
+{
+  "id": "ny-hero-up-opposite-family-v1",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "One single complete full-body pixel RPG sprite on solid pale cream. This is an EDIT of the accepted reference, not a redesign. NORTH-facing back-view contact pose opposite to the reference. Preserve exact Ava identity, compact three-head body, chestnut bob, copper blazer, indigo trousers, brown loafers, camera, scale and shading. Exchange which foot is forward and swap the restrained arm swing. Show only back of head and jacket, absolutely no face. Keep head and torso centered and level. One figure only, full hair and shoes visible, no shadow, text, furniture or extra view."
+},
+{
+  "id": "ny-hero-down-opposite-family-r1",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one SOUTH-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Mirror the walking contact biomechanics across the body center: the leg now planted forward must move back and the other leg must plant forward. Swap the opposing arms. Do not mirror or redesign the head, hair, face, jacket or camera. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-down-opposite-family-r2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one SOUTH-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Mirror the walking contact biomechanics across the body center: the leg now planted forward must move back and the other leg must plant forward. Swap the opposing arms. Do not mirror or redesign the head, hair, face, jacket or camera. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-down-opposite-family-r3",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one SOUTH-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Mirror the walking contact biomechanics across the body center: the leg now planted forward must move back and the other leg must plant forward. Swap the opposing arms. Do not mirror or redesign the head, hair, face, jacket or camera. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-side-opposite-family-r1",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964919274202.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one RIGHT-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Keep the exact RIGHT-facing profile and travel direction. Move the currently forward planted shoe behind the body and move the currently rear shoe forward to the RIGHT. The two shoe positions must visibly exchange; swap the opposing arms too. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-side-opposite-family-r2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964919274202.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one RIGHT-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Keep the exact RIGHT-facing profile and travel direction. Move the currently forward planted shoe behind the body and move the currently rear shoe forward to the RIGHT. The two shoe positions must visibly exchange; swap the opposing arms too. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-side-opposite-family-r3",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964919274202.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one RIGHT-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Keep the exact RIGHT-facing profile and travel direction. Move the currently forward planted shoe behind the body and move the currently rear shoe forward to the RIGHT. The two shoe positions must visibly exchange; swap the opposing arms too. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-up-opposite-family-r1",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one NORTH-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Mirror the walking contact biomechanics across the body center: the leg now planted forward must move back and the other leg must plant forward. Swap the opposing arms. Do not mirror or redesign the head, hair, face, jacket or camera. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-up-opposite-family-r2",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one NORTH-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Mirror the walking contact biomechanics across the body center: the leg now planted forward must move back and the other leg must plant forward. Swap the opposing arms. Do not mirror or redesign the head, hair, face, jacket or camera. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+},
+{
+  "id": "ny-hero-up-opposite-family-r3",
+  "mode": "edit",
+  "referenceUrls": [
+    "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+  ],
+  "size": {
+    "width": 512,
+    "height": 512
+  },
+  "prompt": "Edit the reference into exactly one NORTH-facing full-body contact-pose sprite. Preserve every identity, clothing, compact three-head proportion, head size, torso position, pixel density, palette, camera elevation and body scale from the reference. Mirror the walking contact biomechanics across the body center: the leg now planted forward must move back and the other leg must plant forward. Swap the opposing arms. Do not mirror or redesign the head, hair, face, jacket or camera. This is a small gait edit only. Keep the figure centered, upright and on the same foot baseline. Do not add or remove any object, bag, device, badge, shadow, text, furniture or second figure. Solid pale cream background."
+}
 ]

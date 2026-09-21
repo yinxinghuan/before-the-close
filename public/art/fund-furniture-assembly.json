@@ -1,71 +1,103 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "accepted",
   "sourceService": "AlterU Media Service",
+  "orientationContract": {
+    "primary": "axis-aligned-front-B-view",
+    "accent": "maximum-one-diagonal-per-room"
+  },
   "assets": [
     {
+      "scene": "fund",
+      "index": 0,
       "asset": "public/art/fund-furniture-0.png",
-      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "orientation": "axis-aligned",
+      "sourcePath": "materials/ny-fund-axis-furniture-pack-v3.png",
       "sourceRect": [
-        14,
-        14,
-        498,
-        498
+        10,
+        10,
+        502,
+        502
       ],
-      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
-      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
-      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "sourceSha256": "cbdb370f86094e84769398d804375e0f609b74ec03db30046ecea939d71757b8",
+      "requestId": "c8fd7543-ec4f-490f-bdf8-72e3c2463b70",
+      "taskId": "mt_5905bdb70b1165ae60d08bf21758a38f",
+      "dimensions": [
+        393,
+        327
+      ],
       "operations": [
         "crop-source-cell",
         "remove-connected-background"
       ]
     },
     {
+      "scene": "fund",
+      "index": 1,
       "asset": "public/art/fund-furniture-1.png",
-      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "orientation": "axis-aligned",
+      "sourcePath": "materials/ny-fund-axis-furniture-pack-v3.png",
       "sourceRect": [
-        526,
-        14,
-        1010,
-        498
+        522,
+        10,
+        1014,
+        502
       ],
-      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
-      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
-      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "sourceSha256": "cbdb370f86094e84769398d804375e0f609b74ec03db30046ecea939d71757b8",
+      "requestId": "c8fd7543-ec4f-490f-bdf8-72e3c2463b70",
+      "taskId": "mt_5905bdb70b1165ae60d08bf21758a38f",
+      "dimensions": [
+        410,
+        324
+      ],
       "operations": [
         "crop-source-cell",
         "remove-connected-background"
       ]
     },
     {
+      "scene": "fund",
+      "index": 2,
       "asset": "public/art/fund-furniture-2.png",
-      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "orientation": "axis-aligned",
+      "sourcePath": "materials/ny-fund-axis-furniture-pack-v3.png",
       "sourceRect": [
-        14,
-        526,
-        498,
-        1010
+        10,
+        522,
+        502,
+        1014
       ],
-      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
-      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
-      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "sourceSha256": "cbdb370f86094e84769398d804375e0f609b74ec03db30046ecea939d71757b8",
+      "requestId": "c8fd7543-ec4f-490f-bdf8-72e3c2463b70",
+      "taskId": "mt_5905bdb70b1165ae60d08bf21758a38f",
+      "dimensions": [
+        387,
+        359
+      ],
       "operations": [
         "crop-source-cell",
         "remove-connected-background"
       ]
     },
     {
+      "scene": "fund",
+      "index": 3,
       "asset": "public/art/fund-furniture-3.png",
-      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "orientation": "diagonal-accent",
+      "sourcePath": "materials/ny-fund-axis-furniture-pack-v3.png",
       "sourceRect": [
-        526,
-        526,
-        1010,
-        1010
+        522,
+        522,
+        1014,
+        1014
       ],
-      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
-      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
-      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "sourceSha256": "cbdb370f86094e84769398d804375e0f609b74ec03db30046ecea939d71757b8",
+      "requestId": "c8fd7543-ec4f-490f-bdf8-72e3c2463b70",
+      "taskId": "mt_5905bdb70b1165ae60d08bf21758a38f",
+      "dimensions": [
+        237,
+        276
+      ],
       "operations": [
         "crop-source-cell",
         "remove-connected-background"

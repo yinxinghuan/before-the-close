@@ -98,20 +98,20 @@ rows = [
     [
         ("ny-hero-down-left-support-v6", False),
         ("ny-hero-down-stand-v6", False),
-        ("ny-hero-down-right-support-v6", False),
+        ("ny-hero-down-opposite-family-r2", False),
     ],
     [
         ("ny-hero-right-near-support-v7", True),
         ("ny-hero-right-stand-v7", True),
-        ("ny-hero-right-far-support-v7", True),
+        ("ny-hero-side-opposite-family-r2", True),
     ],
     [
         ("ny-hero-right-near-support-v7", False),
         ("ny-hero-right-stand-v7", False),
-        ("ny-hero-right-far-support-v7", False),
+        ("ny-hero-side-opposite-family-r2", False),
     ],
     [
-        ("gait-study-up-left-01", False),
+        ("ny-hero-up-opposite-family-r1", False),
         ("ny-hero-up-stand-v6", False),
         ("ny-hero-up-right-support-v6", False),
     ],
@@ -130,7 +130,7 @@ atlas.save(OUT / "hero.png")
     json.dumps(
         {
             "version": 3,
-            "status": "candidate",
+            "status": "accepted",
             "directions": ["down", "left", "right", "up"],
             "sourceService": "AlterU Media Service",
             "partialLimbReflectionAllowed": False,
@@ -177,7 +177,7 @@ for index in range(4):
     json.dumps(
         {
             "version": 1,
-            "status": "candidate",
+            "status": "accepted",
             "sourceService": "AlterU Media Service",
             "assets": fund_assets,
         },
@@ -262,7 +262,7 @@ npc_sheet.save(OUT / "npcs.png")
     json.dumps(
         {
             "version": 2,
-            "status": "candidate",
+            "status": "accepted",
             "sourceService": "AlterU Media Service",
             "directions": ["down", "left", "right", "up"],
             "frames": npc_frames,
@@ -309,7 +309,7 @@ for index, (source_id, source_cell, columns, rows_count) in enumerate(portrait_s
     json.dumps(
         {
             "version": 2,
-            "status": "candidate",
+            "status": "accepted",
             "sourceService": "AlterU Media Service",
             "portraits": portrait_manifest,
         },

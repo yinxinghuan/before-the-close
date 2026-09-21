@@ -959,5 +959,135 @@
       "height": 512
     },
     "prompt": "Use the reference as the mandatory accepted walking construction standard: strict RIGHT-facing far-leg-support contact pose opposite the near-leg phase, compact approximately three-head-tall body, large readable head, short legs, steep overhead orthographic camera, crown visibility, pixel density, outline, shading, limb spacing and full-body footprint. Replace Ava completely with Daniel Kim, Korean American man age 29, round black glasses clearly visible, black side-parted hair, pale blue rolled-sleeve Oxford shirt, navy trousers and black shoes. Do not lengthen the legs or convert him to a flat side-view fashion character. One complete figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose."
-  }
+  },
+  {
+      "id": "gait-study-up-left-01",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "opposite_reference",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Edit the accepted right-support contact pose into its exact opposite. LEFT shoe plants clearly toward the TOP of the image; RIGHT shoe trails clearly toward the BOTTOM. Preserve the torso and camera. Separate the two shoe silhouettes so neither overlaps the other."
+    },
+    {
+      "id": "gait-study-up-left-02",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "opposite_reference_exaggerated",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Reverse the accepted contact pose. Move the LEFT shoe visibly toward the TOP and the RIGHT shoe visibly toward the BOTTOM, with vertical shoe-center separation about one shoe length. Keep hips level and upright. The result must read as walking even at thumbnail size."
+    },
+    {
+      "id": "gait-study-up-left-03",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "stand_reference_coordinates",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Change the idle into a left-support walking contact frame. LEFT shoe center must be above the RIGHT shoe center by at least one shoe height. RIGHT heel lifts slightly. Keep both legs individually readable and do not hide either shoe beneath the coat."
+    },
+    {
+      "id": "gait-study-up-left-04",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "stand_reference_silhouette",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Create a clear left-support stride whose lower-body silhouette differs unmistakably from this idle. LEFT leg extends toward screen top; RIGHT leg extends toward screen bottom. Leave a narrow cream-background gap between the legs and show two complete shoes."
+    },
+    {
+      "id": "gait-study-up-left-05",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "opposite_reference_arm_lock",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Produce the anatomically opposite gait keyframe: left leg forward toward screen top and right leg trailing toward screen bottom; right arm swings toward top and left arm toward bottom. Keep head, shoulders and jacket fixed to the reference."
+    },
+    {
+      "id": "gait-study-up-left-06",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "stand_reference_contact_phase",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Draw the CONTACT phase of a northbound walk cycle, not a passing pose and not idle. The LEFT heel has just contacted ahead toward screen top; RIGHT toe is the rear contact toward screen bottom. Both feet touch the floor at different vertical positions."
+    },
+    {
+      "id": "gait-study-up-left-07",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "opposite_reference_footprint",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Mirror only the gait phase through time, not the entire image: retain identity and rear view, but exchange which limb leads. LEFT footprint is ahead toward screen top; RIGHT footprint is behind toward screen bottom. Make the two brown loafers distinct and separated."
+    },
+    {
+      "id": "gait-study-up-left-08",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "stand_reference_motion_read",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Make one restrained but highly readable left-foot-forward walk keyframe for a mobile game. At 80-pixel display height the viewer must still see which foot leads: left shoe up, right shoe down, opposite arm swing. Do not alter body scale."
+    },
+    {
+      "id": "gait-study-up-left-09",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964684387672.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "opposite_reference_knee",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Convert to the opposite support phase. LEFT leg is straight and planted ahead toward screen top. RIGHT knee bends slightly and the right shoe trails toward screen bottom. Keep the pelvis centered with no sideways lean and no crossed legs."
+    },
+    {
+      "id": "gait-study-up-left-10",
+      "mode": "edit",
+      "referenceUrls": [
+        "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+      ],
+      "size": {
+        "width": 512,
+        "height": 512
+      },
+      "studyMethod": "stand_reference_negative",
+      "prompt": "One single complete Ava Morgan detailed pixel RPG sprite. Preserve the copper blazer, dark indigo trousers, brown loafers, chestnut bob, compact approximately three-head-tall body, pixel density, outline and steep overhead orthographic camera. She faces NORTH away from the viewer; show only the back of head and clothes, never face, blouse front or lapels. One figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose. Generate a north-facing left-support walking keyframe. Reject an idle stance: feet may not share one baseline, shoes may not overlap, legs may not be parallel and symmetric. LEFT shoe must lead toward top, RIGHT shoe must trail toward bottom, with a natural opposite arm swing."
+    }
 ]

@@ -221,20 +221,20 @@
     {
       "row": 3,
       "column": 0,
-      "sourcePath": "materials/ny-hero-up-left-support-v6.png",
-      "sourceFrameSha256": "5370ab27772141147d8a89c7acd3fa840d90d918291929831e7d1eb66a250bd3",
-      "sourceSha256": "d7d7e3bd50dfad2b0bc0d4416a215bba8475481f93d51e0d5e678d900db860a0",
-      "requestId": "c9743476-ba85-4cb9-a835-82df940259f7",
-      "taskId": "mt_f8d25d1df35303bfce3545db1f1392ac",
+      "sourcePath": "materials/gait-study-up-left-01.png",
+      "sourceFrameSha256": "bbec5b80b94f391ef3b4d75620fa1812924222e05f1de2d8bc0001825b3c769c",
+      "sourceSha256": "cf6e0303b34617a5ddd2a37dd7659c0f1f56016d2f4d515e59aaa2df9e1f3879",
+      "requestId": "caf9178e-f8bc-460b-b46e-1eba6fa7dc98",
+      "taskId": "mt_5b36b7dd1c2824e29eab798fe0efd79d",
       "operations": [
         "remove-connected-background",
         "scale-uniform",
         "align-head-and-foot"
       ],
       "bbox": [
-        75,
+        82,
         32,
-        183,
+        176,
         248
       ],
       "footY": 248,
@@ -284,5 +284,11 @@
       "footY": 248,
       "visibleHeight": 216
     }
+  ],
+  "acceptedEvidence": [
+    "_qa/gait-study-contact-sheet.png",
+    "_qa/ui/platform-layout-up-stride-0-390x844.png",
+    "_qa/ui/platform-layout-up-stride-1-390x844.png",
+    "_qa/ui/platform-layout-up-stride-2-390x844.png"
   ]
 }

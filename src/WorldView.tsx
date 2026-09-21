@@ -32,7 +32,7 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
   void Promise.resolve().then(()=>{if(stopped)return;
   const runtimeHero=heroSheet;
   const runtimeSheets=spatialSheets;
-  const space=createRpgSpace({world,host:mount,scene,position:start,speed:108,stride:36,sheet:runtimeHero,spritesheets:runtimeSheets,mapEvents,controlsBlocked:()=>latest.current.paused,walkable:dynamicWalkable,findPath:dynamicPath,
+  const space=createRpgSpace({world,host:mount,scene,position:start,speed:108,stride:52,sheet:runtimeHero,spritesheets:runtimeSheets,mapEvents,controlsBlocked:()=>latest.current.paused,walkable:dynamicWalkable,findPath:dynamicPath,
    onDestination:()=>{},onError:()=>{if(!stopped)setError(true)},
    onReady:runtime=>{if(stopped)return;spaceRef.current=runtime;runtime.pause(latest.current.paused);handle.current={move:(x,y)=>runtime.move(x,y),go:point=>runtime.walkTo(point),approach:entity=>runtime.walkTo(entity.approach),position:runtime.position};const target=desired.current;if(target.scene!==runtime.scene()){setReady(false);void runtime.restore(target.scene,target.start).then(()=>setReady(true)).catch(()=>setError(true))}else setReady(true)},
    onPosition:point=>{const distance=Math.hypot(point.x-lastStep.current.x,point.y-lastStep.current.y);if(distance>.01)footstep(distance);lastStep.current={...point};latest.current.onPosition(point)},

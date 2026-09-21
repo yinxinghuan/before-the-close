@@ -111,7 +111,7 @@ rows = [
         ("ny-hero-right-far-support-v7", False),
     ],
     [
-        ("ny-hero-up-left-support-v6", False),
+        ("gait-study-up-left-01", False),
         ("ny-hero-up-stand-v6", False),
         ("ny-hero-up-right-support-v6", False),
     ],

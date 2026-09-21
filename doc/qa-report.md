@@ -42,3 +42,10 @@ doc/evidence 保存四场景、两尺寸对话、地图、资料、头像、结�
 - 运行时等比尺寸依据真实画面从 108/128 调整为 114/128，以补偿主角宽外套和蓬松发型造成的感知体量差；没有非等比拉伸。
 - `_qa/npc-scale-review.mjs` 在 390×844 下把主角依次放到 Mara、Daniel、Mateo、Priya、Jordan 身边，五组画面均使用生产 renderer 和相同镜头倍率。五人的可见高度、头部、肩宽、描边和像素密度现处于同一演员体系。
 - Daniel 的两张独立行走候选仍未形成可靠反向步相，因此拒绝进入运行图集；不能用动作变化换取风格和比例退化。
+
+## 2026-09-21 后向步态与系统语言
+
+- 用户指出后向左支撑帧和站立帧过近。平台媒体服务受控生成 10 张同身份、同镜头候选，双路并发墙钟约 65.4 秒；结果与 task/request/SHA 见 `gait-generation-study.md`。
+- 采用候选 01：先以已通过的相反支撑帧为 edit 参考，再交换屏幕前后脚。`_qa/gait-browser.mjs` 现真实向上移动，读取 Pixi 显示树并确认 `stride-0 / stand / stride-2` 对应后向图集 0/256/512，同时保存三张 390×844 真实 renderer 画面。
+- 步态距离从 36 调整为 52 世界像素，使三个姿态在实际帧率下均有清晰停留；release ID 加入所有空间资源 URL，避免客户端继续使用旧图集缓存。
+- `_qa/locale.test.ts` 覆盖 zh/en/fr 识别；`_qa/locale-browser.mjs` 用 zh-CN 与 en-US 浏览器上下文验证首次入口跟随系统。旧存档无 `localeMode` 时迁移为 system；用户手动切换后保持 manual。

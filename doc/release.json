@@ -1,85 +1,51 @@
 {
-  "verifiedAt": "2026-09-21T10:06:14.637Z",
-  "sourceCommit": "7921ec28e9f816de7c9a7db510f4860585995428",
+  "verifiedAt": "2026-09-21T13:13:07Z",
+  "sourceCommit": "284b51e4fa21503ac26f02aa70aeb387e610a4a9",
+  "releaseId": "before-the-close-rpgjs-r3",
   "sameBundle": true,
-  "results": [
+  "bundle": {
+    "path": "./assets/index-BZRm1ZHx.js",
+    "sha256": "b200f2eba58c5385ba14171995b3f703e8138a219c52335e523640f8d4986009",
+    "bytes": 1372656
+  },
+  "deployments": [
     {
-      "base": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
-      "bundle": "./assets/index-DnSVKy-y.js",
-      "sha256": "ec5cef3854091f0019b227ac32749672f0e1a1c0b2da7ca77c8139df651d0245",
-      "assets": [
-        {
-          "path": "art/hero.png",
-          "status": 200,
-          "bytes": 292540
-        },
-        {
-          "path": "audio/music.mp3",
-          "status": 200,
-          "bytes": 740523
-        },
-        {
-          "path": "poster.png",
-          "status": 200,
-          "bytes": 1144985
-        },
-        {
-          "path": "THIRD_PARTY_NOTICES.txt",
-          "status": 200,
-          "bytes": 4875
-        }
-      ]
+      "kind": "primary",
+      "url": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
+      "releaseMarker": true
     },
     {
-      "base": "https://yinxinghuan.github.io/before-the-close/",
-      "bundle": "./assets/index-DnSVKy-y.js",
-      "sha256": "ec5cef3854091f0019b227ac32749672f0e1a1c0b2da7ca77c8139df651d0245",
-      "assets": [
-        {
-          "path": "art/hero.png",
-          "status": 200,
-          "bytes": 292540
-        },
-        {
-          "path": "audio/music.mp3",
-          "status": 200,
-          "bytes": 740523
-        },
-        {
-          "path": "poster.png",
-          "status": 200,
-          "bytes": 1144985
-        },
-        {
-          "path": "THIRD_PARTY_NOTICES.txt",
-          "status": 200,
-          "bytes": 4875
-        }
-      ]
+      "kind": "pages-mirror",
+      "url": "https://yinxinghuan.github.io/before-the-close/",
+      "releaseMarker": true
     }
   ],
+  "representativeAsset": {
+    "path": "map/fund-base.png",
+    "status": 200,
+    "bytes": 910645
+  },
   "health": {
     "ok": true,
     "game": "before-the-close",
-    "release": "2026-09-21-r2",
+    "release": "2026-09-21-r3",
     "persistence": "browser-session"
   },
+  "checks": {
+    "tests": "11/11",
+    "playthrough": [
+      "390x844",
+      "320x568"
+    ],
+    "frameP95Ms": 16.7,
+    "canvas2dDrawImageCalls": 0,
+    "secretAudit": "pass",
+    "apiBaseAudit": "pass",
+    "storageAudit": "pass",
+    "remixZip": "pass"
+  },
   "platformCatalog": {
-    "githubRegistered": true,
-    "miniAppMigration": "verified: Publish changed to Update and persisted after Go reload",
-    "migrationEnvironment": "Telegram macOS / AIGram Mini App",
-    "migrationVerifiedOn": "2026-09-20",
-    "playerEntryCheck": {
-      "status": "passed with loading caveat",
-      "environment": "Telegram macOS / AlterU Mini App",
-      "date": "2026-09-20",
-      "evidence": [
-        "Create / Published lists BEFORE THE CLOSE",
-        "Play opens correct chapter introduction",
-        "Walk to memo and press solid action button; memo collected",
-        "Reopen via owner / Create / Play; objective retained and memo visible in Case"
-      ],
-      "limitation": "First scene load failed once; manual Retry recovered after a long wait. All 29 published art PNG URLs returned HTTP 200 independently. Network cause not established; not an iPhone or cross-device test."
-    }
+    "alreadyPublished": true,
+    "migrationActionRequired": false
   }
 }

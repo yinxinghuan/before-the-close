@@ -647,5 +647,317 @@
     "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789919945874323.png"],
     "size": {"width": 1024, "height": 1024},
     "prompt": "A seamless full square straight-down orthographic ground plate for a secure investment data room. Low-pile midnight blue modular carpet with subtle alternating weave and mild rolling-chair compression, evenly lit with a faint cool wash. Keep the entire square as one flat unobstructed walking surface. Absolutely no wall, baseboard, ceiling light, fixture, border, object, furniture, perspective convergence, text or logos. Restrained detailed pixel-art texture matching the reference density."
+  },
+  {
+    "id": "ny-npc-partner-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Treat the reference only as the mandatory sprite construction standard: same chunky restrained pixel-art rendering, same compact approximately three-head-tall body, same large readable head, same short-leg silhouette, same steep overhead orthographic camera, same crown and shoulder visibility, same outline weight, pixel density, shading depth, figure footprint and 85 percent cell-height occupancy. Replace the reference identity and clothing completely with the named character. Create exactly FOUR separate full-body stationary sprites in a clean 2 by 2 grid on solid pale cream, identical scale in all cells. Upper left faces SOUTH with face visible; upper right is strict WEST profile; lower left is strict EAST profile; lower right faces NORTH showing only the back of head and clothes. Feet close on a common baseline, arms naturally down. No grid lines, text, props, floor shadow or caricature. Character: Mara Ellison, Black British-American woman in her early 50s, deep brown skin, short salt-and-pepper natural curls, composed senior investment partner, midnight navy trouser suit, muted teal blouse, oxblood loafers, small silver stud earrings."
+  },
+    {
+    "id": "ny-npc-analyst-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Treat the reference only as the mandatory sprite construction standard: same chunky restrained pixel-art rendering, same compact approximately three-head-tall body, same large readable head, same short-leg silhouette, same steep overhead orthographic camera, same crown and shoulder visibility, same outline weight, pixel density, shading depth, figure footprint and 85 percent cell-height occupancy. Replace the reference identity and clothing completely with the named character. Create exactly FOUR separate full-body stationary sprites in a clean 2 by 2 grid on solid pale cream, identical scale in all cells. Upper left faces SOUTH with face visible; upper right is strict WEST profile; lower left is strict EAST profile; lower right faces NORTH showing only the back of head and clothes. Feet close on a common baseline, arms naturally down. No grid lines, text, props, floor shadow or caricature. Character: Daniel Kim, Korean-American man age 28, warm light skin, short side-parted black hair, understated round dark glasses, pale blue Oxford shirt with sleeves rolled once, navy trousers, black derby shoes, junior investment analyst."
+  },
+    {
+    "id": "ny-npc-founder-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Treat the reference only as the mandatory sprite construction standard: same chunky restrained pixel-art rendering, same compact approximately three-head-tall body, same large readable head, same short-leg silhouette, same steep overhead orthographic camera, same crown and shoulder visibility, same outline weight, pixel density, shading depth, figure footprint and 85 percent cell-height occupancy. Replace the reference identity and clothing completely with the named character. Create exactly FOUR separate full-body stationary sprites in a clean 2 by 2 grid on solid pale cream, identical scale in all cells. Upper left faces SOUTH with face visible; upper right is strict WEST profile; lower left is strict EAST profile; lower right faces NORTH showing only the back of head and clothes. Feet close on a common baseline, arms naturally down. No grid lines, text, props, floor shadow or caricature. Character: Mateo Alvarez, Latino New Yorker man age 42, medium olive skin, wavy dark hair with slight gray at the temples, product founder under pressure, moss green overshirt over an ivory crewneck, charcoal chinos, brown sneakers."
+  },
+    {
+    "id": "ny-npc-finance-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Treat the reference only as the mandatory sprite construction standard: same chunky restrained pixel-art rendering, same compact approximately three-head-tall body, same large readable head, same short-leg silhouette, same steep overhead orthographic camera, same crown and shoulder visibility, same outline weight, pixel density, shading depth, figure footprint and 85 percent cell-height occupancy. Replace the reference identity and clothing completely with the named character. Create exactly FOUR separate full-body stationary sprites in a clean 2 by 2 grid on solid pale cream, identical scale in all cells. Upper left faces SOUTH with face visible; upper right is strict WEST profile; lower left is strict EAST profile; lower right faces NORTH showing only the back of head and clothes. Feet close on a common baseline, arms naturally down. No grid lines, text, props, floor shadow or caricature. Character: Priya Raman, Indian-American woman age 38, warm brown skin, shoulder-length softly wavy black hair, precise finance lead, deep burgundy blouse, charcoal ankle trousers, dark brown flats, slim steel watch."
+  },
+    {
+    "id": "ny-npc-client-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "prompt": "Treat the reference only as the mandatory sprite construction standard: same chunky restrained pixel-art rendering, same compact approximately three-head-tall body, same large readable head, same short-leg silhouette, same steep overhead orthographic camera, same crown and shoulder visibility, same outline weight, pixel density, shading depth, figure footprint and 85 percent cell-height occupancy. Replace the reference identity and clothing completely with the named character. Create exactly FOUR separate full-body stationary sprites in a clean 2 by 2 grid on solid pale cream, identical scale in all cells. Upper left faces SOUTH with face visible; upper right is strict WEST profile; lower left is strict EAST profile; lower right faces NORTH showing only the back of head and clothes. Feet close on a common baseline, arms naturally down. No grid lines, text, props, floor shadow or caricature. Character: Jordan Brooks, Black American woman age 44, rich dark brown skin, close-cropped natural hair, pragmatic multi-store operations director, muted mustard cardigan over a slate blue shirt, dark indigo trousers, practical tan shoes."
+  },
+  {
+    "id": "ny-npc-analyst-side-near-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789976179402566.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Use the reference as the exact Daniel Kim identity, outfit, chunky restrained pixel-art style, compact three-head-tall proportions, figure scale, outline weight, shading and steep overhead orthographic camera. Create one complete strict RIGHT-facing walking contact sprite. The near leg is planted a short step to the right, far leg trails, restrained opposite arm swing, torso stable, crown and shoulder top visible. Same full-body size as one figure in the reference sheet, centered on pale cream, hair and shoes complete. One figure only; no floor shadow, text, props or extra pose."
+  },
+    {
+    "id": "ny-npc-analyst-side-far-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789976179402566.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Use the reference as the exact Daniel Kim identity, outfit, chunky restrained pixel-art style, compact three-head-tall proportions, figure scale, outline weight, shading and steep overhead orthographic camera. Create the opposite complete strict RIGHT-facing walking contact sprite: far leg is planted a short step to the right, near leg trails, arms swap their restrained swing, torso stable, crown and shoulder top visible. Same full-body size as one figure in the reference sheet, centered on pale cream, hair and shoes complete. One figure only; no floor shadow, text, props or extra pose."
+  },
+  {
+    "id": "ny-npc-analyst-side-far-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789976423483289.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Preserve the exact same Daniel Kim identity, visible round black glasses, black hair silhouette, pale blue rolled-sleeve Oxford shirt, navy trousers, black shoes, chunky restrained pixel-art style, compact three-head-tall proportions, figure scale, outline weight, shading and strict RIGHT-facing steep overhead orthographic camera from the reference. Change only the walk phase: the forward leg becomes the trailing leg, the rear leg plants a short step to the RIGHT, and both arms swap their restrained swing. Keep torso, head, glasses and outfit unchanged. One complete full-body figure only, centered on pale cream; no floor shadow, text, prop or extra pose."
+  },
+  {
+    "id": "ny-npc-partner-down-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Mara Ellison, Black British-American woman in her early 50s, deep brown skin, short salt-and-pepper natural curls, midnight navy trouser suit, muted teal blouse, oxblood loafers and small silver stud earrings. The character faces SOUTH toward the viewer in the same neutral idle pose as the reference, with crown, shoulders and foreshortened face visible. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-partner-right-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964920664952.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Mara Ellison, Black British-American woman in her early 50s, deep brown skin, short salt-and-pepper natural curls, midnight navy trouser suit, muted teal blouse, oxblood loafers and small silver stud earrings. The character is a strict RIGHT-facing profile in the same neutral idle pose and steep overhead camera as the reference. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-partner-up-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Mara Ellison, Black British-American woman in her early 50s, deep brown skin, short salt-and-pepper natural curls, midnight navy trouser suit, muted teal blouse, oxblood loafers and small silver stud earrings. The character faces NORTH away from the viewer in the same neutral idle pose, with only the back of the head and clothing visible and absolutely no face or front garment details. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-analyst-down-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Daniel Kim, Korean-American man age 28, warm light skin, short side-parted black hair, understated round black glasses, pale blue Oxford shirt with sleeves rolled once, navy trousers and black derby shoes. The character faces SOUTH toward the viewer in the same neutral idle pose as the reference, with crown, shoulders and foreshortened face visible. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-analyst-right-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964920664952.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Daniel Kim, Korean-American man age 28, warm light skin, short side-parted black hair, understated round black glasses, pale blue Oxford shirt with sleeves rolled once, navy trousers and black derby shoes. The character is a strict RIGHT-facing profile in the same neutral idle pose and steep overhead camera as the reference. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-analyst-up-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Daniel Kim, Korean-American man age 28, warm light skin, short side-parted black hair, understated round black glasses, pale blue Oxford shirt with sleeves rolled once, navy trousers and black derby shoes. The character faces NORTH away from the viewer in the same neutral idle pose, with only the back of the head and clothing visible and absolutely no face or front garment details. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-founder-down-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Mateo Alvarez, Latino New Yorker man age 42, medium olive skin, wavy dark hair with slight gray at the temples, moss green overshirt over an ivory crewneck, charcoal chinos and brown sneakers. The character faces SOUTH toward the viewer in the same neutral idle pose as the reference, with crown, shoulders and foreshortened face visible. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-founder-right-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964920664952.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Mateo Alvarez, Latino New Yorker man age 42, medium olive skin, wavy dark hair with slight gray at the temples, moss green overshirt over an ivory crewneck, charcoal chinos and brown sneakers. The character is a strict RIGHT-facing profile in the same neutral idle pose and steep overhead camera as the reference. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-founder-up-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Mateo Alvarez, Latino New Yorker man age 42, medium olive skin, wavy dark hair with slight gray at the temples, moss green overshirt over an ivory crewneck, charcoal chinos and brown sneakers. The character faces NORTH away from the viewer in the same neutral idle pose, with only the back of the head and clothing visible and absolutely no face or front garment details. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-finance-down-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Priya Raman, Indian-American woman age 38, warm brown skin, shoulder-length softly wavy black hair, deep burgundy blouse, charcoal ankle trousers, dark brown flats and a slim steel watch. The character faces SOUTH toward the viewer in the same neutral idle pose as the reference, with crown, shoulders and foreshortened face visible. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-finance-right-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964920664952.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Priya Raman, Indian-American woman age 38, warm brown skin, shoulder-length softly wavy black hair, deep burgundy blouse, charcoal ankle trousers, dark brown flats and a slim steel watch. The character is a strict RIGHT-facing profile in the same neutral idle pose and steep overhead camera as the reference. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-finance-up-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Priya Raman, Indian-American woman age 38, warm brown skin, shoulder-length softly wavy black hair, deep burgundy blouse, charcoal ankle trousers, dark brown flats and a slim steel watch. The character faces NORTH away from the viewer in the same neutral idle pose, with only the back of the head and clothing visible and absolutely no face or front garment details. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-client-down-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964852999053.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Jordan Brooks, Black American woman age 44, rich dark brown skin, close-cropped natural hair, muted mustard cardigan over a slate blue shirt, dark indigo trousers and practical tan shoes. The character faces SOUTH toward the viewer in the same neutral idle pose as the reference, with crown, shoulders and foreshortened face visible. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-client-right-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964920664952.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Jordan Brooks, Black American woman age 44, rich dark brown skin, close-cropped natural hair, muted mustard cardigan over a slate blue shirt, dark indigo trousers and practical tan shoes. The character is a strict RIGHT-facing profile in the same neutral idle pose and steep overhead camera as the reference. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+    {
+    "id": "ny-npc-client-up-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964819724804.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Treat the reference as the mandatory sprite construction template. Preserve its restrained detailed pixel-art style, compact approximately three-head-tall proportions, large readable head, short legs, steep overhead orthographic projection, crown and shoulder visibility, outline weight, pixel density, shading depth, full-body scale and footprint. Replace Ava completely with Jordan Brooks, Black American woman age 44, rich dark brown skin, close-cropped natural hair, muted mustard cardigan over a slate blue shirt, dark indigo trousers and practical tan shoes. The character faces NORTH away from the viewer in the same neutral idle pose, with only the back of the head and clothing visible and absolutely no face or front garment details. Feet close on one baseline and arms rest naturally. One complete figure only, centered at the same size as the reference, full hair and shoes visible, solid pale cream background, no floor shadow, text, props, extra pose or caricature."
+  },
+  {
+    "id": "ny-npc-analyst-side-far-v5",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789976423483289.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Preserve the exact Daniel Kim identity from the reference: Korean American man age 29, round black glasses clearly visible, black side-parted hair, pale blue rolled-sleeve Oxford shirt, navy trousers and black shoes. Preserve the same chunky restrained detailed pixel-art rendering, compact approximately three-head-tall body, large readable head, short legs, steep overhead orthographic projection, outline weight, pixel density, shading depth, figure scale and footprint. Create one strict RIGHT-facing full-body walking contact pose with an unmistakably opposite gait: the FAR leg crosses forward and plants at the rightmost point of the silhouette while the NEAR leg trails at the leftmost point; the near arm swings forward and far arm swings backward. Keep head, glasses and torso stable. One figure only, centered on solid pale cream, full hair and shoes visible, no floor shadow, text, prop or extra pose."
+  },
+  {
+    "id": "ny-npc-analyst-right-near-v6",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964919274202.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Use the reference as the mandatory accepted walking construction standard: strict RIGHT-facing near-leg-support contact pose, compact approximately three-head-tall body, large readable head, short legs, steep overhead orthographic camera, crown visibility, pixel density, outline, shading, limb spacing and full-body footprint. Replace Ava completely with Daniel Kim, Korean American man age 29, round black glasses clearly visible, black side-parted hair, pale blue rolled-sleeve Oxford shirt, navy trousers and black shoes. Do not lengthen the legs or convert him to a flat side-view fashion character. One complete figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose."
+  },
+  {
+    "id": "ny-npc-analyst-right-far-v6",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964929678920.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Use the reference as the mandatory accepted walking construction standard: strict RIGHT-facing far-leg-support contact pose opposite the near-leg phase, compact approximately three-head-tall body, large readable head, short legs, steep overhead orthographic camera, crown visibility, pixel density, outline, shading, limb spacing and full-body footprint. Replace Ava completely with Daniel Kim, Korean American man age 29, round black glasses clearly visible, black side-parted hair, pale blue rolled-sleeve Oxford shirt, navy trousers and black shoes. Do not lengthen the legs or convert him to a flat side-view fashion character. One complete figure centered on solid pale cream, full hair and shoes visible, no shadow, text, prop or extra pose."
   }
 ]

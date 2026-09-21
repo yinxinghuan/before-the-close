@@ -213,8 +213,12 @@ def npc_source(source_id: str, source_cell: int | None = None) -> tuple[Image.Im
 
 def npc_cell(source_id: str, source_cell: int | None = None, mirror: bool = False) -> tuple[Image.Image, dict]:
     visible, provenance = npc_source(source_id, source_cell)
-    visible = visible.resize((round(visible.width * 108 / visible.height), 108), Image.Resampling.LANCZOS)
-    operations = ["crop-source-cell" if source_cell is not None else "use-full-source", "remove-connected-background", "scale-uniform", "align-head-and-foot"]
+    # The hero's jacket and hair create a broad silhouette. At the same numeric
+    # height, slimmer NPC clothing still reads smaller in the live scene, so the
+    # cast uses a slightly larger visible-height target to equalize perceived scale.
+    visible_height = 114
+    visible = visible.resize((round(visible.width * visible_height / visible.height), visible_height), Image.Resampling.LANCZOS)
+    operations = ["crop-source-cell" if source_cell is not None else "use-full-source", "remove-connected-background", "scale-uniform-to-perceived-hero-size", "align-head-and-foot"]
     if mirror:
         visible = visible.transpose(Image.Transpose.FLIP_LEFT_RIGHT)
         operations.append("mirror-full-frame")
@@ -222,7 +226,7 @@ def npc_cell(source_id: str, source_cell: int | None = None, mirror: bool = Fals
     ys, xs = np.where(alpha[:30] > 128)
     head_x = (int(xs.min()) + int(xs.max())) / 2 if len(xs) else visible.width / 2
     cell = Image.new("RGBA", (128, 128))
-    cell.alpha_composite(visible, (round(64 - head_x), 12))
+    cell.alpha_composite(visible, (round(64 - head_x), 7))
     return cell, {**provenance, "operations": operations, "bbox": list(cell.getbbox())}
 
 
@@ -230,25 +234,15 @@ npc_ids = ["partner", "analyst", "founder", "finance", "client"]
 npc_sheet = Image.new("RGBA", (384, len(npc_ids) * 4 * 128))
 npc_frames = []
 for person_index, person_id in enumerate(npc_ids):
-    base_id = f"ny-npc-{person_id}-v2"
-    back_id = base_id if person_id == "partner" else f"ny-npc-{person_id}-back-v2"
+    down_id = f"ny-npc-{person_id}-down-v4"
+    right_id = f"ny-npc-{person_id}-right-v4"
+    up_id = f"ny-npc-{person_id}-up-v4"
     direction_sources = {
-        0: [(base_id, 0, False)] * 3,
-        1: [(base_id, 1, True)] * 3,
-        2: [(base_id, 1, False)] * 3,
-        3: [(back_id, 3 if person_id == "partner" else None, False)] * 3,
+        0: [(down_id, None, False)] * 3,
+        1: [(right_id, None, True)] * 3,
+        2: [(right_id, None, False)] * 3,
+        3: [(up_id, None, False)] * 3,
     }
-    if person_id == "analyst":
-        direction_sources[1] = [
-            ("ny-npc-analyst-side-near-v2", None, True),
-            (base_id, 1, True),
-            ("ny-npc-analyst-side-far-v2", None, True),
-        ]
-        direction_sources[2] = [
-            ("ny-npc-analyst-side-near-v2", None, False),
-            (base_id, 1, False),
-            ("ny-npc-analyst-side-far-v2", None, False),
-        ]
     for facing in range(4):
         row_index = person_index * 4 + facing
         for column_index, (source_id, source_cell, mirror) in enumerate(direction_sources[facing]):

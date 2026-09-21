@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-09-21T13:13:07Z",
-  "sourceCommit": "284b51e4fa21503ac26f02aa70aeb387e610a4a9",
-  "releaseId": "before-the-close-rpgjs-r3",
+  "verifiedAt": "2026-09-21T14:13:28Z",
+  "sourceCommit": "5d376400eb015d44e8c955acd775a536a32471e6",
+  "releaseId": "before-the-close-rpgjs-r4",
   "sameBundle": true,
   "bundle": {
-    "path": "./assets/index-BZRm1ZHx.js",
-    "sha256": "b200f2eba58c5385ba14171995b3f703e8138a219c52335e523640f8d4986009",
-    "bytes": 1372656
+    "path": "./assets/index-s7_T5hDq.js",
+    "sha256": "ac8533e6b19738528ae4928b76a9c5677483e319d7f7e818b9ba918724f14467",
+    "bytes": 1373172
   },
   "deployments": [
     {
@@ -21,27 +21,33 @@
     }
   ],
   "representativeAsset": {
-    "path": "map/fund-base.png",
+    "path": "art/hero.png",
     "status": 200,
-    "bytes": 910645
+    "bytes": 289238,
+    "sha256": "a10acf55b62213af5ea60b09c0f15eb34fab9d4b6fefbc9a3ffb0125c4dff17f"
   },
   "health": {
     "ok": true,
     "game": "before-the-close",
-    "release": "2026-09-21-r3",
+    "release": "2026-09-21-r4",
     "persistence": "browser-session"
   },
   "checks": {
-    "tests": "11/11",
+    "tests": "12/12",
     "playthrough": [
       "390x844",
       "320x568"
     ],
-    "frameP95Ms": 16.7,
-    "canvas2dDrawImageCalls": 0,
+    "gait": "up stride-0/stand/stride-2 in actual Pixi renderer",
+    "systemLocale": [
+      "zh-CN",
+      "en-US"
+    ],
     "secretAudit": "pass",
     "apiBaseAudit": "pass",
     "storageAudit": "pass",
+    "mediaIntegrationAudit": "pass",
+    "skillPackageAudit": "pass",
     "remixZip": "pass"
   },
   "platformCatalog": {

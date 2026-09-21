@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "status": "accepted",
+  "sourceService": "AlterU Media Service",
+  "floors": [
+    {
+      "scene": "office",
+      "asset": "public/art/floor-office-v2.png",
+      "sourcePath": "materials/ny-relayops-floor-v2.png",
+      "sourceSha256": "dcac89cd799c487c85d604814db63e12a7e61fb9cac70b59e7d41378cbf86bb1",
+      "requestId": "60d53a2f-e53c-47e2-9941-bec99fdff656",
+      "taskId": "mt_88845b31f0b3fd2822cfb279c2febc1f"
+    },
+    {
+      "scene": "records",
+      "asset": "public/art/floor-records-v2.png",
+      "sourcePath": "materials/ny-data-floor-v2.png",
+      "sourceSha256": "a22975c40ad8abe5467f0802c427855c87037f1a4874f80e0c2bf352d103775b",
+      "requestId": "af605d6c-f0d1-49ad-8284-8b8fb125052d",
+      "taskId": "mt_25ab03eebac48220b07b3436dae1c28a"
+    },
+    {
+      "scene": "client",
+      "asset": "public/art/floor-client-v2.png",
+      "sourcePath": "materials/ny-client-floor-v1.png",
+      "sourceSha256": "88f83a39036cf1a499362fd88d2162c891a897269750dc472654bde0132692be",
+      "requestId": "1e475b49-582d-4f41-972f-d88d0752f1f7",
+      "taskId": "mt_52f7aeb90cbc329efd23580a9f570dab"
+    }
+  ],
+  "assets": [
+    {
+      "scene": "office",
+      "index": 0,
+      "asset": "public/art/office-furniture-0.png",
+      "sourcePath": "materials/ny-relayops-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        14,
+        498,
+        498
+      ],
+      "sourceSha256": "d6ec4a7556f563bdbb1509f51d9d0d2986982766347c85c715bb9ba2dc71d1c6",
+      "requestId": "c2b3969e-0053-480f-9061-1b85b9b44b83",
+      "taskId": "mt_adb2b73a1d0c327b0945143b8c9e17cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "office",
+      "index": 1,
+      "asset": "public/art/office-furniture-1.png",
+      "sourcePath": "materials/ny-relayops-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        14,
+        1010,
+        498
+      ],
+      "sourceSha256": "d6ec4a7556f563bdbb1509f51d9d0d2986982766347c85c715bb9ba2dc71d1c6",
+      "requestId": "c2b3969e-0053-480f-9061-1b85b9b44b83",
+      "taskId": "mt_adb2b73a1d0c327b0945143b8c9e17cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "office",
+      "index": 2,
+      "asset": "public/art/office-furniture-2.png",
+      "sourcePath": "materials/ny-relayops-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        526,
+        498,
+        1010
+      ],
+      "sourceSha256": "d6ec4a7556f563bdbb1509f51d9d0d2986982766347c85c715bb9ba2dc71d1c6",
+      "requestId": "c2b3969e-0053-480f-9061-1b85b9b44b83",
+      "taskId": "mt_adb2b73a1d0c327b0945143b8c9e17cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "office",
+      "index": 3,
+      "asset": "public/art/office-furniture-3.png",
+      "admission": "rejected-unused-generated-candidate",
+      "sourcePath": "materials/ny-relayops-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        526,
+        1010,
+        1010
+      ],
+      "sourceSha256": "d6ec4a7556f563bdbb1509f51d9d0d2986982766347c85c715bb9ba2dc71d1c6",
+      "requestId": "c2b3969e-0053-480f-9061-1b85b9b44b83",
+      "taskId": "mt_adb2b73a1d0c327b0945143b8c9e17cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "records",
+      "index": 0,
+      "asset": "public/art/records-furniture-0.png",
+      "sourcePath": "materials/ny-data-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        14,
+        498,
+        498
+      ],
+      "sourceSha256": "dff9279f0c81ad6a781e44caedb325e14567568092f0ef39dfcc9cf1fe0d1dd8",
+      "requestId": "3b8cfb0a-ed80-4d79-be8e-5ae6c82b473c",
+      "taskId": "mt_a7ed08417591aaae4bf6d64db610a707",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "records",
+      "index": 1,
+      "asset": "public/art/records-furniture-1.png",
+      "sourcePath": "materials/ny-data-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        14,
+        1010,
+        498
+      ],
+      "sourceSha256": "dff9279f0c81ad6a781e44caedb325e14567568092f0ef39dfcc9cf1fe0d1dd8",
+      "requestId": "3b8cfb0a-ed80-4d79-be8e-5ae6c82b473c",
+      "taskId": "mt_a7ed08417591aaae4bf6d64db610a707",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "records",
+      "index": 2,
+      "asset": "public/art/records-furniture-2.png",
+      "sourcePath": "materials/ny-data-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        526,
+        498,
+        1010
+      ],
+      "sourceSha256": "dff9279f0c81ad6a781e44caedb325e14567568092f0ef39dfcc9cf1fe0d1dd8",
+      "requestId": "3b8cfb0a-ed80-4d79-be8e-5ae6c82b473c",
+      "taskId": "mt_a7ed08417591aaae4bf6d64db610a707",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "records",
+      "index": 3,
+      "asset": "public/art/records-furniture-3.png",
+      "sourcePath": "materials/ny-data-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        526,
+        1010,
+        1010
+      ],
+      "sourceSha256": "dff9279f0c81ad6a781e44caedb325e14567568092f0ef39dfcc9cf1fe0d1dd8",
+      "requestId": "3b8cfb0a-ed80-4d79-be8e-5ae6c82b473c",
+      "taskId": "mt_a7ed08417591aaae4bf6d64db610a707",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "client",
+      "index": 0,
+      "asset": "public/art/client-furniture-0.png",
+      "sourcePath": "materials/ny-client-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        14,
+        498,
+        498
+      ],
+      "sourceSha256": "106f8542b143e38bb0d9dd30c405df5af50e52276a3246f777a8e8fdfaf339d5",
+      "requestId": "67d1aced-f3f1-4296-8503-d6f51719e24e",
+      "taskId": "mt_80eb35d1548684e3aa0a7c881f777f14",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "client",
+      "index": 1,
+      "asset": "public/art/client-furniture-1.png",
+      "sourcePath": "materials/ny-client-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        14,
+        1010,
+        498
+      ],
+      "sourceSha256": "106f8542b143e38bb0d9dd30c405df5af50e52276a3246f777a8e8fdfaf339d5",
+      "requestId": "67d1aced-f3f1-4296-8503-d6f51719e24e",
+      "taskId": "mt_80eb35d1548684e3aa0a7c881f777f14",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "client",
+      "index": 2,
+      "asset": "public/art/client-furniture-2.png",
+      "sourcePath": "materials/ny-client-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        526,
+        498,
+        1010
+      ],
+      "sourceSha256": "106f8542b143e38bb0d9dd30c405df5af50e52276a3246f777a8e8fdfaf339d5",
+      "requestId": "67d1aced-f3f1-4296-8503-d6f51719e24e",
+      "taskId": "mt_80eb35d1548684e3aa0a7c881f777f14",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "scene": "client",
+      "index": 3,
+      "asset": "public/art/client-furniture-3.png",
+      "sourcePath": "materials/ny-client-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        526,
+        1010,
+        1010
+      ],
+      "sourceSha256": "106f8542b143e38bb0d9dd30c405df5af50e52276a3246f777a8e8fdfaf339d5",
+      "requestId": "67d1aced-f3f1-4296-8503-d6f51719e24e",
+      "taskId": "mt_80eb35d1548684e3aa0a7c881f777f14",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    }
+  ]
+}

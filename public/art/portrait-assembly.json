@@ -1,0 +1,92 @@
+{
+  "version": 2,
+  "status": "accepted",
+  "sourceService": "AlterU Media Service",
+  "portraits": [
+    {
+      "portrait": 0,
+      "sourcePath": "materials/ny-portraits-a-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "4965e92d770653604497f30afec0c035e89f753634c2485cf68d335b3c56304a",
+      "requestId": "fefdfe92-59ef-4f45-a145-1c04818dc908",
+      "taskId": "mt_2cb4db81a4e84400f794a438694b0eb7",
+      "operations": [
+        "crop-source-cell",
+        "resize-thumbnail"
+      ]
+    },
+    {
+      "portrait": 1,
+      "sourcePath": "materials/ny-portraits-a-v2.png",
+      "sourceRect": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "sourceSha256": "4965e92d770653604497f30afec0c035e89f753634c2485cf68d335b3c56304a",
+      "requestId": "fefdfe92-59ef-4f45-a145-1c04818dc908",
+      "taskId": "mt_2cb4db81a4e84400f794a438694b0eb7",
+      "operations": [
+        "crop-source-cell",
+        "resize-thumbnail"
+      ]
+    },
+    {
+      "portrait": 2,
+      "sourcePath": "materials/ny-portraits-a-v2.png",
+      "sourceRect": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "sourceSha256": "4965e92d770653604497f30afec0c035e89f753634c2485cf68d335b3c56304a",
+      "requestId": "fefdfe92-59ef-4f45-a145-1c04818dc908",
+      "taskId": "mt_2cb4db81a4e84400f794a438694b0eb7",
+      "operations": [
+        "crop-source-cell",
+        "resize-thumbnail"
+      ]
+    },
+    {
+      "portrait": 3,
+      "sourcePath": "materials/ny-portraits-a-v2.png",
+      "sourceRect": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "sourceSha256": "4965e92d770653604497f30afec0c035e89f753634c2485cf68d335b3c56304a",
+      "requestId": "fefdfe92-59ef-4f45-a145-1c04818dc908",
+      "taskId": "mt_2cb4db81a4e84400f794a438694b0eb7",
+      "operations": [
+        "crop-source-cell",
+        "resize-thumbnail"
+      ]
+    },
+    {
+      "portrait": 4,
+      "sourcePath": "materials/ny-portraits-b-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "57be6ab7083e49d5febe54bd8576589d1d1f03f82dfd1b4fabfd6044154ce087",
+      "requestId": "97008c9c-54dd-4379-89bf-57ac003d152a",
+      "taskId": "mt_ee1824517d1a83940301e862b0c8b770",
+      "operations": [
+        "crop-source-cell",
+        "resize-thumbnail"
+      ]
+    }
+  ]
+}

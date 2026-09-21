@@ -1,122 +1,1708 @@
-[
-  {
-    "id": "partner",
-    "facing": 0,
-    "sourceCell": 0,
-    "mirror": false
-  },
-  {
-    "id": "partner",
-    "facing": 1,
-    "sourceCell": 1,
-    "mirror": false
-  },
-  {
-    "id": "partner",
-    "facing": 2,
-    "sourceCell": 1,
-    "mirror": true
-  },
-  {
-    "id": "partner",
-    "facing": 3,
-    "sourceCell": 3,
-    "mirror": false
-  },
-  {
-    "id": "analyst",
-    "facing": 0,
-    "sourceCell": 0,
-    "mirror": false
-  },
-  {
-    "id": "analyst",
-    "facing": 1,
-    "sourceCell": 1,
-    "mirror": false
-  },
-  {
-    "id": "analyst",
-    "facing": 2,
-    "sourceCell": 1,
-    "mirror": true
-  },
-  {
-    "id": "analyst",
-    "facing": 3,
-    "sourceCell": 3,
-    "mirror": false
-  },
-  {
-    "id": "founder",
-    "facing": 0,
-    "sourceCell": 0,
-    "mirror": false
-  },
-  {
-    "id": "founder",
-    "facing": 1,
-    "sourceCell": 1,
-    "mirror": false
-  },
-  {
-    "id": "founder",
-    "facing": 2,
-    "sourceCell": 1,
-    "mirror": true
-  },
-  {
-    "id": "founder",
-    "facing": 3,
-    "sourceCell": 3,
-    "mirror": false
-  },
-  {
-    "id": "finance",
-    "facing": 0,
-    "sourceCell": 0,
-    "mirror": false
-  },
-  {
-    "id": "finance",
-    "facing": 1,
-    "sourceCell": 1,
-    "mirror": false
-  },
-  {
-    "id": "finance",
-    "facing": 2,
-    "sourceCell": 1,
-    "mirror": true
-  },
-  {
-    "id": "finance",
-    "facing": 3,
-    "sourceCell": 3,
-    "mirror": false
-  },
-  {
-    "id": "client",
-    "facing": 0,
-    "sourceCell": 0,
-    "mirror": false
-  },
-  {
-    "id": "client",
-    "facing": 1,
-    "sourceCell": 1,
-    "mirror": false
-  },
-  {
-    "id": "client",
-    "facing": 2,
-    "sourceCell": 1,
-    "mirror": true
-  },
-  {
-    "id": "client",
-    "facing": 3,
-    "sourceCell": 3,
-    "mirror": false
-  }
-]
+{
+  "version": 2,
+  "status": "accepted",
+  "sourceService": "AlterU Media Service",
+  "directions": [
+    "down",
+    "left",
+    "right",
+    "up"
+  ],
+  "frames": [
+    {
+      "person": "partner",
+      "facing": 0,
+      "row": 0,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        82,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 0,
+      "row": 0,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        82,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 0,
+      "row": 0,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        82,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 1,
+      "row": 1,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        52,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 1,
+      "row": 1,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        52,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 1,
+      "row": 1,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        52,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 2,
+      "row": 2,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        52,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 2,
+      "row": 2,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        52,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 2,
+      "row": 2,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        52,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 3,
+      "row": 3,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        392,
+        760,
+        760
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 3,
+      "row": 3,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        392,
+        760,
+        760
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "partner",
+      "facing": 3,
+      "row": 3,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-partner-v2.png",
+      "sourceRect": [
+        392,
+        392,
+        760,
+        760
+      ],
+      "sourceSha256": "ab5284e53f5b25546b09b797145d51e88b230a4d2f9eb6c747c1191c8e3369d2",
+      "requestId": "42034779-d402-408a-8c88-39dd22c2a876",
+      "taskId": "mt_cdd43647c5e2fb807029a3ef7a024cb9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 0,
+      "row": 4,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-analyst-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "767872c855fd0ce8d76740c5653879a93539b2bf726b1ad725a951df0411b1cc",
+      "requestId": "ac98ff01-0896-491e-9ec4-760725562b81",
+      "taskId": "mt_2164ea5f4abd5f3578201e93691e3816",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 0,
+      "row": 4,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-analyst-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "767872c855fd0ce8d76740c5653879a93539b2bf726b1ad725a951df0411b1cc",
+      "requestId": "ac98ff01-0896-491e-9ec4-760725562b81",
+      "taskId": "mt_2164ea5f4abd5f3578201e93691e3816",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 0,
+      "row": 4,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-analyst-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "767872c855fd0ce8d76740c5653879a93539b2bf726b1ad725a951df0411b1cc",
+      "requestId": "ac98ff01-0896-491e-9ec4-760725562b81",
+      "taskId": "mt_2164ea5f4abd5f3578201e93691e3816",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 1,
+      "row": 5,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-analyst-side-near-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "f73fdecba7b939742cb00d5c60721eb6adb6296bb79e86d34d69130ff3f1bf77",
+      "requestId": "02968703-ee98-49f5-8ed0-101db0440cca",
+      "taskId": "mt_50916d894486a1d836be383a535dac8d",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        38,
+        12,
+        92,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 1,
+      "row": 5,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-analyst-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "767872c855fd0ce8d76740c5653879a93539b2bf726b1ad725a951df0411b1cc",
+      "requestId": "ac98ff01-0896-491e-9ec4-760725562b81",
+      "taskId": "mt_2164ea5f4abd5f3578201e93691e3816",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        46,
+        12,
+        79,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 1,
+      "row": 5,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-analyst-side-far-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "358b7dbc76e35acdc072cbb3b683b44e4b8a2929f2825ea19e78b1a73b03971e",
+      "requestId": "81316298-cacc-4107-bc4a-18481bbf3d24",
+      "taskId": "mt_ca07486c6678c396f2249b5ec9e639b9",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        43,
+        12,
+        88,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 2,
+      "row": 6,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-analyst-side-near-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "f73fdecba7b939742cb00d5c60721eb6adb6296bb79e86d34d69130ff3f1bf77",
+      "requestId": "02968703-ee98-49f5-8ed0-101db0440cca",
+      "taskId": "mt_50916d894486a1d836be383a535dac8d",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        37,
+        12,
+        91,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 2,
+      "row": 6,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-analyst-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "767872c855fd0ce8d76740c5653879a93539b2bf726b1ad725a951df0411b1cc",
+      "requestId": "ac98ff01-0896-491e-9ec4-760725562b81",
+      "taskId": "mt_2164ea5f4abd5f3578201e93691e3816",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        50,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 2,
+      "row": 6,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-analyst-side-far-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "358b7dbc76e35acdc072cbb3b683b44e4b8a2929f2825ea19e78b1a73b03971e",
+      "requestId": "81316298-cacc-4107-bc4a-18481bbf3d24",
+      "taskId": "mt_ca07486c6678c396f2249b5ec9e639b9",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        41,
+        12,
+        86,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 3,
+      "row": 7,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-analyst-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "c835c75157ecb096aa90c1153054b808c10e270621ffa03cd8849473433f84d3",
+      "requestId": "d6554d55-cf35-46bf-948e-97a9ee43ce7a",
+      "taskId": "mt_0053696da35ccb5dc4ad2b0cd08cd57b",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        45,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 3,
+      "row": 7,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-analyst-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "c835c75157ecb096aa90c1153054b808c10e270621ffa03cd8849473433f84d3",
+      "requestId": "d6554d55-cf35-46bf-948e-97a9ee43ce7a",
+      "taskId": "mt_0053696da35ccb5dc4ad2b0cd08cd57b",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        45,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "analyst",
+      "facing": 3,
+      "row": 7,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-analyst-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "c835c75157ecb096aa90c1153054b808c10e270621ffa03cd8849473433f84d3",
+      "requestId": "d6554d55-cf35-46bf-948e-97a9ee43ce7a",
+      "taskId": "mt_0053696da35ccb5dc4ad2b0cd08cd57b",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        45,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 0,
+      "row": 8,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        44,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 0,
+      "row": 8,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        44,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 0,
+      "row": 8,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        44,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 1,
+      "row": 9,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        48,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 1,
+      "row": 9,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        48,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 1,
+      "row": 9,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        48,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 2,
+      "row": 10,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 2,
+      "row": 10,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 2,
+      "row": 10,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-founder-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "5f7159802604223e606f369cffecc64131b9d3b96b895a64d49c4c17a77a4e7b",
+      "requestId": "fda3abd4-1b97-416e-bc4f-6a307ddeaf08",
+      "taskId": "mt_83b4c7ab2537e2e9eb138063346505b9",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 3,
+      "row": 11,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-founder-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "8b2728cd1666d181b3cbc185974cf5b3125f23cfbda4a1bf23e447ba97652bc7",
+      "requestId": "ca492930-3c91-4cff-b17a-891ebe4f1096",
+      "taskId": "mt_0682320622359650c6c1a0212c1d815c",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        42,
+        12,
+        87,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 3,
+      "row": 11,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-founder-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "8b2728cd1666d181b3cbc185974cf5b3125f23cfbda4a1bf23e447ba97652bc7",
+      "requestId": "ca492930-3c91-4cff-b17a-891ebe4f1096",
+      "taskId": "mt_0682320622359650c6c1a0212c1d815c",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        42,
+        12,
+        87,
+        120
+      ]
+    },
+    {
+      "person": "founder",
+      "facing": 3,
+      "row": 11,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-founder-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "8b2728cd1666d181b3cbc185974cf5b3125f23cfbda4a1bf23e447ba97652bc7",
+      "requestId": "ca492930-3c91-4cff-b17a-891ebe4f1096",
+      "taskId": "mt_0682320622359650c6c1a0212c1d815c",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        42,
+        12,
+        87,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 0,
+      "row": 12,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 0,
+      "row": 12,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 0,
+      "row": 12,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        83,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 1,
+      "row": 13,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        51,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 1,
+      "row": 13,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        51,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 1,
+      "row": 13,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        51,
+        12,
+        81,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 2,
+      "row": 14,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 2,
+      "row": 14,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 2,
+      "row": 14,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-finance-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "ccba17cda84923a0909d7bc130eb6e01cc6d1c0f2d227b6580df3798fbad0743",
+      "requestId": "5c091e98-c7c4-4b8d-bc30-e7e337ff2aab",
+      "taskId": "mt_09509d699e4abfb48dcf6e063c7630a1",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        48,
+        12,
+        78,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 3,
+      "row": 15,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-finance-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "702837e3cdb09209c04d984f7d18ed0011e8c897b457452a53e9e3d2f89f0ba6",
+      "requestId": "f8ad40c2-553f-41e9-bfcd-22bb38344063",
+      "taskId": "mt_74f341761886c8bef6ce76ff863d476f",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 3,
+      "row": 15,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-finance-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "702837e3cdb09209c04d984f7d18ed0011e8c897b457452a53e9e3d2f89f0ba6",
+      "requestId": "f8ad40c2-553f-41e9-bfcd-22bb38344063",
+      "taskId": "mt_74f341761886c8bef6ce76ff863d476f",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "finance",
+      "facing": 3,
+      "row": 15,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-finance-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "702837e3cdb09209c04d984f7d18ed0011e8c897b457452a53e9e3d2f89f0ba6",
+      "requestId": "f8ad40c2-553f-41e9-bfcd-22bb38344063",
+      "taskId": "mt_74f341761886c8bef6ce76ff863d476f",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        46,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 0,
+      "row": 16,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        47,
+        12,
+        82,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 0,
+      "row": 16,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        47,
+        12,
+        82,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 0,
+      "row": 16,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        8,
+        8,
+        376,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        47,
+        12,
+        82,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 1,
+      "row": 17,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        54,
+        12,
+        75,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 1,
+      "row": 17,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        54,
+        12,
+        75,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 1,
+      "row": 17,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot",
+        "mirror-full-frame"
+      ],
+      "bbox": [
+        54,
+        12,
+        75,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 2,
+      "row": 18,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        54,
+        12,
+        75,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 2,
+      "row": 18,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        54,
+        12,
+        75,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 2,
+      "row": 18,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-client-v2.png",
+      "sourceRect": [
+        392,
+        8,
+        760,
+        376
+      ],
+      "sourceSha256": "dfbc03bb9438791ffc6d35d67b2964fee7d06deb072551d397205f44c9a24ff9",
+      "requestId": "b66564a9-da57-4a6f-9c2e-28b1a2bac163",
+      "taskId": "mt_d24eca41593b2a56a6942da605acaadc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        54,
+        12,
+        75,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 3,
+      "row": 19,
+      "column": 0,
+      "sourcePath": "materials/ny-npc-client-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "2e0a521e48ae3e62ac92515451b0e81a142ffacb67741f5ec3a95c97948de657",
+      "requestId": "626ad326-2272-4b84-9aca-64080fd3caaa",
+      "taskId": "mt_1ae24ee6b41a0a6733d00d0e532ae629",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        44,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 3,
+      "row": 19,
+      "column": 1,
+      "sourcePath": "materials/ny-npc-client-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "2e0a521e48ae3e62ac92515451b0e81a142ffacb67741f5ec3a95c97948de657",
+      "requestId": "626ad326-2272-4b84-9aca-64080fd3caaa",
+      "taskId": "mt_1ae24ee6b41a0a6733d00d0e532ae629",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        44,
+        12,
+        84,
+        120
+      ]
+    },
+    {
+      "person": "client",
+      "facing": 3,
+      "row": 19,
+      "column": 2,
+      "sourcePath": "materials/ny-npc-client-back-v2.png",
+      "sourceRect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceSha256": "2e0a521e48ae3e62ac92515451b0e81a142ffacb67741f5ec3a95c97948de657",
+      "requestId": "626ad326-2272-4b84-9aca-64080fd3caaa",
+      "taskId": "mt_1ae24ee6b41a0a6733d00d0e532ae629",
+      "operations": [
+        "use-full-source",
+        "remove-connected-background",
+        "scale-uniform",
+        "align-head-and-foot"
+      ],
+      "bbox": [
+        44,
+        12,
+        84,
+        120
+      ]
+    }
+  ]
+}

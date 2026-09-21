@@ -1,12 +1,12 @@
 {
-  "verifiedAt": "2026-09-20T07:11:36.273Z",
-  "sourceCommit": "9ef64e5b42dbbb59401307889925c5857e5b5857",
+  "verifiedAt": "2026-09-20T12:42:20.425Z",
+  "sourceCommit": "36fb2c94bfe03cc4c3d9a20093b1265976bea9fb",
   "sameBundle": true,
   "results": [
     {
       "base": "https://game.aiwaves.tech/233b6970-d7f6-4d54-bc20-4213eefc6ba5/",
-      "bundle": "./assets/index-CIPwHveU.js",
-      "sha256": "97a37588606a4490783c580c4cb2fa8fbeb7144b108c65bc97e9b0f546207ce5",
+      "bundle": "./assets/index-BJTnMSNw.js",
+      "sha256": "36dff131baeb6d27ad2af66b5bfac1cd92de1c6bb0e0e898aa0fa0942677a469",
       "assets": [
         {
           "path": "art/hero.png",
@@ -32,8 +32,8 @@
     },
     {
       "base": "https://yinxinghuan.github.io/before-the-close/",
-      "bundle": "./assets/index-CIPwHveU.js",
-      "sha256": "97a37588606a4490783c580c4cb2fa8fbeb7144b108c65bc97e9b0f546207ce5",
+      "bundle": "./assets/index-BJTnMSNw.js",
+      "sha256": "36dff131baeb6d27ad2af66b5bfac1cd92de1c6bb0e0e898aa0fa0942677a469",
       "assets": [
         {
           "path": "art/hero.png",
@@ -66,6 +66,20 @@
   },
   "platformCatalog": {
     "githubRegistered": true,
-    "miniAppMigration": "blocked: native Mac UI locked; no credentials or unrelated surfaces accessed"
+    "miniAppMigration": "verified: Publish changed to Update and persisted after Go reload",
+    "migrationEnvironment": "Telegram macOS / AIGram Mini App",
+    "migrationVerifiedOn": "2026-09-20",
+    "playerEntryCheck": {
+      "status": "passed with loading caveat",
+      "environment": "Telegram macOS / AlterU Mini App",
+      "date": "2026-09-20",
+      "evidence": [
+        "Create / Published lists BEFORE THE CLOSE",
+        "Play opens correct chapter introduction",
+        "Walk to memo and press solid action button; memo collected",
+        "Reopen via owner / Create / Play; objective retained and memo visible in Case"
+      ],
+      "limitation": "First scene load failed once; manual Retry recovered after a long wait. All 29 published art PNG URLs returned HTTP 200 independently. Network cause not established; not an iPhone or cross-device test."
+    }
   }
 }

@@ -302,5 +302,350 @@
       "height": 512
     },
     "prompt": "Detailed pixel art full body RPG sprite, ONE adult East Asian woman with short black bob hairstyle, navy fitted pantsuit and ivory blouse, brown oxford shoes. Orthographic elevated top down camera looking down 40 degrees with clearly visible TOP of head and shoulders, same proportions as classic detailed JRPG adult, compact five-head tall. Facing directly SOUTH toward bottom of screen while walking a small normal step. Her RIGHT leg is forward and her LEFT arm swings gently forward, right arm hangs behind body. Both arms hang DOWN CLOSE TO HIPS, hands touching the silhouette of thighs, elbows straight, narrow relaxed silhouette. No hands away from body, no arms spread, no T pose. Entire body from hair to shoe soles, centered on flat warm cream background, no shadow, generous margin, no text or grid."
+  },
+  {
+    "id": "ny-hero-anchor-v1",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Use the reference ONLY for exact classic overhead RPG pixel-art proportions, strong three-quarter TOP-DOWN viewing angle, outline thickness and chunky pixel clusters. Create ONE new character only, centered full body on a uniform pale cream background. This is Ava Morgan, a 32-year-old woman investment principal in a New York mid-market investment firm. Chestnut brown chin-length wavy bob, ivory open-collar shirt, muted copper-brown fitted blazer, dark indigo straight trousers, dark brown flat leather loafers. No bag, no tie, no badges, no glamour. She faces SOUTH, directly toward the bottom edge, in neutral standing pose, feet evenly planted close together, arms naturally down. Match the reference compact proportions: full height about THREE head-heights, broad readable head and shoulders, short solid legs, mature adult face with restrained features. Camera looks down steeply enough to see much of the crown and shoulder tops; face foreshortened, never eye-level fashion illustration. Same pixel-art edge density as reference, warm highlights and restrained dark outlines. Do not copy its male face, hoodie or clothing. No other figures, no contact sheet, no furniture, no ground shadow, no letters. Entire hair and shoes visible with 60px margins."
+  },
+  {
+    "id": "ny-hero-anchor-text-v1",
+    "mode": "text",
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Classic handheld adventure RPG sprite, compact three-head-tall adult, strongly elevated orthographic view; clear thick dark outlines and hand-placed chunky pixel clusters, limited muted colors. Create ONE new character only, centered full body on a uniform pale cream background. This is Ava Morgan, a 32-year-old woman investment principal in a New York mid-market investment firm. Chestnut brown chin-length wavy bob, ivory open-collar shirt, muted copper-brown fitted blazer, dark indigo straight trousers, dark brown flat leather loafers. No bag, no tie, no badges, no glamour. She faces SOUTH, directly toward the bottom edge, in neutral standing pose, feet evenly planted close together, arms naturally down. Compact proportions: full height about THREE head-heights, broad readable head and shoulders, short solid legs, mature adult face with restrained features. Camera looks down steeply enough to see much of the crown and shoulder tops; face foreshortened, never eye-level fashion illustration. Consistent crisp pixel-art edges, warm highlights and restrained dark outlines.  No other figures, no contact sheet, no furniture, no ground shadow, no letters. Entire hair and shoes visible with 60px margins."
+  },
+  {
+    "id": "ny-fund-floor-v1",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "Orthographic directly top-down flat ground plate for a refined 2D pixel-art New York investment office, square floor only. Muted desaturated warm grey fine wool commercial carpet, very subtle tonal wear in walking routes. A warm late-afternoon band of sunlight enters from the upper LEFT, crosses a narrow strip along the left edge, then fades softly toward the middle; restrained brass-gold light and cool slate shadows. Large quiet low-contrast surfaces, hand-painted pixel clusters, no tiny maze grain, no noisy texture, NO grid, no tile outlines. This is one continuous entire 12-meter-wide floor ground plate, not a small repeating tile. Full bleed floor texture to all four edges, no borders. No walls, no objects, no furniture, no rug, no text, no perspective convergence."
+  },
+  {
+    "id": "ny-hero-anchor-v2",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png"
+    ],
+    "size": {
+      "width": 512,
+      "height": 512
+    },
+    "prompt": "Use the reference ONLY for exact classic overhead RPG pixel-art proportions, strong three-quarter TOP-DOWN viewing angle, outline thickness and chunky pixel clusters. Create ONE new character only, centered full body on a uniform pale cream background. This is Ava Morgan, a 32-year-old woman investment principal in a New York mid-market investment firm. Chestnut brown chin-length wavy bob, ivory open-collar shirt, muted copper-brown fitted blazer, dark indigo straight trousers, dark brown flat leather loafers. No bag, no tie, no badges, no glamour. She faces SOUTH, directly toward the bottom edge, in neutral standing pose, feet evenly planted close together, arms naturally down. Match the reference compact proportions: full height about THREE head-heights, broad readable head and shoulders, short solid legs, mature adult face with restrained features. Camera looks down steeply enough to see much of the crown and shoulder tops; face foreshortened, never eye-level fashion illustration. Same pixel-art edge density as reference, warm highlights and restrained dark outlines. Do not copy its male face, hoodie or clothing. No other figures, no contact sheet, no furniture, no ground shadow, no letters. Entire hair and shoes visible with 60px margins."
+  },
+  {
+    "id": "ny-fund-floor-v2",
+    "size": {
+      "width": 768,
+      "height": 768
+    },
+    "prompt": "Orthographic directly top-down flat ground plate for a refined 2D pixel-art New York investment office, square floor only. Muted desaturated warm grey fine wool commercial carpet, very subtle tonal wear in walking routes. A warm late-afternoon band of sunlight enters from the upper LEFT, crosses a narrow strip along the left edge, then fades softly toward the middle; restrained brass-gold light and cool slate shadows. Large quiet low-contrast surfaces, hand-painted pixel clusters, no tiny maze grain, no noisy texture, NO grid, no tile outlines. This is one continuous entire 12-meter-wide floor ground plate, not a small repeating tile. Full bleed floor texture to all four edges, no borders. No walls, no objects, no furniture, no rug, no text, no perspective convergence."
+  },
+  {
+    "id": "ny-hero-proportion-v3",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 1024
+    },
+    "prompt": "Costume edit of the supplied 3-column 4-row overhead pixel RPG sprite sheet. Preserve the EXACT compact body geometry, large head size, short legs, top-of-head visibility, camera angle, twelve poses and layout of the reference. Do NOT redraw with realistic tall adult proportions. Replace the yellow hoodie with a muted copper blazer over ivory shirt, replace teal pants with dark indigo trousers, replace boots with flat brown loafers. Remove shoulder bag and strap. Change hair to chin-length wavy chestnut bob; portray a female professional. No change to character height or silhouette proportions. Keep all twelve figures in their exact original poses and directions, same thick pixel outlines. Plain light cream background. No labels."
+  },
+  {
+    "id": "ny-hero-down-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Create exactly THREE separate full-body pixel RPG sprites in one horizontal row, all the same Ava Morgan identity and compact three-head-tall proportions from the reference. All three face SOUTH toward the bottom edge in the same steep overhead orthographic camera, with crown and shoulder tops clearly visible. Copper blazer, ivory open-collar shirt, dark indigo trousers, brown loafers, chin-length chestnut bob. LEFT: left leg is the planted forward support leg while right leg trails; right arm swings slightly forward and left arm slightly back, hands stay close to thighs. CENTER: neutral stand with both feet together and arms relaxed. RIGHT: genuinely opposite phase, right leg is the planted forward support leg while left trails; left arm slightly forward and right arm slightly back. Short natural stride, stable torso and head. Same full height, foot baseline, face, hair, clothing and pixel density. Solid pale cream background, generous separation, no grid, labels, furniture or shadow."
+  },
+  {
+    "id": "ny-hero-left-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Create exactly THREE separate full-body pixel RPG sprites in one horizontal row, all the same Ava Morgan identity and compact three-head-tall proportions from the reference. Every figure is strict LEFT-facing profile: nose, torso, both shoes and walking direction point LEFT. Same steep overhead orthographic camera with crown and shoulder top visible. Copper blazer, ivory shirt, dark indigo trousers, brown loafers, chin-length chestnut bob. LEFT sprite: near leg planted forward to LEFT, far leg trailing, opposite arm swing. CENTER: true side-profile neutral stand, feet together, arms down. RIGHT: opposite walking phase with far leg planted forward to LEFT and near leg trailing, arms swap. Short natural stride; stable head, torso and identity. Same full height and baseline. Solid pale cream background, generous separation, no front-facing body, no back-facing head, no grid, labels, furniture or shadow."
+  },
+  {
+    "id": "ny-hero-up-v4",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Create exactly THREE separate full-body pixel RPG sprites in one horizontal row, all the same Ava Morgan identity and compact three-head-tall proportions from the reference. All three face NORTH away from viewer in the same steep overhead orthographic camera. Only the back of the chestnut bob, blazer back, trousers and shoes are visible: absolutely no face, blouse front, lapels or buttons. LEFT: left leg planted forward toward NORTH, right leg trails, opposite restrained arm swing. CENTER: neutral back-facing stand, feet together and arms down. RIGHT: genuinely opposite phase, right leg planted forward toward NORTH, left trails, arms swap. Copper blazer, dark indigo trousers, brown loafers; stable torso and head, same full height, foot baseline and pixel density. Solid pale cream background, generous separation, no grid, labels, furniture or shadow."
+  },
+  {
+    "id": "ny-hero-down-v5",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Extract the FIRST ROW movement design from the reference and make a new three-sprite horizontal strip. Preserve its exact compact three-head-tall geometry, steep overhead angle, top-of-head visibility, short stride and left/stand/right support phases. All three figures face SOUTH toward the viewer; face is visible beneath the hair in every figure. Change identity and costume only: Ava Morgan, woman with chin-length chestnut bob, muted copper blazer, ivory shirt, dark indigo trousers, brown loafers; remove hoodie and bag. LEFT and RIGHT must keep the reference row's genuinely opposite support legs and restrained opposing arm swing; CENTER stands neutrally. Same identity, head size, torso, full height and baseline. Pale cream background, exactly three full figures, no back-facing head, no tiara or hair accessory, no grid, text, furniture or shadow."
+  },
+  {
+    "id": "ny-hero-up-v5",
+    "mode": "edit",
+    "referenceUrls": [
+      "https://game.aiwaves.tech/cb90357b-fe01-48ab-b14b-0620eb0d556e/art/overhead/hero-gait-v2.png"
+    ],
+    "size": {
+      "width": 768,
+      "height": 512
+    },
+    "prompt": "Extract the FOURTH ROW movement design from the reference and make a new three-sprite horizontal strip. Preserve its exact compact three-head-tall geometry, steep overhead camera, back-of-head view, short stride and left/stand/right support phases. All three figures face NORTH away from viewer; no face or shirt front is visible. Change identity and costume only: Ava Morgan with chin-length chestnut bob seen from behind, muted copper blazer back, dark indigo trousers, brown loafers; remove hoodie and bag. LEFT and RIGHT must keep the reference row's genuinely opposite support legs and restrained opposing arm swing; CENTER stands neutrally. Same identity, head size, torso, full height and baseline. Pale cream background, exactly three full figures, no front-facing torso, no grid, text, furniture or shadow."
+  },
+  {
+    "id": "ny-hero-down-left-support-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity, copper blazer, ivory shirt, dark indigo trousers, brown loafers, chin-length chestnut bob and compact three-head-tall proportions. She faces SOUTH toward viewer in a steep overhead orthographic camera with crown and shoulder tops visible. Natural walking contact pose: LEFT foot is planted one short step forward toward bottom of image, RIGHT foot trails behind under the body; RIGHT arm swings slightly forward and LEFT arm slightly back, both hands remain close to thighs. Stable upright torso, face visible and foreshortened. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-down-right-support-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity, copper blazer, ivory shirt, dark indigo trousers, brown loafers, chin-length chestnut bob and compact three-head-tall proportions. She faces SOUTH toward viewer in a steep overhead orthographic camera with crown and shoulder tops visible. Natural walking contact pose genuinely opposite to a left-foot pose: RIGHT foot is planted one short step forward toward bottom of image, LEFT foot trails behind under the body; LEFT arm swings slightly forward and RIGHT arm slightly back, both hands remain close to thighs. Stable upright torso, face visible and foreshortened. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-up-left-support-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity and compact three-head-tall proportions. She faces NORTH away from viewer in a steep overhead orthographic camera. Show only back of chestnut bob, copper blazer back, dark indigo trousers and brown loafers; absolutely no face, blouse front, lapels or buttons. Walking contact pose: LEFT foot planted one short step toward top of image, RIGHT foot trails; RIGHT arm slightly forward toward top and LEFT arm slightly back, hands close to sides. Stable upright torso. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-up-right-support-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity and compact three-head-tall proportions. She faces NORTH away from viewer in a steep overhead orthographic camera. Show only back of chestnut bob, copper blazer back, dark indigo trousers and brown loafers; absolutely no face, blouse front, lapels or buttons. Walking contact pose genuinely opposite to a left-foot pose: RIGHT foot planted one short step toward top of image, LEFT foot trails; LEFT arm slightly forward toward top and RIGHT arm slightly back, hands close to sides. Stable upright torso. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-down-stand-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, preserving the reference identity, face, hair silhouette, compact three-head-tall body, steep overhead orthographic camera, copper blazer, ivory shirt, dark indigo trousers and brown loafers. She faces SOUTH toward viewer in a neutral idle pose: torso centered, both feet close together on one baseline, knees straight but relaxed, both arms hanging naturally beside the body, shoulders level. Face remains foreshortened beneath the visible crown of her chin-length chestnut bob. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-up-stand-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964685810816.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, preserving the reference identity, back hair silhouette, compact three-head-tall body and steep overhead orthographic camera. She faces NORTH away from viewer in a neutral idle pose: torso centered, both feet close together on one baseline, knees straight but relaxed, both arms hanging naturally beside the copper blazer. Show only the back of her chestnut bob, blazer back, dark indigo trousers and brown loafers; absolutely no face, blouse front, lapels or buttons. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-left-near-support-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity, chin-length chestnut bob, copper blazer, ivory shirt, dark indigo trousers, brown loafers and compact three-head-tall proportions. Strict LEFT-facing profile in the same steep overhead orthographic camera: nose, torso, knees, both shoes and walking direction all point LEFT, with crown and shoulder tops visible. Natural short walking contact pose: the visible NEAR leg is planted one short step toward LEFT and the FAR leg trails; arms swing slightly in opposition and hands stay close to thighs. Stable upright torso. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-left-stand-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity, chin-length chestnut bob, copper blazer, ivory shirt, dark indigo trousers, brown loafers and compact three-head-tall proportions. Strict LEFT-facing profile in the same steep overhead orthographic camera: nose, torso, knees and both shoes point LEFT, with crown and shoulder tops visible. Neutral idle pose with feet close together on one baseline, torso centered, shoulders level and both arms relaxed at her sides. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-left-far-support-v6",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789920024216827.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One single complete Ava Morgan pixel RPG sprite, matching the reference identity, chin-length chestnut bob, copper blazer, ivory shirt, dark indigo trousers, brown loafers and compact three-head-tall proportions. Strict LEFT-facing profile in the same steep overhead orthographic camera: nose, torso, knees, both shoes and walking direction all point LEFT, with crown and shoulder tops visible. Walking contact pose genuinely opposite to the near-leg pose: the FAR leg is planted one short step toward LEFT and the visible NEAR leg trails; arms swap their restrained opposition and hands stay close to thighs. Stable upright torso. One figure only, centered, full hair and shoes visible, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-right-near-support-v7",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "Turn the exact compact Ava Morgan character in the reference into one RIGHT-facing profile walking sprite. Preserve her oversized head: head plus hair must occupy 36 percent of total visible height, and the full body must remain exactly three heads tall with short legs and broad shoulders. Preserve the steep overhead orthographic view, copper blazer, ivory shirt, dark indigo trousers, brown loafers and chin-length chestnut bob. Nose, torso, knees, shoes and travel point RIGHT. Short contact pose: visible near foot planted a small step RIGHT, far foot trails, restrained opposite arm swing. No camera lowering, no adult fashion illustration proportions. One figure only, centered, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-right-stand-v7",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "Turn the exact compact Ava Morgan character in the reference into one RIGHT-facing profile idle sprite. Preserve her oversized head: head plus hair must occupy 36 percent of total visible height, and the full body must remain exactly three heads tall with short legs and broad shoulders. Preserve the steep overhead orthographic view, copper blazer, ivory shirt, dark indigo trousers, brown loafers and chin-length chestnut bob. Nose, torso, knees and shoes point RIGHT. Neutral pose with both feet close on one baseline and arms relaxed. No camera lowering, no adult fashion illustration proportions. One figure only, centered, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-hero-right-far-support-v7",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789964675665593.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "Turn the exact compact Ava Morgan character in the reference into one RIGHT-facing profile walking sprite. Preserve her oversized head: head plus hair must occupy 36 percent of total visible height, and the full body must remain exactly three heads tall with short legs and broad shoulders. Preserve the steep overhead orthographic view, copper blazer, ivory shirt, dark indigo trousers, brown loafers and chin-length chestnut bob. Nose, torso, knees, shoes and travel point RIGHT. Opposite short contact pose: far foot planted a small step RIGHT, visible near foot trails, arms swap their restrained swing. No camera lowering, no adult fashion illustration proportions. One figure only, centered, pale cream background, no shadow, text, accessories or furniture."
+  },
+  {
+    "id": "ny-fund-furniture-pack-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789883611646930.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a clean 2 by 2 asset sheet for a premium contemporary New York VC/PE office in restrained pixel art. Match the reference's steep overhead orthographic camera and pixel density; every object must show its top and front/side faces consistently, with parallel edges and no vanishing point. Each quadrant contains one complete separated functional furniture group at game-ready scale on solid pale cream, with wide empty margins and no overlap. TOP LEFT: compact oval walnut investment committee table with six slim dark teal chairs arranged naturally around it, three closed deal folders and one central conference speaker on the tabletop. TOP RIGHT: analyst research workstation with a walnut desk, two compact monitors showing abstract financial charts without text, task lamp, keyboard, two document stacks, and one dark teal chair tucked near the desk. BOTTOM LEFT: partner conversation nook with two muted rust armchairs angled about 45 degrees toward a small round brass-and-walnut table holding one closed notebook. BOTTOM RIGHT: low walnut credenza with a small cyan financial dashboard screen, three restrained deal tombstones, two storage doors and a plant at one end. Professional global Manhattan finance identity, midnight navy, walnut, muted copper, cream and small cyan accents. No people, logos, labels, wall, floor, room background, cast perspective shadow, white outline or isometric camera."
+  },
+  {
+    "id": "ny-npc-partner-v2",
+    "size": {"width": 768, "height": 768},
+    "prompt": "High quality restrained pixel-art 2D RPG character sheet, steep overhead orthographic camera about 55 degrees, parallel lines and no vanishing point, compact three-and-a-half-head adult proportions with a large readable head and short legs. Solid pale cream background, no floor shadow. Exactly FOUR separate full-body stationary sprites in a 2x2 grid, same identity and scale in every cell: Mara Ellison, Black British-American woman in her early 50s, deep brown skin, short salt-and-pepper natural curls, composed senior investment partner, midnight navy trouser suit, muted teal blouse, oxblood loafers, small silver stud earrings. Upper LEFT faces SOUTH with face visible; upper RIGHT is strict WEST/LEFT profile; lower LEFT is strict EAST/RIGHT profile; lower RIGHT faces NORTH with back of head only. Feet close, arms naturally down, crown and shoulder tops visible, generous margins, no grid, text, props or exaggerated ethnic costume."
+  },
+  {
+    "id": "ny-npc-analyst-v2",
+    "size": {"width": 768, "height": 768},
+    "prompt": "High quality restrained pixel-art 2D RPG character sheet, steep overhead orthographic camera about 55 degrees, parallel lines and no vanishing point, compact three-and-a-half-head adult proportions with a large readable head and short legs. Solid pale cream background, no floor shadow. Exactly FOUR separate full-body stationary sprites in a 2x2 grid, same identity and scale in every cell: Daniel Kim, Korean-American man age 28, warm light skin, short side-parted black hair, understated round dark glasses, pale blue Oxford shirt with sleeves casually rolled once, navy trousers, black derby shoes, junior investment analyst. Upper LEFT faces SOUTH; upper RIGHT strict WEST/LEFT profile; lower LEFT strict EAST/RIGHT profile; lower RIGHT faces NORTH. Feet close, arms naturally down, crown and shoulder tops visible, generous margins, no grid, text, props or caricature."
+  },
+  {
+    "id": "ny-npc-founder-v2",
+    "size": {"width": 768, "height": 768},
+    "prompt": "High quality restrained pixel-art 2D RPG character sheet, steep overhead orthographic camera about 55 degrees, parallel lines and no vanishing point, compact three-and-a-half-head adult proportions with a large readable head and short legs. Solid pale cream background, no floor shadow. Exactly FOUR separate full-body stationary sprites in a 2x2 grid, same identity and scale in every cell: Mateo Alvarez, Latino New Yorker man age 42, medium olive skin, wavy dark hair with slight gray at the temples, product founder under pressure, moss green overshirt with sleeves rolled to elbows over an ivory crewneck, charcoal chinos and brown sneakers. Upper LEFT faces SOUTH; upper RIGHT strict WEST/LEFT profile; lower LEFT strict EAST/RIGHT profile; lower RIGHT faces NORTH. Feet close, arms naturally down, crown and shoulder tops visible, generous margins, no grid, text, props or stereotyped costume."
+  },
+  {
+    "id": "ny-npc-finance-v2",
+    "size": {"width": 768, "height": 768},
+    "prompt": "High quality restrained pixel-art 2D RPG character sheet, steep overhead orthographic camera about 55 degrees, parallel lines and no vanishing point, compact three-and-a-half-head adult proportions with a large readable head and short legs. Solid pale cream background, no floor shadow. Exactly FOUR separate full-body stationary sprites in a 2x2 grid, same identity and scale in every cell: Priya Raman, Indian-American woman age 38, warm brown skin, shoulder-length softly wavy black hair, precise finance lead, deep burgundy blouse, charcoal ankle trousers and dark brown flats, slim steel watch. Upper LEFT faces SOUTH; upper RIGHT strict WEST/LEFT profile; lower LEFT strict EAST/RIGHT profile; lower RIGHT faces NORTH. Feet close, arms naturally down, crown and shoulder tops visible, generous margins, no grid, text, props or stereotyped costume."
+  },
+  {
+    "id": "ny-npc-client-v2",
+    "size": {"width": 768, "height": 768},
+    "prompt": "High quality restrained pixel-art 2D RPG character sheet, steep overhead orthographic camera about 55 degrees, parallel lines and no vanishing point, compact three-and-a-half-head adult proportions with a large readable head and short legs. Solid pale cream background, no floor shadow. Exactly FOUR separate full-body stationary sprites in a 2x2 grid, same identity and scale in every cell: Jordan Brooks, Black American woman age 44, rich dark brown skin, close-cropped natural hair, pragmatic multi-store operations director, muted mustard cardigan over a slate blue shirt, dark indigo trousers and practical tan shoes. Upper LEFT faces SOUTH; upper RIGHT strict WEST/LEFT profile; lower LEFT strict EAST/RIGHT profile; lower RIGHT faces NORTH. Feet close, arms naturally down, crown and shoulder tops visible, generous margins, no grid, text, props or stereotyped costume."
+  },
+  {
+    "id": "ny-npc-analyst-back-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965455825383.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One complete stationary back-facing NORTH sprite of the exact same Daniel Kim identity and outfit from the reference: back of short side-parted black hair, pale blue Oxford shirt, navy trousers and black derby shoes. Steep overhead orthographic RPG camera with crown and shoulder tops visible, compact proportions, feet together, arms resting down. Absolutely no face, glasses, shirt front, buttons or chest pocket. One figure only, centered on pale cream, no shadow, text or props."
+  },
+  {
+    "id": "ny-npc-founder-back-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965468416272.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One complete stationary back-facing NORTH sprite of the exact same Mateo Alvarez identity and outfit from the reference: back of wavy dark hair with gray temples, moss green overshirt with rolled sleeves, charcoal chinos and brown sneakers. Steep overhead orthographic RPG camera with crown and shoulder tops visible, compact proportions, feet together, arms resting down. Absolutely no face, shirt front, buttons or breast pocket. One figure only, centered on pale cream, no shadow, text or props."
+  },
+  {
+    "id": "ny-npc-finance-back-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965467746440.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One complete stationary back-facing NORTH sprite of the exact same Priya Raman identity and outfit from the reference: back of shoulder-length softly wavy black hair, deep burgundy blouse, charcoal ankle trousers and dark brown flats. Steep overhead orthographic RPG camera with crown and shoulder tops visible, compact proportions, feet together, arms resting down. Absolutely no face, blouse front, buttons or chest details. One figure only, centered on pale cream, no shadow, text or props."
+  },
+  {
+    "id": "ny-npc-client-back-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965481236232.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One complete stationary back-facing NORTH sprite of the exact same Jordan Brooks identity and outfit from the reference: back of close-cropped natural hair, muted mustard cardigan, dark indigo trousers and practical tan shoes. Steep overhead orthographic RPG camera with crown and shoulder tops visible, compact proportions, feet together, arms resting down. Absolutely no face, slate shirt front, cardigan buttons or front pockets. One figure only, centered on pale cream, no shadow, text or props."
+  },
+  {
+    "id": "ny-npc-analyst-side-near-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965455825383.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One complete Daniel Kim pixel RPG walking sprite, exact identity and outfit from the reference: Korean-American analyst, side-parted black hair, round dark glasses, pale blue Oxford shirt, navy trousers and black derby shoes. Strict RIGHT-facing profile in steep overhead orthographic camera, crown and shoulder tops visible. Short natural contact pose with visible near foot planted a small step RIGHT and far foot trailing, restrained opposite arm swing, stable torso. Keep the same compact proportions and large readable head as the reference sheet. One figure only, centered on pale cream, no shadow, text or props."
+  },
+  {
+    "id": "ny-npc-analyst-side-far-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965455825383.png"],
+    "size": {"width": 512, "height": 512},
+    "prompt": "One complete Daniel Kim pixel RPG walking sprite, exact identity and outfit from the reference: Korean-American analyst, side-parted black hair, round dark glasses, pale blue Oxford shirt, navy trousers and black derby shoes. Strict RIGHT-facing profile in steep overhead orthographic camera, crown and shoulder tops visible. Opposite short contact pose: far foot planted a small step RIGHT and visible near foot trailing, arms swap their restrained swing, stable torso. Keep the same compact proportions and large readable head as the reference sheet. One figure only, centered on pale cream, no shadow, text or props."
+  },
+  {
+    "id": "ny-portraits-a-v2",
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Premium restrained pixel-art dialogue portraits for a serious New York investment mystery, exactly FOUR separate head-and-shoulders portraits in a clean 2x2 grid. Same eye-level three-quarter portrait camera, muted midnight navy background with subtle office window light, consistent crop, pixel density and painterly shading; no frames, dividers, text, logos or props. TOP LEFT Mara Ellison: Black British-American woman early 50s, deep brown skin, short salt-and-pepper natural curls, composed senior partner, midnight navy suit and muted teal blouse. TOP RIGHT Daniel Kim: Korean-American man 28, warm light skin, short side-parted black hair, understated round dark glasses, pale blue Oxford shirt, observant junior analyst. BOTTOM LEFT Mateo Alvarez: Latino New Yorker man 42, medium olive skin, wavy dark hair with gray at temples, moss green overshirt over ivory crewneck, tired but persuasive founder. BOTTOM RIGHT Priya Raman: Indian-American woman 38, warm brown skin, shoulder-length softly wavy black hair, deep burgundy blouse, precise and guarded finance lead. Natural facial structure, age and professional differences; no stereotypes or exaggerated expressions."
+  },
+  {
+    "id": "ny-portraits-b-v2",
+    "size": {"width": 1024, "height": 512},
+    "prompt": "Premium restrained pixel-art dialogue portraits for a serious New York investment mystery, exactly TWO separate head-and-shoulders portraits in one horizontal row. Same eye-level three-quarter portrait camera, muted midnight navy background with subtle office window light, consistent crop, pixel density and painterly shading; no frames, divider, text, logos or props. LEFT Jordan Brooks: Black American woman 44, rich dark brown skin, close-cropped natural hair, muted mustard cardigan over slate blue shirt, pragmatic multi-store operations director. RIGHT Ava Morgan: white American woman 34, fair warm skin, chin-length chestnut bob, muted copper blazer over ivory open-collar shirt, alert investment manager. Natural facial structure, age and professional differences; no stereotypes or exaggerated expressions."
+  },
+  {
+    "id": "ny-relayops-floor-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789919945874323.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a seamless full square ground plate for a New York B2B software startup workspace, matching the reference's straight-down orthographic floor camera and restrained detailed pixel art. Material is warm gray sealed concrete with subtle aggregate, faint rolling-chair wear, a few realistic cable-cover lines near edges, soft late-evening window light and very restrained cyan monitor reflection. Uniform usable walking surface with no perspective convergence. No walls, border, furniture, people, objects, text, logos, holes or large stains."
+  },
+  {
+    "id": "ny-data-floor-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789919945874323.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a seamless full square ground plate for a secure investment data room inside a New York software company, matching the reference's straight-down orthographic floor camera and restrained detailed pixel art. Material is low-pile midnight blue modular carpet with subtle alternating weave, mild chair-track compression and a narrow cool ceiling-light wash. Uniform usable walking surface, no perspective convergence. No walls, border, furniture, people, objects, text, logos, holes or large stains."
+  },
+  {
+    "id": "ny-client-floor-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789919945874323.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a seamless full square ground plate for the back-office operations room of a contemporary New York multi-store retailer, matching the reference's straight-down orthographic floor camera and restrained detailed pixel art. Material is warm light-gray commercial resilient flooring with subtle long seams, light trolley wheel wear along one path, a faint amber practical light pool and a restrained cyan screen reflection. Uniform usable walking surface, no perspective convergence. No walls, border, furniture, people, objects, text, logos, holes or large stains."
+  },
+  {
+    "id": "ny-relayops-furniture-pack-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965188175249.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a clean 2 by 2 separated furniture asset sheet for RelayOps, a contemporary New York B2B software startup, matching the reference's restrained pixel art, steep overhead orthographic camera, parallel edges and scale. Each quadrant has one complete functional group on solid pale cream with wide margins. TOP LEFT: paired sit-stand engineering desks with four compact monitors, keyboards, two task chairs and tidy cable trays. TOP RIGHT: product delivery whiteboard on a mobile stand plus a narrow table with integration adapters and two closed laptops, diagrams shown only as abstract colored blocks without words. BOTTOM LEFT: compact team huddle area with a low modular sofa, two poufs and a round table holding a tablet. BOTTOM RIGHT: implementation staging rack with labeled-looking but unreadable bins, two handheld scanners, packed routers and a small tool cart. Walnut, charcoal, muted moss, cream and restrained cyan status accents. No people, readable text, logos, floor, wall, room background, perspective convergence or oversized props."
+  },
+  {
+    "id": "ny-data-furniture-pack-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965188175249.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a clean 2 by 2 separated furniture asset sheet for a secure due-diligence data room, matching the reference's restrained pixel art, steep overhead orthographic camera, parallel edges and scale. Each quadrant has one complete functional group on solid pale cream with wide margins. TOP LEFT: rectangular review table with four dark teal chairs, two document stacks, one calculator and two closed folders. TOP RIGHT: low locked file cabinet wall with archive boxes and a small cyan access panel. BOTTOM LEFT: rolling finance workstation with one monitor, keyboard, calculator tape and two document trays, paired with a compact chair. BOTTOM RIGHT: compact secure server and network rack beside a shred console and sealed records cart. Walnut, charcoal, midnight blue, cream and restrained cyan indicators. No people, readable text, logos, floor, wall, room background, perspective convergence or oversized props."
+  },
+  {
+    "id": "ny-client-furniture-pack-v1",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789965188175249.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "Create a clean 2 by 2 separated furniture asset sheet for the operations room of a contemporary New York multi-store retailer, matching the reference's restrained pixel art, steep overhead orthographic camera, parallel edges and scale. Each quadrant has one complete functional group on solid pale cream with wide margins. TOP LEFT: POS integration test bench with two compact terminals, barcode scanner, receipt printer and cable organizer. TOP RIGHT: deployment planning station with a wide desk, two monitors showing abstract store-status blocks without words, task chair and paper schedule. BOTTOM LEFT: practical break-and-brief corner with two simple chairs, small round table and reusable bottles. BOTTOM RIGHT: mobile replenishment cart beside two stacked logistics totes, handheld scanner dock and a narrow equipment cabinet. Charcoal, muted mustard, slate blue, walnut and restrained cyan status accents. No people, readable text, logos, floor, wall, room background, perspective convergence or oversized props."
+  },
+  {
+    "id": "ny-relayops-floor-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789919945874323.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "A seamless full square straight-down orthographic ground plate for a New York software startup workspace. Warm gray sealed concrete with fine aggregate, very faint rolling-chair wear and soft late-evening amber plus cyan reflected light. Keep the entire square as one flat unobstructed walking surface. Absolutely no cables, cable covers, objects, furniture, walls, ceiling lights, borders, seams that form a room, perspective convergence, text or logos. Restrained detailed pixel-art texture matching the reference density."
+  },
+  {
+    "id": "ny-data-floor-v2",
+    "mode": "edit",
+    "referenceUrls": ["https://cdn.aiwaves.tech/prod/telegram/avatar/2131057/1789919945874323.png"],
+    "size": {"width": 1024, "height": 1024},
+    "prompt": "A seamless full square straight-down orthographic ground plate for a secure investment data room. Low-pile midnight blue modular carpet with subtle alternating weave and mild rolling-chair compression, evenly lit with a faint cool wash. Keep the entire square as one flat unobstructed walking surface. Absolutely no wall, baseboard, ceiling light, fixture, border, object, furniture, perspective convergence, text or logos. Restrained detailed pixel-art texture matching the reference density."
   }
 ]

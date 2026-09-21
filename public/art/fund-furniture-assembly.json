@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "status": "accepted",
+  "sourceService": "AlterU Media Service",
+  "assets": [
+    {
+      "asset": "public/art/fund-furniture-0.png",
+      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        14,
+        498,
+        498
+      ],
+      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
+      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
+      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "asset": "public/art/fund-furniture-1.png",
+      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        14,
+        1010,
+        498
+      ],
+      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
+      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
+      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "asset": "public/art/fund-furniture-2.png",
+      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "sourceRect": [
+        14,
+        526,
+        498,
+        1010
+      ],
+      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
+      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
+      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    },
+    {
+      "asset": "public/art/fund-furniture-3.png",
+      "sourcePath": "materials/ny-fund-furniture-pack-v1.png",
+      "sourceRect": [
+        526,
+        526,
+        1010,
+        1010
+      ],
+      "sourceSha256": "2070bf9ae6e1f6d95b9e01b51970639bca0b27e90ef8964b3de8f5e185a73252",
+      "requestId": "21fd0682-57a8-4a78-a264-388050e04857",
+      "taskId": "mt_f9ad0a4f9e0cadfa88776a2bc03267cc",
+      "operations": [
+        "crop-source-cell",
+        "remove-connected-background"
+      ]
+    }
+  ]
+}

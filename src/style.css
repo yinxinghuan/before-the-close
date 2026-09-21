@@ -20,3 +20,11 @@
 .bc-controls{position:absolute;z-index:3;bottom:max(8px,env(safe-area-inset-bottom));left:12px;right:12px;padding:0;height:76px;background:transparent;border:0;gap:24px;align-items:center;pointer-events:none}.bc-controls>*{pointer-events:auto}.bc-stick{width:72px;height:72px;background:#1c2b2be8;box-shadow:none;border-color:#acb3a1}.bc-stick__knob{background:#aab29f;border:0;box-shadow:0 2px 3px #0003}.bc-stick__knob svg{opacity:.2;width:23px;height:23px}.bc-primary{background:#1b292be8;border-color:#acb3a170;min-height:66px;box-shadow:0 2px 8px #0002}.bc-primary[data-active=true]{background:#eee8d8;color:#283332;border-color:#c4bdac}
 .bc-interaction{z-index:4;bottom:96px;background:#1b292bf5;border-color:#a7a894;border-top:1px solid #c9c3ad;border-radius:4px}.bc-interaction>header{background:transparent}.bc-interaction--person{height:auto;max-height:min(64dvh,calc(100dvh - 182px))}.bc-topics{flex-shrink:0}
 @media(max-width:350px){.bc-header{left:8px;right:8px;padding:7px 6px}.bc-header h1{font-size:17px}.bc-header nav{gap:1px}.bc-header nav button{width:44px}.bc-objective{top:87px;left:14px;right:14px;font-size:11px}.bc-location{top:139px}.bc-controls{left:10px;right:10px;gap:20px}.bc-stick{width:64px;height:64px}.bc-primary{padding:8px 10px}.bc-interaction{left:10px;right:10px}}
+
+/* RPGJS / CanvasEngine spatial renderer. The DOM remains UI only. */
+.bc-world #rpg{position:absolute;pointer-events:auto}
+.bc-world #rpg canvas{width:auto;height:auto;display:block;touch-action:manipulation}
+.bc-world-loading{z-index:3}
+.bc-access-targets button{z-index:2}
+.bc-access-targets button::after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;transform:translate(-50%,-50%);background:#b48b50;box-shadow:0 0 0 2px #142b3580}
+.bc-access-targets button[data-person="true"]::after{width:6px;height:6px}

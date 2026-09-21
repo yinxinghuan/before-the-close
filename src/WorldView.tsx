@@ -1,42 +1,60 @@
-import {useEffect,useRef,useState} from 'react';import {rooms,world,type SceneId,type Entity} from './world';import {people,tx,type Locale} from './content';import {findPath,walkable,type Point} from './spatial/world';import {advanceRoute,moveWithCollision} from './spatial/distance-motion';import {footstep} from './audio';
-export type WorldHandle={move:(x:number,y:number)=>void;go:(p:Point)=>void;approach:(e:Entity)=>void;position:()=>Point};
-export function WorldView({scene,start,locale,paused,known,onNear,onPosition,onEntity,handle}:{scene:SceneId;start:Point;locale:Locale;paused:boolean;known:string[];onNear:(e:Entity|null)=>void;onPosition:(p:Point)=>void;onEntity:(e:Entity)=>void;handle:{current:WorldHandle|null}}){
- const canvas=useRef<HTMLCanvasElement>(null),host=useRef<HTMLDivElement>(null),latest=useRef({paused,onNear,onPosition,onEntity,locale,known});latest.current={paused,onNear,onPosition,onEntity,locale,known};const [ready,setReady]=useState(false),[error,setError]=useState(false);const screenEntities=useRef<Record<string,Point>>({});
- useEffect(()=>{let stopped=false,frame=0;let position={...start},direction=0,travel=0,velocity={x:0,y:0},route:Point[]=[];let last=performance.now(),saved=0,nearest='';const images:Record<string,HTMLImageElement>={};const room=rooms[scene];const residents=Object.fromEntries(room.entities.filter(e=>e.person).map(e=>[e.id,{...e.at,target:e.at.x+22,wait:0,travel:0,moving:false,facing:0}]));let camera={x:0,y:0,scale:1};setReady(false);setError(false);
- const go=(p:Point)=>{velocity={x:0,y:0};const activeWorld={...world,scenes:{...world.scenes,[scene]:{...world.scenes[scene],obstacles:[...world.scenes[scene].obstacles,...Object.values(residents).map(r=>({x:r.x-12,y:r.y-10,w:24,h:14}))]}}};route=findPath(activeWorld,scene,position,p)};handle.current={move:(x,y)=>{velocity={x,y};if(x||y)route=[]},go,approach:e=>go(e.approach),position:()=>position};
- const names=['hero','wall','window','door',room.floorAsset||`floor-${room.floor}`,...new Set(room.props.map(p=>p.asset)),'npcs'];
- Promise.all(names.map(name=>new Promise<void>((resolve,reject)=>{const im=new Image();images[name]=im;im.onload=()=>resolve();im.onerror=()=>name==='npcs'?resolve():reject();im.src=`./art/${name}.png`}))).then(()=>{if(stopped)return;setReady(true);frame=requestAnimationFrame(draw)}).catch(()=>setError(true));
- const down=(e:KeyboardEvent)=>{if(latest.current.paused||e.target instanceof HTMLInputElement)return;const k=e.key.toLowerCase();if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright'].includes(k)){e.preventDefault();keys.add(k);velocity=keyVector();route=[]}};const keys=new Set<string>();const keyVector=()=>({x:Number(keys.has('d')||keys.has('arrowright'))-Number(keys.has('a')||keys.has('arrowleft')),y:Number(keys.has('s')||keys.has('arrowdown'))-Number(keys.has('w')||keys.has('arrowup'))});const up=(e:KeyboardEvent)=>{keys.delete(e.key.toLowerCase());velocity=keyVector()};const blur=()=>{keys.clear();velocity={x:0,y:0};route=[]};window.addEventListener('keydown',down);window.addEventListener('keyup',up);window.addEventListener('blur',blur);
- function draw(now:number){if(stopped)return;frame=requestAnimationFrame(draw);const c=canvas.current,h=host.current;if(!c||!h)return;const W=h.clientWidth,H=h.clientHeight,dpr=Math.min(devicePixelRatio,2);if(c.width!==Math.round(W*dpr)||c.height!==Math.round(H*dpr)){c.width=Math.round(W*dpr);c.height=Math.round(H*dpr)}const ctx=c.getContext('2d')!;const dt=Math.min((now-last)/1000,.04);last=now;let delta={x:0,y:0},distance=0;
- for(const e of room.entities.filter(e=>e.person)){const r=residents[e.id];const dx=position.x-r.x,dy=position.y-r.y;r.moving=false;if(Math.hypot(dx,dy)<105||latest.current.paused){r.facing=Math.abs(dx)>Math.abs(dy)?dx<0?1:2:dy<0?3:0}else if(e.id==='analyst'){r.wait-=dt;if(r.wait<=0){const step=Math.sign(r.target-r.x)*Math.min(Math.abs(r.target-r.x),22*dt);r.x+=step;r.travel+=Math.abs(step);r.moving=Math.abs(step)>.01;r.facing=step<0?1:2;if(Math.abs(r.target-r.x)<.1){r.wait=.7;r.target=e.at.x+(r.target>e.at.x?-22:22)}}}}
- if(!latest.current.paused){const can=(p:Point)=>walkable(world,scene,p)&&!Object.values(residents).some(r=>p.x<r.x+12&&p.x+14>r.x-12&&p.y<r.y+4&&p.y+10>r.y-10);if(velocity.x||velocity.y){const n=Math.hypot(velocity.x,velocity.y);const result=moveWithCollision(position,{x:velocity.x/n*108*dt,y:velocity.y/n*108*dt},can);delta={x:result.position.x-position.x,y:result.position.y-position.y};position=result.position;distance=result.distance}else if(route.length){const result=advanceRoute(position,route,108*dt,can);position=result.position;distance=result.distance;delta=result.direction;route=route.slice(result.consumed);if(result.blocked)route=[]}}
- if(distance>.01){travel+=distance;footstep(distance);direction=Math.abs(delta.x)>Math.abs(delta.y)?delta.x<0?1:2:delta.y<0?3:0;if(now-saved>250){latest.current.onPosition(position);saved=now}}
- camera.scale=Math.max(W/430,H/640,Math.min(W/345,H/455));camera.x=Math.max(W-640*camera.scale,Math.min(0,W/2-(position.x+7)*camera.scale));camera.y=Math.max(H-640*camera.scale,Math.min(0,H*.57-position.y*camera.scale));
- ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle='#142b35';ctx.fillRect(0,0,W,H);ctx.translate(camera.x,camera.y);ctx.scale(camera.scale,camera.scale);ctx.imageSmoothingEnabled=true;
- const floor=images[room.floorAsset||`floor-${room.floor}`];if(room.floorAsset)ctx.drawImage(floor,0,0,640,640);else for(let y=0;y<640;y+=128)for(let x=0;x<640;x+=128)ctx.drawImage(floor,x,y,128,128);
- const wall=images.wall;for(let x=0;x<640;x+=320)ctx.drawImage(wall,x,0,320,80);if(images.window?.naturalWidth&&scene!=='records'){ctx.drawImage(images.window,204,5,156,72)}
- // Side caps overlap the back wall; front wall is drawn last.
- for(let y=0;y<640;y+=128){ctx.drawImage(wall,0,0,64,256,0,y,32,128);ctx.drawImage(wall,0,0,64,256,608,y,32,128)}
-for(const e of room.entities.filter(e=>e.kind==='door')){
- const d=images.door;
- if(e.at.y<100&&d?.naturalWidth)ctx.drawImage(d,e.at.x-39*d.naturalWidth/d.naturalHeight,10,78*d.naturalWidth/d.naturalHeight,78);
- else if(e.at.x<60||e.at.x>580){
-  ctx.drawImage(floor,0,0,128,128,e.at.x-18,e.at.y-28,36,56);
-  if(d?.naturalWidth){const sw=d.naturalWidth,sh=d.naturalHeight;ctx.drawImage(d,sw*.05,sh*.88,sw*.9,sh*.06,e.at.x-17,e.at.y-29,34,5);ctx.drawImage(d,sw*.05,sh*.88,sw*.9,sh*.06,e.at.x-17,e.at.y+25,34,5)}
- }
-}
- const residentPositions=residents;
- const objects:{y:number;paint:()=>void}[]=room.props.map(p=>({y:p.y,paint:()=>{const im=images[p.asset];const height=p.width*im.height/im.width;ctx.drawImage(im,p.x-p.width/2,p.y-height,p.width,height)}}));
- function actor(im:HTMLImageElement,row:number,col:number,x:number,y:number){if(!im?.naturalWidth)return;const cell=im===images.hero?256:128;ctx.drawImage(im,col*cell,row*cell,cell,cell,x-40,y-76,80,80)}
- for(const e of room.entities.filter(e=>e.kind==='person')){const p=residentPositions[e.id];objects.push({y:p.y,paint:()=>{const atlas=images.npcs;if(atlas?.naturalWidth){const r=residents[e.id];actor(atlas,people[e.person!].row*4+r.facing,r.moving?[0,1,2,1][Math.floor(r.travel/7)%4]:1,p.x,p.y)}else actor(images.hero,0,1,p.x,p.y)}})}
- objects.push({y:position.y+10,paint:()=>actor(images.hero,direction,distance>.01?[0,1,2,1][Math.floor(travel/9)%4]:1,position.x+7,position.y+10)});objects.sort((a,b)=>a.y-b.y).forEach(o=>o.paint());
- let closest:Entity|null=null,best=65;for(const e of room.entities){const p=residentPositions[e.id]||e.at;const dist=Math.hypot(position.x+7-p.x,position.y+5-p.y);if(dist<best){best=dist;closest=e}screenEntities.current[e.id]={x:camera.x+p.x*camera.scale,y:camera.y+(p.y-22)*camera.scale};const button=h.querySelector<HTMLElement>(`[data-entity="${e.id}"]`);if(button){button.style.left=screenEntities.current[e.id].x+'px';button.style.top=screenEntities.current[e.id].y+'px'}if(e.kind!=='door'){ctx.fillStyle=dist<65?'#ffe4a5':'#b48b50';ctx.beginPath();ctx.arc(p.x,p.y-(e.kind==='person'?82:65),e.kind==='person'?3:4,0,Math.PI*2);ctx.fill()}}
- if(nearest!==(closest?.id||'')){nearest=closest?.id||'';latest.current.onNear(closest)}
- ctx.fillStyle='#35464b';ctx.fillRect(0,603,640,37);for(let x=0;x<640;x+=320)ctx.drawImage(wall,x,603,320,80);
- for(const e of room.entities.filter(e=>e.kind==='door'&&e.at.y>570)){ctx.drawImage(floor,0,0,128,128,e.at.x-30,588,60,52);if(images.door?.naturalWidth)ctx.drawImage(images.door,e.at.x-39*images.door.naturalWidth/images.door.naturalHeight,596,78*images.door.naturalWidth/images.door.naturalHeight,78)}
- }
- const click=(e:MouseEvent)=>{if(latest.current.paused)return;const box=canvas.current!.getBoundingClientRect();const x=e.clientX-box.left,y=e.clientY-box.top;const target=room.entities.find(en=>{const p=screenEntities.current[en.id];return p&&Math.hypot(p.x-x,p.y-y)<27});if(target){handle.current?.approach(target);latest.current.onEntity(target)}else handle.current?.go({x:(x-camera.x)/camera.scale-7,y:(y-camera.y)/camera.scale-5})};canvas.current?.addEventListener('click',click);
- return()=>{stopped=true;cancelAnimationFrame(frame);window.removeEventListener('keydown',down);window.removeEventListener('keyup',up);window.removeEventListener('blur',blur);canvas.current?.removeEventListener('click',click);handle.current=null;latest.current.onPosition(position)};
- },[scene]);
- return <div ref={host} className="bc-world"><canvas ref={canvas} aria-label={tx(rooms[scene].title,locale)}/>{!ready&&<div className="bc-world-loading">{error?<div><p>{tx(['场景未能载入','Scene unavailable'],locale)}</p><button onClick={()=>location.reload()}>{tx(['重新载入','Retry'],locale)}</button></div>:tx(['正在抵达…','Arriving…'],locale)}</div>}<div className="bc-access-targets">{rooms[scene].entities.map(e=><button key={e.id} data-entity={e.id} onClick={()=>{handle.current?.approach(e);onEntity(e)}}>{e.person?tx(known.includes(e.person)?people[e.person].name:people[e.person].unknown,locale):tx(e.label,locale)}</button>)}</div></div>
+import {useEffect,useRef,useState} from 'react';
+import type {RpgPlayer} from '@rpgjs/server';
+import {people,tx,type Locale} from './content';
+import {rooms,world,type SceneId,type Entity} from './world';
+import {findPath,walkable,type Point} from './spatial/world';
+import {createRpgSpace,type Space} from './spatial/rpg-space';
+import {baseGraphic,frontGraphic,heroSheet,propGraphic,spatialSheets} from './spatial/sheets';
+import {footstep} from './audio';
+
+export type WorldHandle={move:(x:number,y:number)=>void;go:(point:Point)=>void;approach:(entity:Entity)=>void;position:()=>Point};
+type Resident={x:number;y:number;target:number;wait:number;travel:number;moving:boolean;facing:'down'|'left'|'right'|'up';event?:RpgPlayer};
+
+export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPosition,handle}:{journeyId:string;scene:SceneId;start:Point;locale:Locale;paused:boolean;known:string[];onNear:(entity:Entity|null)=>void;onPosition:(point:Point)=>void;handle:{current:WorldHandle|null}}){
+ const host=useRef<HTMLDivElement>(null),spaceRef=useRef<Space|null>(null),lastStep=useRef({...start});
+ const latest=useRef({scene,paused,onNear,onPosition,locale,known});latest.current={scene,paused,onNear,onPosition,locale,known};
+ const desired=useRef({journeyId,scene,start});desired.current={journeyId,scene,start};
+ const [ready,setReady]=useState(false),[error,setError]=useState(false);
+ const residents=useRef(Object.fromEntries(Object.values(rooms).map(room=>[room.id,Object.fromEntries(room.entities.filter(entity=>entity.person).map(entity=>[entity.id,{x:entity.at.x,y:entity.at.y,target:entity.at.x+22,wait:0,travel:0,moving:false,facing:'down'} as Resident]))])) as Record<SceneId,Record<string,Resident>>);
+
+ useEffect(()=>{
+  let stopped=false,nearest='',click:((event:MouseEvent)=>void)|undefined;
+  const mount=host.current?.querySelector<HTMLElement>('#rpg');if(!mount)return;
+  const personEvents=(roomId:SceneId)=>rooms[roomId].entities.filter(entity=>entity.person).map(entity=>({id:'person-'+entity.id,x:entity.at.x,y:entity.at.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic('npc-'+entity.person!);this.animationName.set('stand');residents.current[roomId][entity.id].event=this;this.syncChanges()}}}));
+  const mapEvents=(id:string)=>{const roomId=id as SceneId,room=rooms[roomId];return[
+   {id:baseGraphic(roomId),x:0,y:0,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(baseGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
+   ...room.props.map(prop=>({id:propGraphic(prop),x:prop.x,y:prop.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(propGraphic(prop));this.animationName.set('stand');this.syncChanges()}}})),
+   ...personEvents(roomId),
+   {id:frontGraphic(roomId),x:0,y:640,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(frontGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
+  ]};
+  const dynamicWalkable=(point:Point,id:string)=>walkable(world,id,point)&&!Object.values(residents.current[id as SceneId]||{}).some(resident=>point.x<resident.x+12&&point.x+world.actor.w>resident.x-12&&point.y<resident.y+4&&point.y+world.actor.h>resident.y-10);
+  const dynamicPath=(from:Point,to:Point,id:string)=>{const active={...world,scenes:{...world.scenes,[id]:{...world.scenes[id],obstacles:[...world.scenes[id].obstacles,...Object.values(residents.current[id as SceneId]||{}).map(resident=>({x:resident.x-12,y:resident.y-10,w:24,h:14}))]}}};return findPath(active,id,from,to)};
+  void Promise.resolve().then(()=>{if(stopped)return;
+  const runtimeHero=heroSheet;
+  const runtimeSheets=spatialSheets;
+  const space=createRpgSpace({world,host:mount,scene,position:start,speed:108,stride:36,sheet:runtimeHero,spritesheets:runtimeSheets,mapEvents,controlsBlocked:()=>latest.current.paused,walkable:dynamicWalkable,findPath:dynamicPath,
+   onDestination:()=>{},onError:()=>{if(!stopped)setError(true)},
+   onReady:runtime=>{if(stopped)return;spaceRef.current=runtime;runtime.pause(latest.current.paused);handle.current={move:(x,y)=>runtime.move(x,y),go:point=>runtime.walkTo(point),approach:entity=>runtime.walkTo(entity.approach),position:runtime.position};const target=desired.current;if(target.scene!==runtime.scene()){setReady(false);void runtime.restore(target.scene,target.start).then(()=>setReady(true)).catch(()=>setError(true))}else setReady(true)},
+   onPosition:point=>{const distance=Math.hypot(point.x-lastStep.current.x,point.y-lastStep.current.y);if(distance>.01)footstep(distance);lastStep.current={...point};latest.current.onPosition(point)},
+   onFrame:(dt,position,activeScene,isPaused)=>{if(stopped||activeScene!==latest.current.scene)return;const room=rooms[activeScene as SceneId],active=residents.current[activeScene as SceneId];
+    for(const entity of room.entities.filter(item=>item.person)){const resident=active[entity.id],dx=position.x+7-resident.x,dy=position.y+5-resident.y;resident.moving=false;
+     if(Math.hypot(dx,dy)<105||isPaused)resident.facing=Math.abs(dx)>Math.abs(dy)?dx<0?'left':'right':dy<0?'up':'down';
+     else if(entity.id==='analyst'){resident.wait-=dt;if(resident.wait<=0){const step=Math.sign(resident.target-resident.x)*Math.min(Math.abs(resident.target-resident.x),22*dt);resident.x+=step;resident.travel+=Math.abs(step);resident.moving=Math.abs(step)>.01;resident.facing=step<0?'left':'right';if(Math.abs(resident.target-resident.x)<.1){resident.wait=.7;resident.target=entity.at.x+(resident.target>entity.at.x?-22:22)}}}
+     if(resident.event){resident.event.direction.set(resident.facing as never);resident.event.animationName.set(resident.moving?['stride-0','stride-1','stride-2','stride-1'][Math.floor(resident.travel/7)%4]:'stand');void resident.event.teleport({x:resident.x,y:resident.y});resident.event.syncChanges()}
+    }
+    let closest:Entity|null=null,best=65;
+    for(const entity of room.entities){const resident=active[entity.id],point=resident?{x:resident.x,y:resident.y}:entity.at,dist=Math.hypot(position.x+7-point.x,position.y+5-point.y);if(dist<best){best=dist;closest=entity}const marker=space.project({x:point.x,y:point.y-(entity.kind==='person'?82:65)}),button=host.current?.querySelector<HTMLElement>(`[data-entity="${entity.id}"]`);if(button){button.style.left=marker.x+'px';button.style.top=marker.y+'px'}}
+    if(nearest!==(closest?.id||'')){nearest=closest?.id||'';latest.current.onNear(closest)}
+   }
+  });
+  click=(event:MouseEvent)=>{if(latest.current.paused)return;const rect=host.current!.getBoundingClientRect();space.walkTo(space.toWorld({x:event.clientX-rect.left,y:event.clientY-rect.top}))};
+  mount.addEventListener('click',click);
+  }).catch(()=>{if(!stopped)setError(true)});
+  return()=>{stopped=true;if(click)mount.removeEventListener('click',click);handle.current=null};
+ },[]);
+
+ useEffect(()=>{spaceRef.current?.pause(paused)},[paused]);
+ useEffect(()=>{const space=spaceRef.current;if(!space)return;setReady(false);setError(false);lastStep.current={...start};void space.restore(scene,start).then(()=>setReady(true)).catch(()=>setError(true))},[journeyId,scene]);
+
+ return <div ref={host} className="bc-world"><div id="rpg" aria-label={tx(rooms[scene].title,locale)}/>{!ready&&<div className="bc-world-loading">{error?<div><p>{tx(['场景未能载入','Scene unavailable'],locale)}</p><button onClick={()=>location.reload()}>{tx(['重新载入','Retry'],locale)}</button></div>:tx(['正在抵达…','Arriving…'],locale)}</div>}<div className="bc-access-targets">{rooms[scene].entities.map(entity=><button key={entity.id} data-entity={entity.id} data-person={Boolean(entity.person)} onClick={event=>{event.stopPropagation();handle.current?.approach(entity)}}>{entity.person?tx(known.includes(entity.person)?people[entity.person].name:people[entity.person].unknown,locale):tx(entity.label,locale)}</button>)}</div></div>;
 }

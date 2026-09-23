@@ -44,3 +44,6 @@ WorldView按房间选出主角、NPC、家具、墙地门纹理，先经Pixi Ass
 音频固定复用上限为step 3 / paper 2 / door 1，音乐单实例；不随脚步新增播放器。音乐失败重试不重复注册前后台监听。NPC仅在位置/方向/姿态变化时同步。相机与互动标记采用transform，保持原有project/toWorld映射；摇杆旋钮通过ref局部更新，pointermove不再使App重渲染。
 
 持续测试脚本 `_qa/movement-soak.mjs` 支持 `QA_URL / QA_CPU / QA_BLOCKS / QA_INPUT=touch / QA_WIDTH / QA_HEIGHT / QA_LABEL`。必须检查实际travel，避免把撞墙静止误算为行走测试；默认自然GC。iPhone AlterU约5秒卡顿的用户报告及修复证据见 `movement-performance-20260923.md`；桌面模拟不等于目标设备通过。
+
+### r8.3 探索与交谈UI
+地图接近目标保留44px可访问区域，去除常驻圆点，人物命中点由原头顶移到身体。主行动使用深青实底/金边和按压位移；原摇杆净空、文字右对齐不变。对话以实体+台词+页码+语言绑定阅读计时，900ms后开放开口/回应；等待420ms后呈现NPC台词，最后页自动进入选项，其他页保留继续。新等待、关闭与换对象取消旧计时。减少动效只关闭180ms淡入。

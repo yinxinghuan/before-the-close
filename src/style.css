@@ -26,7 +26,7 @@
 .bc-world #rpg canvas{width:auto;height:auto;display:block;touch-action:manipulation}
 .bc-world-loading{z-index:3}
 .bc-access-targets button{z-index:2}
-.bc-access-targets button::after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;transform:translate(-50%,-50%);background:#b48b50;box-shadow:0 0 0 2px #142b3580}
+.bc-access-targets button::after{content:none;position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;transform:translate(-50%,-50%);background:#b48b50;box-shadow:0 0 0 2px #142b3580}
 .bc-access-targets button[data-person="true"]::after{width:6px;height:6px}
 
 /* Keep the location caption above the revealed north doorway. */
@@ -34,3 +34,14 @@
 
 /* Moving interaction markers follow the camera without relaying out the page. */
 .bc-access-targets button{left:0;top:0}
+
+/* Exploration actions remain legible against bright floors and doors. */
+.bc-primary[data-active=true]{background:#244b4e;color:#fff3d6;border:2px solid #d4b374;box-shadow:0 3px 0 #102224,0 0 0 1px #102224,0 5px 12px #0006}
+.bc-primary[data-active=true] span{color:#dce9df}.bc-primary[data-active=true] strong{font-size:18px}.bc-primary[data-active=true] svg{color:#f1ce86}
+.bc-primary[data-active=true]:active{transform:translateY(2px);box-shadow:0 1px 0 #102224,0 0 0 1px #102224;filter:brightness(1.12)}
+.bc-introduce[data-awaiting=true]{visibility:hidden;pointer-events:none}
+.bc-turn{animation:bc-dialogue-enter 180ms ease-out}.bc-turn[data-phase=waiting]{border-left:0;border-right:2px solid #aab7b8;padding-left:0;padding-right:12px;text-align:right}
+.bc-turn:not([data-phase=waiting]) p{font-family:Georgia,"Songti SC",serif;font-size:17px;line-height:1.6}
+.bc-topics{animation:bc-dialogue-enter 180ms ease-out}.bc-greeting{color:#d4dacf}
+@keyframes bc-dialogue-enter{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.bc-turn,.bc-topics{animation:none}}

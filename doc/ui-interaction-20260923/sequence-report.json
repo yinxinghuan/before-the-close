@@ -1,0 +1,18 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "permanentDots": false,
+    "readingSequence": true,
+    "cancelledReply": true,
+    "reducedMotion": false
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "permanentDots": false,
+    "readingSequence": true,
+    "cancelledReply": true,
+    "reducedMotion": true
+  }
+]

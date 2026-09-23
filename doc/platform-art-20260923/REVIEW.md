@@ -29,3 +29,9 @@
 发布结果以doc/release.json为准。默认新素材位于public/art/platform-v1，构建对应dist/art/platform-v1。原始生成文件及prepared候选留在本地试验目录，公开源码保存请求/哈希、计划、运行图片和装配脚本；需要恢复原图时脚本下载现有响应URL，不重新生成。
 
 作者侧新接口制作已经跑通；没有据此宣称平台玩家动态生成房间、陌生agent独立复现或统计稳定率验收通过。动态能力还需虚空房先可玩、逐件替换、失败恢复与存档的专项验证。
+
+## r8.1线上补验与技能包
+
+线上冷加载暴露CanvasEngine异步图像挂载与转场销毁竞态，已按场景先加载纹理再切图。800ms图片延迟两尺寸复验及正式线上两尺寸门往返均零页面异常，见evidence/slow-network-r8.1.log、online-r8.1.log。
+
+空间技能增量包位于doc/skill-handoff/build-spatial-story-game-20260923-r8.1.zip。新版媒体SDK同步时发现原有submitImageMedia扩展不能丢失，已恢复并增加真实请求体模拟测试（无网络、无费用）。独立临时目录48项工具合同检查全部通过；这不是陌生agent独立做出同质量游戏的证明。

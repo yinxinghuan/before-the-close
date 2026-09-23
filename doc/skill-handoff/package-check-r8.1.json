@@ -24,43 +24,43 @@
       "id": "source-overwrite",
       "passed": true,
       "exit": 1,
-      "error": " and report must not overwrite the source')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Image output and report must not overwrite the source\n"
+      "error": " and report must not overwrite the source')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Image output and report must not overwrite the source\n"
     },
     {
       "id": "uneven-grid",
       "passed": true,
       "exit": 1,
-      "error": "l.height%4==0, 'Expected an evenly divided 3 by 4 sheet')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Expected an evenly divided 3 by 4 sheet\n"
+      "error": "l.height%4==0, 'Expected an evenly divided 3 by 4 sheet')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Expected an evenly divided 3 by 4 sheet\n"
     },
     {
       "id": "empty-frames",
       "passed": true,
       "exit": 1,
-      "error": "{row},{col}: empty or touching cell edge ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: empty or touching cell edge (None)\n"
+      "error": "{row},{col}: empty or touching cell edge ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: empty or touching cell edge (None)\n"
     },
     {
       "id": "anchor-outside-cell",
       "passed": true,
       "exit": 1,
-      "error": "nd 0<args.foot_y<fh, 'Foot anchor must be inside each cell')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Foot anchor must be inside each cell\n"
+      "error": "nd 0<args.foot_y<fh, 'Foot anchor must be inside each cell')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Foot anchor must be inside each cell\n"
     },
     {
       "id": "subject-does-not-fit",
       "passed": true,
       "exit": 1,
-      "error": " subject does not fit anchor ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: subject does not fit anchor ((35, 25, 61, 76))\n"
+      "error": " subject does not fit anchor ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: subject does not fit anchor ((35, 25, 61, 76))\n"
     },
     {
       "id": "failed-check-preserves-previous-output",
       "passed": true,
       "exit": 1,
-      "error": "{row},{col}: empty or touching cell edge ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: empty or touching cell edge (None)\n"
+      "error": "{row},{col}: empty or touching cell edge ({bbox})')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Frame 0,0: empty or touching cell edge (None)\n"
     },
     {
       "id": "report-overwrites-source",
       "passed": true,
       "exit": 1,
-      "error": " and report must not overwrite the source')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Image output and report must not overwrite the source\n"
+      "error": " and report must not overwrite the source')\n  File \"/var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/build-spatial-story-game/scripts/prepare-actor-cutout.py\", line 8, in require\n    raise ValueError(message)\nValueError: Image output and report must not overwrite the source\n"
     },
     {
       "id": "independent-room",
@@ -120,7 +120,7 @@
       "id": "independent-distance-motion",
       "passed": true,
       "exit": 0,
-      "output": "ustom strides and slow input have matching poses at matching distances (0.456917ms)\n✔ irregular frames consume corners continuously and do not mutate the caller route (0.138375ms)\n✔ arrival does not overshoot and zero budget never moves (0.074083ms)\n✔ wall contact cannot advance gait; wall sliding uses actual travel (0.063208ms)\n✔ one-unit sweep detects thin barriers despite a large frame delta (0.056875ms)\n✔ pose cycle is owned by the selector and invalid calibration fails explicitly (0.186959ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 6.218875\n",
+      "output": ")\n✔ custom strides and slow input have matching poses at matching distances (0.456ms)\n✔ irregular frames consume corners continuously and do not mutate the caller route (0.132917ms)\n✔ arrival does not overshoot and zero budget never moves (0.0735ms)\n✔ wall contact cannot advance gait; wall sliding uses actual travel (0.071084ms)\n✔ one-unit sweep detects thin barriers despite a large frame delta (0.059291ms)\n✔ pose cycle is owned by the selector and invalid calibration fails explicitly (0.192834ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 6.259208\n",
       "error": ""
     },
     {
@@ -150,7 +150,7 @@
     },
     {
       "id": "independent-self-contained-media-client",
-      "passed": false,
+      "passed": true,
       "tokens": [
         "submitImageMedia",
         "generateImageMedia",
@@ -163,6 +163,13 @@
         "session_id",
         "retryable"
       ]
+    },
+    {
+      "id": "independent-media-client-request-contract",
+      "passed": true,
+      "exit": 0,
+      "output": "Media SDK: stable IDs, GPT fields, text without refs, multi-image and legacy sizing pass (mock transport only).\n",
+      "error": "(node:99435) ExperimentalWarning: Transform Types is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
     },
     {
       "id": "independent-six-theme-catalog",
@@ -258,7 +265,7 @@
       "passed": true,
       "validExit": 0,
       "invalidExit": 1,
-      "error": "FAIL: /var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-1yu4zdee/invalid.tmx: missing objectgroup; RPGJS may join the room without creating player/event display nodes\n"
+      "error": "FAIL: /var/folders/_x/ww8zbmss7_13pf2zk142gsl80000gn/T/spatial-package-5dxbma8s/invalid.tmx: missing objectgroup; RPGJS may join the room without creating player/event display nodes\n"
     },
     {
       "id": "independent-current-rpgjs-adapter-contract",
@@ -326,5 +333,5 @@
       "error": ""
     }
   ],
-  "passed": false
+  "passed": true
 }

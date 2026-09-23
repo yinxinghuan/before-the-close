@@ -1,0 +1,2 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {routeBetween} from '../src/map-route';
+test('routes respect directed open passages, cycles and disconnected rooms',()=>{const e=[{from:'a',to:'b'},{from:'b',to:'a'},{from:'b',to:'c'}];assert.deepEqual(routeBetween('a','c',e),['a','b','c']);assert.deepEqual(routeBetween('a','a',e),['a']);assert.equal(routeBetween('c','a',e),null);assert.equal(routeBetween('a','d',e),null)});

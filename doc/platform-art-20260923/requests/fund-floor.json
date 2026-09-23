@@ -1,0 +1,49 @@
+{
+  "id": "fund-floor",
+  "request": {
+    "request_id": "67621d33-f046-4292-8d17-a2820e90ab6d",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Seamless orthographic TOP DOWN floor texture only, covering the whole square image edge to edge. A refined New York investment office floor of dark desaturated blue-gray wool carpet tiles with a few understated worn fibers, alternating tiny muted weave pixel clusters. Same scale everywhere, parallel straight tile seams, no vanishing point, no directional perspective. Genuine restrained crisp 16-bit pixel-art, 12 colors, no photoreal noise. Tile squares about 160 pixels wide in 1024 image. NO wall, NO furniture, NO door, NO object, NO border, NO lighting gradient, no cast shadows. Flat continuous floor material suitable for repeating across an RPG room.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:50:40.378Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_31fdb7b8d45a17fd79a5646bbf09f4ba",
+    "request_id": "67621d33-f046-4292-8d17-a2820e90ab6d",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142644111,
+    "updated_at": 1790142673925,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142673585-iibeza7uq6.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142673585-iibeza7uq6.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29707
+  },
+  "elapsedSeconds": 33.706,
+  "file": "doc/platform-art-20260923/raw/fund-floor.webp",
+  "sha256": "7f5ce9ad0dda543fa2f69c5473f608ad57e957b8dc41d259439e05f738476df0"
+}

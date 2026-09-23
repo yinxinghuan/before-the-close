@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-left-b-v2",
+  "request": {
+    "request_id": "42052c83-0d0d-4053-8fb4-e99196db60e2",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Draw one complete full-body sprite of this exact analyst in LEFT profile walking left. Keep identity, pale blue rolled sleeve shirt, charcoal trousers, short black hair, compact RPG proportions, elevated orthographic camera, chunky pixels, magenta background. Navy folder tucked under near anatomical LEFT arm, that hand stays beside hip. Opposite walking contact: near LEFT thigh angles BACK to screen RIGHT, knee bends and near LEFT heel is lifted at screen RIGHT. Far RIGHT leg crosses BEHIND near thigh and extends straight forward to screen LEFT, its heel planted. Free far RIGHT arm swings BACK to screen RIGHT; no hand reaches out in front of his belly. Left-facing face, no running. Whole coherent body; make front/back leg occlusion unmistakable with near leg lighter, far leg darker. One sprite, no labels or ground.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T07:28:53.947Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_1e538afaa49dfd8e850f37230bcbea4a",
+    "request_id": "42052c83-0d0d-4053-8fb4-e99196db60e2",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148534513,
+    "updated_at": 1790148568200,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148567896-jk2ti08hi8.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148567896-jk2ti08hi8.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33493
+  },
+  "elapsedSeconds": 34.559,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-left-b-v2.webp",
+  "sha256": "9f021c5b0fc8035b3040248ce1d9d62273db0ba53a03e4effac62cfed9644b87"
+}

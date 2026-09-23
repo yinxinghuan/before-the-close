@@ -1,0 +1,53 @@
+{
+  "id": "hero-left-b",
+  "request": {
+    "request_id": "354c6b0a-08ad-45c2-b931-e1e0cb09b812",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142957169-opvx0fidyie.webp"
+    ],
+    "prompt": "Produce ONE full-body alternate walking contact frame of EXACTLY the person in the reference. Preserve head/hair shape, head location, torso, clothes, colors, overhead camera, pixel block size and total figure height. Opaque solid magenta background. No new accessories, no shadow, no text. Keep character facing exactly the SAME direction. The opposite frame must genuinely exchange which leg is forward; do not merely redraw the same stride. Reference nearer trouser leg reaches toward screen LEFT and rear foot toward screen RIGHT. Now the NEAR leg must trail to SCREEN RIGHT with toe touching and heel lifted; FAR leg extends to SCREEN LEFT with heel planted, toe slightly lifted. Near arm extends LEFT, far arm moves RIGHT. Keep same side profile. Make near/far leg overlap visibly change rather than duplicating the V-shaped silhouette.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-left-a"
+  ],
+  "attemptedAt": "2026-09-23T05:57:14.330Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_55cf55d5f201f75de7eb5a0f6a86286e",
+    "request_id": "354c6b0a-08ad-45c2-b931-e1e0cb09b812",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143035161,
+    "updated_at": 1790143065951,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143065604-tq4ei4q3dvj.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143065604-tq4ei4q3dvj.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30668
+  },
+  "elapsedSeconds": 31.736,
+  "file": "doc/platform-art-20260923/raw/hero-left-b.webp",
+  "sha256": "e205fc6651fae98c9328145c2fe9fd7d0abcda9784fce0341a24d6ecc94be630"
+}

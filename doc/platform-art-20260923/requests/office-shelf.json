@@ -1,0 +1,49 @@
+{
+  "id": "office-shelf",
+  "request": {
+    "request_id": "0bde6aae-19d3-4eff-8f03-c8e6b4631082",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide office cabinet, dark blue painted steel, four small compartments containing neat routers, folded cables and two cardboard equipment boxes. One flat shipping label sheet on top, no readable text. Waist-high, not a tall bookcase.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:38:38.256Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_efc0fd3aef4aafdd1a6513872c42fa71",
+    "request_id": "0bde6aae-19d3-4eff-8f03-c8e6b4631082",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149119097,
+    "updated_at": 1790149154232,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149153653-oyr168b7vud.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149153653-oyr168b7vud.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 35024
+  },
+  "elapsedSeconds": 36.201,
+  "file": "doc/platform-art-20260923/raw/office-shelf.webp",
+  "sha256": "df861c8aa6d59efe8a0be3f1c17e7404c53545169c7751039070a1bc4aeabd67"
+}

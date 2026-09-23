@@ -1,0 +1,53 @@
+{
+  "id": "hero-left-a",
+  "request": {
+    "request_id": "cb071f34-9014-4fb1-835a-a7132627263d",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use ONLY the supplied newly generated character as identity/style reference. Preserve her chestnut bob, copper blazer, ivory shirt, navy trousers, brown loafers, compact THREE-head-high proportions, dark outline and chunky pixels. This is a complete new full-body sprite, not a partial limb edit. Orthographic overhead RPG camera, seen from above at50degrees. Exact same opaque flat magenta background, no shadow or text. One centered character only, no other person. Face exactly WEST toward left edge of image. Complete SIDE PROFILE with one visible eye, nose points LEFT, no 3/4 turn. WALKING contact A: nearer leg wearing navy trouser extends LEFT with brown shoe heel planted near leftmost foot position. Far leg trails to RIGHT with heel lifted. Near arm swings right, far arm left. Head and body upright, short natural walking stride, both shoes distinct.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T05:55:24.430Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_e9d3fa2e904b3b7ab9cb0657115a0836",
+    "request_id": "cb071f34-9014-4fb1-835a-a7132627263d",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142925511,
+    "updated_at": 1790142957436,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142957169-opvx0fidyie.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142957169-opvx0fidyie.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31812
+  },
+  "elapsedSeconds": 33.119,
+  "file": "doc/platform-art-20260923/raw/hero-left-a.webp",
+  "sha256": "223d53041c40e991d92d3ca6e9170836461c7939793228913c0014ea3b3a6228"
+}

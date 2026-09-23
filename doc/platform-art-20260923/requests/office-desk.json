@@ -1,0 +1,49 @@
+{
+  "id": "office-desk",
+  "request": {
+    "request_id": "df5cb831-ac16-4e53-8de7-2acb57d1d8d0",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One contemporary startup founder desk in pale oak, slim black steel frame, closed silver laptop, neatly stacked contract papers, ceramic coffee mug, small navy desk lamp. Compact low proportions, generous knee space. No chair.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:38:38.252Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_75cc23e0feded1b3bb70bf5e44f04b24",
+    "request_id": "df5cb831-ac16-4e53-8de7-2acb57d1d8d0",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149119073,
+    "updated_at": 1790149152698,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149152451-wae0atv3jah.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149152451-wae0atv3jah.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33504
+  },
+  "elapsedSeconds": 37.638,
+  "file": "doc/platform-art-20260923/raw/office-desk.webp",
+  "sha256": "a6b2bf6d41c9518131e8dc31175c2d71bdb2fecb490546e14cf7880a4e326acb"
+}

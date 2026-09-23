@@ -1,0 +1,146 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "direction": "up",
+    "distance": 121,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "direction": "down",
+    "distance": 119,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "direction": "left",
+    "distance": 117,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "direction": "right",
+    "distance": 121,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "direction": "up",
+    "distance": 121,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "direction": "down",
+    "distance": 121,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "direction": "left",
+    "distance": 121,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "direction": "right",
+    "distance": 121,
+    "transitions": [
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1",
+      "stride-2",
+      "stride-1",
+      "stride-0",
+      "stride-1"
+    ]
+  }
+]

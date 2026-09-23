@@ -1,0 +1,687 @@
+{
+  "status": "candidate",
+  "sourceManifest": "manifest.json",
+  "dimensions": {
+    "fund-furniture-0": [
+      894,
+      603
+    ],
+    "fund-furniture-1": [
+      866,
+      425
+    ],
+    "fund-furniture-2": [
+      785,
+      401
+    ],
+    "fund-furniture-3": [
+      549,
+      680
+    ],
+    "office-furniture-0": [
+      819,
+      626
+    ],
+    "office-furniture-1": [
+      865,
+      533
+    ],
+    "office-furniture-2": [
+      895,
+      517
+    ],
+    "office-furniture-3": [
+      550,
+      752
+    ],
+    "records-furniture-0": [
+      880,
+      553
+    ],
+    "records-furniture-1": [
+      769,
+      459
+    ],
+    "records-furniture-2": [
+      714,
+      476
+    ],
+    "records-furniture-3": [
+      583,
+      624
+    ],
+    "client-furniture-0": [
+      889,
+      660
+    ],
+    "client-furniture-1": [
+      736,
+      436
+    ],
+    "client-furniture-2": [
+      588,
+      527
+    ],
+    "client-furniture-3": [
+      336,
+      695
+    ],
+    "fund-furniture-4": [
+      442,
+      656
+    ],
+    "fund-furniture-5": [
+      442,
+      656
+    ],
+    "office-furniture-4": [
+      442,
+      656
+    ],
+    "office-furniture-5": [
+      442,
+      656
+    ],
+    "records-furniture-4": [
+      442,
+      656
+    ],
+    "records-furniture-5": [
+      442,
+      656
+    ],
+    "client-furniture-4": [
+      442,
+      656
+    ],
+    "client-furniture-5": [
+      442,
+      656
+    ]
+  },
+  "operations": [
+    "same-run north/side wall strips reused across rooms; uniform scale then repeat/crop",
+    "east side strip whole mirror",
+    "side walls cover north corners; south wall covers side corners",
+    "door leaves uniform width48; jamb endpoints cropped from same-run wall",
+    "floors independently generated per function, repeated at256 world units"
+  ],
+  "coverage": [
+    "fund-base",
+    "fund-north",
+    "fund-side",
+    "fund-front",
+    "fund-door-fund-office-near",
+    "fund-door-fund-office-leaf",
+    "office-base",
+    "office-north",
+    "office-side",
+    "office-front",
+    "office-door-office-fund-near",
+    "office-door-office-fund-leaf",
+    "office-door-office-records-near",
+    "office-door-office-records-leaf",
+    "records-base",
+    "records-north",
+    "records-side",
+    "records-front",
+    "records-door-records-office-near",
+    "records-door-records-office-leaf",
+    "client-base",
+    "client-north",
+    "client-side",
+    "client-front",
+    "fund-furniture-0",
+    "fund-furniture-1",
+    "fund-furniture-2",
+    "fund-furniture-3",
+    "office-furniture-0",
+    "office-furniture-1",
+    "office-furniture-2",
+    "office-furniture-3",
+    "records-furniture-0",
+    "records-furniture-1",
+    "records-furniture-2",
+    "records-furniture-3",
+    "client-furniture-0",
+    "client-furniture-1",
+    "client-furniture-2",
+    "client-furniture-3",
+    "hero",
+    "npc-partner",
+    "npc-founder",
+    "npc-finance",
+    "npc-client",
+    "npc-analyst",
+    "fund-furniture-4",
+    "fund-furniture-5",
+    "office-furniture-4",
+    "office-furniture-5",
+    "records-furniture-4",
+    "records-furniture-5",
+    "client-furniture-4",
+    "client-furniture-5",
+    "portrait-0",
+    "portrait-0-thumb",
+    "portrait-1",
+    "portrait-1-thumb",
+    "portrait-2",
+    "portrait-2-thumb",
+    "portrait-3",
+    "portrait-3-thumb",
+    "portrait-4",
+    "portrait-4-thumb",
+    "poster"
+  ],
+  "derivedSources": {
+    "fund-base": [
+      "fund-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "fund-north": [
+      "fund-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "fund-side": [
+      "fund-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "fund-front": [
+      "fund-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "fund-door-fund-office-near": [
+      "fund-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "fund-door-fund-office-leaf": [
+      "fund-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-base": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-north": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-side": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-front": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-door-office-fund-near": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-door-office-fund-leaf": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-door-office-records-near": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "office-door-office-records-leaf": [
+      "office-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "records-base": [
+      "records-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "records-north": [
+      "records-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "records-side": [
+      "records-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "records-front": [
+      "records-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "records-door-records-office-near": [
+      "records-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "records-door-records-office-leaf": [
+      "records-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "client-base": [
+      "client-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "client-north": [
+      "client-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "client-side": [
+      "client-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "client-front": [
+      "client-floor",
+      "north-wall",
+      "side-wall",
+      "door-white-v3",
+      "office-window"
+    ],
+    "fund-furniture-0": [
+      "fund-desk"
+    ],
+    "fund-furniture-1": [
+      "fund-meeting"
+    ],
+    "fund-furniture-2": [
+      "fund-cabinet"
+    ],
+    "fund-furniture-3": [
+      "fund-chair"
+    ],
+    "office-furniture-0": [
+      "office-desk"
+    ],
+    "office-furniture-1": [
+      "office-forecast"
+    ],
+    "office-furniture-2": [
+      "office-shelf-v2"
+    ],
+    "office-furniture-3": [
+      "office-plant"
+    ],
+    "records-furniture-0": [
+      "records-desk"
+    ],
+    "records-furniture-1": [
+      "records-cabinet-v2"
+    ],
+    "records-furniture-2": [
+      "records-table"
+    ],
+    "records-furniture-3": [
+      "records-cart"
+    ],
+    "client-furniture-0": [
+      "client-desk"
+    ],
+    "client-furniture-1": [
+      "client-workbench"
+    ],
+    "client-furniture-2": [
+      "client-cabinet"
+    ],
+    "client-furniture-3": [
+      "client-cart"
+    ],
+    "fund-furniture-4": [
+      "office-chair"
+    ],
+    "fund-furniture-5": [
+      "office-chair"
+    ],
+    "office-furniture-4": [
+      "office-chair"
+    ],
+    "office-furniture-5": [
+      "office-chair"
+    ],
+    "records-furniture-4": [
+      "office-chair"
+    ],
+    "records-furniture-5": [
+      "office-chair"
+    ],
+    "client-furniture-4": [
+      "office-chair"
+    ],
+    "client-furniture-5": [
+      "office-chair"
+    ],
+    "portrait-0": [
+      "portrait-0-v2"
+    ],
+    "portrait-1": [
+      "portrait-1"
+    ],
+    "portrait-2": [
+      "portrait-2"
+    ],
+    "portrait-3": [
+      "portrait-3"
+    ],
+    "portrait-4": [
+      "portrait-4"
+    ],
+    "poster": [
+      "poster-release"
+    ]
+  },
+  "heroFrames": [
+    {
+      "direction": "down",
+      "column": 0,
+      "source": "hero-down-a",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "down",
+      "column": 1,
+      "source": "hero-down-idle-v3",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "down",
+      "column": 2,
+      "source": "hero-down-b",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "left",
+      "column": 0,
+      "source": "hero-left-a",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "left",
+      "column": 1,
+      "source": "hero-left-idle",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "left",
+      "column": 2,
+      "source": "hero-left-b",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "right",
+      "column": 0,
+      "source": "hero-left-a",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243",
+        "whole-frame mirror"
+      ]
+    },
+    {
+      "direction": "right",
+      "column": 1,
+      "source": "hero-left-idle",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243",
+        "whole-frame mirror"
+      ]
+    },
+    {
+      "direction": "right",
+      "column": 2,
+      "source": "hero-left-b",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243",
+        "whole-frame mirror"
+      ]
+    },
+    {
+      "direction": "up",
+      "column": 0,
+      "source": "hero-up-a",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "up",
+      "column": 1,
+      "source": "hero-up-idle",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    },
+    {
+      "direction": "up",
+      "column": 2,
+      "source": "hero-up-b",
+      "operations": [
+        "uniform height216",
+        "head-centered",
+        "sole baseline243"
+      ]
+    }
+  ],
+  "partnerAnimation": "stationary NPC; directional stands, no patrol gait; right whole-frame mirror",
+  "founderAnimation": "stationary NPC; directional stands, no patrol gait; right whole-frame mirror",
+  "financeAnimation": "stationary NPC; directional stands, no patrol gait; right whole-frame mirror",
+  "clientAnimation": "stationary NPC; directional stands, no patrol gait; right whole-frame mirror",
+  "analystFrames": [
+    {
+      "direction": "down",
+      "column": 0,
+      "source": "npc-analyst-down-a",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "down",
+      "column": 1,
+      "source": "npc-analyst-down",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "down",
+      "column": 2,
+      "source": "npc-analyst-down-b",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "left",
+      "column": 0,
+      "source": "npc-analyst-left-a",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "left",
+      "column": 1,
+      "source": "npc-analyst-left-idle-v2",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "left",
+      "column": 2,
+      "source": "npc-analyst-left-b-v2",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "right",
+      "column": 0,
+      "source": "npc-analyst-right-a",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "right",
+      "column": 1,
+      "source": "npc-analyst-right-idle",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "right",
+      "column": 2,
+      "source": "npc-analyst-right-b",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "up",
+      "column": 0,
+      "source": "npc-analyst-up-a",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "up",
+      "column": 1,
+      "source": "npc-analyst-up-idle",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    },
+    {
+      "direction": "up",
+      "column": 2,
+      "source": "npc-analyst-up-b",
+      "operations": [
+        "uniform height108",
+        "head-centered",
+        "sole baseline122"
+      ]
+    }
+  ]
+}

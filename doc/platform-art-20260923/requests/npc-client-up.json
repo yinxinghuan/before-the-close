@@ -1,0 +1,53 @@
+{
+  "id": "npc-client-up",
+  "request": {
+    "request_id": "100b4691-6257-45b2-960a-53dd9ddb06cc",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790149491867-2h37wyazepc.webp"
+    ],
+    "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face NORTH away from viewer, back of head and clothing only, no face visible. Neutral stand, both feet together. Rear shoe heels visible, not front toes.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-client-down"
+  ],
+  "attemptedAt": "2026-09-23T07:49:21.621Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_1a27d1806b6d2b8ff4ad2f1e2c25a3c3",
+    "request_id": "100b4691-6257-45b2-960a-53dd9ddb06cc",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149762397,
+    "updated_at": 1790149795907,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149795465-nybz1dr3p3e.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149795465-nybz1dr3p3e.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33381
+  },
+  "elapsedSeconds": 35.383,
+  "file": "doc/platform-art-20260923/raw/npc-client-up.webp",
+  "sha256": "2988a1621c76b60896cc9c73b66012baef1d67fca3278caff3aca99c5ab1d98a"
+}

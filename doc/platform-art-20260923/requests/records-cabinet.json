@@ -1,0 +1,49 @@
+{
+  "id": "records-cabinet",
+  "request": {
+    "request_id": "1aaaa88b-0717-49ed-897b-baf85a787975",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide dark charcoal archive cabinet, three drawers across, slim brass pulls. Closed gray document storage boxes stacked no more than two high on top, a blue folder beside them. Low waist-high cabinet, all top edges axis aligned.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:40:25.576Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_eebb6122d54f85effdad276daa1a3660",
+    "request_id": "1aaaa88b-0717-49ed-897b-baf85a787975",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149226740,
+    "updated_at": 1790149259129,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149258819-zcs85jn4p1b.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149258819-zcs85jn4p1b.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32254
+  },
+  "elapsedSeconds": 37.401,
+  "file": "doc/platform-art-20260923/raw/records-cabinet.webp",
+  "sha256": "5fe2be1d3eb27a83f8c1dc100f27a02d02fc87ee80c22846ebd6c755bd660aaa"
+}

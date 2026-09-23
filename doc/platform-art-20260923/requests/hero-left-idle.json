@@ -1,0 +1,53 @@
+{
+  "id": "hero-left-idle",
+  "request": {
+    "request_id": "5e3c229f-cb6c-4a25-8858-bb0d7079972d",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142957169-opvx0fidyie.webp"
+    ],
+    "prompt": "Preserve the exact character identity, proportions, hair, clothes, angle, full-body scale, chunky pixel style and palette of the supplied newly generated reference. ONE full-body neutral standing pose, both arms down, feet side by side under hips with soles on same horizontal baseline. No stride, no leg hidden behind other. Opaque uniform pure magenta background, no shadow, no words. Facing exactly screen LEFT in side profile, nose points left. Bring both shoes directly below hips, heel/toe profile facing left, do not turn front.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-left-a"
+  ],
+  "attemptedAt": "2026-09-23T06:00:00.171Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_05aa7948d2c28339397014932516f13d",
+    "request_id": "5e3c229f-cb6c-4a25-8858-bb0d7079972d",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143201005,
+    "updated_at": 1790143231705,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143231386-f70tay4rjrh.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143231386-f70tay4rjrh.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30528
+  },
+  "elapsedSeconds": 31.802,
+  "file": "doc/platform-art-20260923/raw/hero-left-idle.webp",
+  "sha256": "8bf4092007be32c3df02409c4537164c2c32df3999901d8b7061b0674861eb0f"
+}

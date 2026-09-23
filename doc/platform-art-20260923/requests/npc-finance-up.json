@@ -1,0 +1,53 @@
+{
+  "id": "npc-finance-up",
+  "request": {
+    "request_id": "8d0c966b-b972-44af-ab63-2df00c8bebe1",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790149494746-voehmq5mr4o.webp"
+    ],
+    "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face NORTH away from viewer, back of head and clothing only, no face visible. Neutral stand, both feet together. Rear shoe heels visible, not front toes.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-finance-down"
+  ],
+  "attemptedAt": "2026-09-23T07:49:21.621Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_93ca80074d6ae8c29d67a2d7c06cd304",
+    "request_id": "8d0c966b-b972-44af-ab63-2df00c8bebe1",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149762332,
+    "updated_at": 1790149796636,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149796171-doqpxzdga8.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149796171-doqpxzdga8.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34180
+  },
+  "elapsedSeconds": 35.329,
+  "file": "doc/platform-art-20260923/raw/npc-finance-up.webp",
+  "sha256": "dff287386b2ae9758e5bcdab570f48f75d5a3b5385aa0aeeef3e212a090f450d"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "office-plant",
+  "request": {
+    "request_id": "1b49bc93-82f9-424b-b1b9-0d8f17fe20ff",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One moderate size potted fiddle-leaf indoor plant in a plain terracotta cylinder. Elevated orthographic overhead view, leaves in compact silhouette, simple pot, no furniture or floor.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:38:38.256Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_c5de82bde251b2c78cd1b98d220cd626",
+    "request_id": "1b49bc93-82f9-424b-b1b9-0d8f17fe20ff",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149118767,
+    "updated_at": 1790149151500,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149151199-p6yl6ffwsg.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149151199-p6yl6ffwsg.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32272
+  },
+  "elapsedSeconds": 33.515,
+  "file": "doc/platform-art-20260923/raw/office-plant.webp",
+  "sha256": "9ff819bdda48757e181bfba618b0970ae4f105ec5ce37bc1875c37e7a4e7984d"
+}

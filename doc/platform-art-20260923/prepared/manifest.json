@@ -1,0 +1,1768 @@
+{
+  "client-cabinet": {
+    "size": [
+      588,
+      527
+    ],
+    "source_sha256": "961065dc709c8ffe1aa8597cb37b413913c67b8d78b0cf2e25144af0b7cc228d",
+    "source_bounds": [
+      218,
+      236,
+      806,
+      763
+    ],
+    "ratio": 0.896,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "client-cart": {
+    "size": [
+      336,
+      695
+    ],
+    "source_sha256": "9ea2d0bd4d9c5edfe872cb01716fa01909dec75f8dec503c78bf9e5d3a63f199",
+    "source_bounds": [
+      344,
+      166,
+      680,
+      861
+    ],
+    "ratio": 2.068,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "client-desk": {
+    "size": [
+      889,
+      660
+    ],
+    "source_sha256": "5e6d635e014a5c47424bc719e16c0e1b06631cd9e71fc971ca80c900881ddfe9",
+    "source_bounds": [
+      69,
+      168,
+      958,
+      828
+    ],
+    "ratio": 0.742,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "client-floor": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "673feb180fe2ca8994da12868ce76ddfe9899c9a7c48e37517e6bd6cfd23455e",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "text",
+    "parents": [],
+    "operations": [],
+    "status": "candidate"
+  },
+  "client-workbench": {
+    "size": [
+      736,
+      436
+    ],
+    "source_sha256": "2f7ad39a24711f271926909513d8a1e95c280ecf272056ec25d84d64e6b4a2e0",
+    "source_bounds": [
+      144,
+      305,
+      880,
+      741
+    ],
+    "ratio": 0.592,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "door-white-v2": {
+    "size": [
+      552,
+      550
+    ],
+    "source_sha256": "b0f82bdbb9db2ec63eddcdb9980311f008d0ffc4f39bd1dfe4df47dded333953",
+    "source_bounds": [
+      237,
+      236,
+      789,
+      786
+    ],
+    "ratio": 0.996,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "door-white-v3": {
+    "size": [
+      375,
+      548
+    ],
+    "source_sha256": "326bb768017b9cbee848b86d103931949c5c96634ff318968133894dca8d27ff",
+    "source_bounds": [
+      329,
+      224,
+      704,
+      772
+    ],
+    "ratio": 1.461,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "door-white": {
+    "size": [
+      421,
+      717
+    ],
+    "source_sha256": "dd85b92d18696f1fac753b77c946c5349a02b9ad1d487e90cd258499b8ea376c",
+    "source_bounds": [
+      307,
+      139,
+      728,
+      856
+    ],
+    "ratio": 1.703,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "fund-cabinet": {
+    "size": [
+      785,
+      401
+    ],
+    "source_sha256": "2ed2033fcd34eb214b418e9fd380a584fe0161c42de575cf45a408c0231ac935",
+    "source_bounds": [
+      119,
+      314,
+      904,
+      715
+    ],
+    "ratio": 0.511,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "fund-chair": {
+    "size": [
+      549,
+      680
+    ],
+    "source_sha256": "483091edbeb50c52e2cecbad9aecbe2b6d986854d9a365593e92d4affad152c5",
+    "source_bounds": [
+      238,
+      187,
+      787,
+      867
+    ],
+    "ratio": 1.239,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "fund-desk": {
+    "size": [
+      894,
+      603
+    ],
+    "source_sha256": "63beb6ae3e7d17298de9202d8a743bdfa0e044d3afd571ce430d574b188698e4",
+    "source_bounds": [
+      65,
+      209,
+      959,
+      812
+    ],
+    "ratio": 0.674,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "fund-floor": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "7f5ce9ad0dda543fa2f69c5473f608ad57e957b8dc41d259439e05f738476df0",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "text",
+    "parents": [],
+    "operations": [],
+    "status": "candidate"
+  },
+  "fund-meeting": {
+    "size": [
+      866,
+      425
+    ],
+    "source_sha256": "98ef19e6d46abc59d2d6a555975cd4f4fc8c6cbaf6eb8a02cb3c80d8fb6607d2",
+    "source_bounds": [
+      79,
+      299,
+      945,
+      724
+    ],
+    "ratio": 0.491,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-down-a": {
+    "size": [
+      247,
+      622
+    ],
+    "source_sha256": "509d99df1e3cad9699be0cdf05d857d55f7fabb3127dc6e4f1c5bf70621ef28b",
+    "source_bounds": [
+      383,
+      206,
+      630,
+      828
+    ],
+    "ratio": 2.518,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-down-b": {
+    "size": [
+      253,
+      622
+    ],
+    "source_sha256": "24f4a02611f12fddde08cd0ed6b3c206b27ac02e5a44f86d9ab3ee29d3f43353",
+    "source_bounds": [
+      382,
+      205,
+      635,
+      827
+    ],
+    "ratio": 2.458,
+    "mode": "edit",
+    "parents": [
+      "hero-down-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-down-idle-v2": {
+    "size": [
+      400,
+      663
+    ],
+    "source_sha256": "572172a58afa39768744dbc40c6b7673032d1e500f192e8c5dccee0c882436ac",
+    "source_bounds": [
+      305,
+      185,
+      705,
+      848
+    ],
+    "ratio": 1.657,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-down-idle-v3": {
+    "size": [
+      267,
+      631
+    ],
+    "source_sha256": "f77c217dbee6625f57fec3927ceb643b1812855018e3b8bba73e66e0203139b6",
+    "source_bounds": [
+      377,
+      190,
+      644,
+      821
+    ],
+    "ratio": 2.363,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-down-idle": {
+    "size": [
+      230,
+      585
+    ],
+    "source_sha256": "e45bff32099cc1abb206a8f25dd8447c8a5284bc825a57fd73ee56d10f756efc",
+    "source_bounds": [
+      389,
+      209,
+      619,
+      794
+    ],
+    "ratio": 2.543,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-left-a": {
+    "size": [
+      276,
+      603
+    ],
+    "source_sha256": "223d53041c40e991d92d3ca6e9170836461c7939793228913c0014ea3b3a6228",
+    "source_bounds": [
+      369,
+      203,
+      645,
+      806
+    ],
+    "ratio": 2.185,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-left-b": {
+    "size": [
+      288,
+      607
+    ],
+    "source_sha256": "e205fc6651fae98c9328145c2fe9fd7d0abcda9784fce0341a24d6ecc94be630",
+    "source_bounds": [
+      349,
+      203,
+      637,
+      810
+    ],
+    "ratio": 2.108,
+    "mode": "edit",
+    "parents": [
+      "hero-left-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-left-idle": {
+    "size": [
+      227,
+      605
+    ],
+    "source_sha256": "8bf4092007be32c3df02409c4537164c2c32df3999901d8b7061b0674861eb0f",
+    "source_bounds": [
+      390,
+      203,
+      617,
+      808
+    ],
+    "ratio": 2.665,
+    "mode": "edit",
+    "parents": [
+      "hero-left-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-a-v2": {
+    "size": [
+      263,
+      632
+    ],
+    "source_sha256": "f9bb9ce120a1594a0f25021a4a808df90cf6399aac446ecadf8f4cdd1c0588bc",
+    "source_bounds": [
+      363,
+      189,
+      626,
+      821
+    ],
+    "ratio": 2.403,
+    "mode": "edit",
+    "parents": [
+      "hero-up-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-a-v3": {
+    "size": [
+      282,
+      649
+    ],
+    "source_sha256": "4061ada657b90ebe67bfbde8b25894f8583b19615f0c8c5e70ffca8983c3358a",
+    "source_bounds": [
+      363,
+      184,
+      645,
+      833
+    ],
+    "ratio": 2.301,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-a": {
+    "size": [
+      267,
+      630
+    ],
+    "source_sha256": "fbb22f6221505c3e77c9ecc772773b10797593bdb6f7d83d24064aa8696fbfed",
+    "source_bounds": [
+      379,
+      189,
+      646,
+      819
+    ],
+    "ratio": 2.36,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-b-v2": {
+    "size": [
+      261,
+      640
+    ],
+    "source_sha256": "215d5aa15ddb0b485458e4cc676df1932d69b4eb482157a9750ed4e5c4aea3f0",
+    "source_bounds": [
+      386,
+      189,
+      647,
+      829
+    ],
+    "ratio": 2.452,
+    "mode": "edit",
+    "parents": [
+      "hero-up-b"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-b-v3": {
+    "size": [
+      252,
+      634
+    ],
+    "source_sha256": "62378b4366459486b58623922580a7cc7255a846fce163b2769bc468efdeab0c",
+    "source_bounds": [
+      377,
+      190,
+      629,
+      824
+    ],
+    "ratio": 2.516,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-b-v4": {
+    "size": [
+      283,
+      662
+    ],
+    "source_sha256": "b4dbd6c0a60089fce6e04403d5dc5dc4d862f18ac2648155f5051fc6ae976d01",
+    "source_bounds": [
+      363,
+      184,
+      646,
+      846
+    ],
+    "ratio": 2.339,
+    "mode": "edit",
+    "parents": [
+      "hero-up-a-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-b": {
+    "size": [
+      260,
+      629
+    ],
+    "source_sha256": "59f283c5eae7fae9ca6da5c62cab355165a608d1600fe86db0e7001b0dfc516b",
+    "source_bounds": [
+      371,
+      189,
+      631,
+      818
+    ],
+    "ratio": 2.419,
+    "mode": "edit",
+    "parents": [
+      "hero-up-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-idle-v2": {
+    "size": [
+      278,
+      625
+    ],
+    "source_sha256": "75f0622fce4815e69d1c57c804324e35f3e5c20f16a7c2d752f1c162695b0d30",
+    "source_bounds": [
+      370,
+      189,
+      648,
+      814
+    ],
+    "ratio": 2.248,
+    "mode": "edit",
+    "parents": [
+      "hero-up-idle"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-idle-v3": {
+    "size": [
+      260,
+      626
+    ],
+    "source_sha256": "a5f7cc00e2d6b51ee2c553f651f9439261584cee1301d5afb953d291d0450025",
+    "source_bounds": [
+      378,
+      190,
+      638,
+      816
+    ],
+    "ratio": 2.408,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "hero-up-idle": {
+    "size": [
+      277,
+      625
+    ],
+    "source_sha256": "cb879947f340ebcb35c82dea374f8fe0086ddfc7d8a12f4473455349d6b6a80f",
+    "source_bounds": [
+      370,
+      189,
+      647,
+      814
+    ],
+    "ratio": 2.256,
+    "mode": "edit",
+    "parents": [
+      "hero-up-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "north-wall": {
+    "size": [
+      1518,
+      368
+    ],
+    "source_sha256": "8ca32e0b2531057a8678315d0843fde1c425c8dbb316183e4586774ef5daa914",
+    "source_bounds": [
+      9,
+      309,
+      1527,
+      677
+    ],
+    "ratio": 0.242,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-down-a": {
+    "size": [
+      255,
+      667
+    ],
+    "source_sha256": "eccfec1a7959403b5abcc65e26ff3dfd0018cf642e0d9b8d47ab42ae3d192ce9",
+    "source_bounds": [
+      378,
+      192,
+      633,
+      859
+    ],
+    "ratio": 2.616,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-down-b": {
+    "size": [
+      265,
+      661
+    ],
+    "source_sha256": "f36f19dde3110cec99542fdfcb5c3898a18484e3906f9da53364ccb9ae7db554",
+    "source_bounds": [
+      370,
+      191,
+      635,
+      852
+    ],
+    "ratio": 2.494,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-down": {
+    "size": [
+      256,
+      628
+    ],
+    "source_sha256": "33bbeb13e0e74fe91833fafac08bb94a3b28abe830e8c085e493d8bc0375d310",
+    "source_bounds": [
+      378,
+      192,
+      634,
+      820
+    ],
+    "ratio": 2.453,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-left-a": {
+    "size": [
+      286,
+      629
+    ],
+    "source_sha256": "55fcf9ccc61c4721ca2e894437cac02a2cc388eccbfc95a9c25cbf6f4833a862",
+    "source_bounds": [
+      351,
+      188,
+      637,
+      817
+    ],
+    "ratio": 2.199,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-left-b-v2": {
+    "size": [
+      283,
+      621
+    ],
+    "source_sha256": "9f021c5b0fc8035b3040248ce1d9d62273db0ba53a03e4effac62cfed9644b87",
+    "source_bounds": [
+      348,
+      194,
+      631,
+      815
+    ],
+    "ratio": 2.194,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-left-b": {
+    "size": [
+      294,
+      633
+    ],
+    "source_sha256": "98398ff15404b95814bb745cfb42b909917d0483ac62b827df104cb450c58e6a",
+    "source_bounds": [
+      351,
+      188,
+      645,
+      821
+    ],
+    "ratio": 2.153,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-left-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-left-idle-v2": {
+    "size": [
+      222,
+      628
+    ],
+    "source_sha256": "34a81d338391c1d5df6b6ba972d4777d447c707b9a4b025d847ac713d833ffa2",
+    "source_bounds": [
+      385,
+      187,
+      607,
+      815
+    ],
+    "ratio": 2.829,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-left-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-left-idle": {
+    "size": [
+      234,
+      685
+    ],
+    "source_sha256": "ff8a27f2b2279279c1aaf53d04fa8d2ee85169a95c8379b5d3baf44a146a5e93",
+    "source_bounds": [
+      370,
+      168,
+      604,
+      853
+    ],
+    "ratio": 2.927,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-left-a"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-right-a": {
+    "size": [
+      241,
+      612
+    ],
+    "source_sha256": "3f1c5aeb9146290da4311e25a8fcac5fc1318742ca53ac6782b782714737f2d7",
+    "source_bounds": [
+      384,
+      197,
+      625,
+      809
+    ],
+    "ratio": 2.539,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-right-b": {
+    "size": [
+      255,
+      626
+    ],
+    "source_sha256": "089695fa15cd1fd5117fe6f8ad3b0a3f11466311394f4602d97831b901460078",
+    "source_bounds": [
+      361,
+      191,
+      616,
+      817
+    ],
+    "ratio": 2.455,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-right-idle": {
+    "size": [
+      207,
+      625
+    ],
+    "source_sha256": "cf068779b7b35602d5aa76dd5d7b609567f024612fa4b841bd312920611fb1e9",
+    "source_bounds": [
+      399,
+      191,
+      606,
+      816
+    ],
+    "ratio": 3.019,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-up-a": {
+    "size": [
+      252,
+      636
+    ],
+    "source_sha256": "efd548693a3e239d1fd51eeb311a1420b26196b3638fd37691aacd20a73e7888",
+    "source_bounds": [
+      375,
+      192,
+      627,
+      828
+    ],
+    "ratio": 2.524,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-up-b": {
+    "size": [
+      260,
+      634
+    ],
+    "source_sha256": "371413f33d6f9ea35d789baf69c0cdd58af2a7f462616202fd418afb5b8420b5",
+    "source_bounds": [
+      374,
+      192,
+      634,
+      826
+    ],
+    "ratio": 2.438,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-analyst-up-idle": {
+    "size": [
+      251,
+      624
+    ],
+    "source_sha256": "0266c89e90630ba6e97dd21af73d46097f979aaf66a6af1ed262f718a6a42feb",
+    "source_bounds": [
+      378,
+      193,
+      629,
+      817
+    ],
+    "ratio": 2.486,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-client-down": {
+    "size": [
+      266,
+      661
+    ],
+    "source_sha256": "7d7afe5bbedac65e2a262611b30d5fc5ca4955728c38c1c1f1544fde5479f2a7",
+    "source_bounds": [
+      373,
+      192,
+      639,
+      853
+    ],
+    "ratio": 2.485,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-client-left": {
+    "size": [
+      219,
+      656
+    ],
+    "source_sha256": "159bc0dc27509a7fba4df7bba71bb9b6a60681a96bedea67a21e40f5d598d111",
+    "source_bounds": [
+      402,
+      193,
+      621,
+      849
+    ],
+    "ratio": 2.995,
+    "mode": "edit",
+    "parents": [
+      "npc-client-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-client-up": {
+    "size": [
+      260,
+      660
+    ],
+    "source_sha256": "2988a1621c76b60896cc9c73b66012baef1d67fca3278caff3aca99c5ab1d98a",
+    "source_bounds": [
+      373,
+      191,
+      633,
+      851
+    ],
+    "ratio": 2.538,
+    "mode": "edit",
+    "parents": [
+      "npc-client-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-finance-down": {
+    "size": [
+      246,
+      667
+    ],
+    "source_sha256": "dad2023d309cf9bb88412b7bcc80667effbdff090277defe7de6c5e417425bf3",
+    "source_bounds": [
+      378,
+      189,
+      624,
+      856
+    ],
+    "ratio": 2.711,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-finance-left": {
+    "size": [
+      216,
+      663
+    ],
+    "source_sha256": "0624e90b9eb49c70e457b21a13e63ad325feb40f551234f3d3de8676761dff62",
+    "source_bounds": [
+      400,
+      189,
+      616,
+      852
+    ],
+    "ratio": 3.069,
+    "mode": "edit",
+    "parents": [
+      "npc-finance-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-finance-up": {
+    "size": [
+      240,
+      666
+    ],
+    "source_sha256": "dff287386b2ae9758e5bcdab570f48f75d5a3b5385aa0aeeef3e212a090f450d",
+    "source_bounds": [
+      384,
+      190,
+      624,
+      856
+    ],
+    "ratio": 2.775,
+    "mode": "edit",
+    "parents": [
+      "npc-finance-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-founder-down": {
+    "size": [
+      257,
+      629
+    ],
+    "source_sha256": "cd73cfb51ad26bd68684799a9cb0e93a548af89b8a2483c88f4aaaa88b22c408",
+    "source_bounds": [
+      376,
+      189,
+      633,
+      818
+    ],
+    "ratio": 2.447,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-founder-left": {
+    "size": [
+      215,
+      630
+    ],
+    "source_sha256": "e9ce9c9e21270367720eb8dd8948d46dc5eb58199fcc98fc99b39097914a6d4b",
+    "source_bounds": [
+      393,
+      188,
+      608,
+      818
+    ],
+    "ratio": 2.93,
+    "mode": "edit",
+    "parents": [
+      "npc-founder-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-founder-up": {
+    "size": [
+      250,
+      629
+    ],
+    "source_sha256": "d8727bef7e97576a86960fb29a930ef92f85c55a47c30722a49f273519b4b721",
+    "source_bounds": [
+      376,
+      188,
+      626,
+      817
+    ],
+    "ratio": 2.516,
+    "mode": "edit",
+    "parents": [
+      "npc-founder-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-partner-down": {
+    "size": [
+      268,
+      631
+    ],
+    "source_sha256": "734eb3bf6850ed5dd521934795ba1cb403de9e40da75b96907641b0023f6c3f3",
+    "source_bounds": [
+      375,
+      190,
+      643,
+      821
+    ],
+    "ratio": 2.354,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-partner-left": {
+    "size": [
+      211,
+      648
+    ],
+    "source_sha256": "4ec2cae87e76aaabeff3f65bad9af3d1fd08aada6717fdd06dc6328de4970e08",
+    "source_bounds": [
+      395,
+      191,
+      606,
+      839
+    ],
+    "ratio": 3.071,
+    "mode": "edit",
+    "parents": [
+      "npc-partner-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "npc-partner-up": {
+    "size": [
+      259,
+      627
+    ],
+    "source_sha256": "3ff98907ec98acd4475d97db1bd98f2d51e2bd77d3c74b9e3655e5e73049cfda",
+    "source_bounds": [
+      379,
+      190,
+      638,
+      817
+    ],
+    "ratio": 2.421,
+    "mode": "edit",
+    "parents": [
+      "npc-partner-down"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-chair": {
+    "size": [
+      442,
+      656
+    ],
+    "source_sha256": "9d508a4187f20dc45c9fa1ec8fab6c1038f3179350a5e553666d541e80b714d2",
+    "source_bounds": [
+      291,
+      185,
+      733,
+      841
+    ],
+    "ratio": 1.484,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-desk": {
+    "size": [
+      819,
+      626
+    ],
+    "source_sha256": "a6b2bf6d41c9518131e8dc31175c2d71bdb2fecb490546e14cf7880a4e326acb",
+    "source_bounds": [
+      103,
+      198,
+      922,
+      824
+    ],
+    "ratio": 0.764,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-floor": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "9e4f5b9192d37aae5442f01d30b36d96e5030e62ab5906f7ef24e2f5766d311d",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "text",
+    "parents": [],
+    "operations": [],
+    "status": "candidate"
+  },
+  "office-forecast": {
+    "size": [
+      865,
+      533
+    ],
+    "source_sha256": "cb452b975c328c3a77f012ddd604de31479f01fe58363baba1e478aecfb1d254",
+    "source_bounds": [
+      80,
+      275,
+      945,
+      808
+    ],
+    "ratio": 0.616,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-plant": {
+    "size": [
+      550,
+      752
+    ],
+    "source_sha256": "9ff819bdda48757e181bfba618b0970ae4f105ec5ce37bc1875c37e7a4e7984d",
+    "source_bounds": [
+      242,
+      128,
+      792,
+      880
+    ],
+    "ratio": 1.367,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-shelf-v2": {
+    "size": [
+      895,
+      517
+    ],
+    "source_sha256": "816083f8128eacbe5aa9b0e929b6379562e06ed07b24e676e77829b44a109fe5",
+    "source_bounds": [
+      65,
+      254,
+      960,
+      771
+    ],
+    "ratio": 0.578,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-shelf": {
+    "size": [
+      900,
+      634
+    ],
+    "source_sha256": "df861c8aa6d59efe8a0be3f1c17e7404c53545169c7751039070a1bc4aeabd67",
+    "source_bounds": [
+      62,
+      205,
+      962,
+      839
+    ],
+    "ratio": 0.704,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "office-window": {
+    "size": [
+      946,
+      377
+    ],
+    "source_sha256": "fbcfa71ee46d52be41a1390d6226704efa582fa1ae3d02cb051fc4e9d57624a6",
+    "source_bounds": [
+      39,
+      322,
+      985,
+      699
+    ],
+    "ratio": 0.399,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "portrait-0-v2": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "fb197382bb1c72163d5cb4683a2ab26e99405b14ebc381f50f19cf1a20f7ba83",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "npc-partner-down"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "portrait-0": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "42f79d0a16abb4b52d5dbae67cc394d05abf21766a35746a07f64f45e2f5df12",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "npc-partner-down"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "portrait-1": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "bc2b83cc0ba21d95254966186673eac7c2421083a3bcd9cb0d5b2e43df517dbc",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "npc-analyst-down"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "portrait-2": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "0749eaa2febc720a4c6ce1916cb0ebea1bee0a8d1551e597c4266f0016a0c796",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "npc-founder-down"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "portrait-3": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "945e321ce082fa48a0413221162acdcc7be0da542971cabe5afbf62521020226",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "npc-finance-down"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "portrait-4": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "e3a7b928c52e194cf2194485ed614926e07d20bd6bc07e720dc88dc1a44ee6e8",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "npc-client-down"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "poster-release": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "9aa3633ec39c5e24c14e05cd28e24b895c9acb618bf5efbffc5355221f4a13d7",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "poster"
+    ],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "poster": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "7914e5786484650e5dc8754b02c7c22a8fee5c730880311e851b9f41fb2f1ab6",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "edit",
+    "parents": [
+      "hero-down-idle-v3"
+    ],
+    "operations": [],
+    "status": "candidate"
+  },
+  "records-cabinet-v2": {
+    "size": [
+      769,
+      459
+    ],
+    "source_sha256": "2b45c783ac4395682dbd0c2dbba5330c2a36ad492afede0396e9c94b6e74d1ec",
+    "source_bounds": [
+      128,
+      277,
+      897,
+      736
+    ],
+    "ratio": 0.597,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "records-cabinet": {
+    "size": [
+      842,
+      575
+    ],
+    "source_sha256": "5fe2be1d3eb27a83f8c1dc100f27a02d02fc87ee80c22846ebd6c755bd660aaa",
+    "source_bounds": [
+      84,
+      231,
+      926,
+      806
+    ],
+    "ratio": 0.683,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "records-cart": {
+    "size": [
+      583,
+      624
+    ],
+    "source_sha256": "48f5bad313ef0969328d727e562979fd5651e2c9d3c2a9824feb25d2ddb7fa7e",
+    "source_bounds": [
+      221,
+      200,
+      804,
+      824
+    ],
+    "ratio": 1.07,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "records-desk": {
+    "size": [
+      880,
+      553
+    ],
+    "source_sha256": "a28db336e2b3f2406429a171bc3480922c611b046f81c77e904a49366a9c9723",
+    "source_bounds": [
+      72,
+      234,
+      952,
+      787
+    ],
+    "ratio": 0.628,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "records-floor": {
+    "size": [
+      1024,
+      1024
+    ],
+    "source_sha256": "a18caa6e8ce9997f1f2ee322147267537c29f63022f128cabe3d75e5917b6622",
+    "source_bounds": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "ratio": 1.0,
+    "mode": "text",
+    "parents": [],
+    "operations": [],
+    "status": "candidate"
+  },
+  "records-table": {
+    "size": [
+      714,
+      476
+    ],
+    "source_sha256": "93420aac9ed42ef097354198b9ad1c63dd6a9ca285a340045828611e966f3b75",
+    "source_bounds": [
+      155,
+      298,
+      869,
+      774
+    ],
+    "ratio": 0.667,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "side-wall": {
+    "size": [
+      211,
+      1536
+    ],
+    "source_sha256": "5911b669e77adbc66f9d59bfa3b9559779dbead4f48e15b8431f801ef4085787",
+    "source_bounds": [
+      407,
+      0,
+      618,
+      1536
+    ],
+    "ratio": 7.28,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  }
+}

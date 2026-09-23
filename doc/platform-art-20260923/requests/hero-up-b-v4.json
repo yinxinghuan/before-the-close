@@ -1,0 +1,53 @@
+{
+  "id": "hero-up-b-v4",
+  "request": {
+    "request_id": "a2da11b6-523a-4d6c-9ca7-7f5ac6c4d5e1",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790148235461-u6klypasbs.webp"
+    ],
+    "prompt": "One complete full-body RPG sprite, same woman and exact overhead camera/pixel style as reference. She faces NORTH, back toward us. Draw the OPPOSITE WALK CONTACT: the shoe on the RIGHT SIDE OF THE IMAGE must be HIGHER, nearer to her jacket; the shoe on the LEFT SIDE OF THE IMAGE must be LOWER, toward bottom edge. Put the bottom of left shoe at y=850, bottom of right shoe at y=790. Screen-left leg extends back down and lifts heel to expose a dark brown sole. Screen-right leg is the straight supporting leg further away. Screen-right hand swings toward viewer, screen-left hand away. Preserve chestnut bob, copper blazer, navy trousers completely covering ankles, brown shoes. No visible skin above shoes. Recreate the full coherent pose; do not retain the original right-trailing step. Solid pure magenta background, one figure, no ground shadow, no text.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-up-a-v3"
+  ],
+  "attemptedAt": "2026-09-23T07:25:53.955Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_263baff817d1370a2234939a5e55365b",
+    "request_id": "a2da11b6-523a-4d6c-9ca7-7f5ac6c4d5e1",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148354532,
+    "updated_at": 1790148390302,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148389958-0ubuposwtemn.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148389958-0ubuposwtemn.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 35635
+  },
+  "elapsedSeconds": 36.551,
+  "file": "doc/platform-art-20260923/raw/hero-up-b-v4.webp",
+  "sha256": "b4dbd6c0a60089fce6e04403d5dc5dc4d862f18ac2648155f5051fc6ae976d01"
+}

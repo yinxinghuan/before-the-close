@@ -1,0 +1,49 @@
+{
+  "id": "hero-down-idle-v3",
+  "request": {
+    "request_id": "1a70f85d-6ab3-4d7d-bdd1-d9fe1628bc87",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp 16-bit pixel-art for an overhead exploration RPG, restrained dark outline, visible square pixel clusters, limited subdued palette, no photoreal shading. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw, every x-axis edge exactly horizontal, z vertical, depth recedes straight upward. No vanishing point. One compact adult female office worker, chestnut chin-length bob, copper blazer, ivory shirt, dark indigo trousers, brown flat loafers. Full-body sprite faces screen bottom. Three-head-height classic RPG proportions: head/hair 32 percent of sprite height, jacket torso 36 percent, SHORT trouser legs with shoes32 percent. Broad shoulders, solid build, small adult face. Show crown of hair and shoulder tops from above, face mildly shortened; NOT a giant baby head, NOT long fashion illustration. Hands down, two feet next to each other. Hard-edged clusters around 3 to 5 source pixels wide, coherent sprite detail. Single complete figure centered with generous margin. Opaque uniform magenta #ff00ff background, no shadow, no text, no items.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:52:58.711Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_dc4bb6054a40c1e1926fa4a4237a4f7b",
+    "request_id": "1a70f85d-6ab3-4d7d-bdd1-d9fe1628bc87",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142779347,
+    "updated_at": 1790142808008,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 28462
+  },
+  "elapsedSeconds": 29.495,
+  "file": "doc/platform-art-20260923/raw/hero-down-idle-v3.webp",
+  "sha256": "f77c217dbee6625f57fec3927ceb643b1812855018e3b8bba73e66e0203139b6"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "hero-up-b-v3",
+  "request": {
+    "request_id": "78e079b5-b5e7-47fb-9321-eb10f3a3d030",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Identity reference only. Draw a NEW complete sprite from BEHIND of this woman, facing NORTH (away, toward top of image). Fixed orthographic high-angle RPG camera. Retain compact 3-head proportions, chestnut bob, copper blazer, ivory collar, navy trousers and dark brown footwear. Back of head, shoulder blades, rear jacket seam. Navy trouser hems cover ankles and rear shoe uppers completely: no visible skin, no tan strip between trousers and shoes. Feet are simple DARK BROWN rounded heel blocks below hems; shoe toes point AWAY and are hidden by legs. We see rear shoe heels, never a shoe tongue, laces or front vamp. Coarse pixel art, same outline/palette density. Solid pure magenta background. One isolated full-body sprite, no ground shadow. Walking contact B, small natural step away: right leg straight supporting in front, left leg extends behind toward bottom with heel lifted; dark underside of left sole visible. Right arm swings back to camera, left arm away.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T07:23:21.121Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_5dc4c6fcfbc4cab1621a4796893397dd",
+    "request_id": "78e079b5-b5e7-47fb-9321-eb10f3a3d030",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148201951,
+    "updated_at": 1790148235520,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148235202-8tpmx0iug8u.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148235202-8tpmx0iug8u.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33366
+  },
+  "elapsedSeconds": 34.607,
+  "file": "doc/platform-art-20260923/raw/hero-up-b-v3.webp",
+  "sha256": "62378b4366459486b58623922580a7cc7255a846fce163b2769bc468efdeab0c"
+}

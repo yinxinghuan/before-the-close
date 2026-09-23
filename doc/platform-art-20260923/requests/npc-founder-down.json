@@ -1,0 +1,53 @@
+{
+  "id": "npc-founder-down",
+  "request": {
+    "request_id": "758dac60-0140-4359-a2c4-cec0571550da",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use this newly generated woman only for shared compact three-head RPG proportions, adult scale, overhead orthographic camera, chunky pixel size and outline. Create a DIFFERENT person, entire body neutral standing facing SOUTH, feet adjacent. Solid magenta background, no cast shadow or text. Mateo Alvarez, male New York software founder in his early 40s, warm olive skin, wavy short dark brown hair, subtle short beard, rolled-sleeve ivory shirt, slate-blue chinos, simple dark brown shoes. Thoughtful tired expression, no props.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T07:44:22.058Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_bf2307dcf2bf10603bd4e414bb437421",
+    "request_id": "758dac60-0140-4359-a2c4-cec0571550da",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149462537,
+    "updated_at": 1790149496005,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149495718-c6zy0qr4pwj.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149495718-c6zy0qr4pwj.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33336
+  },
+  "elapsedSeconds": 34.162,
+  "file": "doc/platform-art-20260923/raw/npc-founder-down.webp",
+  "sha256": "cd73cfb51ad26bd68684799a9cb0e93a548af89b8a2483c88f4aaaa88b22c408"
+}

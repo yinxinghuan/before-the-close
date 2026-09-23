@@ -1,0 +1,53 @@
+{
+  "id": "hero-down-a",
+  "request": {
+    "request_id": "9c29bb67-4fc5-499a-9959-5c76982087a2",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use ONLY the supplied newly generated character as identity/style reference. Preserve her chestnut bob, copper blazer, ivory shirt, navy trousers, brown loafers, compact THREE-head-high proportions, dark outline and chunky pixels. This is a complete new full-body sprite, not a partial limb edit. Orthographic overhead RPG camera, seen from above at50degrees. Exact same opaque flat magenta background, no shadow or text. One centered character only, no other person. Face south toward bottom edge, WALKING contact pose A. Her anatomical RIGHT foot (screen LEFT shoe) is extended toward BOTTOM of image, heel planted. Screen RIGHT shoe trails higher, heel raised, sole partly visible. Left arm swings forward slightly, right arm back. Clearly separate feet, short natural walking stride, not wide running legs. Keep crown and shoulder tops visible.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T05:55:24.430Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_d2cca487c38fcd35c1e35dbcc4fd5057",
+    "request_id": "9c29bb67-4fc5-499a-9959-5c76982087a2",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142925305,
+    "updated_at": 1790142958517,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142958191-cdp9p3e5c1.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142958191-cdp9p3e5c1.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33101
+  },
+  "elapsedSeconds": 34.211,
+  "file": "doc/platform-art-20260923/raw/hero-down-a.webp",
+  "sha256": "509d99df1e3cad9699be0cdf05d857d55f7fabb3127dc6e4f1c5bf70621ef28b"
+}

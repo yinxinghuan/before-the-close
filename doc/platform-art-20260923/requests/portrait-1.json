@@ -1,0 +1,53 @@
+{
+  "id": "portrait-1",
+  "request": {
+    "request_id": "2890c23e-d5e6-429d-acb7-9950f253b336",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Create a detailed pixel-art dialogue PORTRAIT of exactly the adult person in this newly created sprite: preserve identity, age, skin tone, hairstyle, glasses if present, and clothing colors. Chest-up editorial character portrait, natural three-quarter frontal face, readable expressive eyes, relaxed professional posture, person fills frame with head fully visible. A New York international business drama, restrained thoughtful expression, sophisticated warm light, visible square pixel clusters and consistent dark outline, no photoreal gradients, no anime exaggeration. Solid dark desaturated blue-gray background, not magenta, no text, no symbols, no other person, no added props. Square composition, can crop as small face thumbnail.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T07:50:57.120Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_8a23ef9107f84495efc25c5491da0df8",
+    "request_id": "2890c23e-d5e6-429d-acb7-9950f253b336",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149857816,
+    "updated_at": 1790149900378,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149900018-p0vj67di3ds.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149900018-p0vj67di3ds.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 40309
+  },
+  "elapsedSeconds": 43.473,
+  "file": "doc/platform-art-20260923/raw/portrait-1.webp",
+  "sha256": "bc2b83cc0ba21d95254966186673eac7c2421083a3bcd9cb0d5b2e43df517dbc"
+}

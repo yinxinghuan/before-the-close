@@ -1,0 +1,49 @@
+{
+  "id": "hero-down-idle-v2",
+  "request": {
+    "request_id": "d2c4d797-ffe3-418f-8dd9-a45a0d4b24a8",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "ONE compact chunky pixel-art sprite for a TOP-DOWN 2D adventure videogame, drawn at low-resolution sprite scale then enlarged with crisp nearest-neighbor square blocks. A woman investment principal with chestnut bob, copper blazer over ivory shirt, navy trousers, brown loafers. Her entire figure is TWO AND A HALF HEAD HEIGHTS, short squat game sprite silhouette, very large head, broad shoulders, extremely SHORT LEGS, NOT human illustration proportions. Camera is HIGH ABOVE her, looking down 60 degrees: mostly hair crown visible, eyes near the lower edge of head, torso strongly foreshortened. She faces south at bottom of screen, two feet beside each other. Head occupies top 40 percent of total silhouette height, torso 35 percent, legs and shoes together only 25 percent. Maximum visible sprite height 450px and width about 260px in a 1024 square canvas. Restrained adult face, no smile, no anime huge eyes, no long torso, no long legs. One full body centered, no floor or shadow, no words. Flat opaque pure magenta #ff00ff background. Fine but clearly blocky 16-bit pixel art with dark outline, only 24 colors. No gradients or realistic rendering.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:50:40.377Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_f2409720bb77dbcff2c0d9f7f8588a59",
+    "request_id": "d2c4d797-ffe3-418f-8dd9-a45a0d4b24a8",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142641044,
+    "updated_at": 1790142673011,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142672715-5x8nqbmmqay.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142672715-5x8nqbmmqay.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31770
+  },
+  "elapsedSeconds": 32.762,
+  "file": "doc/platform-art-20260923/raw/hero-down-idle-v2.webp",
+  "sha256": "572172a58afa39768744dbc40c6b7673032d1e500f192e8c5dccee0c882436ac"
+}

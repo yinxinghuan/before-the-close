@@ -1,0 +1,53 @@
+{
+  "id": "npc-client-down",
+  "request": {
+    "request_id": "1332d40b-b885-41e3-bf65-8ca8bb52f258",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use this newly generated woman only for shared compact three-head RPG proportions, adult scale, overhead orthographic camera, chunky pixel size and outline. Create a DIFFERENT person, entire body neutral standing facing SOUTH, feet adjacent. Solid magenta background, no cast shadow or text. Jordan Brooks, female operations manager in her mid 40s, dark brown skin, short natural black curls, muted plum collared blouse with rolled sleeves, warm gray trousers and dark flat shoes. Practical confident posture, no props.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T07:44:22.058Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_c9716b29e54b4c0548f85c5ae5ace722",
+    "request_id": "1332d40b-b885-41e3-bf65-8ca8bb52f258",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149462826,
+    "updated_at": 1790149492240,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149491867-2h37wyazepc.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149491867-2h37wyazepc.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29308
+  },
+  "elapsedSeconds": 30.431,
+  "file": "doc/platform-art-20260923/raw/npc-client-down.webp",
+  "sha256": "7d7afe5bbedac65e2a262611b30d5fc5ca4955728c38c1c1f1544fde5479f2a7"
+}

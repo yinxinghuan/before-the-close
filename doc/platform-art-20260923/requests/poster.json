@@ -1,0 +1,53 @@
+{
+  "id": "poster",
+  "request": {
+    "request_id": "cd553bbd-4840-423f-89d8-301b6d77be4e",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Pixel-art narrative game key art, square poster WITHOUT any text. The copper-blazer woman in the reference is a New York investment associate; preserve her chestnut bob and clothing identity. Show her at a walnut desk with an open diligence folder and a dark city window revealing Manhattan at dusk; foreground contains two ordinary coffee cups and a small brass lamp. Restrained teal shadows, warm amber light, serious human-scale financial drama, adult international professional setting, no fantasy, no neon cyberpunk, no stock-trading graphs, no currency icons. Visible hand-crafted chunky pixel clusters and dark outlines consistent with a sophisticated 2D exploration RPG. Portrait composition may use cinematic perspective. No words, no logos, no border.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T07:52:33.140Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_5ed103e58dec3b002042ea0559e70bd4",
+    "request_id": "cd553bbd-4840-423f-89d8-301b6d77be4e",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149953892,
+    "updated_at": 1790150001159,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790150000893-4cpgk3x2iz6.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790150000893-4cpgk3x2iz6.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 47144
+  },
+  "elapsedSeconds": 48.213,
+  "file": "doc/platform-art-20260923/raw/poster.webp",
+  "sha256": "7914e5786484650e5dc8754b02c7c22a8fee5c730880311e851b9f41fb2f1ab6"
+}

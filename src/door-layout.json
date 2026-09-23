@@ -1,0 +1,38 @@
+{
+  "fund-office": {
+    "room": "fund",
+    "side": "E",
+    "x": 606,
+    "y": 345
+  },
+  "office-fund": {
+    "room": "office",
+    "side": "W",
+    "x": 34,
+    "y": 430
+  },
+  "office-records": {
+    "room": "office",
+    "side": "E",
+    "x": 606,
+    "y": 320
+  },
+  "office-client": {
+    "room": "office",
+    "side": "S",
+    "x": 340,
+    "y": 576
+  },
+  "records-office": {
+    "room": "records",
+    "side": "W",
+    "x": 34,
+    "y": 320
+  },
+  "client-office": {
+    "room": "client",
+    "side": "N",
+    "x": 340,
+    "y": 88
+  }
+}

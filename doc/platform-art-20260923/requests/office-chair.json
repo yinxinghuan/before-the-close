@@ -1,0 +1,49 @@
+{
+  "id": "office-chair",
+  "request": {
+    "request_id": "6a0cb9c0-6621-4637-894c-a037a3422321",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "ONE compact black swivel office task chair, front facing SOUTH, elevated orthographic RPG view looking down50degrees, no perspective and zero sideways yaw. Rectangular padded seat top with exactly equal horizontal front/back edges and vertical depth edges, low rectangular charcoal blue backrest, two simple arms, short central base and five small wheels. Restrained crisp chunky 16-bit pixel art with dark outlines, plain materials, tiny signs of daily use. NOT isometric, not diagonal, no room or ground shadow. Whole complete object centered on pure solid magenta #ff00ff background, generous margins.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:56:45.365Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_68271836a7efa0443965c4a3042144cb",
+    "request_id": "6a0cb9c0-6621-4637-894c-a037a3422321",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790150206169,
+    "updated_at": 1790150236698,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790150236081-32u2x811548.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790150236081-32u2x811548.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30333
+  },
+  "elapsedSeconds": 31.638,
+  "file": "doc/platform-art-20260923/raw/office-chair.webp",
+  "sha256": "9d508a4187f20dc45c9fa1ec8fab6c1038f3179350a5e553666d541e80b714d2"
+}

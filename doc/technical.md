@@ -21,3 +21,15 @@ RPGJS/CanvasEngine 持有地面、墙、家具、人物和前景纹理，移动�
 
 ## 本轮游戏收口
 activateJourney / appendJourney 在活动旅程改变前保存实时脚点，避免间隔写盘成功但内存目录位置陈旧。arriveAt 让剧情时间单调推进；它是作者场景时间，不是实时倒计时。摇杆有7 CSS px死区，手柄按指针偏移并在取消/松手时归中。结局后的afterDecision按角色和既有决定提供现场回应，签署后negotiate在领域层拒绝改写条款。
+
+### 2026-09-22 出口视觉修订
+
+`src/door-layout.json` 是出口位置和朝向的共用输入，`scripts/build-map-layers.mjs` 与 `src/world.ts` 消费它。镜头的垂直边缘揭示位移同时用于 RPG 挂载节点、热点投影和点击反投影；角色逻辑坐标及现有存档坐标保持原含义。新门口截图位于 `_qa/ui/platform-layout-wall-review-*`，仅为本地待用户评审版本，未发布。
+
+### 新平台美术隔离试验（2026-09-23）
+
+DEV参数 `artTrial=platform` 通过 spatial/sheets.ts 按 sample-manifest.coverage 选择新平台样本资源；未覆盖资源仍走旧引用。world.ts 仅在该DEV模式调用 platform-room-layout.ts，共享渲染布局和碰撞测试。生成脚本只访问统一媒体API，保存幂等ID、响应、来源和时延；下载失败从已返回URL恢复，不再次付费生成。准备脚本显式去洋红底与等比装配。生产默认未切换，本段不代表全量换图或动态生成功能上线。
+
+### r8默认美术与构建合同
+
+src/art-assets.ts默认启用平台新素材，只有DEV显式legacy/actor/room才回旧试验。sheets.ts按新清单加载独立NPC图集和真实图片尺寸；world.ts应用四房布局与独立座椅占地。build-platform-sample.py从本轮原图处理结果装配并安装65个运行文件。finalize-art-build.mjs从dist移除旧图，保留源码回退。脚本audit-platform-art.py校验SHA、同轮引用图谱和运行覆盖，不判断美学。正式构建两尺寸端到端回归见platform-art-20260923/evidence。

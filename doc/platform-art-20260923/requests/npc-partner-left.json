@@ -1,0 +1,53 @@
+{
+  "id": "npc-partner-left",
+  "request": {
+    "request_id": "c5427d4d-f7d5-4a8f-9c28-62c9db53dc71",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556599-kneoy5xtt.webp"
+    ],
+    "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Stand neutral facing SCREEN LEFT. Exact side profile, nose LEFT, hands relaxed, feet under hips. Same short silver hair, mature woman, navy trouser suit.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-partner-down"
+  ],
+  "attemptedAt": "2026-09-23T06:08:39.843Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_108fb4815fd6e7070c7076338e05a15c",
+    "request_id": "c5427d4d-f7d5-4a8f-9c28-62c9db53dc71",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143720455,
+    "updated_at": 1790143752755,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143752389-xswpst4hh8n.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143752389-xswpst4hh8n.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32108
+  },
+  "elapsedSeconds": 33.055,
+  "file": "doc/platform-art-20260923/raw/npc-partner-left.webp",
+  "sha256": "4ec2cae87e76aaabeff3f65bad9af3d1fd08aada6717fdd06dc6328de4970e08"
+}

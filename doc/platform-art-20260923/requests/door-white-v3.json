@@ -1,0 +1,49 @@
+{
+  "id": "door-white-v3",
+  "request": {
+    "request_id": "39c54993-fd75-4a43-88c5-e4fbd0181547",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Pixel-art overhead RPG prop, isolated rectangular ivory office door LEAF only. The final visible outline MUST be a vertical rectangle with width three units and height four units (3:4). Taller than wide but squat, NOT square, NOT a tall 1:2 human-height door. Strong foreshortening from a high downward ORTHOGRAPHIC camera. Straight vertical side edges and LEVEL horizontal top and bottom, no sideways yaw. See the slab own narrow flat TOP face, same width as front and no protruding cap. Tiny black lever on left on a horizontally elliptical rosette, two tiny right hinge barrels showing their top ellipses. All hardware modest size, not oversized. Plain flat ivory front, no inset border, no decoration. NO stationary frame, doorjamb, wall, floor, threshold, shadow. Entire object with wide empty margin on flat opaque magenta #ff00ff. Crisp hand-placed square pixels, restrained dark outline, limited beige/black palette, no soft product rendering.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T06:00:00.170Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_3c7b2767a0b6cf453be9b0dba0b7cb12",
+    "request_id": "39c54993-fd75-4a43-88c5-e4fbd0181547",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143201106,
+    "updated_at": 1790143230126,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143229813-wobnz5621zj.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143229813-wobnz5621zj.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 28883
+  },
+  "elapsedSeconds": 30.075,
+  "file": "doc/platform-art-20260923/raw/door-white-v3.webp",
+  "sha256": "326bb768017b9cbee848b86d103931949c5c96634ff318968133894dca8d27ff"
+}

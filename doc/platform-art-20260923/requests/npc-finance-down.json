@@ -1,0 +1,53 @@
+{
+  "id": "npc-finance-down",
+  "request": {
+    "request_id": "691cd60d-a992-4bd3-bfec-39d67572dac4",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use this newly generated woman only for shared compact three-head RPG proportions, adult scale, overhead orthographic camera, chunky pixel size and outline. Create a DIFFERENT person, entire body neutral standing facing SOUTH, feet adjacent. Solid magenta background, no cast shadow or text. Priya Raman, female finance lead in her early 40s, medium brown skin, dark hair secured in a low bun, thin oval glasses, muted deep green blouse with sleeves to elbow, charcoal trousers, sensible dark shoes. Calm focused expression, no props.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T07:44:22.057Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_db92acc6550f2f703cac370cb604ef56",
+    "request_id": "691cd60d-a992-4bd3-bfec-39d67572dac4",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149463072,
+    "updated_at": 1790149495088,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149494746-voehmq5mr4o.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149494746-voehmq5mr4o.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31886
+  },
+  "elapsedSeconds": 33.237,
+  "file": "doc/platform-art-20260923/raw/npc-finance-down.webp",
+  "sha256": "dad2023d309cf9bb88412b7bcc80667effbdff090277defe7de6c5e417425bf3"
+}

@@ -18,3 +18,39 @@
 平台恢复复测：简单512图 HTTP200 succeeded约3.9秒；主角edit与地板text均成功含下载15.5/9.1秒。主角anchor-v2视觉拒绝：仍细长正面立绘。继续v3严格保留旧街图集几何的服装编辑；地板v2仅生成候选，尚未合成准入。
 
 早期 proportion-v3 等候选仍为拒绝状态；最终主角运行图集来自后续分方向平台帧和整帧装配，不能混淆。用户随后撤销旧 NPC 签收：其四宫格素材在真实画面中比主角显小且风格不同。五名 NPC 已按主角 accepted 单帧标准逐方向经平台重生并装配，等比感知尺寸调整为 114/128；`_qa/npc-scale-review.mjs` 已保存五组主角相邻同屏证据。Daniel 的长腿走路候选被拒绝，未进入运行图集。人物互动提示点已升到头顶净空位置。技能已增加整组演员的可见宽度、头部、肩宽、像素密度、互动提示锚点和逐人同屏门禁。2026-09-21 r3 已迁移到真实 RPGJS，并完成公开扫描、两尺寸回归、UUID 自托管与 Pages 双部署；正式证据见 `release.json`。
+
+2026-09-22 墙门专项本地修订：参照 native-door-admission.md，平台新生现代办公室门扇和参考编辑门槛，原图去底等比显示；侧门背景、门扇与近端门框独立深度事件，统一出口配置，镜头上下边缘揭示。doc/door-art-review.json 保存来源。最新本地截图 platform-layout-wall-review / platform-layout-door-native。未发布、未宣称整套美术合格；首轮四立柱门槛被拒绝。此前 r7 的 accepted 不能作为本轮视觉结论。
+
+2026-09-23 用户暂停平台门素材提示词/灰模试验，demo阶段回到已认可内置图像工具路线；工具未披露具体模型，不冒称确认GPT-6。尚未接入或发布新门。用户要求审计此前参考依赖，见reference-dependency-audit.md/json：主角/NPC、多房间地面、早期家具和Memory Margin新房间计时测试均存在edit依赖；当前四套轴向家具v3与头像v2为text，不能一概归类。平台执行不等于无参考生成能力。
+
+## 2026-09-23 最新：美术清零独立重制（优先于前面的历史完成状态）
+
+用户明确要求所有运行美术重新制作，仅靠技能文字，不读取历史游戏图片参考。工具选内置 imagegen，模型身份未暴露。现有未提交修改全部保留，未替换生产素材，未发布。
+
+本轮资料：`doc/art-rebuild-20260923/PLAN.md`、`generation-ledger.json`、`REVIEW.md`。40张生成原图已保存，其中17张text、23张本轮新图派生；无历史图参考。`scripts/audit-fresh-art.py` 来源审计通过，但 accepted=0，不能当视觉完成。`scripts/prepare-fresh-art.py` 只输出隔离候选图集与实际尺寸比例板；不会读取旧素材。
+
+已拒绝旧式长身主角、独立长身NPC、写实墙/门、两版收缩桌面的档案家具、第二版收缩轮廓的门。wall-v2是新的像素墙候选；door-v2仍不合格。主角侧向contact两端太相似，NPC只有站立方向，均须补验证/修正。不要继续未经签收批量扩展。下一步先做好一间完整房间的厚墙、原生门、主体家具和主角连续步态，再在真实RPGJS中用390×844、320×568检查。
+
+其他未完成：窗口/侧门端面、肖像/海报重生，档案家具纠正，全部runtime引用覆盖、其余房间合成、碰撞、动画、完整功能回归。共享技能新增 `references/independent-art-trial.md` 记录分层能力、禁止旧accepted继承、先样本房后扩展以及失败证据。当前不能宣称游戏重制完成或技能稳定性验证通过。
+
+### 侧向人物修正续记
+
+新增42张中的最后两张为hero-left-contact-b-v2（失败，复现A）、v3（候选，改善抬跟与交叉）。prepared/hero.png已使用v3。新增hero-walk-review.gif素材循环和_qa/fresh-gait.html。本地5235端口运行；?artTrial=actor只切新主角，其他图片仍旧版，只可叫人物隔离测试。_qa/actor-trial-controls.ts只在DEV挂载，按钮使用真实键盘事件执行四向短循环，已停下。构建经过检查，尚未将新美术作为默认资源，尚未发布。
+
+### 首间新素材房间已接入
+
+本地http://127.0.0.1:5235/?artTrial=room，基金办公室世界素材改用doc/art-rebuild-20260923/prepared，不修改默认生产资源。新增scripts/build-fresh-sample.py、src/fresh-room-layout.ts与_qa/fresh-room.test.ts。候选门door-v3、连续sidewall-v1、window-v1为无参考文本生成；端面由新墙材质裁块拼装，已披露。全部来源审计45张=20text+25edit，accepted仍0。
+
+真实RPGJS验证fund→office→fund并抵达即能返回。两种CSS视口门口截图已发对话。13项测试通过；同屏效果还需用户评审，NPC站立复制不是步态已完成。不要把候选称已验收或上线。下一步继续主角/NPC运动与南墙/四角检查，再扩展其余房间。
+
+## 2026-09-23 新平台GPT接口样本（当前优先）
+
+统一媒体服务v0.5.0已跑通，当前改造使用显式Sunburst模型。独立记录见 `doc/platform-art-20260923/PLAN.md`、`REVIEW.md`、`requests/`；无历史图参考，同轮人物edit已披露。脚本 generate-platform-art.mjs / prepare-platform-art.py / build-platform-sample.py。Python必须用 /Users/yin/miniconda3/bin/python3。
+
+DEV入口5236/?artTrial=platform；新主角、Mara站姿、基金房墙地门窗家具接入，14项测试、构建与两尺寸门往返通过。其他房间、Daniel等演员及肖像仍旧；主角背向鞋形/完整步态尚未通过。未发布、未替换默认生产美术。先完成样本房与演员门禁，后扩展全游戏；动态生成另验。所有此前未提交修改保留。
+
+## 2026-09-23 r8 全量新美术（覆盖前述样本状态）
+
+新接口81次请求（32text/49同轮edit），四房间/主角/五NPC/五头像/封面已成为默认运行素材，65个派生运行文件；不再需要artTrial参数。历史图未用于生成，旧素材源码保留，正式dist剔除旧运行图片。主角原始背向A/B得到用户认可，已恢复，不再按鞋口高光否决。
+
+正式dist两尺寸完整通关/存档恢复通过，17项测试通过；主角四向两循环、分析员巡游/靠近转向已验证。详见platform-art-20260923/REVIEW.md及evidence。共享技能新增platform-gpt-art-trial.md，记录实际配方、过度审核纠偏和截图真源门禁。发布状态看release.json。玩家动态生成和陌生agent盲测仍未完成，不把作者生成成功扩大成全链路完成。

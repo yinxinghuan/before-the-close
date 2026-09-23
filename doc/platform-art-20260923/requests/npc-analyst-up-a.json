@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-up-a",
+  "request": {
+    "request_id": "b3b87a7a-2e52-40da-a336-cb7da62adf90",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Walk facing SCREEN TOP, only BACK of head and pale blue shirt, no face. Screen LEFT leg steps higher/forward, screen RIGHT leg trails lower with heel lifted showing sole. Folder remains under anatomical LEFT arm. No front shoe laces seen from behind.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T06:08:39.844Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_49d0c8abbd8092d6ff72b85caa39ac65",
+    "request_id": "b3b87a7a-2e52-40da-a336-cb7da62adf90",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143720585,
+    "updated_at": 1790143755903,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143755536-j4yzvw9zhm.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143755536-j4yzvw9zhm.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 35208
+  },
+  "elapsedSeconds": 36.179,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-up-a.webp",
+  "sha256": "efd548693a3e239d1fd51eeb311a1420b26196b3638fd37691aacd20a73e7888"
+}

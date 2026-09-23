@@ -12,7 +12,7 @@ test('every RPGJS map keeps an object layer so player and event sprites render',
 });
 
 test('composite furniture keeps visible gaps walkable while solid footprints block',()=>{
- assert.equal(walkable(world,'fund',{x:453,y:390}),true,'gap between the upper meeting chairs');
+ assert.equal(walkable(world,'fund',{x:453,y:390}),true,'clear approach above the meeting table');
  assert.equal(walkable(world,'fund',{x:430,y:440}),false,'meeting table footprint');
- assert.equal(walkable(world,'fund',{x:170,y:225}),false,'work desk footprint');
+ assert.equal(walkable(world,'fund',{x:170,y:254}),false,'work desk footprint');
 });

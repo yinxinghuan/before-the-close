@@ -1,0 +1,49 @@
+{
+  "id": "records-desk",
+  "request": {
+    "request_id": "51b06a37-3ec4-4565-b40a-0d1c163d5e33",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One plain broad rectangular walnut data-room desk on short sturdy legs. Three orderly ivory paper stacks, a small closed blue binder, brass desk lamp and a small rubber stamp, all on top; ample empty desktop. No chair.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:40:25.575Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_5fe13f08eec869797e97f846a01d5f78",
+    "request_id": "51b06a37-3ec4-4565-b40a-0d1c163d5e33",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149226466,
+    "updated_at": 1790149268193,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149267946-5klefns6pab.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149267946-5klefns6pab.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 41615
+  },
+  "elapsedSeconds": 43.869,
+  "file": "doc/platform-art-20260923/raw/records-desk.webp",
+  "sha256": "a28db336e2b3f2406429a171bc3480922c611b046f81c77e904a49366a9c9723"
+}

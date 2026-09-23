@@ -1,0 +1,53 @@
+{
+  "id": "portrait-0-v2",
+  "request": {
+    "request_id": "b3ab999f-c904-4f88-9c69-f06695de030e",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556599-kneoy5xtt.webp"
+    ],
+    "prompt": "Chest-up pixel-art dialogue portrait of EXACTLY the silver-haired female partner shown in this sprite, in a navy suit and ivory blouse. Mara Ellison is 58 years old, experienced investment partner, visibly mature adult: subtle crow feet, small natural forehead lines, slightly deeper nasolabial lines and mature jaw contour, NOT a young woman with dyed gray hair. Preserve her warm medium skin tone, silver side-part bob and professional clothing. Calm incisive expression, natural-sized eyes, understated makeup. Three-quarter frontal head, whole head visible, refined chunky pixel clusters, consistent dark outlines. Solid desaturated navy background. Square composition, no text, no props or logos.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-partner-down"
+  ],
+  "attemptedAt": "2026-09-23T07:56:45.366Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_e34e883347dfcfe3e2e8a1ae28820db4",
+    "request_id": "b3ab999f-c904-4f88-9c69-f06695de030e",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790150206190,
+    "updated_at": 1790150246723,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790150245962-yvungovzbw.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790150245962-yvungovzbw.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 40367
+  },
+  "elapsedSeconds": 41.634,
+  "file": "doc/platform-art-20260923/raw/portrait-0-v2.webp",
+  "sha256": "fb197382bb1c72163d5cb4683a2ab26e99405b14ebc381f50f19cf1a20f7ba83"
+}

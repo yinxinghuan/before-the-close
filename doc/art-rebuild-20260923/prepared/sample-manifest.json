@@ -1,0 +1,85 @@
+{
+  "status": "candidate",
+  "sources": [
+    {
+      "id": "fund-furniture-v2",
+      "path": "doc/art-rebuild-20260923/raw/fund-furniture-v2.png",
+      "sha256": "8f0f890cc77fa68078f2ace674894aec3947fcbca9b5182952b6a8b079d2eb09",
+      "operations": [
+        "remove-low-alpha-haze",
+        "remove-magenta-backdrop"
+      ]
+    },
+    {
+      "id": "wall-v2",
+      "path": "doc/art-rebuild-20260923/raw/wall-v2.png",
+      "sha256": "66cf478d0eeb5a214fc6d5041728de23ba95e485acba3488266b6cfb83206cbe",
+      "operations": [
+        "remove-low-alpha-haze",
+        "remove-magenta-backdrop"
+      ]
+    },
+    {
+      "id": "sidewall-v1",
+      "path": "doc/art-rebuild-20260923/raw/sidewall-v1.png",
+      "sha256": "6c7e1bcbf0c3731d566a51c8ce6c9c68ff5bd304442575716774c6c59f8a14bc",
+      "operations": [
+        "remove-low-alpha-haze",
+        "remove-magenta-backdrop"
+      ]
+    },
+    {
+      "id": "door-v3",
+      "path": "doc/art-rebuild-20260923/raw/door-v3.png",
+      "sha256": "c65837a5c9e508c55778ea48b1b21c6e588c330ed6d8f946f835ebbca9c30a5f",
+      "operations": [
+        "remove-low-alpha-haze",
+        "remove-magenta-backdrop"
+      ]
+    },
+    {
+      "id": "window-v1",
+      "path": "doc/art-rebuild-20260923/raw/window-v1.png",
+      "sha256": "515486df7ac83f3ff496d12c2898cac8f433a41552918464931eaac8f10a40db",
+      "operations": [
+        "remove-low-alpha-haze",
+        "remove-magenta-backdrop"
+      ]
+    },
+    {
+      "id": "fund-floor",
+      "path": "doc/art-rebuild-20260923/raw/fund-floor.png",
+      "sha256": "ac16742d6a6a707e8687292595b92984ab370022e954db04521b43e9ed2dbb73",
+      "operations": [
+        "remove-low-alpha-haze",
+        "remove-magenta-backdrop"
+      ]
+    }
+  ],
+  "dimensions": {
+    "fund-furniture-0": [
+      537,
+      395
+    ],
+    "fund-furniture-1": [
+      488,
+      392
+    ],
+    "fund-furniture-2": [
+      535,
+      292
+    ],
+    "fund-furniture-3": [
+      250,
+      326
+    ]
+  },
+  "layers": [
+    "fund-base.png",
+    "fund-north.png",
+    "fund-side.png",
+    "fund-front.png",
+    "fund-door-fund-office-near.png",
+    "fund-door-fund-office-leaf.png"
+  ]
+}

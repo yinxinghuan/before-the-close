@@ -1,0 +1,49 @@
+{
+  "id": "fund-meeting",
+  "request": {
+    "request_id": "a14dd473-3a8b-48a7-8ee6-a3a7daa839de",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp 16-bit pixel-art asset for an overhead RPG. Restrained warm walnut, ivory paper, dark blue-gray. Elevated ORTHOGRAPHIC camera looking down50degrees, zero sideways yaw, no vanishing point. X axis exactly horizontal, Z exactly vertical, depth straight upward. Rectangular top surfaces have equal length parallel front and back edges, strictly vertical left/right depth edges, never a tapered trapezoid or isometric diagonal. Dark outlines, hard square pixel clusters, not realistic. Uniform opaque pure magenta #ff00ff background outside complete object, generous margins, no shadow, no floor, no walls, no person, no text. ONE rectangular walnut conference TABLE only, NO CHAIRS. On the broad rectangular tabletop four modest closed blue folios, two small plain mugs and a central muted brass desk lamp. Plenty of empty tabletop. All items touch its upper plane. Four short sturdy legs. Front edge precisely horizontal, depth edges straight upward. Meeting-table footprint about twice a normal desk width, seen high above. No decorative border or surrounding room.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:58:59.167Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_3acc8cb1e83795432f5da97e77177cb4",
+    "request_id": "a14dd473-3a8b-48a7-8ee6-a3a7daa839de",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143140076,
+    "updated_at": 1790143169063,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143168690-2e2o3wapnad.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143168690-2e2o3wapnad.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 28805
+  },
+  "elapsedSeconds": 30.025,
+  "file": "doc/platform-art-20260923/raw/fund-meeting.webp",
+  "sha256": "98ef19e6d46abc59d2d6a555975cd4f4fc8c6cbaf6eb8a02cb3c80d8fb6607d2"
+}

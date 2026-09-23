@@ -34,8 +34,11 @@ export function createRpgSpace(options:SpaceOptions){
  const projectPlayer=()=>{const sprite=client?.getCurrentPlayer();if(!sprite||!player)return;sprite.animationFixed=true;if(sprite.x()!==pos.x)sprite.x.set(pos.x);if(sprite.y()!==pos.y)sprite.y.set(pos.y);if(sprite.direction()!==player.direction())sprite.direction.set(player.direction());if(sprite.animationName()!==player.animationName())sprite.animationName.set(player.animationName())};
  const stand=()=>{stride=0;if(player&&player.animationName()!=='stand')player.animationName.set('stand');projectPlayer()};
  const cameraLeft=()=>Math.max(0,Math.min(world.width-engineWidth,pos.x+world.actor.w/2-engineWidth/2));
- const screen=(point:Point)=>({x:leftInset+(point.x-cameraLeft())*scale,y:point.y*scale});
- const unproject=(point:Point)=>({x:(point.x-leftInset)/scale+cameraLeft(),y:point.y/scale});
+ // Preserve sprite scale; reveal the approached boundary outside the HUD.
+ const cameraOffset=()=>Math.max(-104,Math.min(144,(320-pos.y)*.8));
+ const placeCamera=()=>{host.style.top=`${cameraOffset()}px`};
+ const screen=(point:Point)=>({x:leftInset+(point.x-cameraLeft())*scale,y:point.y*scale+cameraOffset()});
+ const unproject=(point:Point)=>({x:(point.x-leftInset)/scale+cameraLeft(),y:(point.y-cameraOffset())/scale});
  const resize=()=>{
   const box=host.parentElement!,width=box.clientWidth,height=box.clientHeight;
   engineWidth=Math.min(430,Math.max(296,width/Math.max(1,height)*world.height));
@@ -79,7 +82,7 @@ export function createRpgSpace(options:SpaceOptions){
    if(distance>1e-7){stride=(stride+distance)%options.stride;const phase=Math.floor(stride/options.stride*4);const pose=['stride-0','stride-1','stride-2','stride-1'][phase];if(player.animationName()!==pose)player.animationName.set(pose);player.direction.set(Math.abs(x)>Math.abs(y)?(x>0?Direction.Right:Direction.Left):(y>0?Direction.Down:Direction.Up));void player.teleport(pos);player.syncChanges();options.onPosition(pos)}else stand();
    if(finished){const callback=arrive;arrive=undefined;options.onDestination(null);stand();callback?.()}
   }
-  options.onFrame?.(dt,{...pos},scene,blocked);projectPlayer();requestAnimationFrame(tick);
+  placeCamera();options.onFrame?.(dt,{...pos},scene,blocked);projectPlayer();requestAnimationFrame(tick);
   if(debug){const sprite=client?.getCurrentPlayer();host.dataset.playerGraphics=String(sprite?.graphics().length??-1);host.dataset.playerSheets=String(sprite?.graphicsSignals().length??-1);host.dataset.roomEvents=String(Object.keys((client?.activeRoom() as unknown as {events?:()=>Record<string,unknown>})?.events?.()??{}).length)}
  };
  requestAnimationFrame(tick);

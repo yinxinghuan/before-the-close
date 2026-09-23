@@ -1,0 +1,22 @@
+[
+  {
+    "width": 390,
+    "height": 844,
+    "errors": [],
+    "patrolDistance": 44,
+    "facing": {
+      "direction": "right",
+      "pose": "stand"
+    }
+  },
+  {
+    "width": 320,
+    "height": 568,
+    "errors": [],
+    "patrolDistance": 44,
+    "facing": {
+      "direction": "right",
+      "pose": "stand"
+    }
+  }
+]

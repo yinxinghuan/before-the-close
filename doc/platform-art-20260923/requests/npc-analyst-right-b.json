@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-right-b",
+  "request": {
+    "request_id": "5f72b295-a283-4492-9813-d1ee5320b49a",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly RIGHT in profile. Near RIGHT leg trails LEFT with heel raised, far LEFT leg reaches RIGHT heel planted. Folder tucked under far LEFT arm, mostly occluded by torso; free near RIGHT arm swings forward. Natural short walking stride.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T07:26:58.866Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_000f54f36b82f41df07f94772e59c83a",
+    "request_id": "5f72b295-a283-4492-9813-d1ee5320b49a",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148419399,
+    "updated_at": 1790148451931,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148451639-12kgz52pie8l.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148451639-12kgz52pie8l.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32405
+  },
+  "elapsedSeconds": 33.296,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-right-b.webp",
+  "sha256": "089695fa15cd1fd5117fe6f8ad3b0a3f11466311394f4602d97831b901460078"
+}

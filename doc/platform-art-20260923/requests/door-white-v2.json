@@ -1,0 +1,49 @@
+{
+  "id": "door-white-v2",
+  "request": {
+    "request_id": "23165377-b892-4362-9835-cfaa683855f3",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "A game sprite of a WIDE SHORT thin rectangular panel of warm ivory painted wood, exactly 400 wide by 500 high in image space. It looks like a compact upright board, not a tall doorway. Face rectangle from x312 to712 and y272 to772 on a 1024 square canvas. Horizontal top and bottom equal length. No sideways rotation. Narrow TOP surface of this same slab visible above y272, depth16px, no extra beam. Two tiny dark hinge barrels on right edge and a small matte black left lever on horizontally flattened elliptical round mounting plate. These details identify a door LEAF; no frame, jamb, threshold, base, floor or shadow. High downward orthographic view, foreshortened height, strongly visible upper surfaces of handle and hinges. Genuine low-resolution 2D pixel art enlarged with sharp square pixels, stepped dark outlines, 24 colors, no soft render. Entire short rectangular object centered with empty margin on uniform opaque magenta #ff00ff. Width is 80 percent of visible face height, do not make a narrow tall real-life door.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:50:40.378Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_1c6138c6d476d21985d3e654413e5bc5",
+    "request_id": "23165377-b892-4362-9835-cfaa683855f3",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142641214,
+    "updated_at": 1790142672672,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142672342-rszx8l60rae.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142672342-rszx8l60rae.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31328
+  },
+  "elapsedSeconds": 32.499,
+  "file": "doc/platform-art-20260923/raw/door-white-v2.webp",
+  "sha256": "b0f82bdbb9db2ec63eddcdb9980311f008d0ffc4f39bd1dfe4df47dded333953"
+}

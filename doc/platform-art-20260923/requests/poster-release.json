@@ -1,0 +1,53 @@
+{
+  "id": "poster-release",
+  "request": {
+    "request_id": "60724a30-8aca-489a-a6db-6f3f21d2a39a",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790150000893-4cpgk3x2iz6.webp"
+    ],
+    "prompt": "Polish this SAME pixel-art financial investigation game cover. Preserve the woman, office, walnut desk and New York dusk atmosphere, with same chunky pixel art. Add the exact readable title BEFORE THE CLOSE in elegant warm ivory serif lettering in the upper quarter, on two balanced lines. Keep her face and all key narrative elements above the bottom20 percent; the bottom may contain desk foreground. Clear visual focal point and readable at160px thumbnail. Square1024 composition. No other words, no badges or logos. No additional characters.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "poster"
+  ],
+  "attemptedAt": "2026-09-23T08:05:01.281Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_6ee0f57cf79576349a143763b4534e1e",
+    "request_id": "60724a30-8aca-489a-a6db-6f3f21d2a39a",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790150701946,
+    "updated_at": 1790150747412,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790150746952-viosnyzydf.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790150746952-viosnyzydf.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 45163
+  },
+  "elapsedSeconds": 46.386,
+  "file": "doc/platform-art-20260923/raw/poster-release.webp",
+  "sha256": "9aa3633ec39c5e24c14e05cd28e24b895c9acb618bf5efbffc5355221f4a13d7"
+}

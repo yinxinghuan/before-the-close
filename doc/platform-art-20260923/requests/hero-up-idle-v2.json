@@ -1,0 +1,53 @@
+{
+  "id": "hero-up-idle-v2",
+  "request": {
+    "request_id": "0978831d-f410-485c-a902-bc72fe954942",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143229282-8tm5lwa0y1e.webp"
+    ],
+    "prompt": "Create ONE complete full-body north-facing sprite of the SAME woman in the reference: chestnut bob, copper blazer, navy trousers, brown loafers, compact three-head-high chunky pixel RPG style. Preserve identity and proportions. Fixed orthographic overhead camera, no perspective, no cast shadow. Solid pure magenta background. She faces AWAY, toward the TOP edge; back of head, back of jacket and back of legs only. Both shoes point UP into the scene. Planted shoe shows its small dark rear heel beneath trouser cuff, NOT a front vamp, toe cap, laces, or exposed instep facing the viewer. Raised trailing shoe may show one dark sole, no skin-colored patch inside the sole. Natural small walking stride, no running, kicking or kneeling. Generate the whole pose, not isolated body parts. Standing at rest, both legs straight, feet adjacent on the same horizontal ground line. Both shoe rear heels on ground.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-up-idle"
+  ],
+  "attemptedAt": "2026-09-23T07:20:56.338Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_35978d53784c97c657d118bd46c603f4",
+    "request_id": "0978831d-f410-485c-a902-bc72fe954942",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148057381,
+    "updated_at": 1790148091335,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148091051-1gsyj3x8tth.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148091051-1gsyj3x8tth.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29602
+  },
+  "elapsedSeconds": 35.491,
+  "file": "doc/platform-art-20260923/raw/hero-up-idle-v2.webp",
+  "sha256": "75f0622fce4815e69d1c57c804324e35f3e5c20f16a7c2d752f1c162695b0d30"
+}

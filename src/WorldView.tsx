@@ -4,7 +4,7 @@ import {people,tx,type Locale} from './content';
 import {rooms,world,type SceneId,type Entity} from './world';
 import {findPath,walkable,type Point} from './spatial/world';
 import {createRpgSpace,type Space} from './spatial/rpg-space';
-import {baseGraphic,frontGraphic,heroSheet,northGraphic,propGraphic,sideGraphic,spatialSheets} from './spatial/sheets';
+import {baseGraphic,doorParts,frontGraphic,heroSheet,northGraphic,propGraphic,sideGraphic,spatialSheets} from './spatial/sheets';
 import {footstep} from './audio';
 
 export type WorldHandle={move:(x:number,y:number)=>void;go:(point:Point)=>void;approach:(entity:Entity)=>void;position:()=>Point};
@@ -27,6 +27,7 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
    {id:sideGraphic(roomId),x:0,y:0,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(sideGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
    ...room.props.map(prop=>({id:propGraphic(prop),x:prop.x,y:prop.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(propGraphic(prop));this.animationName.set('stand');this.syncChanges()}}})),
    ...personEvents(roomId),
+   ...doorParts.filter(part=>part.scene===roomId).map(part=>({id:part.id,x:0,y:part.depth,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(part.id);this.animationName.set('stand');this.syncChanges()}}})),
    {id:frontGraphic(roomId),x:0,y:640,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(frontGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
   ]};
   const dynamicWalkable=(point:Point,id:string)=>walkable(world,id,point)&&!Object.values(residents.current[id as SceneId]||{}).some(resident=>point.x<resident.x+12&&point.x+world.actor.w>resident.x-12&&point.y<resident.y+4&&point.y+world.actor.h>resident.y-10);

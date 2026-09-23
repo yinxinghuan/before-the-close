@@ -1,0 +1,53 @@
+{
+  "id": "hero-up-a",
+  "request": {
+    "request_id": "4e3c0e3d-4291-428a-8f84-1405d4e85557",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use ONLY the supplied newly generated character as identity/style reference. Preserve her chestnut bob, copper blazer, ivory shirt, navy trousers, brown loafers, compact THREE-head-high proportions, dark outline and chunky pixels. This is a complete new full-body sprite, not a partial limb edit. Orthographic overhead RPG camera, seen from above at50degrees. Exact same opaque flat magenta background, no shadow or text. One centered character only, no other person. Face exactly NORTH toward top edge. Only BACK of head/hair, back of copper blazer and backs of trousers visible, NO face or eyes. Walking contact A: screen LEFT shoe is higher/further toward top than right shoe. Screen RIGHT shoe trails lower and lifts its heel, showing brown sole. Natural small forward step, both feet visible and distinct, one arm counter-swings. Show top of head and shoulders.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T05:55:24.430Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_1ee5416409ca1dacbf31dcdbd09efc8c",
+    "request_id": "4e3c0e3d-4291-428a-8f84-1405d4e85557",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142925203,
+    "updated_at": 1790142955847,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142955547-h34df4n2xrt.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142955547-h34df4n2xrt.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30495
+  },
+  "elapsedSeconds": 31.567,
+  "file": "doc/platform-art-20260923/raw/hero-up-a.webp",
+  "sha256": "fbb22f6221505c3e77c9ecc772773b10797593bdb6f7d83d24064aa8696fbfed"
+}

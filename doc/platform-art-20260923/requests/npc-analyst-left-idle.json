@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-left-idle",
+  "request": {
+    "request_id": "d8a9621f-2f04-44fa-ac8c-5b0238b3a0bf",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143752022-80402g68ore.webp"
+    ],
+    "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly LEFT in profile. Stand STILL, feet aligned side by side on same ground level, no stepping. Folder under near left arm.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-left-a"
+  ],
+  "attemptedAt": "2026-09-23T07:25:53.956Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_570ec8a154ccc4d38a12721c08e5dd3d",
+    "request_id": "d8a9621f-2f04-44fa-ac8c-5b0238b3a0bf",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148355196,
+    "updated_at": 1790148388522,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148388224-fy9d8dpx3s.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148388224-fy9d8dpx3s.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33214
+  },
+  "elapsedSeconds": 34.833,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-left-idle.webp",
+  "sha256": "ff8a27f2b2279279c1aaf53d04fa8d2ee85169a95c8379b5d3baf44a146a5e93"
+}

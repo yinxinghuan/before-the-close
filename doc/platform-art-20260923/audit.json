@@ -1,0 +1,14 @@
+{
+  "requests": 81,
+  "modes": {
+    "edit": 49,
+    "text": 32
+  },
+  "models": {
+    "gpt-image-2.5-sunburst": 81
+  },
+  "historicalReferenceCount": 0,
+  "runtimeFiles": 65,
+  "coverageMissing": [],
+  "visualQuality": "not determined by this audit"
+}

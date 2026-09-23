@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-left-b",
+  "request": {
+    "request_id": "b326c0e4-98cd-4cc3-8bec-def29a5b4ce5",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143752022-80402g68ore.webp"
+    ],
+    "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly LEFT in profile. OPPOSITE contact to reference: near LEFT leg trails to RIGHT with heel raised, far RIGHT leg extends LEFT and plants heel. Keep torso identity. Folder stays near left arm.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-left-a"
+  ],
+  "attemptedAt": "2026-09-23T07:24:24.822Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_be97c9c5e90cd1ebbca4657443c038d1",
+    "request_id": "b326c0e4-98cd-4cc3-8bec-def29a5b4ce5",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148265948,
+    "updated_at": 1790148302323,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148302041-48n7t4zkf.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148302041-48n7t4zkf.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 36182
+  },
+  "elapsedSeconds": 37.696,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-left-b.webp",
+  "sha256": "98398ff15404b95814bb745cfb42b909917d0483ac62b827df104cb450c58e6a"
+}

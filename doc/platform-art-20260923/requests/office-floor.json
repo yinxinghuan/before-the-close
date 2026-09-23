@@ -1,0 +1,49 @@
+{
+  "id": "office-floor",
+  "request": {
+    "request_id": "80455c18-e671-41a2-b4a7-cd48e1b72dc6",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Seamless flat TOP DOWN orthographic floor texture only, entire square edge to edge. Restrained chunky 16-bit pixel-art, limited 12-color palette, no photoreal noise. muted warm gray low-pile commercial carpet tiles, subtle tiny fibers. Six tiles across 1024px image, perfectly parallel axis aligned straight seams, equal size everywhere. No furniture, wall, object, shadow, lighting gradient, border or magenta. Repeatable floor material only.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:43:10.937Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_8d36c9951d41a61393078a38bd50d13c",
+    "request_id": "80455c18-e671-41a2-b4a7-cd48e1b72dc6",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149391902,
+    "updated_at": 1790149419769,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149419405-8384prkdm52.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149419405-8384prkdm52.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 27757
+  },
+  "elapsedSeconds": 29.06,
+  "file": "doc/platform-art-20260923/raw/office-floor.webp",
+  "sha256": "9e4f5b9192d37aae5442f01d30b36d96e5030e62ab5906f7ef24e2f5766d311d"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "npc-partner-up",
+  "request": {
+    "request_id": "ff977841-9424-4569-8172-c0273e7f581f",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556599-kneoy5xtt.webp"
+    ],
+    "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Stand facing SCREEN TOP. Show only BACK of silver bob, navy blazer and trousers. No face or eyes. Both shoe heel backs visible, NOT front buckles.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-partner-down"
+  ],
+  "attemptedAt": "2026-09-23T06:08:39.844Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_9cba194aaa4621be71ebe2f2c1fd4abc",
+    "request_id": "ff977841-9424-4569-8172-c0273e7f581f",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143720682,
+    "updated_at": 1790143751755,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143751422-q7lx86ppth.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143751422-q7lx86ppth.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30950
+  },
+  "elapsedSeconds": 32.127,
+  "file": "doc/platform-art-20260923/raw/npc-partner-up.webp",
+  "sha256": "3ff98907ec98acd4475d97db1bd98f2d51e2bd77d3c74b9e3655e5e73049cfda"
+}

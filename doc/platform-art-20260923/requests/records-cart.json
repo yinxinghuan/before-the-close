@@ -1,0 +1,49 @@
+{
+  "id": "records-cart",
+  "request": {
+    "request_id": "699223c1-0f37-4708-bb1c-2079f966b7a4",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One small axis-aligned gray steel two-tier rolling document trolley, a navy binder and two ivory paper stacks supported on each shelf, four short wheels. Front facing south, shallow rectangular shelves, waist-high.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:42:09.931Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_278ab393287308b8f50cf8efd5b97b97",
+    "request_id": "699223c1-0f37-4708-bb1c-2079f966b7a4",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149330714,
+    "updated_at": 1790149363252,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149362929-39hnm8ouwbr.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149362929-39hnm8ouwbr.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32426
+  },
+  "elapsedSeconds": 33.523,
+  "file": "doc/platform-art-20260923/raw/records-cart.webp",
+  "sha256": "48f5bad313ef0969328d727e562979fd5651e2c9d3c2a9824feb25d2ddb7fa7e"
+}

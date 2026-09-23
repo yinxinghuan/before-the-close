@@ -1,0 +1,49 @@
+{
+  "id": "fund-desk",
+  "request": {
+    "request_id": "9ec9d432-4a1a-46c6-8669-e258fab74ab0",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Crisp 16-bit pixel-art for an overhead exploration RPG, restrained dark outline, visible square pixel clusters, limited subdued palette, no photoreal shading. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw, every x-axis edge exactly horizontal, z vertical, depth recedes straight upward. No vanishing point. A single substantial rectangular walnut office DESK and the few objects it supports. Straight-on south-facing 3/4 overhead orthographic view. Desktop is a true projected RECTANGLE: back edge and front edge same length perfectly horizontal, left/right depth edges strictly VERTICAL in the image, no trapezoid and no diagonal or taper. Table front has two low drawer pedestals and knee space. Top surface broad enough to clearly see a closed slim laptop, two neatly stacked paper folders and one coffee mug, all feet touching tabletop, no floating. Warm walnut with brass drawer pulls, restrained signs of daily work, New York investment office. NO chair, NO person, NO floor, NO room. Entire furniture centered occupying about 700x450 of1024 image, uniform opaque pure magenta #ff00ff background. Shape composed of rectangles, not isometric.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:52:58.712Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_ce588dd9add68a044cd79205086821cd",
+    "request_id": "9ec9d432-4a1a-46c6-8669-e258fab74ab0",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142779523,
+    "updated_at": 1790142811295,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142810984-xgykzbraobc.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142810984-xgykzbraobc.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31657
+  },
+  "elapsedSeconds": 32.711,
+  "file": "doc/platform-art-20260923/raw/fund-desk.webp",
+  "sha256": "63beb6ae3e7d17298de9202d8a743bdfa0e044d3afd571ce430d574b188698e4"
+}

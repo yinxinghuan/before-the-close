@@ -1,0 +1,49 @@
+{
+  "id": "records-floor",
+  "request": {
+    "request_id": "ea1e20a1-6abd-4ff9-a1ac-683e102e3705",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Seamless flat TOP DOWN orthographic floor texture only, entire square edge to edge. Restrained chunky 16-bit pixel-art, limited 12-color palette, no photoreal noise. muted olive gray solid linoleum square tiles with understated scuffs. Six tiles across 1024px image, perfectly parallel axis aligned straight seams, equal size everywhere. No furniture, wall, object, shadow, lighting gradient, border or magenta. Repeatable floor material only.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:43:10.938Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_1cd4d94dbc90458ceea76afe3b76bde1",
+    "request_id": "ea1e20a1-6abd-4ff9-a1ac-683e102e3705",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149392056,
+    "updated_at": 1790149436788,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149436507-ihjba107hc.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149436507-ihjba107hc.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 44610
+  },
+  "elapsedSeconds": 46.079,
+  "file": "doc/platform-art-20260923/raw/records-floor.webp",
+  "sha256": "a18caa6e8ce9997f1f2ee322147267537c29f63022f128cabe3d75e5917b6622"
+}

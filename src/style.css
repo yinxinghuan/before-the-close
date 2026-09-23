@@ -28,3 +28,6 @@
 .bc-access-targets button{z-index:2}
 .bc-access-targets button::after{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;transform:translate(-50%,-50%);background:#b48b50;box-shadow:0 0 0 2px #142b3580}
 .bc-access-targets button[data-person="true"]::after{width:6px;height:6px}
+
+/* Keep the location caption above the revealed north doorway. */
+.bc-location{top:122px}

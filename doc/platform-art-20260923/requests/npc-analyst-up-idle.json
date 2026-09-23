@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-up-idle",
+  "request": {
+    "request_id": "904a4a9f-65d4-4371-993d-e07c743a5810",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face NORTH, entire BACK visible, no face. Stand still with feet aligned. Folder on screen LEFT under left arm. Trouser hems cover ankles. Only small rear heels visible, no front shoe vamps or skin above shoes.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T07:25:53.956Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_87c070a4bc8384c1d238b7c88a6b2186",
+    "request_id": "904a4a9f-65d4-4371-993d-e07c743a5810",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148355055,
+    "updated_at": 1790148391237,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148390918-jn3lngul7om.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148390918-jn3lngul7om.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 36066
+  },
+  "elapsedSeconds": 37.491,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-up-idle.webp",
+  "sha256": "0266c89e90630ba6e97dd21af73d46097f979aaf66a6af1ed262f718a6a42feb"
+}

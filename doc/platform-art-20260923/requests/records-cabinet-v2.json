@@ -1,0 +1,49 @@
+{
+  "id": "records-cabinet-v2",
+  "request": {
+    "request_id": "589bbce6-14aa-40cb-924a-8c1c78a32d13",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "PARALLEL PROJECTION CONSTRUCTION: visible top plane is a mathematical RECTANGLE, same width at y=300 and y=480. Its four corners must be (180,300),(844,300),(844,480),(180,480). Vertical front plane immediately below from y=480 to y=740, SAME width. All outer edges horizontal or vertical; no sloped side edges, no vanishing point, no narrower back edge. Draw the whole cabinet as this rectangular block, no side face. These coordinates describe shape only, never draw measurements or labels. Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide dark charcoal archive cabinet, three drawers across, slim brass pulls. Closed gray document storage boxes stacked no more than two high on top, a blue folder beside them. Low waist-high cabinet, all top edges axis aligned.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T07:45:27.660Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_281b7c2f240157a3ad824e2dd0e34d00",
+    "request_id": "589bbce6-14aa-40cb-924a-8c1c78a32d13",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149528395,
+    "updated_at": 1790149557899,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149557611-hjqv7vqr3w7.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149557611-hjqv7vqr3w7.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 29379
+  },
+  "elapsedSeconds": 32.121,
+  "file": "doc/platform-art-20260923/raw/records-cabinet-v2.webp",
+  "sha256": "2b45c783ac4395682dbd0c2dbba5330c2a36ad492afede0396e9c94b6e74d1ec"
+}

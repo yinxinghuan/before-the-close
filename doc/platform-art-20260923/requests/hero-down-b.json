@@ -1,0 +1,53 @@
+{
+  "id": "hero-down-b",
+  "request": {
+    "request_id": "146e5ecd-1818-4872-b80f-d2cfa812196a",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142958191-cdp9p3e5c1.webp"
+    ],
+    "prompt": "Produce ONE full-body alternate walking contact frame of EXACTLY the person in the reference. Preserve head/hair shape, head location, torso, clothes, colors, overhead camera, pixel block size and total figure height. Opaque solid magenta background. No new accessories, no shadow, no text. Keep character facing exactly the SAME direction. The opposite frame must genuinely exchange which leg is forward; do not merely redraw the same stride. Reference has SCREEN RIGHT shoe lower/forward. Now SCREEN LEFT shoe is lower/forward and flat planted, SCREEN RIGHT shoe higher/behind with heel raised. Swap the arm swing: SCREEN RIGHT hand lower/forward, SCREEN LEFT hand higher/back. Short natural stride.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-a"
+  ],
+  "attemptedAt": "2026-09-23T05:57:14.323Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_f84390d6aa1f4585a13e9c007b6e2b4b",
+    "request_id": "146e5ecd-1818-4872-b80f-d2cfa812196a",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143034880,
+    "updated_at": 1790143065484,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143065232-yuvzeqs30vk.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143065232-yuvzeqs30vk.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 30230
+  },
+  "elapsedSeconds": 31.44,
+  "file": "doc/platform-art-20260923/raw/hero-down-b.webp",
+  "sha256": "24f4a02611f12fddde08cd0ed6b3c206b27ac02e5a44f86d9ab3ee29d3f43353"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "door-white",
+  "request": {
+    "request_id": "7eb718a3-9935-481c-b84a-7f224ca060f8",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Genuine hand-crafted 2D pixel art for a mature overhead exploration RPG. Visible square pixel clusters, controlled 24-color palette, dark 1-pixel style outlines, NO photoreal rendering, NO soft airbrush gradients. Orthographic camera angled down 55 degrees, no vanishing point, no isometric yaw. One rectangular warm ivory painted movable thin slab. In image coordinates the FRONT FACE is a rectangle 400 pixels wide and 500 pixels tall. Both vertical edges parallel and both horizontal edges level; do NOT rotate slab sideways. Its own thin top surface is visible as a 16 pixel deep strip flush to its width, NOT an added lintel. Add two small black hinge barrels on right edge, one small black lever on left on a physically circular rosette that projects as a horizontal ellipse 0.57 as high as wide. Handle upper surface and hinge top caps must show the same downward view. This is an office door LEAF ONLY. No jamb, fixed frame, surrounding wall, floor or shadow. Entire object centered with large margin on uniform opaque saturated magenta #ff00ff. Crisp pixelated edges and shade steps, not a smooth 3D product render.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T05:48:09.262Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_5ebbd07f87b12d92cc1314058c7d8d65",
+    "request_id": "7eb718a3-9935-481c-b84a-7f224ca060f8",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790142495598,
+    "updated_at": 1790142522982,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790142522608-g1v9xczshgv.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790142522608-g1v9xczshgv.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 27268
+  },
+  "elapsedSeconds": 33.838,
+  "file": "doc/platform-art-20260923/raw/door-white.webp",
+  "sha256": "dd85b92d18696f1fac753b77c946c5349a02b9ad1d487e90cd258499b8ea376c"
+}

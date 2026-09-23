@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-down",
+  "request": {
+    "request_id": "ca057104-9a8f-4e14-92fe-3d58bb814348",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use the supplied newly created woman ONLY for the shared compact three-head-high RPG proportions, exact overhead camera, pixel size, outline thickness and source framing. Create a DIFFERENT full-body adult character, not her face or clothes. ONE figure neutral stand facing south toward screen bottom, arms down and feet beside each other. Same apparent adult height and shoulder scale. Opaque uniform magenta #ff00ff background, no ground/shadow, no labels. Daniel Kim, a 28-year-old male investment analyst in a New York international firm, short side-parted black hair, light-medium skin, pale blue rolled-sleeve shirt, charcoal slim straight trousers and brown leather shoes. Young adult man, restrained facial features, no tie or bag. A small navy file folder tucked tightly under his left arm; no text on it.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T06:05:24.589Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_39f51257ddacbc193fd9af5b400cb59d",
+    "request_id": "ca057104-9a8f-4e14-92fe-3d58bb814348",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143525451,
+    "updated_at": 1790143556567,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31002
+  },
+  "elapsedSeconds": 35.197,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-down.webp",
+  "sha256": "33bbeb13e0e74fe91833fafac08bb94a3b28abe830e8c085e493d8bc0375d310"
+}

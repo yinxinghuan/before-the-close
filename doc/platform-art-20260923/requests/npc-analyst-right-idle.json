@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-right-idle",
+  "request": {
+    "request_id": "afc8f8e3-02c9-4ce5-b0df-a1fca5ea2511",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly RIGHT in profile. Stand still, feet side by side at same ground level. Folder tucked under far LEFT arm, mostly hidden by torso. Near RIGHT arm hangs at side.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T07:26:58.866Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_f1a8c87ae551d4391ff81c41de175d27",
+    "request_id": "afc8f8e3-02c9-4ce5-b0df-a1fca5ea2511",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148419653,
+    "updated_at": 1790148453189,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148452859-yrlf2rsg1y.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148452859-yrlf2rsg1y.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33420
+  },
+  "elapsedSeconds": 34.536,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-right-idle.webp",
+  "sha256": "cf068779b7b35602d5aa76dd5d7b609567f024612fa4b841bd312920611fb1e9"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-left-a",
+  "request": {
+    "request_id": "c95719ec-f3a1-4f19-b9e0-16a8b9d86ef7",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Walk facing exactly SCREEN LEFT. Near leg extends LEFT heel planted; far leg trails RIGHT heel lifted. Far arm moves forward. Small folder remains held under anatomical LEFT arm, no text, do not switch arms. Clear natural compact stride, not running.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T06:08:39.844Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_84ed6e432a718bcb34b1c9a5a2fdaade",
+    "request_id": "c95719ec-f3a1-4f19-b9e0-16a8b9d86ef7",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143720737,
+    "updated_at": 1790143752348,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143752022-80402g68ore.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143752022-80402g68ore.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31497
+  },
+  "elapsedSeconds": 32.633,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-left-a.webp",
+  "sha256": "55fcf9ccc61c4721ca2e894437cac02a2cc388eccbfc95a9c25cbf6f4833a862"
+}

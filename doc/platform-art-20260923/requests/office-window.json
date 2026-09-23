@@ -1,0 +1,49 @@
+{
+  "id": "office-window",
+  "request": {
+    "request_id": "59f3aac7-e4e4-46ec-9b6a-571f8ec80c10",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "One wide rectangular office WINDOW as a separate game sprite, front facing with zero sideways yaw. Pixel art matching a mature 16-bit overhead RPG. Thin dark charcoal mullions divide it into three vertical panes. Through the glass a distant Manhattan skyline at golden dusk, muted blue-gray buildings and soft peach sky, no legible text, no famous logo. Narrow ivory interior sill at bottom with clearly visible top surface under50degree downward orthographic camera. Window overall width three times height. Entire complete window isolated with generous margin on opaque pure magenta #ff00ff, no surrounding wall, no floor or furniture. Restrained 24-color pixel clusters, hard dark outlines, no photographic gradients.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-23T06:05:24.589Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_fbe7eb6bd801542b399d721d7b78d056",
+    "request_id": "59f3aac7-e4e4-46ec-9b6a-571f8ec80c10",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143525521,
+    "updated_at": 1790143559574,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143559236-zaghiwx406.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143559236-zaghiwx406.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 33467
+  },
+  "elapsedSeconds": 36.26,
+  "file": "doc/platform-art-20260923/raw/office-window.webp",
+  "sha256": "fbcfa71ee46d52be41a1390d6226704efa582fa1ae3d02cb051fc4e9d57624a6"
+}

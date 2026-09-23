@@ -1,0 +1,53 @@
+{
+  "id": "npc-finance-left",
+  "request": {
+    "request_id": "4abb9b5f-17ac-4ae4-9637-64958797d76d",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790149494746-voehmq5mr4o.webp"
+    ],
+    "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face exactly LEFT in full profile, nose pointing left. Neutral stand, both feet together; no stride.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-finance-down"
+  ],
+  "attemptedAt": "2026-09-23T07:47:19.513Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_6646efeb3c7f3c8a6237a4a0742e6943",
+    "request_id": "4abb9b5f-17ac-4ae4-9637-64958797d76d",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790149640068,
+    "updated_at": 1790149672284,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790149671992-xofyx7je2n.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790149671992-xofyx7je2n.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32037
+  },
+  "elapsedSeconds": 34.035,
+  "file": "doc/platform-art-20260923/raw/npc-finance-left.webp",
+  "sha256": "0624e90b9eb49c70e457b21a13e63ad325feb40f551234f3d3de8676761dff62"
+}

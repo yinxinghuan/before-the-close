@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-down-a",
+  "request": {
+    "request_id": "38cb1dce-6cf0-4b05-84a3-a0e23316a640",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143556243-quj0gm5s317.webp"
+    ],
+    "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face SOUTH, front visible. Walk contact A: anatomical LEFT leg (screen right) steps toward viewer, RIGHT leg behind.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-down"
+  ],
+  "attemptedAt": "2026-09-23T07:24:24.824Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_7375ddc7b05e2154e770a4f0e1c4b6a1",
+    "request_id": "38cb1dce-6cf0-4b05-84a3-a0e23316a640",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148269391,
+    "updated_at": 1790148301803,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148301515-qwr3g429hx.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148301515-qwr3g429hx.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32298
+  },
+  "elapsedSeconds": 37.247,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-down-a.webp",
+  "sha256": "eccfec1a7959403b5abcc65e26ff3dfd0018cf642e0d9b8d47ab42ae3d192ce9"
+}

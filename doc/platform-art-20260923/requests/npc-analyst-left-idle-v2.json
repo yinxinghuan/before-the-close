@@ -1,0 +1,53 @@
+{
+  "id": "npc-analyst-left-idle-v2",
+  "request": {
+    "request_id": "6c7eea46-f890-45aa-b19d-dc6fe217647c",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790143752022-80402g68ore.webp"
+    ],
+    "prompt": "One complete sprite of EXACTLY this person facing LEFT. Change walking pose to neutral standing: both feet adjacent beneath hips at same ground level, knees straight, free right arm relaxed. Navy folder stays under near left arm. Preserve head size, torso length and compact leg length of reference. Do not elongate body or shrink head: crown-to-chin remains about one third of full height, short trouser legs. Same blue rolled-sleeve shirt, charcoal trousers, brown shoes, black hair, same orthographic elevated camera, same coarse pixels and outline. Solid pure magenta background, no shadow or text. One full-body character only.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "npc-analyst-left-a"
+  ],
+  "attemptedAt": "2026-09-23T07:30:52.974Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_e48d18367901c8ec66d4892766c7ddc6",
+    "request_id": "6c7eea46-f890-45aa-b19d-dc6fe217647c",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790148653540,
+    "updated_at": 1790148685602,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790148685324-m7518magx4.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790148685324-m7518magx4.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31860
+  },
+  "elapsedSeconds": 34.903,
+  "file": "doc/platform-art-20260923/raw/npc-analyst-left-idle-v2.webp",
+  "sha256": "34a81d338391c1d5df6b6ba972d4777d447c707b9a4b025d847ac713d833ffa2"
+}

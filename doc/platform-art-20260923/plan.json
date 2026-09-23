@@ -1,0 +1,485 @@
+{
+  "model": "gpt-image-2.5-sunburst",
+  "sourcePolicy": "text roots only; same-run explicit parent references for actor poses; no historical images",
+  "assets": [
+    {
+      "id": "hero-down-idle",
+      "prompt": "Genuine hand-crafted 2D pixel art for a mature overhead exploration RPG. Visible square pixel clusters, controlled 24-color palette, dark 1-pixel style outlines, NO photoreal rendering, NO soft airbrush gradients. Orthographic camera angled down 55 degrees, no vanishing point, no isometric yaw. ONE complete compact adult woman sprite, facing straight toward the BOTTOM edge. Ava Morgan, a 32-year-old New York investment principal, chestnut chin-length bob, ivory open collar, muted copper blazer, dark indigo trousers and brown leather loafers. No bag or badge. Three head-heights tall total, broad readable head and shoulders, short solid legs; mature restrained features. Clearly see crown, shoulder tops, shoe tops; short foreshortened face. Neutral stand: arms down, two feet planted beside each other. Full body centered occupying about 650 pixels of a 1024 canvas, large empty margin. Entire hair and both shoes visible. Uniform opaque saturated magenta #ff00ff background, NO shadow, NO ground, NO props, NO words, NO frame. Every visible body part belongs to one person."
+    },
+    {
+      "id": "door-white",
+      "prompt": "Genuine hand-crafted 2D pixel art for a mature overhead exploration RPG. Visible square pixel clusters, controlled 24-color palette, dark 1-pixel style outlines, NO photoreal rendering, NO soft airbrush gradients. Orthographic camera angled down 55 degrees, no vanishing point, no isometric yaw. One rectangular warm ivory painted movable thin slab. In image coordinates the FRONT FACE is a rectangle 400 pixels wide and 500 pixels tall. Both vertical edges parallel and both horizontal edges level; do NOT rotate slab sideways. Its own thin top surface is visible as a 16 pixel deep strip flush to its width, NOT an added lintel. Add two small black hinge barrels on right edge, one small black lever on left on a physically circular rosette that projects as a horizontal ellipse 0.57 as high as wide. Handle upper surface and hinge top caps must show the same downward view. This is an office door LEAF ONLY. No jamb, fixed frame, surrounding wall, floor or shadow. Entire object centered with large margin on uniform opaque saturated magenta #ff00ff. Crisp pixelated edges and shade steps, not a smooth 3D product render."
+    },
+    {
+      "id": "north-wall",
+      "size": {
+        "width": 1536,
+        "height": 1024
+      },
+      "prompt": "Genuine hand-crafted 2D pixel art for a mature overhead exploration RPG. Visible square pixel clusters, controlled 24-color palette, dark 1-pixel style outlines, NO photoreal rendering, NO soft airbrush gradients. Orthographic camera angled down 55 degrees, no vanishing point, no isometric yaw. ONE isolated horizontally repeatable office wall segment, front-facing cross-section for overhead RPG. Wall assembly occupies a wide rectangle, 1200px wide by 280px high, centered. From top to bottom: solid charcoal wall TOP thickness band 70px deep, warm gray plaster INNER vertical face 180px high, narrow dark walnut skirting 30px high. All edges perfectly horizontal/vertical, equal widths top and bottom, no diagonal sides or converging edges. Top band clearly a thick wall cross section, flat dark fill with restrained pixel clusters; no extra bright rim. Understated Manhattan investment office, limited restrained color, readable chunky pixels. NO door, NO window, NO furniture, NO floor, NO end pillars, NO corner blocks. Uniform opaque saturated magenta #ff00ff outside wall silhouette. Seamless left/right ends for horizontal repetition."
+    },
+    {
+      "id": "hero-down-idle-v2",
+      "prompt": "ONE compact chunky pixel-art sprite for a TOP-DOWN 2D adventure videogame, drawn at low-resolution sprite scale then enlarged with crisp nearest-neighbor square blocks. A woman investment principal with chestnut bob, copper blazer over ivory shirt, navy trousers, brown loafers. Her entire figure is TWO AND A HALF HEAD HEIGHTS, short squat game sprite silhouette, very large head, broad shoulders, extremely SHORT LEGS, NOT human illustration proportions. Camera is HIGH ABOVE her, looking down 60 degrees: mostly hair crown visible, eyes near the lower edge of head, torso strongly foreshortened. She faces south at bottom of screen, two feet beside each other. Head occupies top 40 percent of total silhouette height, torso 35 percent, legs and shoes together only 25 percent. Maximum visible sprite height 450px and width about 260px in a 1024 square canvas. Restrained adult face, no smile, no anime huge eyes, no long torso, no long legs. One full body centered, no floor or shadow, no words. Flat opaque pure magenta #ff00ff background. Fine but clearly blocky 16-bit pixel art with dark outline, only 24 colors. No gradients or realistic rendering."
+    },
+    {
+      "id": "door-white-v2",
+      "prompt": "A game sprite of a WIDE SHORT thin rectangular panel of warm ivory painted wood, exactly 400 wide by 500 high in image space. It looks like a compact upright board, not a tall doorway. Face rectangle from x312 to712 and y272 to772 on a 1024 square canvas. Horizontal top and bottom equal length. No sideways rotation. Narrow TOP surface of this same slab visible above y272, depth16px, no extra beam. Two tiny dark hinge barrels on right edge and a small matte black left lever on horizontally flattened elliptical round mounting plate. These details identify a door LEAF; no frame, jamb, threshold, base, floor or shadow. High downward orthographic view, foreshortened height, strongly visible upper surfaces of handle and hinges. Genuine low-resolution 2D pixel art enlarged with sharp square pixels, stepped dark outlines, 24 colors, no soft render. Entire short rectangular object centered with empty margin on uniform opaque magenta #ff00ff. Width is 80 percent of visible face height, do not make a narrow tall real-life door."
+    },
+    {
+      "id": "fund-floor",
+      "prompt": "Seamless orthographic TOP DOWN floor texture only, covering the whole square image edge to edge. A refined New York investment office floor of dark desaturated blue-gray wool carpet tiles with a few understated worn fibers, alternating tiny muted weave pixel clusters. Same scale everywhere, parallel straight tile seams, no vanishing point, no directional perspective. Genuine restrained crisp 16-bit pixel-art, 12 colors, no photoreal noise. Tile squares about 160 pixels wide in 1024 image. NO wall, NO furniture, NO door, NO object, NO border, NO lighting gradient, no cast shadows. Flat continuous floor material suitable for repeating across an RPG room."
+    },
+    {
+      "id": "hero-down-idle-v3",
+      "prompt": "Crisp 16-bit pixel-art for an overhead exploration RPG, restrained dark outline, visible square pixel clusters, limited subdued palette, no photoreal shading. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw, every x-axis edge exactly horizontal, z vertical, depth recedes straight upward. No vanishing point. One compact adult female office worker, chestnut chin-length bob, copper blazer, ivory shirt, dark indigo trousers, brown flat loafers. Full-body sprite faces screen bottom. Three-head-height classic RPG proportions: head/hair 32 percent of sprite height, jacket torso 36 percent, SHORT trouser legs with shoes32 percent. Broad shoulders, solid build, small adult face. Show crown of hair and shoulder tops from above, face mildly shortened; NOT a giant baby head, NOT long fashion illustration. Hands down, two feet next to each other. Hard-edged clusters around 3 to 5 source pixels wide, coherent sprite detail. Single complete figure centered with generous margin. Opaque uniform magenta #ff00ff background, no shadow, no text, no items."
+    },
+    {
+      "id": "fund-desk",
+      "prompt": "Crisp 16-bit pixel-art for an overhead exploration RPG, restrained dark outline, visible square pixel clusters, limited subdued palette, no photoreal shading. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw, every x-axis edge exactly horizontal, z vertical, depth recedes straight upward. No vanishing point. A single substantial rectangular walnut office DESK and the few objects it supports. Straight-on south-facing 3/4 overhead orthographic view. Desktop is a true projected RECTANGLE: back edge and front edge same length perfectly horizontal, left/right depth edges strictly VERTICAL in the image, no trapezoid and no diagonal or taper. Table front has two low drawer pedestals and knee space. Top surface broad enough to clearly see a closed slim laptop, two neatly stacked paper folders and one coffee mug, all feet touching tabletop, no floating. Warm walnut with brass drawer pulls, restrained signs of daily work, New York investment office. NO chair, NO person, NO floor, NO room. Entire furniture centered occupying about 700x450 of1024 image, uniform opaque pure magenta #ff00ff background. Shape composed of rectangles, not isometric."
+    },
+    {
+      "id": "side-wall",
+      "size": {
+        "width": 1024,
+        "height": 1536
+      },
+      "prompt": "Crisp 16-bit pixel-art for an overhead exploration RPG, restrained dark outline, visible square pixel clusters, limited subdued palette, no photoreal shading. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw, every x-axis edge exactly horizontal, z vertical, depth recedes straight upward. No vanishing point. One long continuous LEFT SIDE WALL strip for an overhead 2D map. Perfectly vertical rectangular silhouette, total projected width90 pixels and height1200pixels, centered in1024x1536. Outer top surface dark charcoal occupies left60px width; inner narrow warm gray plaster face occupies right24px; walnut floor skirting on rightmost6px. All bands run the entire length top to bottom, no breaks. Straight parallel vertical boundaries. It is a wall cutaway along north-south axis, NOT a front-facing wall turned sideways, no floor patch, no horizontal plinth at bottom, no pillars, no windows, no door, no diagonal faces. Dark gray wall thickness and subdued plaster material match professional office. Uniform opaque magenta #ff00ff background."
+    },
+    {
+      "id": "hero-down-a",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use ONLY the supplied newly generated character as identity/style reference. Preserve her chestnut bob, copper blazer, ivory shirt, navy trousers, brown loafers, compact THREE-head-high proportions, dark outline and chunky pixels. This is a complete new full-body sprite, not a partial limb edit. Orthographic overhead RPG camera, seen from above at50degrees. Exact same opaque flat magenta background, no shadow or text. One centered character only, no other person. Face south toward bottom edge, WALKING contact pose A. Her anatomical RIGHT foot (screen LEFT shoe) is extended toward BOTTOM of image, heel planted. Screen RIGHT shoe trails higher, heel raised, sole partly visible. Left arm swings forward slightly, right arm back. Clearly separate feet, short natural walking stride, not wide running legs. Keep crown and shoulder tops visible."
+    },
+    {
+      "id": "hero-left-a",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use ONLY the supplied newly generated character as identity/style reference. Preserve her chestnut bob, copper blazer, ivory shirt, navy trousers, brown loafers, compact THREE-head-high proportions, dark outline and chunky pixels. This is a complete new full-body sprite, not a partial limb edit. Orthographic overhead RPG camera, seen from above at50degrees. Exact same opaque flat magenta background, no shadow or text. One centered character only, no other person. Face exactly WEST toward left edge of image. Complete SIDE PROFILE with one visible eye, nose points LEFT, no 3/4 turn. WALKING contact A: nearer leg wearing navy trouser extends LEFT with brown shoe heel planted near leftmost foot position. Far leg trails to RIGHT with heel lifted. Near arm swings right, far arm left. Head and body upright, short natural walking stride, both shoes distinct."
+    },
+    {
+      "id": "hero-up-a",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use ONLY the supplied newly generated character as identity/style reference. Preserve her chestnut bob, copper blazer, ivory shirt, navy trousers, brown loafers, compact THREE-head-high proportions, dark outline and chunky pixels. This is a complete new full-body sprite, not a partial limb edit. Orthographic overhead RPG camera, seen from above at50degrees. Exact same opaque flat magenta background, no shadow or text. One centered character only, no other person. Face exactly NORTH toward top edge. Only BACK of head/hair, back of copper blazer and backs of trousers visible, NO face or eyes. Walking contact A: screen LEFT shoe is higher/further toward top than right shoe. Screen RIGHT shoe trails lower and lifts its heel, showing brown sole. Natural small forward step, both feet visible and distinct, one arm counter-swings. Show top of head and shoulders."
+    },
+    {
+      "id": "fund-cabinet",
+      "prompt": "Crisp 16-bit pixel-art asset for an overhead RPG. Restrained warm walnut, ivory paper, dark blue-gray. Elevated ORTHOGRAPHIC camera looking down50degrees, zero sideways yaw, no vanishing point. X axis exactly horizontal, Z exactly vertical, depth straight upward. Rectangular top surfaces have equal length parallel front and back edges, strictly vertical left/right depth edges, never a tapered trapezoid or isometric diagonal. Dark outlines, hard square pixel clusters, not realistic. Uniform opaque pure magenta #ff00ff background outside complete object, generous margins, no shadow, no floor, no walls, no person, no text. ONE low wide walnut office credenza, three cabinet doors with small brass pulls. A single slim blue document tray with papers, one compact silver printer and a small green plant on its top, all resting physically on the top surface. No other furniture. Axis-aligned front facing south. Shape is a short wide rectangle, appropriate for waist-high office storage. All supports visible."
+    },
+    {
+      "id": "fund-meeting",
+      "prompt": "Crisp 16-bit pixel-art asset for an overhead RPG. Restrained warm walnut, ivory paper, dark blue-gray. Elevated ORTHOGRAPHIC camera looking down50degrees, zero sideways yaw, no vanishing point. X axis exactly horizontal, Z exactly vertical, depth straight upward. Rectangular top surfaces have equal length parallel front and back edges, strictly vertical left/right depth edges, never a tapered trapezoid or isometric diagonal. Dark outlines, hard square pixel clusters, not realistic. Uniform opaque pure magenta #ff00ff background outside complete object, generous margins, no shadow, no floor, no walls, no person, no text. ONE rectangular walnut conference TABLE only, NO CHAIRS. On the broad rectangular tabletop four modest closed blue folios, two small plain mugs and a central muted brass desk lamp. Plenty of empty tabletop. All items touch its upper plane. Four short sturdy legs. Front edge precisely horizontal, depth edges straight upward. Meeting-table footprint about twice a normal desk width, seen high above. No decorative border or surrounding room."
+    },
+    {
+      "id": "fund-chair",
+      "prompt": "Crisp 16-bit pixel-art asset for an overhead RPG. Restrained warm walnut, ivory paper, dark blue-gray. Elevated ORTHOGRAPHIC camera looking down50degrees, zero sideways yaw, no vanishing point. X axis exactly horizontal, Z exactly vertical, depth straight upward. Rectangular top surfaces have equal length parallel front and back edges, strictly vertical left/right depth edges, never a tapered trapezoid or isometric diagonal. Dark outlines, hard square pixel clusters, not realistic. Uniform opaque pure magenta #ff00ff background outside complete object, generous margins, no shadow, no floor, no walls, no person, no text. ONE compact dark blue leather lounge armchair with walnut arms and four short walnut legs, turned45degrees as an ACCENT OBJECT. Parallel orthographic axonometric edges without perspective convergence; top of cushion and arms visible from50degrees above. Beautiful restrained material and dark outline matching a mature investment office. Complete chair, no people, no side table. This is the only oblique furniture, modest footprint."
+    },
+    {
+      "id": "hero-down-b",
+      "parents": [
+        "hero-down-a"
+      ],
+      "prompt": "Produce ONE full-body alternate walking contact frame of EXACTLY the person in the reference. Preserve head/hair shape, head location, torso, clothes, colors, overhead camera, pixel block size and total figure height. Opaque solid magenta background. No new accessories, no shadow, no text. Keep character facing exactly the SAME direction. The opposite frame must genuinely exchange which leg is forward; do not merely redraw the same stride. Reference has SCREEN RIGHT shoe lower/forward. Now SCREEN LEFT shoe is lower/forward and flat planted, SCREEN RIGHT shoe higher/behind with heel raised. Swap the arm swing: SCREEN RIGHT hand lower/forward, SCREEN LEFT hand higher/back. Short natural stride."
+    },
+    {
+      "id": "hero-left-b",
+      "parents": [
+        "hero-left-a"
+      ],
+      "prompt": "Produce ONE full-body alternate walking contact frame of EXACTLY the person in the reference. Preserve head/hair shape, head location, torso, clothes, colors, overhead camera, pixel block size and total figure height. Opaque solid magenta background. No new accessories, no shadow, no text. Keep character facing exactly the SAME direction. The opposite frame must genuinely exchange which leg is forward; do not merely redraw the same stride. Reference nearer trouser leg reaches toward screen LEFT and rear foot toward screen RIGHT. Now the NEAR leg must trail to SCREEN RIGHT with toe touching and heel lifted; FAR leg extends to SCREEN LEFT with heel planted, toe slightly lifted. Near arm extends LEFT, far arm moves RIGHT. Keep same side profile. Make near/far leg overlap visibly change rather than duplicating the V-shaped silhouette."
+    },
+    {
+      "id": "hero-up-b",
+      "parents": [
+        "hero-up-a"
+      ],
+      "prompt": "Produce ONE full-body alternate walking contact frame of EXACTLY the person in the reference. Preserve head/hair shape, head location, torso, clothes, colors, overhead camera, pixel block size and total figure height. Opaque solid magenta background. No new accessories, no shadow, no text. Keep character facing exactly the SAME direction. The opposite frame must genuinely exchange which leg is forward; do not merely redraw the same stride. Reference screen RIGHT shoe is lower/trailing. Now SCREEN LEFT shoe is lower/trailing with heel raised and sole visible, SCREEN RIGHT shoe higher/forward and planted. We see backs of legs and backs/soles of shoes, NEVER front lace area. Back of head only. Exchange the arm swing."
+    },
+    {
+      "id": "hero-left-idle",
+      "parents": [
+        "hero-left-a"
+      ],
+      "prompt": "Preserve the exact character identity, proportions, hair, clothes, angle, full-body scale, chunky pixel style and palette of the supplied newly generated reference. ONE full-body neutral standing pose, both arms down, feet side by side under hips with soles on same horizontal baseline. No stride, no leg hidden behind other. Opaque uniform pure magenta background, no shadow, no words. Facing exactly screen LEFT in side profile, nose points left. Bring both shoes directly below hips, heel/toe profile facing left, do not turn front."
+    },
+    {
+      "id": "hero-up-idle",
+      "parents": [
+        "hero-up-a"
+      ],
+      "prompt": "Preserve the exact character identity, proportions, hair, clothes, angle, full-body scale, chunky pixel style and palette of the supplied newly generated reference. ONE full-body neutral standing pose, both arms down, feet side by side under hips with soles on same horizontal baseline. No stride, no leg hidden behind other. Opaque uniform pure magenta background, no shadow, no words. Facing exactly TOP of screen; BACK of hair and blazer, NO face. Both shoes seen from behind under trousers, heel backs visible, toes point away upward, NO front laces on back-facing feet."
+    },
+    {
+      "id": "door-white-v3",
+      "prompt": "Pixel-art overhead RPG prop, isolated rectangular ivory office door LEAF only. The final visible outline MUST be a vertical rectangle with width three units and height four units (3:4). Taller than wide but squat, NOT square, NOT a tall 1:2 human-height door. Strong foreshortening from a high downward ORTHOGRAPHIC camera. Straight vertical side edges and LEVEL horizontal top and bottom, no sideways yaw. See the slab own narrow flat TOP face, same width as front and no protruding cap. Tiny black lever on left on a horizontally elliptical rosette, two tiny right hinge barrels showing their top ellipses. All hardware modest size, not oversized. Plain flat ivory front, no inset border, no decoration. NO stationary frame, doorjamb, wall, floor, threshold, shadow. Entire object with wide empty margin on flat opaque magenta #ff00ff. Crisp hand-placed square pixels, restrained dark outline, limited beige/black palette, no soft product rendering."
+    },
+    {
+      "id": "npc-partner-down",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use the supplied newly created woman ONLY for the shared compact three-head-high RPG proportions, exact overhead camera, pixel size, outline thickness and source framing. Create a DIFFERENT full-body adult character, not her face or clothes. ONE figure neutral stand facing south toward screen bottom, arms down and feet beside each other. Same apparent adult height and shoulder scale. Opaque uniform magenta #ff00ff background, no ground/shadow, no labels. Mara Ellison, an experienced woman investment partner in her late50s: short silver-gray swept bob, warm deep brown skin, navy tailored trouser suit over ivory blouse, dark loafers, small understated gold earrings, calm mature face, slightly broader shoulders, not a caricature. Professional New York office wardrobe."
+    },
+    {
+      "id": "npc-analyst-down",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use the supplied newly created woman ONLY for the shared compact three-head-high RPG proportions, exact overhead camera, pixel size, outline thickness and source framing. Create a DIFFERENT full-body adult character, not her face or clothes. ONE figure neutral stand facing south toward screen bottom, arms down and feet beside each other. Same apparent adult height and shoulder scale. Opaque uniform magenta #ff00ff background, no ground/shadow, no labels. Daniel Kim, a 28-year-old male investment analyst in a New York international firm, short side-parted black hair, light-medium skin, pale blue rolled-sleeve shirt, charcoal slim straight trousers and brown leather shoes. Young adult man, restrained facial features, no tie or bag. A small navy file folder tucked tightly under his left arm; no text on it."
+    },
+    {
+      "id": "office-window",
+      "prompt": "One wide rectangular office WINDOW as a separate game sprite, front facing with zero sideways yaw. Pixel art matching a mature 16-bit overhead RPG. Thin dark charcoal mullions divide it into three vertical panes. Through the glass a distant Manhattan skyline at golden dusk, muted blue-gray buildings and soft peach sky, no legible text, no famous logo. Narrow ivory interior sill at bottom with clearly visible top surface under50degree downward orthographic camera. Window overall width three times height. Entire complete window isolated with generous margin on opaque pure magenta #ff00ff, no surrounding wall, no floor or furniture. Restrained 24-color pixel clusters, hard dark outlines, no photographic gradients."
+    },
+    {
+      "id": "npc-partner-left",
+      "parents": [
+        "npc-partner-down"
+      ],
+      "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Stand neutral facing SCREEN LEFT. Exact side profile, nose LEFT, hands relaxed, feet under hips. Same short silver hair, mature woman, navy trouser suit."
+    },
+    {
+      "id": "npc-partner-up",
+      "parents": [
+        "npc-partner-down"
+      ],
+      "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Stand facing SCREEN TOP. Show only BACK of silver bob, navy blazer and trousers. No face or eyes. Both shoe heel backs visible, NOT front buckles."
+    },
+    {
+      "id": "npc-analyst-left-a",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Walk facing exactly SCREEN LEFT. Near leg extends LEFT heel planted; far leg trails RIGHT heel lifted. Far arm moves forward. Small folder remains held under anatomical LEFT arm, no text, do not switch arms. Clear natural compact stride, not running."
+    },
+    {
+      "id": "npc-analyst-up-a",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Create ONE complete full-body sprite of exactly the referenced person. Preserve identity, clothes, compact proportions, adult height, large readable head, pixel size and outline. Same elevated orthographic RPG camera. Opaque solid magenta background, no text or shadow. Walk facing SCREEN TOP, only BACK of head and pale blue shirt, no face. Screen LEFT leg steps higher/forward, screen RIGHT leg trails lower with heel lifted showing sole. Folder remains under anatomical LEFT arm. No front shoe laces seen from behind."
+    },
+    {
+      "id": "hero-up-idle-v2",
+      "parents": [
+        "hero-up-idle"
+      ],
+      "prompt": "Create ONE complete full-body north-facing sprite of the SAME woman in the reference: chestnut bob, copper blazer, navy trousers, brown loafers, compact three-head-high chunky pixel RPG style. Preserve identity and proportions. Fixed orthographic overhead camera, no perspective, no cast shadow. Solid pure magenta background. She faces AWAY, toward the TOP edge; back of head, back of jacket and back of legs only. Both shoes point UP into the scene. Planted shoe shows its small dark rear heel beneath trouser cuff, NOT a front vamp, toe cap, laces, or exposed instep facing the viewer. Raised trailing shoe may show one dark sole, no skin-colored patch inside the sole. Natural small walking stride, no running, kicking or kneeling. Generate the whole pose, not isolated body parts. Standing at rest, both legs straight, feet adjacent on the same horizontal ground line. Both shoe rear heels on ground."
+    },
+    {
+      "id": "hero-up-a-v2",
+      "parents": [
+        "hero-up-a"
+      ],
+      "prompt": "Create ONE complete full-body north-facing sprite of the SAME woman in the reference: chestnut bob, copper blazer, navy trousers, brown loafers, compact three-head-high chunky pixel RPG style. Preserve identity and proportions. Fixed orthographic overhead camera, no perspective, no cast shadow. Solid pure magenta background. She faces AWAY, toward the TOP edge; back of head, back of jacket and back of legs only. Both shoes point UP into the scene. Planted shoe shows its small dark rear heel beneath trouser cuff, NOT a front vamp, toe cap, laces, or exposed instep facing the viewer. Raised trailing shoe may show one dark sole, no skin-colored patch inside the sole. Natural small walking stride, no running, kicking or kneeling. Generate the whole pose, not isolated body parts. Contact A: LEFT leg planted farther up; RIGHT leg trails down, heel lightly raised showing dark brown sole. RIGHT arm forward, LEFT arm backward."
+    },
+    {
+      "id": "hero-up-b-v2",
+      "parents": [
+        "hero-up-b"
+      ],
+      "prompt": "Create ONE complete full-body north-facing sprite of the SAME woman in the reference: chestnut bob, copper blazer, navy trousers, brown loafers, compact three-head-high chunky pixel RPG style. Preserve identity and proportions. Fixed orthographic overhead camera, no perspective, no cast shadow. Solid pure magenta background. She faces AWAY, toward the TOP edge; back of head, back of jacket and back of legs only. Both shoes point UP into the scene. Planted shoe shows its small dark rear heel beneath trouser cuff, NOT a front vamp, toe cap, laces, or exposed instep facing the viewer. Raised trailing shoe may show one dark sole, no skin-colored patch inside the sole. Natural small walking stride, no running, kicking or kneeling. Generate the whole pose, not isolated body parts. Contact B: RIGHT leg planted farther up; LEFT leg trails down, heel lightly raised showing dark brown sole. LEFT arm forward, RIGHT arm backward."
+    },
+    {
+      "id": "hero-up-idle-v3",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Identity reference only. Draw a NEW complete sprite from BEHIND of this woman, facing NORTH (away, toward top of image). Fixed orthographic high-angle RPG camera. Retain compact 3-head proportions, chestnut bob, copper blazer, ivory collar, navy trousers and dark brown footwear. Back of head, shoulder blades, rear jacket seam. Navy trouser hems cover ankles and rear shoe uppers completely: no visible skin, no tan strip between trousers and shoes. Feet are simple DARK BROWN rounded heel blocks below hems; shoe toes point AWAY and are hidden by legs. We see rear shoe heels, never a shoe tongue, laces or front vamp. Coarse pixel art, same outline/palette density. Solid pure magenta background. One isolated full-body sprite, no ground shadow. Neutral standing with both feet on ground at same level, arms resting beside torso."
+    },
+    {
+      "id": "hero-up-a-v3",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Identity reference only. Draw a NEW complete sprite from BEHIND of this woman, facing NORTH (away, toward top of image). Fixed orthographic high-angle RPG camera. Retain compact 3-head proportions, chestnut bob, copper blazer, ivory collar, navy trousers and dark brown footwear. Back of head, shoulder blades, rear jacket seam. Navy trouser hems cover ankles and rear shoe uppers completely: no visible skin, no tan strip between trousers and shoes. Feet are simple DARK BROWN rounded heel blocks below hems; shoe toes point AWAY and are hidden by legs. We see rear shoe heels, never a shoe tongue, laces or front vamp. Coarse pixel art, same outline/palette density. Solid pure magenta background. One isolated full-body sprite, no ground shadow. Walking contact A, small natural step away: left leg straight supporting in front, right leg extends behind toward bottom with heel lifted; dark underside of right sole visible. Left arm swings back to camera, right arm away."
+    },
+    {
+      "id": "hero-up-b-v3",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Identity reference only. Draw a NEW complete sprite from BEHIND of this woman, facing NORTH (away, toward top of image). Fixed orthographic high-angle RPG camera. Retain compact 3-head proportions, chestnut bob, copper blazer, ivory collar, navy trousers and dark brown footwear. Back of head, shoulder blades, rear jacket seam. Navy trouser hems cover ankles and rear shoe uppers completely: no visible skin, no tan strip between trousers and shoes. Feet are simple DARK BROWN rounded heel blocks below hems; shoe toes point AWAY and are hidden by legs. We see rear shoe heels, never a shoe tongue, laces or front vamp. Coarse pixel art, same outline/palette density. Solid pure magenta background. One isolated full-body sprite, no ground shadow. Walking contact B, small natural step away: right leg straight supporting in front, left leg extends behind toward bottom with heel lifted; dark underside of left sole visible. Right arm swings back to camera, left arm away."
+    },
+    {
+      "id": "npc-analyst-down-a",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face SOUTH, front visible. Walk contact A: anatomical LEFT leg (screen right) steps toward viewer, RIGHT leg behind."
+    },
+    {
+      "id": "npc-analyst-down-b",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face SOUTH, front visible. Walk contact B: anatomical RIGHT leg (screen left) steps toward viewer, LEFT leg behind."
+    },
+    {
+      "id": "npc-analyst-left-idle",
+      "parents": [
+        "npc-analyst-left-a"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly LEFT in profile. Stand STILL, feet aligned side by side on same ground level, no stepping. Folder under near left arm."
+    },
+    {
+      "id": "npc-analyst-left-b",
+      "parents": [
+        "npc-analyst-left-a"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly LEFT in profile. OPPOSITE contact to reference: near LEFT leg trails to RIGHT with heel raised, far RIGHT leg extends LEFT and plants heel. Keep torso identity. Folder stays near left arm."
+    },
+    {
+      "id": "npc-analyst-up-idle",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face NORTH, entire BACK visible, no face. Stand still with feet aligned. Folder on screen LEFT under left arm. Trouser hems cover ankles. Only small rear heels visible, no front shoe vamps or skin above shoes."
+    },
+    {
+      "id": "npc-analyst-up-b",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face NORTH, entire BACK visible, no face. Walk contact B: screen RIGHT leg steps forward higher, screen LEFT leg trails lower, heel raised with dark sole visible. Folder on screen LEFT under left arm. Trouser hems cover ankles; no shoe front tongues or skin strips."
+    },
+    {
+      "id": "npc-analyst-right-a",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly RIGHT in profile. Near RIGHT leg reaches RIGHT heel planted, far LEFT leg trails LEFT heel raised. Folder tucked under far LEFT arm, mostly occluded by torso; free near RIGHT hand visible. Natural short walking stride."
+    },
+    {
+      "id": "npc-analyst-right-idle",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly RIGHT in profile. Stand still, feet side by side at same ground level. Folder tucked under far LEFT arm, mostly hidden by torso. Near RIGHT arm hangs at side."
+    },
+    {
+      "id": "npc-analyst-right-b",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw ONE complete full-body sprite of the SAME male analyst: short side-parted black hair, pale blue rolled-sleeve shirt, charcoal trousers, brown shoes, navy folder secured under anatomical LEFT arm. Preserve compact three-head proportions, chunky pixels, thick outline, elevated orthographic RPG camera. Keep left forearm holding folder; free right arm naturally swings. No shifting folder to other arm. Solid pure magenta background, no ground shadow or text. Face exactly RIGHT in profile. Near RIGHT leg trails LEFT with heel raised, far LEFT leg reaches RIGHT heel planted. Folder tucked under far LEFT arm, mostly occluded by torso; free near RIGHT arm swings forward. Natural short walking stride."
+    },
+    {
+      "id": "hero-up-b-v4",
+      "parents": [
+        "hero-up-a-v3"
+      ],
+      "prompt": "One complete full-body RPG sprite, same woman and exact overhead camera/pixel style as reference. She faces NORTH, back toward us. Draw the OPPOSITE WALK CONTACT: the shoe on the RIGHT SIDE OF THE IMAGE must be HIGHER, nearer to her jacket; the shoe on the LEFT SIDE OF THE IMAGE must be LOWER, toward bottom edge. Put the bottom of left shoe at y=850, bottom of right shoe at y=790. Screen-left leg extends back down and lifts heel to expose a dark brown sole. Screen-right leg is the straight supporting leg further away. Screen-right hand swings toward viewer, screen-left hand away. Preserve chestnut bob, copper blazer, navy trousers completely covering ankles, brown shoes. No visible skin above shoes. Recreate the full coherent pose; do not retain the original right-trailing step. Solid pure magenta background, one figure, no ground shadow, no text."
+    },
+    {
+      "id": "npc-analyst-left-b-v2",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Draw one complete full-body sprite of this exact analyst in LEFT profile walking left. Keep identity, pale blue rolled sleeve shirt, charcoal trousers, short black hair, compact RPG proportions, elevated orthographic camera, chunky pixels, magenta background. Navy folder tucked under near anatomical LEFT arm, that hand stays beside hip. Opposite walking contact: near LEFT thigh angles BACK to screen RIGHT, knee bends and near LEFT heel is lifted at screen RIGHT. Far RIGHT leg crosses BEHIND near thigh and extends straight forward to screen LEFT, its heel planted. Free far RIGHT arm swings BACK to screen RIGHT; no hand reaches out in front of his belly. Left-facing face, no running. Whole coherent body; make front/back leg occlusion unmistakable with near leg lighter, far leg darker. One sprite, no labels or ground."
+    },
+    {
+      "id": "npc-analyst-left-idle-v2",
+      "parents": [
+        "npc-analyst-left-a"
+      ],
+      "prompt": "One complete sprite of EXACTLY this person facing LEFT. Change walking pose to neutral standing: both feet adjacent beneath hips at same ground level, knees straight, free right arm relaxed. Navy folder stays under near left arm. Preserve head size, torso length and compact leg length of reference. Do not elongate body or shrink head: crown-to-chin remains about one third of full height, short trouser legs. Same blue rolled-sleeve shirt, charcoal trousers, brown shoes, black hair, same orthographic elevated camera, same coarse pixels and outline. Solid pure magenta background, no shadow or text. One full-body character only."
+    },
+    {
+      "id": "office-desk",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One contemporary startup founder desk in pale oak, slim black steel frame, closed silver laptop, neatly stacked contract papers, ceramic coffee mug, small navy desk lamp. Compact low proportions, generous knee space. No chair."
+    },
+    {
+      "id": "office-forecast",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One compact pale oak workbench desk with two low drawers, open laptop seen from behind with dark casing, one calculator and two paper charts flat on its top. Wide visible rectangular top; no chair."
+    },
+    {
+      "id": "office-shelf",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide office cabinet, dark blue painted steel, four small compartments containing neat routers, folded cables and two cardboard equipment boxes. One flat shipping label sheet on top, no readable text. Waist-high, not a tall bookcase."
+    },
+    {
+      "id": "office-plant",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One moderate size potted fiddle-leaf indoor plant in a plain terracotta cylinder. Elevated orthographic overhead view, leaves in compact silhouette, simple pot, no furniture or floor."
+    },
+    {
+      "id": "records-desk",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One plain broad rectangular walnut data-room desk on short sturdy legs. Three orderly ivory paper stacks, a small closed blue binder, brass desk lamp and a small rubber stamp, all on top; ample empty desktop. No chair."
+    },
+    {
+      "id": "records-cabinet",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide dark charcoal archive cabinet, three drawers across, slim brass pulls. Closed gray document storage boxes stacked no more than two high on top, a blue folder beside them. Low waist-high cabinet, all top edges axis aligned."
+    },
+    {
+      "id": "records-table",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One compact rectangular walnut review table on black metal legs, paper payment schedule laid flat with illegible tiny lines, calculator, two closed binders and one black coffee mug. No chair."
+    },
+    {
+      "id": "records-cart",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One small axis-aligned gray steel two-tier rolling document trolley, a navy binder and two ivory paper stacks supported on each shelf, four short wheels. Front facing south, shallow rectangular shelves, waist-high."
+    },
+    {
+      "id": "client-desk",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One operations manager desk of worn light oak on gray metal legs, modest monitor viewed from rear, paper deployment checklist, small black radio and ceramic mug. No chair."
+    },
+    {
+      "id": "client-workbench",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide packing and inspection bench of warm pale plywood on steel legs, three small brown parcels, a handheld barcode scanner and a flat paper checklist. Compact parcels each smaller than a persons head. No readable text or floor."
+    },
+    {
+      "id": "client-cabinet",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low teal metal operations cabinet, two doors, modest paper tray and black landline phone on top, visible signs of normal daily use. Not futuristic, not military, not a tall locker."
+    },
+    {
+      "id": "client-cart",
+      "prompt": "Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One compact small wheeled trolley carrying two modest taped cardboard parcels, low rectangular steel shelf frame. Axis aligned front view, narrow enough for a person to stand beside it. No large pallet."
+    },
+    {
+      "id": "office-floor",
+      "prompt": "Seamless flat TOP DOWN orthographic floor texture only, entire square edge to edge. Restrained chunky 16-bit pixel-art, limited 12-color palette, no photoreal noise. muted warm gray low-pile commercial carpet tiles, subtle tiny fibers. Six tiles across 1024px image, perfectly parallel axis aligned straight seams, equal size everywhere. No furniture, wall, object, shadow, lighting gradient, border or magenta. Repeatable floor material only."
+    },
+    {
+      "id": "records-floor",
+      "prompt": "Seamless flat TOP DOWN orthographic floor texture only, entire square edge to edge. Restrained chunky 16-bit pixel-art, limited 12-color palette, no photoreal noise. muted olive gray solid linoleum square tiles with understated scuffs. Six tiles across 1024px image, perfectly parallel axis aligned straight seams, equal size everywhere. No furniture, wall, object, shadow, lighting gradient, border or magenta. Repeatable floor material only."
+    },
+    {
+      "id": "client-floor",
+      "prompt": "Seamless flat TOP DOWN orthographic floor texture only, entire square edge to edge. Restrained chunky 16-bit pixel-art, limited 12-color palette, no photoreal noise. warm desaturated gray concrete square utility tiles, slight signs of use. Six tiles across 1024px image, perfectly parallel axis aligned straight seams, equal size everywhere. No furniture, wall, object, shadow, lighting gradient, border or magenta. Repeatable floor material only."
+    },
+    {
+      "id": "npc-founder-down",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use this newly generated woman only for shared compact three-head RPG proportions, adult scale, overhead orthographic camera, chunky pixel size and outline. Create a DIFFERENT person, entire body neutral standing facing SOUTH, feet adjacent. Solid magenta background, no cast shadow or text. Mateo Alvarez, male New York software founder in his early 40s, warm olive skin, wavy short dark brown hair, subtle short beard, rolled-sleeve ivory shirt, slate-blue chinos, simple dark brown shoes. Thoughtful tired expression, no props."
+    },
+    {
+      "id": "npc-finance-down",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use this newly generated woman only for shared compact three-head RPG proportions, adult scale, overhead orthographic camera, chunky pixel size and outline. Create a DIFFERENT person, entire body neutral standing facing SOUTH, feet adjacent. Solid magenta background, no cast shadow or text. Priya Raman, female finance lead in her early 40s, medium brown skin, dark hair secured in a low bun, thin oval glasses, muted deep green blouse with sleeves to elbow, charcoal trousers, sensible dark shoes. Calm focused expression, no props."
+    },
+    {
+      "id": "npc-client-down",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Use this newly generated woman only for shared compact three-head RPG proportions, adult scale, overhead orthographic camera, chunky pixel size and outline. Create a DIFFERENT person, entire body neutral standing facing SOUTH, feet adjacent. Solid magenta background, no cast shadow or text. Jordan Brooks, female operations manager in her mid 40s, dark brown skin, short natural black curls, muted plum collared blouse with rolled sleeves, warm gray trousers and dark flat shoes. Practical confident posture, no props."
+    },
+    {
+      "id": "office-shelf-v2",
+      "prompt": "PARALLEL PROJECTION CONSTRUCTION: visible top plane is a mathematical RECTANGLE, same width at y=300 and y=480. Its four corners must be (180,300),(844,300),(844,480),(180,480). Vertical front plane immediately below from y=480 to y=740, SAME width. All outer edges horizontal or vertical; no sloped side edges, no vanishing point, no narrower back edge. Draw the whole cabinet as this rectangular block, no side face. These coordinates describe shape only, never draw measurements or labels. Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide office cabinet, dark blue painted steel, four small compartments containing neat routers, folded cables and two cardboard equipment boxes. One flat shipping label sheet on top, no readable text. Waist-high, not a tall bookcase."
+    },
+    {
+      "id": "records-cabinet-v2",
+      "prompt": "PARALLEL PROJECTION CONSTRUCTION: visible top plane is a mathematical RECTANGLE, same width at y=300 and y=480. Its four corners must be (180,300),(844,300),(844,480),(180,480). Vertical front plane immediately below from y=480 to y=740, SAME width. All outer edges horizontal or vertical; no sloped side edges, no vanishing point, no narrower back edge. Draw the whole cabinet as this rectangular block, no side face. These coordinates describe shape only, never draw measurements or labels. Crisp restrained 16-bit pixel-art isolated furniture for an overhead 2D RPG. Dark outlines and clearly visible square pixel clusters, subdued navy, walnut, warm ivory and gray palette. Elevated ORTHOGRAPHIC camera looking down 50 degrees, zero sideways yaw. Front and back tabletop edges equal length and horizontal; depth edges vertical on the image. Rectangular top planes, no trapezoid, no vanishing point, no isometric angle. One complete object with generous margin, opaque pure magenta #ff00ff background, no floor, wall, person, text or cast shadow. Small accessories physically rest on the supporting top surface. One low wide dark charcoal archive cabinet, three drawers across, slim brass pulls. Closed gray document storage boxes stacked no more than two high on top, a blue folder beside them. Low waist-high cabinet, all top edges axis aligned."
+    },
+    {
+      "id": "npc-founder-left",
+      "parents": [
+        "npc-founder-down"
+      ],
+      "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face exactly LEFT in full profile, nose pointing left. Neutral stand, both feet together; no stride."
+    },
+    {
+      "id": "npc-founder-up",
+      "parents": [
+        "npc-founder-down"
+      ],
+      "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face NORTH away from viewer, back of head and clothing only, no face visible. Neutral stand, both feet together. Rear shoe heels visible, not front toes."
+    },
+    {
+      "id": "npc-finance-left",
+      "parents": [
+        "npc-finance-down"
+      ],
+      "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face exactly LEFT in full profile, nose pointing left. Neutral stand, both feet together; no stride."
+    },
+    {
+      "id": "npc-finance-up",
+      "parents": [
+        "npc-finance-down"
+      ],
+      "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face NORTH away from viewer, back of head and clothing only, no face visible. Neutral stand, both feet together. Rear shoe heels visible, not front toes."
+    },
+    {
+      "id": "npc-client-left",
+      "parents": [
+        "npc-client-down"
+      ],
+      "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face exactly LEFT in full profile, nose pointing left. Neutral stand, both feet together; no stride."
+    },
+    {
+      "id": "npc-client-up",
+      "parents": [
+        "npc-client-down"
+      ],
+      "prompt": "Create one complete full-body sprite of EXACTLY the referenced person. Same hair, age, skin, clothes, compact three-head proportions, chunky pixel size and outline. Preserve same apparent adult height and overhead orthographic camera. Solid pure magenta background, no text or shadow. Face NORTH away from viewer, back of head and clothing only, no face visible. Neutral stand, both feet together. Rear shoe heels visible, not front toes."
+    },
+    {
+      "id": "portrait-0",
+      "parents": [
+        "npc-partner-down"
+      ],
+      "prompt": "Create a detailed pixel-art dialogue PORTRAIT of exactly the adult person in this newly created sprite: preserve identity, age, skin tone, hairstyle, glasses if present, and clothing colors. Chest-up editorial character portrait, natural three-quarter frontal face, readable expressive eyes, relaxed professional posture, person fills frame with head fully visible. A New York international business drama, restrained thoughtful expression, sophisticated warm light, visible square pixel clusters and consistent dark outline, no photoreal gradients, no anime exaggeration. Solid dark desaturated blue-gray background, not magenta, no text, no symbols, no other person, no added props. Square composition, can crop as small face thumbnail."
+    },
+    {
+      "id": "portrait-1",
+      "parents": [
+        "npc-analyst-down"
+      ],
+      "prompt": "Create a detailed pixel-art dialogue PORTRAIT of exactly the adult person in this newly created sprite: preserve identity, age, skin tone, hairstyle, glasses if present, and clothing colors. Chest-up editorial character portrait, natural three-quarter frontal face, readable expressive eyes, relaxed professional posture, person fills frame with head fully visible. A New York international business drama, restrained thoughtful expression, sophisticated warm light, visible square pixel clusters and consistent dark outline, no photoreal gradients, no anime exaggeration. Solid dark desaturated blue-gray background, not magenta, no text, no symbols, no other person, no added props. Square composition, can crop as small face thumbnail."
+    },
+    {
+      "id": "portrait-2",
+      "parents": [
+        "npc-founder-down"
+      ],
+      "prompt": "Create a detailed pixel-art dialogue PORTRAIT of exactly the adult person in this newly created sprite: preserve identity, age, skin tone, hairstyle, glasses if present, and clothing colors. Chest-up editorial character portrait, natural three-quarter frontal face, readable expressive eyes, relaxed professional posture, person fills frame with head fully visible. A New York international business drama, restrained thoughtful expression, sophisticated warm light, visible square pixel clusters and consistent dark outline, no photoreal gradients, no anime exaggeration. Solid dark desaturated blue-gray background, not magenta, no text, no symbols, no other person, no added props. Square composition, can crop as small face thumbnail."
+    },
+    {
+      "id": "portrait-3",
+      "parents": [
+        "npc-finance-down"
+      ],
+      "prompt": "Create a detailed pixel-art dialogue PORTRAIT of exactly the adult person in this newly created sprite: preserve identity, age, skin tone, hairstyle, glasses if present, and clothing colors. Chest-up editorial character portrait, natural three-quarter frontal face, readable expressive eyes, relaxed professional posture, person fills frame with head fully visible. A New York international business drama, restrained thoughtful expression, sophisticated warm light, visible square pixel clusters and consistent dark outline, no photoreal gradients, no anime exaggeration. Solid dark desaturated blue-gray background, not magenta, no text, no symbols, no other person, no added props. Square composition, can crop as small face thumbnail."
+    },
+    {
+      "id": "portrait-4",
+      "parents": [
+        "npc-client-down"
+      ],
+      "prompt": "Create a detailed pixel-art dialogue PORTRAIT of exactly the adult person in this newly created sprite: preserve identity, age, skin tone, hairstyle, glasses if present, and clothing colors. Chest-up editorial character portrait, natural three-quarter frontal face, readable expressive eyes, relaxed professional posture, person fills frame with head fully visible. A New York international business drama, restrained thoughtful expression, sophisticated warm light, visible square pixel clusters and consistent dark outline, no photoreal gradients, no anime exaggeration. Solid dark desaturated blue-gray background, not magenta, no text, no symbols, no other person, no added props. Square composition, can crop as small face thumbnail."
+    },
+    {
+      "id": "poster",
+      "parents": [
+        "hero-down-idle-v3"
+      ],
+      "prompt": "Pixel-art narrative game key art, square poster WITHOUT any text. The copper-blazer woman in the reference is a New York investment associate; preserve her chestnut bob and clothing identity. Show her at a walnut desk with an open diligence folder and a dark city window revealing Manhattan at dusk; foreground contains two ordinary coffee cups and a small brass lamp. Restrained teal shadows, warm amber light, serious human-scale financial drama, adult international professional setting, no fantasy, no neon cyberpunk, no stock-trading graphs, no currency icons. Visible hand-crafted chunky pixel clusters and dark outlines consistent with a sophisticated 2D exploration RPG. Portrait composition may use cinematic perspective. No words, no logos, no border."
+    },
+    {
+      "id": "office-chair",
+      "prompt": "ONE compact black swivel office task chair, front facing SOUTH, elevated orthographic RPG view looking down50degrees, no perspective and zero sideways yaw. Rectangular padded seat top with exactly equal horizontal front/back edges and vertical depth edges, low rectangular charcoal blue backrest, two simple arms, short central base and five small wheels. Restrained crisp chunky 16-bit pixel art with dark outlines, plain materials, tiny signs of daily use. NOT isometric, not diagonal, no room or ground shadow. Whole complete object centered on pure solid magenta #ff00ff background, generous margins."
+    },
+    {
+      "id": "portrait-0-v2",
+      "parents": [
+        "npc-partner-down"
+      ],
+      "prompt": "Chest-up pixel-art dialogue portrait of EXACTLY the silver-haired female partner shown in this sprite, in a navy suit and ivory blouse. Mara Ellison is 58 years old, experienced investment partner, visibly mature adult: subtle crow feet, small natural forehead lines, slightly deeper nasolabial lines and mature jaw contour, NOT a young woman with dyed gray hair. Preserve her warm medium skin tone, silver side-part bob and professional clothing. Calm incisive expression, natural-sized eyes, understated makeup. Three-quarter frontal head, whole head visible, refined chunky pixel clusters, consistent dark outlines. Solid desaturated navy background. Square composition, no text, no props or logos."
+    },
+    {
+      "id": "poster-release",
+      "parents": [
+        "poster"
+      ],
+      "prompt": "Polish this SAME pixel-art financial investigation game cover. Preserve the woman, office, walnut desk and New York dusk atmosphere, with same chunky pixel art. Add the exact readable title BEFORE THE CLOSE in elegant warm ivory serif lettering in the upper quarter, on two balanced lines. Keep her face and all key narrative elements above the bottom20 percent; the bottom may contain desk foreground. Clear visual focal point and readable at160px thumbnail. Square1024 composition. No other words, no badges or logos. No additional characters."
+    }
+  ]
+}

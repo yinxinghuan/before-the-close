@@ -1,0 +1,53 @@
+{
+  "id": "npc-partner-down",
+  "request": {
+    "request_id": "190f5bf8-1709-4f30-b885-208562fff412",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "edit",
+    "reference_urls": [
+      "https://images.aiwaves.tech/uploads/1790142807478-gx0dszt1xwj.webp"
+    ],
+    "prompt": "Use the supplied newly created woman ONLY for the shared compact three-head-high RPG proportions, exact overhead camera, pixel size, outline thickness and source framing. Create a DIFFERENT full-body adult character, not her face or clothes. ONE figure neutral stand facing south toward screen bottom, arms down and feet beside each other. Same apparent adult height and shoulder scale. Opaque uniform magenta #ff00ff background, no ground/shadow, no labels. Mara Ellison, an experienced woman investment partner in her late50s: short silver-gray swept bob, warm deep brown skin, navy tailored trouser suit over ivory blouse, dark loafers, small understated gold earrings, calm mature face, slightly broader shoulders, not a caricature. Professional New York office wardrobe.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [
+    "hero-down-idle-v3"
+  ],
+  "attemptedAt": "2026-09-23T06:05:24.589Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_1f5b0ae9fa858bce75fbf04a147893fc",
+    "request_id": "190f5bf8-1709-4f30-b885-208562fff412",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790143525358,
+    "updated_at": 1790143556930,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790143556599-kneoy5xtt.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790143556599-kneoy5xtt.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "edit",
+      "reference_count": 1,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31313
+  },
+  "elapsedSeconds": 32.457,
+  "file": "doc/platform-art-20260923/raw/npc-partner-down.webp",
+  "sha256": "734eb3bf6850ed5dd521934795ba1cb403de9e40da75b96907641b0023f6c3f3"
+}

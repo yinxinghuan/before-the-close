@@ -37,3 +37,10 @@ src/art-assets.ts默认启用平台新素材，只有DEV显式legacy/actor/room�
 ### 冷加载转场修正 r8.1
 
 WorldView按房间选出主角、NPC、家具、墙地门纹理，先经Pixi Assets.load进入同一纹理缓存。首场景准备后创建引擎；restore设置changing后调用prepareScene，再changeMap，避免旧精灵异步加载恢复时访问已销毁transform。800ms图片延迟的两尺寸往返复验通过。
+
+
+### 持续行走修正 r8.2
+
+音频固定复用上限为step 3 / paper 2 / door 1，音乐单实例；不随脚步新增播放器。音乐失败重试不重复注册前后台监听。NPC仅在位置/方向/姿态变化时同步。相机与互动标记采用transform，保持原有project/toWorld映射；摇杆旋钮通过ref局部更新，pointermove不再使App重渲染。
+
+持续测试脚本 `_qa/movement-soak.mjs` 支持 `QA_URL / QA_CPU / QA_BLOCKS / QA_INPUT=touch / QA_WIDTH / QA_HEIGHT / QA_LABEL`。必须检查实际travel，避免把撞墙静止误算为行走测试；默认自然GC。iPhone AlterU约5秒卡顿的用户报告及修复证据见 `movement-performance-20260923.md`；桌面模拟不等于目标设备通过。

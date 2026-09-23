@@ -37,14 +37,14 @@ export function createRpgSpace(options:SpaceOptions){
  const cameraLeft=()=>Math.max(0,Math.min(world.width-engineWidth,pos.x+world.actor.w/2-engineWidth/2));
  // Preserve sprite scale; reveal the approached boundary outside the HUD.
  const cameraOffset=()=>Math.max(-104,Math.min(144,(320-pos.y)*.8));
- const placeCamera=()=>{host.style.top=`${cameraOffset()}px`};
+ const placeCamera=()=>{const transform=`translate3d(-50%,${cameraOffset()}px,0) scale(${scale})`;if(host.style.transform!==transform)host.style.transform=transform};
  const screen=(point:Point)=>({x:leftInset+(point.x-cameraLeft())*scale,y:point.y*scale+cameraOffset()});
  const unproject=(point:Point)=>({x:(point.x-leftInset)/scale+cameraLeft(),y:(point.y-cameraOffset())/scale});
  const resize=()=>{
   const box=host.parentElement!,width=box.clientWidth,height=box.clientHeight;
   engineWidth=Math.min(430,Math.max(296,width/Math.max(1,height)*world.height));
   scale=height/world.height;leftInset=(width-engineWidth*scale)/2;
-  host.style.width=`${engineWidth}px`;host.style.height=`${world.height}px`;host.style.left='50%';host.style.top='0';host.style.transformOrigin='top center';host.style.transform=`translateX(-50%) scale(${scale})`;
+  host.style.width=`${engineWidth}px`;host.style.height=`${world.height}px`;host.style.left='50%';host.style.top='0';host.style.transformOrigin='top center';placeCamera();
   const resolution=Math.min(3,Math.max(1,Math.ceil(scale*(devicePixelRatio||1)*4)/4));
   if(client?.renderer){client.renderer.resize(engineWidth,world.height,resolution);client.width.set(String(engineWidth));client.height.set(String(world.height))}
  };

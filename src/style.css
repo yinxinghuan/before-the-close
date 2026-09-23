@@ -31,3 +31,6 @@
 
 /* Keep the location caption above the revealed north doorway. */
 .bc-location{top:122px}
+
+/* Moving interaction markers follow the camera without relaying out the page. */
+.bc-access-targets button{left:0;top:0}

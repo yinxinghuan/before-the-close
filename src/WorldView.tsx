@@ -49,10 +49,17 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
     for(const entity of room.entities.filter(item=>item.person)){const resident=active[entity.id],dx=position.x+7-resident.x,dy=position.y+5-resident.y;resident.moving=false;
      if(Math.hypot(dx,dy)<105||isPaused)resident.facing=Math.abs(dx)>Math.abs(dy)?dx<0?'left':'right':dy<0?'up':'down';
      else if(entity.id==='analyst'){resident.wait-=dt;if(resident.wait<=0){const step=Math.sign(resident.target-resident.x)*Math.min(Math.abs(resident.target-resident.x),22*dt);resident.x+=step;resident.travel+=Math.abs(step);resident.moving=Math.abs(step)>.01;resident.facing=step<0?'left':'right';if(Math.abs(resident.target-resident.x)<.1){resident.wait=.7;resident.target=entity.at.x+(resident.target>entity.at.x?-22:22)}}}
-     if(resident.event){resident.event.direction.set(resident.facing as never);resident.event.animationName.set(resident.moving?['stride-0','stride-1','stride-2','stride-1'][Math.floor(resident.travel/7)%4]:'stand');void resident.event.teleport({x:resident.x,y:resident.y});resident.event.syncChanges()}
+     if(resident.event){
+      const event=resident.event,pose=resident.moving?['stride-0','stride-1','stride-2','stride-1'][Math.floor(resident.travel/7)%4]:'stand';
+      let changed=false;
+      if(event.direction()!==resident.facing){event.direction.set(resident.facing as never);changed=true}
+      if(event.animationName()!==pose){event.animationName.set(pose);changed=true}
+      if(event.x()!==resident.x||event.y()!==resident.y){void event.teleport({x:resident.x,y:resident.y});changed=true}
+      if(changed)event.syncChanges();
+     }
     }
     let closest:Entity|null=null,best=65;
-    for(const entity of room.entities){const resident=active[entity.id],point=resident?{x:resident.x,y:resident.y}:entity.at,dist=Math.hypot(position.x+7-point.x,position.y+5-point.y);if(dist<best){best=dist;closest=entity}const marker=space.project({x:point.x,y:point.y-(entity.kind==='person'?82:65)}),button=host.current?.querySelector<HTMLElement>(`[data-entity="${entity.id}"]`);if(button){button.style.left=marker.x+'px';button.style.top=marker.y+'px'}}
+    for(const entity of room.entities){const resident=active[entity.id],point=resident?{x:resident.x,y:resident.y}:entity.at,dist=Math.hypot(position.x+7-point.x,position.y+5-point.y);if(dist<best){best=dist;closest=entity}const marker=space.project({x:point.x,y:point.y-(entity.kind==='person'?82:65)}),button=host.current?.querySelector<HTMLElement>(`[data-entity="${entity.id}"]`);if(button){const transform=`translate3d(${marker.x}px,${marker.y}px,0) translate(-50%,-50%)`;if(button.style.transform!==transform)button.style.transform=transform}}
     if(nearest!==(closest?.id||'')){nearest=closest?.id||'';latest.current.onNear(closest)}
    }
   });

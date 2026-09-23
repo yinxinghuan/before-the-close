@@ -3,7 +3,8 @@ import fs from 'node:fs/promises';
 const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
 const report=[];await fs.mkdir('_qa/ui/platform-art',{recursive:true});
 try{for(const [width,height] of [[390,844],[320,568]]){
- const context=await browser.newContext({viewport:{width,height},locale:'en-US'});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const context=await browser.newContext({viewport:{width,height},locale:'en-US'});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.stack||e.message));
+ if(process.env.QA_IMAGE_DELAY)await page.route('**/art/platform-v1/*.png*',async route=>{await new Promise(resolve=>setTimeout(resolve,Number(process.env.QA_IMAGE_DELAY)));await route.continue()});
  await page.goto(process.env.QA_URL||'http://127.0.0.1:5236/?debug=1');
  await page.addStyleTag({content:'#alteru-guest-banner{display:none!important}'});
  await page.getByRole('button',{name:'Take your badge. Begin.'}).click();await page.locator('.bc-world-loading').waitFor({state:'detached'});await page.waitForTimeout(1200);
@@ -21,6 +22,7 @@ try{for(const [width,height] of [[390,844],[320,568]]){
  const outbound=await page.locator('.bc-location').innerText();if(!outbound.includes('WORKSPACE'))throw Error('Outbound door failed: '+outbound);
  await page.locator('.bc-primary').click();await page.locator('.bc-world-loading').waitFor({state:'detached'});await page.waitForTimeout(300);
  const inbound=await page.locator('.bc-location').innerText();if(!inbound.includes('NORTHLINE'))throw Error('Return door failed: '+inbound);
+ if(errors.length)throw Error('Page errors: '+errors.join('\n'));
  report.push({width,height,errors,outbound,inbound,activeHero:await page.evaluate(()=>document.querySelector('#rpg').__rpgClient.getCurrentPlayer().graphicsSignals()[0].image),images:await page.evaluate(()=>performance.getEntriesByType('resource').filter(e=>e.name.includes('platform-art-20260923')).map(e=>e.name))});await context.close();
 }}finally{await browser.close()}
 await fs.writeFile('_qa/ui/platform-art/runtime.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report));

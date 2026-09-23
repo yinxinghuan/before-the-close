@@ -54,3 +54,5 @@ DEV入口5236/?artTrial=platform；新主角、Mara站姿、基金房墙地门�
 新接口81次请求（32text/49同轮edit），四房间/主角/五NPC/五头像/封面已成为默认运行素材，65个派生运行文件；不再需要artTrial参数。历史图未用于生成，旧素材源码保留，正式dist剔除旧运行图片。主角原始背向A/B得到用户认可，已恢复，不再按鞋口高光否决。
 
 正式dist两尺寸完整通关/存档恢复通过，17项测试通过；主角四向两循环、分析员巡游/靠近转向已验证。详见platform-art-20260923/REVIEW.md及evidence。共享技能新增platform-gpt-art-trial.md，记录实际配方、过度审核纠偏和截图真源门禁。发布状态看release.json。玩家动态生成和陌生agent盲测仍未完成，不把作者生成成功扩大成全链路完成。
+
+线上冷加载补修r8.1：图片未完成时转场可能让CanvasEngine更新销毁的精灵。新增prepareScene纹理缓存准备，目标房间图片就绪后再切图；800ms图片延迟两尺寸门往返零异常。技能运行时模板同步prepareScene合同，包内媒体SDK也同步新版。最终双部署以release.json实际hash为准。

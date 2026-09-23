@@ -33,3 +33,7 @@ DEV参数 `artTrial=platform` 通过 spatial/sheets.ts 按 sample-manifest.cover
 ### r8默认美术与构建合同
 
 src/art-assets.ts默认启用平台新素材，只有DEV显式legacy/actor/room才回旧试验。sheets.ts按新清单加载独立NPC图集和真实图片尺寸；world.ts应用四房布局与独立座椅占地。build-platform-sample.py从本轮原图处理结果装配并安装65个运行文件。finalize-art-build.mjs从dist移除旧图，保留源码回退。脚本audit-platform-art.py校验SHA、同轮引用图谱和运行覆盖，不判断美学。正式构建两尺寸端到端回归见platform-art-20260923/evidence。
+
+### 冷加载转场修正 r8.1
+
+WorldView按房间选出主角、NPC、家具、墙地门纹理，先经Pixi Assets.load进入同一纹理缓存。首场景准备后创建引擎；restore设置changing后调用prepareScene，再changeMap，避免旧精灵异步加载恢复时访问已销毁transform。800ms图片延迟的两尺寸往返复验通过。

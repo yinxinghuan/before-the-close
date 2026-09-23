@@ -1,3 +1,4 @@
+import {Assets} from 'pixi.js';
 import {useEffect,useRef,useState} from 'react';
 import type {RpgPlayer} from '@rpgjs/server';
 import {people,tx,type Locale} from './content';
@@ -32,10 +33,15 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
   ]};
   const dynamicWalkable=(point:Point,id:string)=>walkable(world,id,point)&&!Object.values(residents.current[id as SceneId]||{}).some(resident=>point.x<resident.x+12&&point.x+world.actor.w>resident.x-12&&point.y<resident.y+4&&point.y+world.actor.h>resident.y-10);
   const dynamicPath=(from:Point,to:Point,id:string)=>{const active={...world,scenes:{...world.scenes,[id]:{...world.scenes[id],obstacles:[...world.scenes[id].obstacles,...Object.values(residents.current[id as SceneId]||{}).map(resident=>({x:resident.x-12,y:resident.y-10,w:24,h:14}))]}}};return findPath(active,id,from,to)};
-  void Promise.resolve().then(()=>{if(stopped)return;
+  const prepareScene=async(id:string)=>{
+   const roomId=id as SceneId,room=rooms[roomId];
+   const ids=new Set([heroSheet.id,baseGraphic(roomId),northGraphic(roomId),sideGraphic(roomId),frontGraphic(roomId),...room.props.map(propGraphic),...room.entities.filter(e=>e.person).map(e=>'npc-'+e.person),...doorParts.filter(p=>p.scene===roomId).map(p=>p.id)]);
+   await Promise.all([heroSheet,...spatialSheets].filter(s=>ids.has(s.id)).map(s=>Assets.load(s.image)));
+  };
+  void Promise.resolve().then(async()=>{await prepareScene(scene);if(stopped)return;
   const runtimeHero=heroSheet;
   const runtimeSheets=spatialSheets;
-  const space=createRpgSpace({world,host:mount,scene,position:start,speed:108,stride:52,sheet:runtimeHero,spritesheets:runtimeSheets,mapEvents,controlsBlocked:()=>latest.current.paused,walkable:dynamicWalkable,findPath:dynamicPath,
+  const space=createRpgSpace({world,host:mount,scene,position:start,speed:108,stride:52,sheet:runtimeHero,spritesheets:runtimeSheets,mapEvents,prepareScene,controlsBlocked:()=>latest.current.paused,walkable:dynamicWalkable,findPath:dynamicPath,
    onDestination:()=>{},onError:()=>{if(!stopped)setError(true)},
    onReady:runtime=>{if(stopped)return;spaceRef.current=runtime;runtime.pause(latest.current.paused);handle.current={move:(x,y)=>runtime.move(x,y),go:point=>runtime.walkTo(point),approach:entity=>runtime.walkTo(entity.approach),position:runtime.position};const target=desired.current;if(target.scene!==runtime.scene()){setReady(false);void runtime.restore(target.scene,target.start).then(()=>setReady(true)).catch(()=>setError(true))}else setReady(true)},
    onPosition:point=>{const distance=Math.hypot(point.x-lastStep.current.x,point.y-lastStep.current.y);if(distance>.01)footstep(distance);lastStep.current={...point};latest.current.onPosition(point)},

@@ -16,6 +16,7 @@ export type SpaceOptions={
  world:World;host:HTMLElement;scene:string;position:Point;speed:number;stride:number;
  sheet:any;spritesheets:any[];mapEvents:(scene:string)=>any[];
  walkable?:(point:Point,scene:string)=>boolean;findPath?:(from:Point,to:Point,scene:string)=>Point[];
+ prepareScene?:(scene:string)=>Promise<void>;
  controlsBlocked:()=>boolean;onPosition:(point:Point)=>void;onDestination:(point:Point|null)=>void;
  onFrame?:(dt:number,position:Point,scene:string,paused:boolean)=>void;
  onReady:(space:Space)=>void;onError:(error:unknown)=>void;
@@ -52,7 +53,7 @@ export function createRpgSpace(options:SpaceOptions){
   move:(x,y)=>{stick={x,y};if(x||y)cancel()},
   walkTo:(target,callback)=>{if(paused||changing)return false;const next=options.findPath?.(pos,target,scene)??findPath(world,scene,pos,target);if(!next.length)return false;route=next;arrive=callback;options.onDestination(target);return true},
   pause:value=>{paused=value;stick={x:0,y:0};keys.clear();if(value){cancel();stand()}},
-  restore:async(next,p)=>{if(!walkable(world,next,p))throw new Error('INVALID_ARRIVAL');changing=true;cancel();stick={x:0,y:0};stand();try{if(next!==scene){loaded=null;joined=null;const changed=await player!.changeMap(next,p);if(!changed)throw new Error('MAP_CHANGE_REJECTED');await wait(next)}else await player!.teleport(p);scene=next;pos={...p};player!.syncChanges();projectPlayer();options.onPosition(pos)}finally{changing=false}},
+  restore:async(next,p)=>{if(!walkable(world,next,p))throw new Error('INVALID_ARRIVAL');changing=true;cancel();stick={x:0,y:0};stand();try{if(next!==scene){await options.prepareScene?.(next);loaded=null;joined=null;const changed=await player!.changeMap(next,p);if(!changed)throw new Error('MAP_CHANGE_REJECTED');await wait(next)}else await player!.teleport(p);scene=next;pos={...p};player!.syncChanges();projectPlayer();options.onPosition(pos)}finally{changing=false}},
   project:screen,toWorld:unproject,
   face:target=>{if(!player)return;const dx=target.x-pos.x,dy=target.y-pos.y;player.direction.set(Math.abs(dx)>Math.abs(dy)?(dx>0?Direction.Right:Direction.Left):(dy>0?Direction.Down:Direction.Up));stand();player.syncChanges()},
  };

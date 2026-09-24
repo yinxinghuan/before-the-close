@@ -1,0 +1,49 @@
+{
+  "id": "meeting-board",
+  "request": {
+    "request_id": "6e032fe3-ef0e-461a-a67c-a4c1a9438ff4",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Single isolated furniture sprite for a high-quality 2D pixel-art RPG set in a contemporary New York investment/software office. Orthographic elevated FRONT view, camera about 35 degrees downward, zero perspective convergence, parallel horizontal tabletop front/back edges, vertical legs, no diagonal isometric rotation. Rich restrained pixel art, warm walnut, charcoal metal, soft muted teal details; crisp 2-3 pixel clusters, dark thin outline, consistent even indoor light. Show whole object centered on solid pure magenta #ff00ff background, no floor, no wall, no people, no cast shadow beyond footprint, no readable lettering. Furniture fits an adult waist height, broad rather than tall. A low wide walnut committee conference table, viewed from the elevated front, with three slim document folders and a compact tabletop conference speaker. No chairs attached. Table has two short dark pedestal feet. Fine professional restrained pixel craftsmanship.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-24T20:00:34.091Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_2f72ccad3ba5990adb4978970237385e",
+    "request_id": "6e032fe3-ef0e-461a-a67c-a4c1a9438ff4",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790280035191,
+    "updated_at": 1790280066788,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790280066342-orlvp2x5y3n.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790280066342-orlvp2x5y3n.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31102
+  },
+  "elapsedSeconds": 36.801,
+  "file": "doc/chapter-expansion-20260925/raw/meeting-board.webp",
+  "sha256": "83871ef065d1f9cfeb2fc341c657ef244aea0c9725053b44f3d5d88476c32ddd"
+}

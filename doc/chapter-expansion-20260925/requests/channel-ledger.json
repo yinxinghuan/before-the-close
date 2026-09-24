@@ -1,0 +1,49 @@
+{
+  "id": "channel-ledger",
+  "request": {
+    "request_id": "281793d7-14cc-461c-898b-d66619a15aa5",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Single isolated furniture sprite for a high-quality 2D pixel-art RPG set in a contemporary New York investment/software office. Orthographic elevated FRONT view, camera about 35 degrees downward, zero perspective convergence, parallel horizontal tabletop front/back edges, vertical legs, no diagonal isometric rotation. Rich restrained pixel art, warm walnut, charcoal metal, soft muted teal details; crisp 2-3 pixel clusters, dark thin outline, consistent even indoor light. Show whole object centered on solid pure magenta #ff00ff background, no floor, no wall, no people, no cast shadow beyond footprint, no readable lettering. Furniture fits an adult waist height, broad rather than tall. A compact settlement reconciliation desk with two differently colored document trays, closed ledger, small office calculator and a modest desktop monitor. Every item sits firmly on the desk surface. Two solid side supports.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-24T20:00:34.091Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_70b25d9fd8c0feda1eaec332edd8e0af",
+    "request_id": "281793d7-14cc-461c-898b-d66619a15aa5",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790280034991,
+    "updated_at": 1790280066761,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790280066379-l93rgdxz1m.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790280066379-l93rgdxz1m.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 31296
+  },
+  "elapsedSeconds": 36.805,
+  "file": "doc/chapter-expansion-20260925/raw/channel-ledger.webp",
+  "sha256": "b379de1709d80cd8c1b50d33dd798ae5d15fb117ae2b6a1c03194d14a10f6016"
+}

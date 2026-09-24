@@ -1,0 +1,65 @@
+{
+  "channel-ledger": {
+    "size": [
+      972,
+      573
+    ],
+    "source_sha256": "b379de1709d80cd8c1b50d33dd798ae5d15fb117ae2b6a1c03194d14a10f6016",
+    "source_bounds": [
+      26,
+      211,
+      998,
+      784
+    ],
+    "ratio": 0.59,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "delivery-console": {
+    "size": [
+      983,
+      609
+    ],
+    "source_sha256": "68f7e587428368f0642db975cbd0287a0d7d5b6b6885b01e8d4c201d203f6c7e",
+    "source_bounds": [
+      21,
+      220,
+      1004,
+      829
+    ],
+    "ratio": 0.62,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  },
+  "meeting-board": {
+    "size": [
+      974,
+      340
+    ],
+    "source_sha256": "83871ef065d1f9cfeb2fc341c657ef244aea0c9725053b44f3d5d88476c32ddd",
+    "source_bounds": [
+      25,
+      355,
+      999,
+      695
+    ],
+    "ratio": 0.349,
+    "mode": "text",
+    "parents": [],
+    "operations": [
+      "remove explicit magenta chroma key",
+      "tight alpha crop; no deformation"
+    ],
+    "status": "candidate"
+  }
+}

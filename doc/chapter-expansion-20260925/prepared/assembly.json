@@ -1,0 +1,29 @@
+{
+  "reuse": "same-game accepted walls, door, floor and secondary furniture; zero generation references",
+  "newFurniture": {
+    "delivery-console": [
+      983,
+      609
+    ],
+    "channel-ledger": [
+      972,
+      573
+    ],
+    "meeting-board": [
+      974,
+      340
+    ]
+  },
+  "rooms": [
+    "delivery",
+    "channel",
+    "meeting"
+  ],
+  "operations": [
+    "magenta key removal and tight alpha crop",
+    "uniform nearest scaling",
+    "north behind sides; south covers sides",
+    "open northern doors in fund/office/records"
+  ],
+  "status": "pending-scene-review"
+}

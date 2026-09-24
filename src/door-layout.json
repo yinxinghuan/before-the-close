@@ -34,5 +34,41 @@
     "side": "N",
     "x": 340,
     "y": 88
+  },
+  "fund-meeting": {
+    "room": "fund",
+    "side": "N",
+    "x": 320,
+    "y": 88
+  },
+  "meeting-fund": {
+    "room": "meeting",
+    "side": "S",
+    "x": 320,
+    "y": 576
+  },
+  "office-delivery": {
+    "room": "office",
+    "side": "N",
+    "x": 320,
+    "y": 88
+  },
+  "delivery-office": {
+    "room": "delivery",
+    "side": "S",
+    "x": 320,
+    "y": 576
+  },
+  "records-channel": {
+    "room": "records",
+    "side": "N",
+    "x": 320,
+    "y": 88
+  },
+  "channel-records": {
+    "room": "channel",
+    "side": "S",
+    "x": 320,
+    "y": 576
   }
 }

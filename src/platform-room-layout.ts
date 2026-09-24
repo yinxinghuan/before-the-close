@@ -24,7 +24,7 @@ export function applyPlatformOtherRoomLayout(room:Room){
 
 export function addPlatformSeats(room:Room){
  const positions:Record<string,number[][]>={fund:[[395,530],[535,530]],office:[[140,336],[470,310]],records:[[150,341],[228,341]],client:[[235,300],[535,344]]};
- for(const [i,[x,y]] of positions[room.id].entries()){
+ for(const [i,[x,y]] of (positions[room.id]??[]).entries()){
   const asset=room.id+'-furniture-'+(i+4);if(room.props.some(p=>p.asset===asset))continue;
   room.props.push({asset,x,y,width:32,obstacles:[{x:x-11,y:y-16,w:22,h:12}]});
  }

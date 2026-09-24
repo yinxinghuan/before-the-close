@@ -1,9 +1,9 @@
 import {useRef,useState} from 'react';
 import {Building2,BriefcaseBusiness,Files,Store,LocateFixed,Maximize,Minus,Plus} from 'lucide-react';
 import {rooms,type SceneId} from './world';import {tx,type Locale,type Pair} from './content';import doors from './door-layout.json';import {routeBetween} from './map-route';
-const points:Record<SceneId,[number,number]>={fund:[96,100],office:[296,100],records:[496,100],client:[296,290]};
-const mapLabels:Record<SceneId,Pair>={fund:['北线资本','Northline'],office:['开放办公区','RelayOps'],records:['资料室','Data room'],client:['客户现场','Harbor & Pine']};
-const icons={fund:BriefcaseBusiness,office:Building2,records:Files,client:Store};
+const points:Record<SceneId,[number,number]>={fund:[96,190],office:[296,190],records:[496,190],client:[296,310],meeting:[96,70],delivery:[296,70],channel:[496,70]};
+const mapLabels:Record<SceneId,Pair>={meeting:['小会议室','Breakout'],delivery:['交付作战室','Delivery'],channel:['渠道结算','Settlement'],fund:['北线资本','Northline'],office:['开放办公区','RelayOps'],records:['资料室','Data room'],client:['客户现场','Harbor & Pine']};
+const icons={meeting:BriefcaseBusiness,delivery:Building2,channel:Files,fund:BriefcaseBusiness,office:Building2,records:Files,client:Store};
 const edges=Object.values(rooms).flatMap(r=>r.entities.filter(e=>e.to).map(e=>({from:r.id,to:e.to!,id:e.id})));
 export function Atlas({scene,locale}:{scene:SceneId;locale:Locale}){
  const t=(p:Pair)=>tx(p,locale),[destination,setDestination]=useState(scene),[view,setView]=useState({x:0,y:0,z:1});

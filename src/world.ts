@@ -5,7 +5,7 @@ import doorLayout from './door-layout.json';
 import type {Pair,PersonId,RecordId} from './content';
 import {findPath,walkable,type Point,type Rect,type World} from './spatial/world';
 
-export type SceneId='fund'|'office'|'records'|'client';
+export type SceneId='fund'|'office'|'records'|'client'|'delivery'|'channel'|'meeting';
 export type Entity={id:string;kind:'person'|'record'|'door'|'committee';label:Pair;at:Point;approach:Point;person?:PersonId;record?:RecordId;to?:SceneId};
 export type Prop={asset:string;x:number;y:number;width:number;obstacles:Rect[]};
 export type Room={id:SceneId;title:Pair;subtitle:Pair;floor:number;floorAsset?:string;props:Prop[];entities:Entity[]};
@@ -21,25 +21,35 @@ export const rooms:Record<SceneId,Room>={
   placed('fund-furniture-2',430,220,172,[{x:354,y:177,w:152,h:35}]),
   placed('fund-furniture-1',465,492,200,[{x:378,y:404,w:174,h:70}]),
   placed('fund-furniture-3',165,500,80,[{x:136,y:457,w:58,h:36}]),
- ],entities:[file('memo',['投委会摘要','Committee brief'],165,270),{id:'partner',kind:'person',person:'partner',label:['交谈','Talk'],at:{x:545,y:190},approach:{x:515,y:190}},npc('analyst',278,332),{id:'committee',kind:'committee',label:['投委会席位','Committee seat'],at:{x:464,y:488},approach:{x:457,y:532}},door('fund-office','office',['去 RelayOps','To RelayOps'])]},
+ ],entities:[file('memo',['投委会摘要','Committee brief'],165,270),{id:'partner',kind:'person',person:'partner',label:['交谈','Talk'],at:{x:545,y:190},approach:{x:515,y:190}},npc('analyst',278,332),{id:'committee',kind:'committee',label:['投委会席位','Committee seat'],at:{x:464,y:488},approach:{x:457,y:532}},door('fund-meeting','meeting',['去小会议室','To breakout room']),door('fund-office','office',['去 RelayOps','To RelayOps'])]},
  office:{id:'office',title:['RelayOps · 开放办公区','RELAYOPS · WORKSPACE'],subtitle:['周五 · 17:20','FRIDAY · 17:20'],floor:1,floorAsset:'floor-office-v2',props:[
   placed('office-furniture-0',165,282,190,[{x:80,y:218,w:170,h:52}]),
   placed('office-furniture-1',470,252,190,[{x:386,y:194,w:168,h:48}]),
   placed('office-furniture-2',470,500,174,[{x:392,y:432,w:156,h:54}]),
   placed('office-furniture-3',165,500,66,[{x:142,y:454,w:46,h:38}]),
- ],entities:[file('contract',['客户合同','Customer contract'],170,270),file('forecast',['现金预测','Cash forecast'],470,235),npc('founder',355,350),door('office-fund','fund',['回北线资本','To Northline']),door('office-records','records',['去资料会议室','To data room']),door('office-client','client',['去客户现场','To customer site'])]},
+ ],entities:[file('contract',['客户合同','Customer contract'],170,270),file('forecast',['现金预测','Cash forecast'],470,235),npc('founder',355,350),door('office-delivery','delivery',['去交付作战室','To delivery room']),door('office-fund','fund',['回北线资本','To Northline']),door('office-records','records',['去资料会议室','To data room']),door('office-client','client',['去客户现场','To customer site'])]},
  records:{id:'records',title:['RelayOps · 资料会议室','RELAYOPS · DATA ROOM'],subtitle:['周五 · 18:05','FRIDAY · 18:05'],floor:3,floorAsset:'floor-records-v2',props:[
   placed('records-furniture-0',190,295,190,[{x:108,y:229,w:164,h:54}]),
   placed('records-furniture-1',485,220,166,[{x:412,y:177,w:146,h:34}]),
   placed('records-furniture-2',470,470,176,[{x:392,y:411,w:156,h:48}]),
   placed('records-furniture-3',150,515,100,[{x:114,y:455,w:72,h:48}]),
- ],entities:[file('payment',['银行回单','Bank receipt'],190,295),file('appendix',['补充协议','Supplement'],485,205),file('cash',['付款排期','Payment schedule'],470,465),file('channel',['渠道说明','Channel disclosure'],150,510),npc('finance',315,335),door('records-office','office',['回开放办公区','To workspace'])]},
+ ],entities:[file('payment',['银行回单','Bank receipt'],190,295),file('appendix',['补充协议','Supplement'],485,205),file('cash',['付款排期','Payment schedule'],470,465),file('channel',['渠道说明','Channel disclosure'],150,510),npc('finance',315,335),door('records-channel','channel',['去渠道结算办公室','To settlement office']),door('records-office','office',['回开放办公区','To workspace'])]},
  client:{id:'client',title:['Harbor & Pine · 运营现场','HARBOR & PINE · OPERATIONS'],subtitle:['周五 · 19:10','FRIDAY · 19:10'],floor:2,floorAsset:'floor-client-v2',props:[
   placed('client-furniture-0',165,285,184,[{x:84,y:222,w:162,h:52}]),
   placed('client-furniture-1',470,285,188,[{x:386,y:220,w:168,h:52}]),
   placed('client-furniture-3',165,515,72,[{x:140,y:463,w:50,h:40}]),
   placed('client-furniture-2',470,515,150,[{x:404,y:450,w:132,h:52}]),
  ],entities:[file('rollout',['上线清单','Deployment list'],165,275),file('acceptance',['验收意见','Acceptance note'],470,265),file('reference',['复购记录','Renewal record'],470,515),npc('client',315,335),door('client-office','office',['回 RelayOps','To RelayOps'])]},
+ delivery:{id:'delivery',title:['RelayOps · 交付作战室','RELAYOPS · DELIVERY ROOM'],subtitle:['周五 · 18:20','FRIDAY · 18:20'],floor:1,props:[
+ placed('delivery-console',300,310,168,[{x:223,y:274,w:154,h:29}]),placed('office-furniture-2',480,220,128,[{x:423,y:187,w:114,h:26}]),placed('client-furniture-3',140,440,36,[{x:127,y:423,w:26,h:17}]),placed('office-furniture-4',278,365,32,[{x:267,y:351,w:22,h:12}])
+ ],entities:[file('delivery-log',['故障交接单','Delivery handover'],300,310),door('delivery-office','office',['回开放办公区','To workspace'])]},
+ channel:{id:'channel',title:['BridgeStone · 渠道结算办公室','BRIDGESTONE · SETTLEMENT OFFICE'],subtitle:['周五 · 18:40','FRIDAY · 18:40'],floor:3,props:[
+ placed('channel-ledger',250,280,150,[{x:182,y:248,w:136,h:26}]),placed('records-furniture-1',470,210,116,[{x:418,y:179,w:104,h:26}]),placed('records-furniture-3',470,430,55,[{x:450,y:411,w:40,h:18}]),placed('records-furniture-4',235,335,32,[{x:224,y:322,w:22,h:12}])
+ ],entities:[file('settlement-review',['结算核对单','Settlement reconciliation'],250,280),door('channel-records','records',['回资料会议室','To data room'])]},
+ meeting:{id:'meeting',title:['Northline · 小会议室','NORTHLINE · BREAKOUT ROOM'],subtitle:['周五 · 19:50','FRIDAY · 19:50'],floor:0,props:[
+ placed('meeting-board',320,340,220,[{x:220,y:282,w:200,h:50}]),placed('fund-furniture-2',490,180,100,[{x:445,y:154,w:90,h:21}]),placed('fund-furniture-4',240,395,32,[{x:229,y:382,w:22,h:12}]),placed('fund-furniture-5',400,395,32,[{x:389,y:382,w:22,h:12}]),placed('office-furniture-3',125,200,44,[{x:110,y:182,w:30,h:18}])
+ ],entities:[file('committee-draft',['上次讨论留痕','Prior discussion notes'],320,340),door('meeting-fund','fund',['回基金办公室','To fund office'])]},
+
 };
 
 // Local candidate layout; production remains unchanged.

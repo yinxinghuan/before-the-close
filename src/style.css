@@ -50,3 +50,6 @@
 
 .bc-interaction--composing .bc-turn,.bc-interaction--composing .bc-greeting,.bc-interaction--composing .bc-topics>small,.bc-interaction--composing .bc-topics>details{display:none}.bc-interaction--composing .bc-compose{border-top:0;padding-top:0}
 .bc-interaction--composing .bc-topics>button,.bc-interaction--composing .bc-topics>h3,.bc-interaction--composing .bc-topics>.bc-muted{display:none}
+
+/* World coordinates are projected by the RPG camera, never by DOM focus scrolling. */
+.bc-app>.bc-world{overflow:clip}

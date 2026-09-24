@@ -171,7 +171,22 @@
     "portrait-3-thumb",
     "portrait-4",
     "portrait-4-thumb",
-    "poster"
+    "poster",
+    "delivery-console",
+    "channel-ledger",
+    "meeting-board",
+    "delivery-base",
+    "delivery-north",
+    "delivery-side",
+    "delivery-front",
+    "channel-base",
+    "channel-north",
+    "channel-side",
+    "channel-front",
+    "meeting-base",
+    "meeting-north",
+    "meeting-side",
+    "meeting-front"
   ],
   "derivedSources": {
     "fund-base": [

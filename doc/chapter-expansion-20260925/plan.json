@@ -1,0 +1,16 @@
+{
+  "assets": [
+    {
+      "id": "delivery-console",
+      "prompt": "Single isolated furniture sprite for a high-quality 2D pixel-art RPG set in a contemporary New York investment/software office. Orthographic elevated FRONT view, camera about 35 degrees downward, zero perspective convergence, parallel horizontal tabletop front/back edges, vertical legs, no diagonal isometric rotation. Rich restrained pixel art, warm walnut, charcoal metal, soft muted teal details; crisp 2-3 pixel clusters, dark thin outline, consistent even indoor light. Show whole object centered on solid pure magenta #ff00ff background, no floor, no wall, no people, no cast shadow beyond footprint, no readable lettering. Furniture fits an adult waist height, broad rather than tall. A wide software deployment testing workbench: two small retail checkout terminals, laptop, barcode scanner and neatly coiled cables supported directly by a single sturdy low workbench. Terminals all mounted on tabletop; one small crate below. Front-facing rectangular footprint."
+    },
+    {
+      "id": "channel-ledger",
+      "prompt": "Single isolated furniture sprite for a high-quality 2D pixel-art RPG set in a contemporary New York investment/software office. Orthographic elevated FRONT view, camera about 35 degrees downward, zero perspective convergence, parallel horizontal tabletop front/back edges, vertical legs, no diagonal isometric rotation. Rich restrained pixel art, warm walnut, charcoal metal, soft muted teal details; crisp 2-3 pixel clusters, dark thin outline, consistent even indoor light. Show whole object centered on solid pure magenta #ff00ff background, no floor, no wall, no people, no cast shadow beyond footprint, no readable lettering. Furniture fits an adult waist height, broad rather than tall. A compact settlement reconciliation desk with two differently colored document trays, closed ledger, small office calculator and a modest desktop monitor. Every item sits firmly on the desk surface. Two solid side supports."
+    },
+    {
+      "id": "meeting-board",
+      "prompt": "Single isolated furniture sprite for a high-quality 2D pixel-art RPG set in a contemporary New York investment/software office. Orthographic elevated FRONT view, camera about 35 degrees downward, zero perspective convergence, parallel horizontal tabletop front/back edges, vertical legs, no diagonal isometric rotation. Rich restrained pixel art, warm walnut, charcoal metal, soft muted teal details; crisp 2-3 pixel clusters, dark thin outline, consistent even indoor light. Show whole object centered on solid pure magenta #ff00ff background, no floor, no wall, no people, no cast shadow beyond footprint, no readable lettering. Furniture fits an adult waist height, broad rather than tall. A low wide walnut committee conference table, viewed from the elevated front, with three slim document folders and a compact tabletop conference speaker. No chairs attached. Table has two short dark pedestal feet. Fine professional restrained pixel craftsmanship."
+    }
+  ]
+}

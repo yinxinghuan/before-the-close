@@ -1,3 +1,5 @@
+import chapterDimensions from '../chapter-art-dimensions.json';
+import releaseManifest from '../../public/art/platform-v1/manifest.json';
 import {platformArtEnabled,platformArtRoot} from '../art-assets';
 import doorLayout from '../door-layout.json';
 import platformSample from '../../doc/platform-art-20260923/prepared/sample-manifest.json';
@@ -13,7 +15,7 @@ const artTrial=import.meta.env?.DEV?new URLSearchParams(location.search).get('ar
 const freshRoot='./doc/art-rebuild-20260923/prepared/';
 const asset=(path:string)=>{
  const name=path.split('/').pop()!;
- if(platformArtEnabled&&(platformSample.coverage as string[]).includes(name.replace('.png','')))return `${platformArtRoot}${name}?v=platform-2`;
+ if(platformArtEnabled&&(releaseManifest.coverage as string[]).includes(name.replace('.png','')))return `${platformArtRoot}${name}?v=platform-2`;
  const fresh=artTrial==='actor'&&name==='hero.png'||artTrial==='room'&&(name==='hero.png'||name==='npcs.png'||name.startsWith('fund-'));
  return fresh?`${freshRoot}${name}?v=sample-room-1`:`${path}?v=${RELEASE_ID}`;
 };
@@ -25,7 +27,7 @@ export const heroSheet={
 };
 
 export function npcSheet(id:PersonId){
- const platformNpc=platformArtEnabled&&(platformSample.coverage as string[]).includes('npc-'+id);
+ const platformNpc=platformArtEnabled&&(releaseManifest.coverage as string[]).includes('npc-'+id);
  const base=platformNpc?0:people[id].row*4;
  return {id:'npc-'+id,image:platformNpc?asset(`./art/npc-${id}.png`):asset('./art/npcs.png'),width:384,height:platformNpc?512:2560,framesWidth:3,framesHeight:platformNpc?4:20,textures:Object.fromEntries([['stand',1],['stride-0',0],['stride-1',1],['stride-2',2]].map(([name,column])=>[name,{animations:({direction}:{direction:Direction})=>[[{frameX:column,frameY:base+directionRow(direction),time:0,anchor:[.5,.95],scale:[.625,.625],x:0,y:0}]]}]))};
 }
@@ -37,7 +39,7 @@ const dimensions:Record<string,[number,number]>={
  'client-furniture-0':[377,383],'client-furniture-1':[415,352],'client-furniture-2':[331,390],'client-furniture-3':[187,318],
 };
 export const propGraphic=(prop:Prop)=>'prop-'+prop.asset;
-export function propSheet(prop:Prop){const [width,height]=platformArtEnabled&&prop.asset in platformSample.dimensions?(platformSample.dimensions as Record<string,number[]>)[prop.asset]:artTrial==='room'&&prop.asset.startsWith('fund-')?freshSample.dimensions[prop.asset as keyof typeof freshSample.dimensions]:dimensions[prop.asset],scale=prop.width/width;return{id:propGraphic(prop),image:asset(`./art/${prop.asset}.png`),width,height,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[.5,1],scale)}}}
+export function propSheet(prop:Prop){const [width,height]=prop.asset in chapterDimensions?(chapterDimensions as Record<string,number[]>)[prop.asset]:platformArtEnabled&&prop.asset in platformSample.dimensions?(platformSample.dimensions as Record<string,number[]>)[prop.asset]:artTrial==='room'&&prop.asset.startsWith('fund-')?freshSample.dimensions[prop.asset as keyof typeof freshSample.dimensions]:dimensions[prop.asset],scale=prop.width/width;return{id:propGraphic(prop),image:asset(`./art/${prop.asset}.png`),width,height,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[.5,1],scale)}}}
 export const frontGraphic=(scene:SceneId)=>'front-'+scene;
 export const baseGraphic=(scene:SceneId)=>'base-'+scene;
 export const northGraphic=(scene:SceneId)=>'north-'+scene;

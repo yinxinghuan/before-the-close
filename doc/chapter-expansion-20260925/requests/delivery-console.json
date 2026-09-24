@@ -1,0 +1,49 @@
+{
+  "id": "delivery-console",
+  "request": {
+    "request_id": "79ab323b-02c2-463b-abba-d656efc615ee",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Single isolated furniture sprite for a high-quality 2D pixel-art RPG set in a contemporary New York investment/software office. Orthographic elevated FRONT view, camera about 35 degrees downward, zero perspective convergence, parallel horizontal tabletop front/back edges, vertical legs, no diagonal isometric rotation. Rich restrained pixel art, warm walnut, charcoal metal, soft muted teal details; crisp 2-3 pixel clusters, dark thin outline, consistent even indoor light. Show whole object centered on solid pure magenta #ff00ff background, no floor, no wall, no people, no cast shadow beyond footprint, no readable lettering. Furniture fits an adult waist height, broad rather than tall. A wide software deployment testing workbench: two small retail checkout terminals, laptop, barcode scanner and neatly coiled cables supported directly by a single sturdy low workbench. Terminals all mounted on tabletop; one small crate below. Front-facing rectangular footprint.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-24T20:00:34.089Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_dc98d4ceb03c12f4ee68872a2d15004c",
+    "request_id": "79ab323b-02c2-463b-abba-d656efc615ee",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790280034889,
+    "updated_at": 1790280070256,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790280069940-lslzarv3nc.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790280069940-lslzarv3nc.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34853
+  },
+  "elapsedSeconds": 36.833,
+  "file": "doc/chapter-expansion-20260925/raw/delivery-console.webp",
+  "sha256": "68f7e587428368f0642db975cbd0287a0d7d5b6b6885b01e8d4c201d203f6c7e"
+}

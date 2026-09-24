@@ -53,3 +53,7 @@ Atlas.tsx以world.entities门连接构建有向图，map-route.ts广度优先查
 
 ### r8.5 自由交谈
 free-dialogue.ts通过平台匿名game-chat接口发送NPC身份、已揭示资料、当前开放话题和同人物最近4轮记录。回复只显示并成对写入当前浏览器旅程history，不向reducer写任何模型指令。500字符限制，25秒超时，AbortController防重复并在关闭/换对象/卸载时取消；迟到回复不写入。草稿在当前页面按旅程和人物隔离，失败保留并可重试；刷新不承诺恢复未发送草稿。模型台词不等于权威事实。未引入新世界后台，预设判断/交易动作保持独立。
+
+
+## 连续话题更新（2026-09-24）
+使用 src/conversation-flow.ts 对完整已提交问答做话题完成投影，稳定 topicKey 与回应一起保存；作者追问依赖 after，utility 不消耗。新增历史不再静默截断，界面分页与模型上下文窗口分开。存储适配、测试和边界见 conversation-lifecycle-20260924.md。

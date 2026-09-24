@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {newJourney} from '../src/state';import {dialogueTopics} from '../src/conversation-topics';import type {PersonId} from '../src/content';
+test('all five people have a three-round chain with committed and bilingual legacy consumption',()=>{
+ for(const [person,ids] of Object.entries({partner:['mandate','mandate-evidence','mandate-unknown'],analyst:['payer','payer-test','payer-distinction'],founder:['value','value-proof','value-limit'],finance:['scope','scope-proof','scope-downside'],client:['real','real-evidence','real-boundary']})){
+ let j=newJourney();for(const id of ids){const t=dialogueTopics(j,person as PersonId).find(t=>t.id===id)!;assert.ok(t,id);j.history.push({person:person as PersonId,question:t.label[1],reply:t.reply[1],topicKey:id});j=JSON.parse(JSON.stringify(j));assert.ok(!dialogueTopics(j,person as PersonId).some(t=>t.id===id))}
+ }
+ const j=newJourney(),t=dialogueTopics(j,'partner').find(t=>t.id==='mandate')!;j.history.push({person:'partner',question:t.label[0],reply:t.reply[0]});assert.ok(!dialogueTopics(j,'partner').some(t=>t.id==='mandate'));assert.ok(dialogueTopics(j,'partner').some(t=>t.id==='mandate-evidence'))
+ const route=dialogueTopics(j,'partner').find(t=>t.utility)!;j.history.push({person:'partner',question:route.label[1],reply:route.reply[1],topicKey:route.key});assert.ok(dialogueTopics(j,'partner').some(t=>t.key===route.key))
+})
+test('new evidence unlocks required topic without resetting already answered topics',()=>{const j=newJourney(),t=dialogueTopics(j,'analyst')[0];j.history.push({person:'analyst',question:t.label[1],reply:t.reply[1],topicKey:t.key});assert.ok(!dialogueTopics(j,'analyst').some(t=>t.id==='correct'));j.save.facts.channel=true;assert.ok(dialogueTopics(j,'analyst').some(t=>t.id==='correct'));assert.ok(!dialogueTopics(j,'analyst').some(candidate=>candidate.key===j.history[0].topicKey))})

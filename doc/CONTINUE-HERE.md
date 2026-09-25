@@ -122,3 +122,10 @@ r8.5双部署已核验一致：3228c80，index-Czf138X9.js，SHA20ace25c87a06fac
 门补全：新增平台纯文本front-open-leaf（27.627秒，HTTP200），只去品红底、裁透明边；N/S门接入独立门板事件与门柱/门槛，E/W补门槛并校正门叶深度。build与36测试通过。待用户看completed-*-390/320截图；没有发布。注意completed-south-away-390仍与near状态相同，不能作为人物离开验证证据。
 
 v3门候选：纯文本分别生成front-framed-v3/side-leaf-v3，v2原图拒绝。v3前门带框、侧门无框；前门1280×640两帧(close/open)，WorldView距离100切换，不是铰链动画。open帧从同图取固定框，删除活动板区域；投影没有非等比调整。front-open-leaf已移除runtime coverage及public文件，保留拒绝原始证据。新图记录doc/door-completion-20260925/REVIEW.md；36测试、build通过。截图v3-front-open-390/v3-side-west-390；当前用户评审，仍未上线。
+
+## r11 已正式双部署（2026-09-25）
+用户明确要求持续推进直到发布。源码cb2f013354a8ef9c04d0935c672eac1a33e5ff80，主站/Pages实际bundle均为index-8YChJ6Ll.js，SHA256 6de43a315519a5050c6794ce338eaaf35a6e76e738fa91d62904877d9b2ad3e8；health为2026-09-25-r11。门状态图、新侧门、接待区墙、lobby地图、音乐与许可证文件均比对线上与dist哈希一致。发布证据doc/hub-release-r11.json。线上真实操作从会议室返回中央接待区，看到六条出入口与外访引导。36测试、build、secret/API/UUID检查通过；全局存储审计只有无关toy-rampage缺声明，本游戏无问题。iPhone实机尚未复验，不将本次发布当跨游戏生成稳定性证明。
+共享技能headquarters-and-area-maps及wall-door-assembly已更新：明确分型、生成前防止擅改投影、拒绝素材退出运行、联合比例及状态验收。新交接ZIP doc/skill-handoff/build-spatial-story-game-20260925-r11.zip；最终包检查见package-check-r11.json。
+
+## r12 墙体修正（准备发布）
+全部11房高墙面64、薄侧墙8与墙顶约6，新增南墙局部30%透显，人物离开恢复。真实门路线逐房南墙截图见doc/wall-reveal-20260925.md。共享技能已撤回矮厚墙示例并附参数化Pixi实现。未改剧情/人物/家具。发布真源待doc/hub-release-r12.json生成；r11为此前线上版本。

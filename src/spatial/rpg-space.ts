@@ -1,3 +1,4 @@
+import {createForegroundReveal} from './foreground-reveal';
 import {Direction} from '@rpgjs/common';
 import {startGame,provideClientGlobalConfig,provideClientModules,provideRpg,type RpgClientEngine} from '@rpgjs/client';
 import {createServer,provideServerModules,type RpgPlayer} from '@rpgjs/server';
@@ -25,6 +26,7 @@ export type SpaceOptions={
 export function createRpgSpace(options:SpaceOptions){
  if(options.host.id!=='rpg')throw new Error('RPG_MOUNT_ID_REQUIRED');
  const {world,host}=options,ids=Object.keys(world.scenes);
+ const revealForeground=createForegroundReveal({textureForScene:id=>`/${id}-front.png`,size:{w:640,h:640},center:{x:7,y:-22},radius:{x:34,y:44},opacity:.3,active:position=>position.y+10>500});
  const debug=new URLSearchParams(location.search).has('debug');
  let scene=options.scene,pos={...options.position},client:RpgClientEngine|undefined,player:RpgPlayer|undefined;
  let loaded:string|null=null,joined:string|null=null,paused=true,changing=false,last=0,stride=0,stick={x:0,y:0},route:Point[]=[];
@@ -83,6 +85,7 @@ export function createRpgSpace(options:SpaceOptions){
    if(distance>1e-7){stride=(stride+distance)%options.stride;const phase=Math.floor(stride/options.stride*4);const pose=['stride-0','stride-1','stride-2','stride-1'][phase];if(player.animationName()!==pose)player.animationName.set(pose);player.direction.set(Math.abs(x)>Math.abs(y)?(x>0?Direction.Right:Direction.Left):(y>0?Direction.Down:Direction.Up));void player.teleport(pos);player.syncChanges();options.onPosition(pos)}else stand();
    if(finished){const callback=arrive;arrive=undefined;options.onDestination(null);stand();callback?.()}
   }
+  revealForeground((client as any)?.canvasApp?.stage,scene,pos);
   placeCamera();options.onFrame?.(dt,{...pos},scene,blocked);projectPlayer();requestAnimationFrame(tick);
   if(debug){const sprite=client?.getCurrentPlayer();host.dataset.playerGraphics=String(sprite?.graphics().length??-1);host.dataset.playerSheets=String(sprite?.graphicsSignals().length??-1);host.dataset.roomEvents=String(Object.keys((client?.activeRoom() as unknown as {events?:()=>Record<string,unknown>})?.events?.()??{}).length)}
  };

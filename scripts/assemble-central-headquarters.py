@@ -11,7 +11,12 @@ def blank():return Image.new('RGBA',(640,640))
 def tile(dst,im,x,y,w,h):
  for yy in range(y,y+h,im.height):
   for xx in range(x,x+w,im.width):dst.alpha_composite(im.crop((0,0,min(im.width,x+w-xx),min(im.height,y+h-yy))),(xx,yy))
-wall=height(load('north-wall'),64);frontwall=height(load('north-wall'),40);side=width(load('side-wall'),12)
+# Keep the wall face tall; reduce ONLY the oversized cap depth by modular cropping.
+source_wall=load('north-wall')
+wall_module=Image.new('RGBA',(source_wall.width,284))
+wall_module.alpha_composite(source_wall.crop((0,84,source_wall.width,110)),(0,0))
+wall_module.alpha_composite(source_wall.crop((0,110,source_wall.width,368)),(0,26))
+wall=height(wall_module,64);frontwall=wall;side=width(load('side-wall'),8)
 doors=json.loads((ROOT/'src/door-layout.json').read_text())
 for scene in ['lobby','fund','study','archive','partnerroom','meeting','office','records','client','delivery','channel']:
  source=scene if scene in ['fund','office','records','client'] else 'records' if scene in ['archive','channel'] else 'office' if scene=='delivery' else 'fund'
@@ -23,25 +28,25 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
  if scene in ['study','partnerroom']:
   window=width(load('office-window'),110)
   for x in [140,440]:north.alpha_composite(window,(x,95-window.height))
- for edge,x in [('W',22),('E',606)]:
+ for edge,x in [('W',26),('E',606)]:
   strip=side if edge=='W' else ImageOps.mirror(side);cursor=32
   for id,d in sorted([(k,v) for k,v in roomdoors.items() if v['side']==edge],key=lambda pair:pair[1]['y']):
    lo=d['y']-34;hi=d['y']+34
-   tile(sides,strip,x,cursor,12,lo-cursor);cursor=hi
-   end=wall.crop((0,0,12,12));sides.alpha_composite(end,(x,lo))
+   tile(sides,strip,x,cursor,8,lo-cursor);cursor=hi
+   end=wall.crop((0,0,8,8));sides.alpha_composite(end,(x,lo))
    # Threshold uses the same wall-top material and lies below the actor.
-   tile(base,wall.crop((0,0,12,4)),x,lo,12,hi-lo)
+   tile(base,wall.crop((0,0,8,4)),x,lo,8,hi-lo)
    near=blank();near.alpha_composite(end,(x,hi));leaf=blank();door=width(Image.open(OUT/'side-leaf-v3.png').convert('RGBA'),48)
    if edge=='W':door=ImageOps.mirror(door)
    leaf.alpha_composite(door,(34 if edge=='W' else 606-door.width,lo-door.height))
    parts['door-'+id+'-near']=near;parts['door-'+id+'-leaf']=leaf
-  tile(sides,strip,x,cursor,12,564-cursor)
- south=sorted([d for d in roomdoors.values() if d['side']=='S'],key=lambda d:d['x']);cursor=22
+  tile(sides,strip,x,cursor,8,576-cursor)
+ south=sorted([d for d in roomdoors.values() if d['side']=='S'],key=lambda d:d['x']);cursor=26
  for d in south:
-  tile(front,frontwall,cursor,524,d['x']-26-cursor,40);cursor=d['x']+26
+  tile(front,frontwall,cursor,512,d['x']-26-cursor,64);cursor=d['x']+26
   # Open doorway: full upright jambs plus a separately depth-sorted open leaf.
   front.alpha_composite(wall.crop((0,0,6,64)),(d['x']-26,512));front.alpha_composite(wall.crop((0,0,6,64)),(d['x']+20,512))
- tile(front,frontwall,cursor,524,618-cursor,40)
+ tile(front,frontwall,cursor,512,614-cursor,64)
  for d in roomdoors.values():
   if d['side']=='N':
    north.paste((0,0,0,0),(d['x']-26,0,d['x']+26,96));north.alpha_composite(wall.crop((0,0,6,64)),(d['x']-26,32));north.alpha_composite(wall.crop((0,0,6,64)),(d['x']+20,32))
@@ -61,7 +66,8 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
   assert all(x+ornament.width <= d['x']-26 or x >= d['x']+26 for d in roomdoors.values() if d['side']=='N'), f'{scene}: decoration overlaps doorway'
   north.alpha_composite(ornament,(x,94-ornament.height))
  for name,im in {'base':base,'north':north,'side':sides,'front':front,**parts}.items():
-  im.save(OUT/f'{scene}-{name}.png');manifest['coverage'].append(scene+'-'+name) if scene+'-'+name not in manifest['coverage'] else None;manifest['derivedSources'][scene+'-'+name]=([source+'-floor'] if name=='base' else ['north-wall'] if name=='front' else ['side-wall','north-wall'] if name=='side' or name.endswith('-near') else (['front-framed-v3','front-frame-open-v3'] if roomdoors[name[5:-5]]['side'] in ['N','S'] else ['side-leaf-v3']) if name.endswith('-leaf') else ['north-wall']+(['office-window'] if scene in ['study','partnerroom'] else ['wall-decor-0','wall-decor-2'] if scene=='lobby' else ['wall-decor-1'] if scene in ['office','fund','archive'] else ['wall-decor-2'] if scene=='meeting' else []))
+  im.save(OUT/f'{scene}-{name}.png');manifest['coverage'].append(scene+'-'+name) if scene+'-'+name not in manifest['coverage'] else None;manifest['derivedSources'][scene+'-'+name]=([source+'-floor','north-wall'] if name=='base' else ['north-wall'] if name=='front' else ['side-wall','north-wall'] if name=='side' or name.endswith('-near') else (['front-framed-v3','front-frame-open-v3'] if roomdoors[name[5:-5]]['side'] in ['N','S'] else ['side-leaf-v3']) if name.endswith('-leaf') else ['north-wall']+(['office-window'] if scene in ['study','partnerroom'] else ['wall-decor-0','wall-decor-2'] if scene=='lobby' else ['wall-decor-1'] if scene in ['office','fund','archive'] else ['wall-decor-2'] if scene=='meeting' else []))
 
+manifest['wallAssembly']={'northHeight':64,'southHeight':64,'sideThickness':8,'capHeightApprox':6,'source':'north-wall','capCrop':[0,84,source_wall.width,110],'faceCrop':[0,110,source_wall.width,368],'southY':[512,576],'scale':'uniform after modular strip assembly'}
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
 for ext in ['tmx','tsx']:(ROOT/f'public/map/lobby.{ext}').write_text((ROOT/f'public/map/fund.{ext}').read_text().replace('fund','lobby'))

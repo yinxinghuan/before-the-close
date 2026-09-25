@@ -239,7 +239,8 @@
   ],
   "derivedSources": {
     "fund-base": [
-      "fund-floor"
+      "fund-floor",
+      "north-wall"
     ],
     "fund-north": [
       "north-wall",
@@ -267,7 +268,8 @@
       "office-window"
     ],
     "office-base": [
-      "office-floor"
+      "office-floor",
+      "north-wall"
     ],
     "office-north": [
       "north-wall",
@@ -302,7 +304,8 @@
       "side-leaf-v3"
     ],
     "records-base": [
-      "records-floor"
+      "records-floor",
+      "north-wall"
     ],
     "records-north": [
       "north-wall"
@@ -322,7 +325,8 @@
       "side-leaf-v3"
     ],
     "client-base": [
-      "client-floor"
+      "client-floor",
+      "north-wall"
     ],
     "client-north": [
       "north-wall"
@@ -425,7 +429,8 @@
       "poster-release"
     ],
     "lobby-base": [
-      "fund-floor"
+      "fund-floor",
+      "north-wall"
     ],
     "lobby-north": [
       "north-wall",
@@ -475,7 +480,8 @@
       "side-leaf-v3"
     ],
     "study-base": [
-      "fund-floor"
+      "fund-floor",
+      "north-wall"
     ],
     "study-north": [
       "north-wall",
@@ -496,7 +502,8 @@
       "side-leaf-v3"
     ],
     "archive-base": [
-      "records-floor"
+      "records-floor",
+      "north-wall"
     ],
     "archive-north": [
       "north-wall",
@@ -517,7 +524,8 @@
       "side-leaf-v3"
     ],
     "partnerroom-base": [
-      "fund-floor"
+      "fund-floor",
+      "north-wall"
     ],
     "partnerroom-north": [
       "north-wall",
@@ -538,7 +546,8 @@
       "side-leaf-v3"
     ],
     "meeting-base": [
-      "fund-floor"
+      "fund-floor",
+      "north-wall"
     ],
     "meeting-north": [
       "north-wall",
@@ -559,7 +568,8 @@
       "side-leaf-v3"
     ],
     "delivery-base": [
-      "office-floor"
+      "office-floor",
+      "north-wall"
     ],
     "delivery-north": [
       "north-wall"
@@ -572,7 +582,8 @@
       "north-wall"
     ],
     "channel-base": [
-      "records-floor"
+      "records-floor",
+      "north-wall"
     ],
     "channel-north": [
       "north-wall"
@@ -871,5 +882,29 @@
         "sole baseline122"
       ]
     }
-  ]
+  ],
+  "wallAssembly": {
+    "northHeight": 64,
+    "southHeight": 64,
+    "sideThickness": 8,
+    "capHeightApprox": 6,
+    "source": "north-wall",
+    "capCrop": [
+      0,
+      84,
+      1518,
+      110
+    ],
+    "faceCrop": [
+      0,
+      110,
+      1518,
+      368
+    ],
+    "southY": [
+      512,
+      576
+    ],
+    "scale": "uniform after modular strip assembly"
+  }
 }

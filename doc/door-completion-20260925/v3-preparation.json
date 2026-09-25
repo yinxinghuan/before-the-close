@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "id": "front-framed-v3",
+      "bounds": [
+        187,
+        148,
+        838,
+        844
+      ],
+      "size": [
+        651,
+        696
+      ],
+      "sha256": "38026caebb3c114ddabd53e0a6841fb74194334cd3161e865790e8905700c303",
+      "operations": [
+        "magenta key",
+        "trim transparent margin"
+      ]
+    },
+    {
+      "id": "side-leaf-v3",
+      "bounds": [
+        282,
+        194,
+        742,
+        798
+      ],
+      "size": [
+        460,
+        604
+      ],
+      "sha256": "de34c162147aa877209f629b186a731fb860b4703e023d3dbf14958e4ba448d1",
+      "operations": [
+        "magenta key",
+        "trim transparent margin"
+      ]
+    }
+  ],
+  "frameExtractionSourceRect": [
+    260,
+    238,
+    765,
+    817
+  ],
+  "note": "Open frame extracted by removing panel pixels only. No shape warping."
+}

@@ -15,7 +15,7 @@ const artTrial=import.meta.env?.DEV?new URLSearchParams(location.search).get('ar
 const freshRoot='./doc/art-rebuild-20260923/prepared/';
 const asset=(path:string)=>{
  const name=path.split('/').pop()!;
- if(platformArtEnabled&&(releaseManifest.coverage as string[]).includes(name.replace('.png','')))return `${platformArtRoot}${name}?v=platform-2`;
+ if(platformArtEnabled&&(releaseManifest.coverage as string[]).includes(name.replace('.png','')))return `${platformArtRoot}${name}?v=${RELEASE_ID}`;
  const fresh=artTrial==='actor'&&name==='hero.png'||artTrial==='room'&&(name==='hero.png'||name==='npcs.png'||name.startsWith('fund-'));
  return fresh?`${freshRoot}${name}?v=sample-room-1`:`${path}?v=${RELEASE_ID}`;
 };
@@ -51,5 +51,5 @@ export function frontSheet(scene:SceneId){return{id:frontGraphic(scene),image:as
 
 export const spatialSheets=[...Object.values(rooms).flatMap(room=>room.props.map(propSheet)),...(Object.keys(people) as PersonId[]).map(npcSheet),...(Object.keys(rooms) as SceneId[]).flatMap(scene=>[baseSheet(scene),northSheet(scene),sideSheet(scene),frontSheet(scene)])];
 
-export const doorParts=Object.entries(doorLayout).filter(([,d])=>d.side==='W'||d.side==='E').flatMap(([id,d])=>['near','leaf'].map(part=>({id:`door-${id}-${part}`,scene:d.room,depth:d.y+(part==='near'?34:-22)})));
-spatialSheets.push(...doorParts.map(part=>({id:part.id,image:asset(`./map/${part.scene}-${part.id}.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1,0,-part.depth)}})));
+export const doorParts=Object.entries(doorLayout).flatMap(([id,d])=>(d.side==='W'||d.side==='E'?['near','leaf']:['leaf']).map(part=>({id:`door-${id}-${part}`,scene:d.room,portalId:id,front:d.side==='N'||d.side==='S',depth:d.side==='N'||d.side==='S'?d.y+12:d.y+(part==='near'?34:-34)})));
+spatialSheets.push(...doorParts.map(part=>({id:part.id,image:asset(`./map/${part.scene}-${part.id}.png`),width:part.front?1280:640,height:640,framesWidth:part.front?2:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1,0,-part.depth),open:still(part.front?1:0,0,[0,0],1,0,-part.depth)}})));

@@ -1,0 +1,14 @@
+{
+  "assets": [
+    {
+      "id": "wall-decor",
+      "prompt": "Production pixel art sprite asset sheet for a sophisticated near-future contemporary New York VC/PE office 2D orthographic RPG. Three separate wide framed wall decorations arranged vertically in three evenly separated rows on pure solid magenta #FF00FF background. Top: elegant panoramic abstract Manhattan skyline artwork, dark teal and warm brass, visibly an artwork not a window, ivory mat and thin walnut frame. Middle: framed deal-team project board with abstract small index cards and threadlike straight connections, no legible words or numbers. Bottom: restrained geometric abstract artwork in teal, cream and brass with thin walnut frame. Each decoration viewed EXACTLY straight front-on, a perfect horizontal rectangle, parallel edges, no perspective, no visible top or side thickness, no angled frame, no cast shadow outside frame. Crisp high quality pixel art with consistent dense pixels, restrained warm palette. Exactly three distinct rectangular isolated objects, each centered and under 800px wide, ample magenta separation. No room, no floor, no furniture, no humans, no text.",
+      "parents": [],
+      "model": "gpt-image-2.5-sunburst",
+      "size": {
+        "width": 1024,
+        "height": 1024
+      }
+    }
+  ]
+}

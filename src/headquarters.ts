@@ -2,7 +2,7 @@ import type {Journey} from './state';
 import type {Pair,PersonId} from './content';
 import type {SceneId} from './world';
 export const projects=[{id:'relayops',title:['RelayOps · 成长轮尽调','RelayOps · Growth investment'] as Pair,company:'RelayOps',brief:['你已跟进半年。明早投委会需要区分客户使用、首款条件与资金用途。先与项目组核对，再去现场。','You have led this deal for six months. Tomorrow’s committee needs clarity on customer use, payment conditions and funding needs. Brief with your team, then visit the sites.'] as Pair,entry:'office' as SceneId}];
-export const headquartersRooms:SceneId[]=['study','fund','archive','partnerroom','meeting'];
+export const headquartersRooms:SceneId[]=['lobby','study','fund','archive','partnerroom','meeting'];
 export function projectAccepted(j:Journey){return !!j.save.facts['project-accepted']||!!j.save.facts.memo||!!j.save.facts.decision||!headquartersRooms.includes(j.scene)}
 export function projectStatus(j:Journey):Pair{return j.save.facts.decision&&!j.chapterVersion?['此前已结束','Previously closed']:j.save.facts['case-archived']?['已归档','Archived']:j.save.facts.decision?['已提交 · 跟进回音','Submitted · Follow up']:projectAccepted(j)?['尽调进行中','Diligence in progress']:['待接手','Ready to take on']}
 export function canArchive(j:Journey){return !!j.save.facts.decision&&['echo-founder','echo-finance','echo-client'].every(k=>j.save.facts[k])}

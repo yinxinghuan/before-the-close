@@ -198,36 +198,59 @@
     "partnerroom-base",
     "partnerroom-north",
     "partnerroom-side",
-    "partnerroom-front"
+    "partnerroom-front",
+    "lobby-base",
+    "lobby-north",
+    "lobby-side",
+    "lobby-front",
+    "lobby-door-lobby-archive-near",
+    "lobby-door-lobby-archive-leaf",
+    "lobby-door-lobby-study-near",
+    "lobby-door-lobby-study-leaf",
+    "lobby-door-lobby-fund-near",
+    "lobby-door-lobby-fund-leaf",
+    "lobby-door-lobby-partnerroom-near",
+    "lobby-door-lobby-partnerroom-leaf",
+    "fund-door-fund-lobby-near",
+    "fund-door-fund-lobby-leaf",
+    "study-door-study-lobby-near",
+    "study-door-study-lobby-leaf",
+    "archive-door-archive-lobby-near",
+    "archive-door-archive-lobby-leaf",
+    "partnerroom-door-partnerroom-lobby-near",
+    "partnerroom-door-partnerroom-lobby-leaf",
+    "office-door-office-lobby-near",
+    "office-door-office-lobby-leaf",
+    "wall-decor-0",
+    "wall-decor-1",
+    "wall-decor-2",
+    "lobby-door-lobby-meeting-leaf",
+    "lobby-door-lobby-office-leaf",
+    "meeting-door-meeting-lobby-leaf",
+    "office-door-office-client-leaf",
+    "office-door-office-delivery-leaf",
+    "records-door-records-channel-leaf",
+    "client-door-client-office-leaf",
+    "delivery-door-delivery-office-leaf",
+    "channel-door-channel-records-leaf",
+    "front-framed-v3",
+    "side-leaf-v3",
+    "front-frame-open-v3"
   ],
   "derivedSources": {
     "fund-base": [
-      "fund-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "fund-floor"
     ],
     "fund-north": [
-      "fund-floor",
       "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "wall-decor-1"
     ],
     "fund-side": [
-      "fund-floor",
-      "north-wall",
       "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "fund-front": [
-      "fund-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "fund-door-fund-office-near": [
       "fund-floor",
@@ -244,32 +267,18 @@
       "office-window"
     ],
     "office-base": [
-      "office-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "office-floor"
     ],
     "office-north": [
-      "office-floor",
       "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "wall-decor-1"
     ],
     "office-side": [
-      "office-floor",
-      "north-wall",
       "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "office-front": [
-      "office-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "office-door-office-fund-near": [
       "office-floor",
@@ -286,88 +295,44 @@
       "office-window"
     ],
     "office-door-office-records-near": [
-      "office-floor",
-      "north-wall",
       "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "office-door-office-records-leaf": [
-      "office-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "side-leaf-v3"
     ],
     "records-base": [
-      "records-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "records-floor"
     ],
     "records-north": [
-      "records-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "records-side": [
-      "records-floor",
-      "north-wall",
       "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "records-front": [
-      "records-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "records-door-records-office-near": [
-      "records-floor",
-      "north-wall",
       "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "records-door-records-office-leaf": [
-      "records-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "side-leaf-v3"
     ],
     "client-base": [
-      "client-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "client-floor"
     ],
     "client-north": [
-      "client-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "client-side": [
-      "client-floor",
-      "north-wall",
       "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "client-front": [
-      "client-floor",
-      "north-wall",
-      "side-wall",
-      "door-white-v3",
-      "office-window"
+      "north-wall"
     ],
     "fund-furniture-0": [
       "fund-desk"
@@ -458,6 +423,202 @@
     ],
     "poster": [
       "poster-release"
+    ],
+    "lobby-base": [
+      "fund-floor"
+    ],
+    "lobby-north": [
+      "north-wall",
+      "wall-decor-0",
+      "wall-decor-2"
+    ],
+    "lobby-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "lobby-front": [
+      "north-wall"
+    ],
+    "lobby-door-lobby-archive-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "lobby-door-lobby-archive-leaf": [
+      "side-leaf-v3"
+    ],
+    "lobby-door-lobby-study-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "lobby-door-lobby-study-leaf": [
+      "side-leaf-v3"
+    ],
+    "lobby-door-lobby-fund-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "lobby-door-lobby-fund-leaf": [
+      "side-leaf-v3"
+    ],
+    "lobby-door-lobby-partnerroom-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "lobby-door-lobby-partnerroom-leaf": [
+      "side-leaf-v3"
+    ],
+    "fund-door-fund-lobby-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "fund-door-fund-lobby-leaf": [
+      "side-leaf-v3"
+    ],
+    "study-base": [
+      "fund-floor"
+    ],
+    "study-north": [
+      "north-wall",
+      "office-window"
+    ],
+    "study-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "study-front": [
+      "north-wall"
+    ],
+    "study-door-study-lobby-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "study-door-study-lobby-leaf": [
+      "side-leaf-v3"
+    ],
+    "archive-base": [
+      "records-floor"
+    ],
+    "archive-north": [
+      "north-wall",
+      "wall-decor-1"
+    ],
+    "archive-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "archive-front": [
+      "north-wall"
+    ],
+    "archive-door-archive-lobby-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "archive-door-archive-lobby-leaf": [
+      "side-leaf-v3"
+    ],
+    "partnerroom-base": [
+      "fund-floor"
+    ],
+    "partnerroom-north": [
+      "north-wall",
+      "office-window"
+    ],
+    "partnerroom-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "partnerroom-front": [
+      "north-wall"
+    ],
+    "partnerroom-door-partnerroom-lobby-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "partnerroom-door-partnerroom-lobby-leaf": [
+      "side-leaf-v3"
+    ],
+    "meeting-base": [
+      "fund-floor"
+    ],
+    "meeting-north": [
+      "north-wall",
+      "wall-decor-2"
+    ],
+    "meeting-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "meeting-front": [
+      "north-wall"
+    ],
+    "office-door-office-lobby-near": [
+      "side-wall",
+      "north-wall"
+    ],
+    "office-door-office-lobby-leaf": [
+      "side-leaf-v3"
+    ],
+    "delivery-base": [
+      "office-floor"
+    ],
+    "delivery-north": [
+      "north-wall"
+    ],
+    "delivery-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "delivery-front": [
+      "north-wall"
+    ],
+    "channel-base": [
+      "records-floor"
+    ],
+    "channel-north": [
+      "north-wall"
+    ],
+    "channel-side": [
+      "side-wall",
+      "north-wall"
+    ],
+    "channel-front": [
+      "north-wall"
+    ],
+    "lobby-door-lobby-meeting-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "lobby-door-lobby-office-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "meeting-door-meeting-lobby-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "office-door-office-client-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "office-door-office-delivery-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "records-door-records-channel-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "client-door-client-office-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "delivery-door-delivery-office-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
+    ],
+    "channel-door-channel-records-leaf": [
+      "front-framed-v3",
+      "front-frame-open-v3"
     ]
   },
   "heroFrames": [

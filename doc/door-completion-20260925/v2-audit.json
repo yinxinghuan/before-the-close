@@ -1,0 +1,24 @@
+[
+  {
+    "id": "front-framed-v2",
+    "bounds": [
+      298,
+      136,
+      721,
+      852
+    ],
+    "heightToWidth": 1.6926713947990544,
+    "admission": "rejected"
+  },
+  {
+    "id": "side-leaf-v2",
+    "bounds": [
+      239,
+      106,
+      793,
+      897
+    ],
+    "heightToWidth": 1.4277978339350181,
+    "admission": "rejected"
+  }
+]

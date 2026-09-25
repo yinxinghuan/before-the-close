@@ -1,0 +1,16 @@
+{
+  "source": "doc/door-completion-20260925/raw/front-open-leaf.webp",
+  "crop": [
+    427,
+    56,
+    595,
+    972
+  ],
+  "output": "public/art/platform-v1/front-open-leaf.png",
+  "size": [
+    168,
+    916
+  ],
+  "operation": "remove magenta only; crop transparent margin; no geometry changes",
+  "sha256": "46c07bc9762587a2c34d631b6fac1e2ad1148dfa04cc21ce0a290a6298af14ed"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "side-leaf-v2",
+  "request": {
+    "request_id": "1c6f7745-bc0f-49a5-9632-1d2d98f041cc",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Restrained crisp 16-bit pixel art sprite for a professional New York office in an overhead 2D exploration RPG. High ORTHOGRAPHIC camera looking down 50 degrees, ZERO horizontal camera yaw. All main vertical edges perfectly vertical, all front top and bottom edges perfectly horizontal. NO diagonal silhouette edges, no isometric side view, no vanishing point. Naturally foreshortened front face: its projected height is about 1.30 times its width. A visible narrow horizontal top surface belongs to the slab itself. Small black lever on left with a horizontally flattened elliptical rosette, two modest hinge barrels on right with visible oval top ends: all hardware supports the same high camera. Ivory painted slab, restrained dark outlines, visible hard square pixel clusters, warm gray shading, no photoreal gradients. Object centered with generous empty margins on uniform opaque magenta #ff00ff. No text, no floor, no surrounding wall, no cast shadow. Make ONE independent moving door LEAF ONLY. NO fixed frame, NO lintel, NO jamb, NO sill, NO threshold. Entire silhouette short broad upright rectangle with its OWN thin top surface. This is the broad face seen when a SIDE-WALL door swings into a room: DO NOT depict swinging, rotation, angled opening, or a narrow side view. The right hinge edge will be attached to the wall in assembly. Width of main rectangular slab 400 units, visible front height 520 units, own top only about 12 units deep. Hardware small, not large.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-25T05:55:46.365Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_ca372d1e9930a540ca21501e31391e39",
+    "request_id": "1c6f7745-bc0f-49a5-9632-1d2d98f041cc",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790315747150,
+    "updated_at": 1790315774230,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790315773892-f7u5nyo7yk6.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790315773892-f7u5nyo7yk6.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 26953
+  },
+  "elapsedSeconds": 27.967,
+  "file": "doc/door-completion-20260925/raw/side-leaf-v2.webp",
+  "sha256": "2249d0ecea099d412d96c6ad9033e5c8197bc2d7e70ecebbe5cc798972575428",
+  "admission": {
+    "status": "rejected",
+    "reason": "Front too tall; hardware frontal and weak foreshortening. No runtime admission."
+  }
+}

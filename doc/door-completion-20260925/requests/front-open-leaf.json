@@ -1,0 +1,53 @@
+{
+  "id": "front-open-leaf",
+  "request": {
+    "request_id": "2c68be4a-87e6-4c25-8319-c10e8090a2e7",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "A single isolated OPEN DOOR LEAF sprite for an overhead orthographic 2D pixel RPG. Ivory office slab with small black handle, hinges along its LEFT vertical edge. The slab is swung 80 degrees open, viewed from elevated orthographic camera looking down 50 degrees. Door remains upright in world, NEVER laid flat. Hinge edge at left is farther away (higher on image); free edge at right is nearer (lower on image). Vertical edges remain parallel vertical, top and bottom edges parallel sloping down-right. Strongly foreshortened narrow side view: full projected bounding width about 100 pixels and height 420 pixels. Thin ivory top surface, muted beige broad side, black hardware tiny. NO stationary frame, NO jamb, NO wall, NO ground, NO cast shadow. Only moving slab with its own thin edges. Crisp restrained 16-bit pixel art, visible square pixel clusters and dark brown outlines, limited warm cream palette matching a professional New York office. Entire complete silhouette centered on perfectly uniform opaque magenta #ff00ff with generous empty margin. No perspective vanishing point, no isometric room, no text.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-25T05:45:00.193Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_89ec55f3bbce85309c7e246d45c1b1c8",
+    "request_id": "2c68be4a-87e6-4c25-8319-c10e8090a2e7",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790315100905,
+    "updated_at": 1790315127518,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790315127182-krc7gk3xi1.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790315127182-krc7gk3xi1.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 26414
+  },
+  "elapsedSeconds": 27.627,
+  "file": "doc/door-completion-20260925/raw/front-open-leaf.webp",
+  "sha256": "80742d1850fbf44f2a8e7cf4fe1d3ee8283dab3e4819c3e9036493bd42b29157",
+  "admission": {
+    "status": "rejected",
+    "reason": "User rejected projection: narrow diagonal open slab deviates from required axis-aligned door recipe. Do not reuse or transform to pass."
+  }
+}

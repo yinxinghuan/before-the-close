@@ -1,0 +1,49 @@
+{
+  "id": "wall-decor",
+  "request": {
+    "request_id": "b906facc-6979-4bca-ac75-fdeb5a27bc64",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Production pixel art sprite asset sheet for a sophisticated near-future contemporary New York VC/PE office 2D orthographic RPG. Three separate wide framed wall decorations arranged vertically in three evenly separated rows on pure solid magenta #FF00FF background. Top: elegant panoramic abstract Manhattan skyline artwork, dark teal and warm brass, visibly an artwork not a window, ivory mat and thin walnut frame. Middle: framed deal-team project board with abstract small index cards and threadlike straight connections, no legible words or numbers. Bottom: restrained geometric abstract artwork in teal, cream and brass with thin walnut frame. Each decoration viewed EXACTLY straight front-on, a perfect horizontal rectangle, parallel edges, no perspective, no visible top or side thickness, no angled frame, no cast shadow outside frame. Crisp high quality pixel art with consistent dense pixels, restrained warm palette. Exactly three distinct rectangular isolated objects, each centered and under 800px wide, ample magenta separation. No room, no floor, no furniture, no humans, no text.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-25T05:06:54.176Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_2177d4abab132f386f7c93dd98af6e63",
+    "request_id": "b906facc-6979-4bca-ac75-fdeb5a27bc64",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790312814883,
+    "updated_at": 1790312849668,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790312849221-fq2flg5gb45.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790312849221-fq2flg5gb45.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 34592
+  },
+  "elapsedSeconds": 35.929,
+  "file": "doc/hub-decor-20260925/raw/wall-decor.webp",
+  "sha256": "bc3c1020ecfecdb48da9de7226fa5fc023ca2b276014f3168dbf0fd61e8a9d16"
+}

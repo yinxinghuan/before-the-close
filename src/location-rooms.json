@@ -1,0 +1,21 @@
+{
+  "northline": [
+    "lobby",
+    "study",
+    "fund",
+    "archive",
+    "partnerroom",
+    "meeting"
+  ],
+  "relayops": [
+    "office",
+    "records",
+    "delivery"
+  ],
+  "customer": [
+    "client"
+  ],
+  "settlement": [
+    "channel"
+  ]
+}

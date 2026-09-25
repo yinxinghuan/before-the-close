@@ -53,6 +53,12 @@
 
 /* World coordinates are projected by the RPG camera, never by DOM focus scrolling. */
 .bc-app>.bc-world{overflow:clip}
-.bc-area-switch{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:12px;background:#f4efdf;color:#293c39;border-color:#999780}.bc-area-title{font-size:15px;margin-top:14px}.bc-area-list{display:grid;gap:10px;margin-top:14px}.bc-area-list button{display:flex;align-items:center;gap:12px;background:#f4efdf;color:#293c39;text-align:left}.bc-area-list button span{flex:1}.bc-area-list small{display:block;color:#53615a;margin-top:5px}.bc-atlas-viewport--hq{height:370px!important}.bc-atlas-viewport--hq .bc-atlas-world button{width:60%;min-height:54px}.bc-atlas-viewport:not(.bc-atlas-viewport--hq) .bc-atlas-world button{width:38%}
+.bc-area-switch{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:12px;background:#f4efdf;color:#293c39;border-color:#999780}.bc-area-title{font-size:15px;margin-top:14px}.bc-area-list{display:grid;gap:10px;margin-top:14px}.bc-area-list button{display:flex;align-items:center;gap:12px;background:#f4efdf;color:#293c39;text-align:left}.bc-area-list button span{flex:1}.bc-area-list small{display:block;color:#53615a;margin-top:5px}.bc-atlas-viewport--hq{height:370px!important}.bc-atlas-viewport--hq .bc-atlas-world button{width:30%;min-height:54px}.bc-atlas-viewport:not(.bc-atlas-viewport--hq) .bc-atlas-world button{width:38%}
 
 .bc-atlas-viewport--hq .bc-atlas-world button svg{width:16px;height:16px}
+
+.bc-visit-shortcut{position:relative;z-index:4;align-self:flex-end;display:flex;align-items:center;gap:8px;min-height:44px;margin:4px 14px;padding:8px 12px;background:#204b50;color:#fff1ce;border:1px solid #cbb779;box-shadow:0 2px 0 #102d32;font-weight:700}.bc-visit-shortcut svg{width:18px;height:18px}.bc-area-exits{display:grid;gap:6px;margin:10px 0}.bc-area-exits button{display:grid;grid-template-columns:1fr 20px;text-align:left;padding:10px;gap:4px;background:#204b50;color:#fff1ce;border:1px solid #cbb779;min-height:44px}.bc-area-exits button span{font-size:12px;grid-column:1}.bc-area-exits button svg{grid-column:2;grid-row:1/3;width:18px}
+
+.bc-atlas-viewport--hq [data-room]{width:30%;min-width:0;padding:8px 4px;font-size:12px}.bc-atlas-viewport--hq [data-room] strong{white-space:normal}
+.bc-visit-shortcut{position:absolute;top:166px;right:12px;margin:0;max-width:calc(100% - 24px);font-size:12px}
+.bc-visit-shortcut{top:auto;bottom:100px;right:12px}

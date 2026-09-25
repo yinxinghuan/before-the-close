@@ -1,0 +1,59 @@
+{
+  "id": "front-framed-v3",
+  "request": {
+    "request_id": "7e33960e-5777-45d2-800e-242ef35d3f3b",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "model": "gpt-image-2.5-sunburst",
+    "mode": "text",
+    "reference_urls": [],
+    "prompt": "Draw a compact pixel-art game object on solid magenta #ff00ff, not a product photo. Geometric silhouette first: a RECTANGLE 500 pixels WIDE and 550 pixels HIGH, centered in a 1024 square canvas. Its top and bottom edges are perfectly HORIZONTAL and equal length. Left and right edges perfectly VERTICAL and equal length. Fill the rectangle with warm ivory painted wood, hard pixel clusters, dark pixel outline. The uppermost 18 pixels are its own thin top surface visible from above. High angle ORTHOGRAPHIC projection, camera pitched down 55 degrees, ZERO sideways yaw. This is a vertically standing rectangular panel with its vertical dimension strongly foreshortened by the elevated camera, NOT a tall frontal elevation. Small black lever near left edge at lower middle: the originally circular mounting plate is rendered as a HORIZONTAL ELLIPSE, 32 pixels wide but only 14 high, NEVER a circle. Lever shows broad upper surface. Two tiny hinges on right edge show horizontal oval top ends. No diagonal silhouette, no perspective taper, no tall rectangle, no shadows, no floor. 16-bit hand-pixel style, limited muted colors, no gradients. This panel functions as a short projected office door in an overhead RPG. Around that panel add snug fixed walnut doorjambs 24 pixels wide on each side, 24 pixel horizontal lintel with thin visible top, and 10 pixel sill. Outer frame remains almost square, NOT a tall doorway. No surrounding wall. Door panel is closed inside the frame. Entire assembly about 550 wide by 600 high.",
+    "size": {
+      "width": 1024,
+      "height": 1024
+    },
+    "quality": "high",
+    "background": "opaque",
+    "n": 1
+  },
+  "parents": [],
+  "attemptedAt": "2026-09-25T05:56:56.461Z",
+  "status": "candidate",
+  "httpStatus": 200,
+  "response": {
+    "task_id": "mt_9234154d6adc5fa39b550a5bccc10805",
+    "request_id": "7e33960e-5777-45d2-800e-242ef35d3f3b",
+    "type": "image",
+    "status": "succeeded",
+    "created_at": 1790315817033,
+    "updated_at": 1790315849737,
+    "media": {
+      "type": "image",
+      "url": "https://images.aiwaves.tech/uploads/1790315849398-a6f813lxtpf.webp",
+      "urls": [
+        "https://images.aiwaves.tech/uploads/1790315849398-a6f813lxtpf.webp"
+      ],
+      "format": "webp",
+      "model": "gpt-image-2.5-sunburst",
+      "mode": "text",
+      "reference_count": 0,
+      "requested_size": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    "timing_ms": 32589
+  },
+  "elapsedSeconds": 33.433,
+  "file": "doc/door-completion-20260925/raw/front-framed-v3.webp",
+  "sha256": "10684e74f50214e850023f6658d2cb7f1bca3893ea68469035edc39ab2f43ba3",
+  "admission": {
+    "status": "renderer-candidate",
+    "checks": [
+      "axis-aligned outline",
+      "separate front frame vs bare side leaf",
+      "foreshortened hardware visible",
+      "single-scale rendering"
+    ],
+    "limits": "Needs user visual review and phone evidence; no claim of repeated generation stability"
+  }
+}

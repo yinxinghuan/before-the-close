@@ -5,7 +5,7 @@ import doorLayout from './door-layout.json';
 import type {Pair,PersonId,RecordId} from './content';
 import {findPath,walkable,type Point,type Rect,type World} from './spatial/world';
 
-export type SceneId='fund'|'office'|'records'|'client'|'delivery'|'channel'|'meeting'|'study'|'archive'|'partnerroom';
+export type SceneId='lobby'|'fund'|'office'|'records'|'client'|'delivery'|'channel'|'meeting'|'study'|'archive'|'partnerroom';
 export type Entity={id:string;kind:'person'|'record'|'door'|'committee'|'projects'|'archive';label:Pair;at:Point;approach:Point;person?:PersonId;record?:RecordId;to?:SceneId};
 export type Prop={asset:string;x:number;y:number;width:number;obstacles:Rect[]};
 export type Room={id:SceneId;title:Pair;subtitle:Pair;floor:number;floorAsset?:string;props:Prop[];entities:Entity[]};
@@ -13,21 +13,22 @@ export type Room={id:SceneId;title:Pair;subtitle:Pair;floor:number;floorAsset?:s
 const placed=(asset:string,x:number,y:number,width:number,obstacles:Rect[]):Prop=>({asset,x,y,width,obstacles});
 const file=(id:RecordId,label:Pair,x:number,y:number):Entity=>({id,kind:'record',record:id,label,at:{x,y},approach:{x:x-7,y:y+24}});
 const npc=(person:PersonId,x:number,y:number):Entity=>({id:person,kind:'person',person,label:['交谈','Talk'],at:{x,y},approach:{x:x-7,y:y+36}});
-const door=(id:string,to:SceneId,label:Pair):Entity=>{const d=doorLayout[id as keyof typeof doorLayout];return {id,kind:'door',to,label,at:{x:d.x,y:d.y},approach:{x:d.side==='W'?38:d.side==='E'?574:d.x-7,y:d.side==='N'?92:d.side==='S'?566:d.y-5}}};
+const door=(id:string,to:SceneId,label:Pair):Entity=>{const d=doorLayout[id as keyof typeof doorLayout];return {id,kind:'door',to,label,at:{x:d.x,y:d.y},approach:{x:d.side==='W'?38:d.side==='E'?574:d.x-7,y:d.side==='N'?100:d.side==='S'?566:d.y-5}}};
 
 export const rooms:Record<SceneId,Room>={
+ lobby:{id:'lobby',title:['Northline · 中央接待区','NORTHLINE · CENTRAL RECEPTION'],subtitle:['办公室与外访','OFFICES & SITE VISITS'],floor:0,props:[placed('fund-furniture-2',320,280,136,[{x:258,y:252,w:124,h:22}]),placed('office-furniture-3',320,400,46,[{x:306,y:375,w:28,h:18}])],entities:[door('lobby-study','study',['去自己的办公室','To your office']),door('lobby-archive','archive',['去基金资料室','To fund archive']),door('lobby-fund','fund',['去项目组办公区','To deal team']),door('lobby-partnerroom','partnerroom',['去合伙人办公室','To partner office']),door('lobby-meeting','meeting',['去投委会会议室','To committee room']),door('lobby-office','office',['外出拜访 RelayOps','Visit RelayOps'])]},
  fund:{id:'fund',title:['Northline · 项目组办公区','NORTHLINE · DEAL TEAM'],subtitle:['周五 · 16:40','FRIDAY · 16:40'],floor:0,floorAsset:'floor-fund-v2',props:[
   placed('fund-furniture-0',165,282,190,[{x:82,y:216,w:166,h:54}]),
   placed('fund-furniture-2',430,220,172,[{x:354,y:177,w:152,h:35}]),
   placed('fund-furniture-1',465,492,200,[{x:378,y:404,w:174,h:70}]),
   placed('fund-furniture-3',165,500,80,[{x:136,y:457,w:58,h:36}]),
- ],entities:[file('memo',['投委会摘要','Committee brief'],165,270),npc('analyst',278,332),door('fund-study','study',['去自己的办公室','To your office']),door('fund-meeting','meeting',['去投委会会议室','To committee room']),door('fund-office','office',['外出拜访 RelayOps','Visit RelayOps'])]},
+ ],entities:[file('memo',['投委会摘要','Committee brief'],165,270),npc('analyst',278,332),door('fund-lobby','lobby',['回中央接待区','To central reception'])]},
  office:{id:'office',title:['RelayOps · 开放办公区','RELAYOPS · WORKSPACE'],subtitle:['周五 · 17:20','FRIDAY · 17:20'],floor:1,floorAsset:'floor-office-v2',props:[
   placed('office-furniture-0',165,282,190,[{x:80,y:218,w:170,h:52}]),
   placed('office-furniture-1',470,252,190,[{x:386,y:194,w:168,h:48}]),
   placed('office-furniture-2',470,500,174,[{x:392,y:432,w:156,h:54}]),
   placed('office-furniture-3',165,500,66,[{x:142,y:454,w:46,h:38}]),
- ],entities:[file('contract',['客户合同','Customer contract'],170,270),file('forecast',['现金预测','Cash forecast'],470,235),npc('founder',355,350),door('office-delivery','delivery',['去交付作战室','To delivery room']),door('office-fund','fund',['返回 Northline 总部','Return to Northline']),door('office-records','records',['去资料会议室','To data room']),door('office-client','client',['去客户现场','To customer site'])]},
+ ],entities:[file('contract',['客户合同','Customer contract'],170,270),file('forecast',['现金预测','Cash forecast'],470,235),npc('founder',355,350),door('office-delivery','delivery',['去交付作战室','To delivery room']),door('office-lobby','lobby',['返回 Northline 总部','Return to Northline']),door('office-records','records',['去资料会议室','To data room']),door('office-client','client',['去客户现场','To customer site'])]},
  records:{id:'records',title:['RelayOps · 资料会议室','RELAYOPS · DATA ROOM'],subtitle:['周五 · 18:05','FRIDAY · 18:05'],floor:3,floorAsset:'floor-records-v2',props:[
   placed('records-furniture-0',190,295,190,[{x:108,y:229,w:164,h:54}]),
   placed('records-furniture-1',485,220,166,[{x:412,y:177,w:146,h:34}]),
@@ -48,18 +49,18 @@ export const rooms:Record<SceneId,Room>={
  ],entities:[file('settlement-review',['结算核对单','Settlement reconciliation'],250,280),door('channel-records','records',['回资料会议室','To data room'])]},
  meeting:{id:'meeting',title:['Northline · 投委会会议室','NORTHLINE · COMMITTEE ROOM'],subtitle:['周五 · 19:50','FRIDAY · 19:50'],floor:0,props:[
  placed('meeting-board',320,340,220,[{x:220,y:282,w:200,h:50}]),placed('fund-furniture-2',490,180,100,[{x:445,y:154,w:90,h:21}]),placed('fund-furniture-4',240,395,32,[{x:229,y:382,w:22,h:12}]),placed('fund-furniture-5',400,395,32,[{x:389,y:382,w:22,h:12}]),placed('office-furniture-3',125,200,44,[{x:110,y:182,w:30,h:18}])
- ],entities:[{id:'committee',kind:'committee',label:['提交投委会意见','Submit recommendation'],at:{x:440,y:340},approach:{x:455,y:353}},door('meeting-partnerroom','partnerroom',['去合伙人办公室','To partner office']),file('committee-draft',['上次讨论留痕','Prior discussion notes'],320,340),door('meeting-fund','fund',['回基金办公室','To fund office'])]},
+ ],entities:[{id:'committee',kind:'committee',label:['提交投委会意见','Submit recommendation'],at:{x:440,y:340},approach:{x:455,y:353}},file('committee-draft',['上次讨论留痕','Prior discussion notes'],320,340),door('meeting-lobby','lobby',['回中央接待区','To central reception'])]},
 
 
  study:{id:'study',title:['Northline · 艾娃的办公室','NORTHLINE · YOUR OFFICE'],subtitle:['项目与来信','PROJECTS & CORRESPONDENCE'],floor:0,props:[
  placed('fund-furniture-0',210,280,128,[{x:153,y:241,w:114,h:32}]),placed('fund-furniture-4',210,335,32,[{x:199,y:319,w:22,h:12}]),placed('fund-furniture-2',470,210,136,[{x:408,y:182,w:124,h:22}]),placed('office-furniture-3',125,435,46,[{x:111,y:410,w:28,h:18}])
- ],entities:[{id:'project-desk',kind:'projects',label:['项目委托与来信','Project desk'],at:{x:210,y:275},approach:{x:240,y:314}},door('study-fund','fund',['去项目组办公区','To deal team']),door('study-archive','archive',['去基金资料室','To fund archive'])]},
+ ],entities:[{id:'project-desk',kind:'projects',label:['项目委托与来信','Project desk'],at:{x:210,y:275},approach:{x:240,y:314}},door('study-lobby','lobby',['回中央接待区','To central reception'])]},
  archive:{id:'archive',title:['Northline · 基金资料室','NORTHLINE · FUND ARCHIVE'],subtitle:['证据与已提交意见','EVIDENCE & RECOMMENDATIONS'],floor:3,props:[
  placed('records-furniture-1',160,220,136,[{x:99,y:183,w:122,h:30}]),placed('fund-furniture-2',470,220,136,[{x:408,y:190,w:124,h:22}]),placed('channel-ledger',310,390,150,[{x:242,y:358,w:136,h:26}]),placed('records-furniture-4',310,444,32,[{x:299,y:428,w:22,h:12}])
- ],entities:[{id:'archive-desk',kind:'archive',label:['当前项目与历史调查','Case archive'],at:{x:310,y:380},approach:{x:345,y:409}},door('archive-study','study',['回自己的办公室','To your office'])]},
+ ],entities:[{id:'archive-desk',kind:'archive',label:['当前项目与历史调查','Case archive'],at:{x:310,y:380},approach:{x:345,y:409}},door('archive-lobby','lobby',['回中央接待区','To central reception'])]},
  partnerroom:{id:'partnerroom',title:['Northline · 合伙人办公室','NORTHLINE · PARTNER OFFICE'],subtitle:['委托与复盘','MANDATE & REVIEW'],floor:0,props:[
  placed('fund-furniture-0',235,280,128,[{x:178,y:241,w:114,h:32}]),placed('fund-furniture-2',480,215,136,[{x:418,y:185,w:124,h:22}]),placed('fund-furniture-3',145,440,44,[{x:130,y:417,w:30,h:16}]),placed('office-furniture-3',485,455,46,[{x:471,y:430,w:28,h:18}])
- ],entities:[npc('partner',355,335),door('partnerroom-meeting','meeting',['回投委会会议室','To committee room'])]},
+ ],entities:[npc('partner',355,335),door('partnerroom-lobby','lobby',['回中央接待区','To central reception'])]},
 
 };
 
@@ -69,7 +70,7 @@ if(import.meta.env?.DEV&&new URLSearchParams(location.search).get('artTrial')===
 if(platformArtEnabled){applyPlatformRoomLayout(rooms.fund);for(const id of ['office','records','client'] as const)applyPlatformOtherRoomLayout(rooms[id]);for(const room of Object.values(rooms))addPlatformSeats(room);}
 
 const southWall=(room:Room):Rect[]=>{const doors=Object.values(doorLayout).filter(d=>d.room===room.id&&d.side==='S').sort((a,b)=>a.x-b.x);const spans:Rect[]=[];let x=34;for(const d of doors){spans.push({x,y:548,w:d.x-26-x,h:28});x=d.x+26}spans.push({x,y:548,w:606-x,h:28});return spans};
-export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:88,w:572,h:488},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...southWall(room),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
+export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:96,w:572,h:480},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...southWall(room),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
 export const spawn=(id:SceneId):Point=>({...world.scenes[id].spawn});
 
 for(const room of Object.values(rooms))for(const entity of room.entities.filter(entity=>entity.kind==='record')){

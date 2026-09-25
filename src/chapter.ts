@@ -14,21 +14,22 @@ export function chapterStage(j:Journey):Pair{
 export function chapterObjective(j:Journey):Pair|undefined{
  if(!chapterEnabled(j))return
  if(has(j,'decision')){
-  if(!has(j,'echo-founder'))return ['周一：去 RelayOps 听取创始人的安排','Monday: return to RelayOps for the founder’s response']
-  if(!has(j,'echo-finance'))return ['去资料会议室，确认财务如何安排接下来的一周','Visit finance for the coming week’s cash plan']
-  if(!has(j,'echo-client'))return ['去客户现场，听取运营的最后回音','Visit the customer for the final reply']
+  if(!has(j,'echo-founder'))return ['RelayOps · 开放办公区：听取创始人的安排','RelayOps · Workspace: hear the founder’s response']
+  if(!has(j,'echo-finance'))return ['去资料会议室，确认财务如何安排接下来的一周','RelayOps · Data room: confirm the cash plan']
+  if(!has(j,'echo-client'))return ['Harbor & Pine · 运营现场：听取客户回音','Harbor & Pine · Operations: hear the final reply']
   return ['本章结束：回顾意见，或开始另一段独立调查','Chapter complete: revisit your recommendation or begin anew']
  }
- if(has(j,'income')&&!has(j,'chapter-confronted'))return ['回 RelayOps，问创始人为何仍要保留原摘要','Return to RelayOps: challenge the unchanged brief']
+ if(chapterReviewed(j))return ['总部 · 投委会会议室：提交你的投资意见','Northline · Committee room: submit your recommendation']
+ if(has(j,'income')&&!has(j,'chapter-confronted'))return ['RelayOps · 开放办公区：问创始人为何保留原摘要','RelayOps · Workspace: challenge the unchanged brief']
  if(has(j,'chapter-confronted')){
-  if(!has(j,'delivery-log'))return ['去交付作战室查阅故障交接单','Visit the delivery room for the handover log']
-  if(!has(j,'settlement-review'))return ['去渠道结算办公室核对付款链条','Visit the settlement office to reconcile the payment']
+  if(!has(j,'delivery-log'))return ['RelayOps · 交付作战室：查看故障交接单','Visit the delivery room for the handover log']
+  if(!has(j,'settlement-review'))return ['BridgeStone · 结算办公室：核对付款链条','Visit the settlement office to reconcile the payment']
   if(!has(j,'committee-draft'))return ['去投委会会议室查看上次讨论留痕','Visit the committee room for the prior discussion notes']
   if(!has(j,'budget-revision'))return ['重访资料会议室的付款台，取修订预算','Revisit the payment schedule in the data room for the revision']
-  if(!has(j,'budget-confirmed'))return ['向财务追问修订预算的压力情境','Ask finance what the revised budget still leaves exposed']
+  if(!has(j,'budget-confirmed'))return ['RelayOps · 资料会议室：向财务追问修订预算','RelayOps · Data room: ask finance about the revised budget']
   if(!has(j,'acceptance-revision'))return ['重访客户的验收台，取带日期的说明','Revisit the customer’s acceptance note for the dated update']
-  if(!has(j,'boundary-confirmed'))return ['请客户明确可以引用的承诺边界','Ask the customer what you may actually promise']
-  if(!has(j,'committee-reconciled'))return ['回基金找合伙人，把更正和未决风险一起提交','Return to the partner with corrections and unresolved risks']
+  if(!has(j,'boundary-confirmed'))return ['Harbor & Pine · 运营现场：向客户确认承诺边界','Harbor & Pine · Operations: confirm what you may promise']
+  if(!has(j,'committee-reconciled'))return ['总部 · 合伙人办公室：向玛拉复盘更正与未决风险','Northline · Partner office: review corrections and remaining risks']
  }
 }
 export const revisionDefinitions=[

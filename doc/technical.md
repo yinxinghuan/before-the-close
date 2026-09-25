@@ -68,3 +68,8 @@ free-dialogue.ts通过平台匿名game-chat接口发送NPC身份、已揭示资�
 
 ### 地点音频
 `locations.ts` 是房间所属地点的公共真源，地图和 `location-music.ts` 共用。`audio.ts` 在首个手势恢复 AudioContext，以GainNode统一静音并交叉淡化两个BufferSource。解码缓存最多两条，加载令牌拒绝迟到结果；返回原地点会取消过时切曲，文件失败保留当前曲并在下次手势重试。文档隐藏时暂停context与脚步音效。素材生成记录在doc/location-music-20260925，原始音频与音量处理文件分开保留。
+
+## 中央接待区修正
+新增lobby，location-rooms.json共享地点房间归属；door-layout.json的五条总部双向支路为地图/寻路/转场真源。assemble-central-headquarters.py用已认可的独立墙地/侧门重组11房，北墙64、侧墙12、南墙视觉524..564而碰撞548..576，建立可见前景覆盖。北南通道保持开放，侧门独立排序；wall-decor-0..2来自平台纯文生，源任务与裁切坐标记录在doc/hub-decor-20260925。load仅在旧脚点不再可行走时迁移至原房spawn。平台纹理URL绑定RELEASE_ID，防止原地址墙体缓存。
+
+正面门纹理为1280×640的闭合/空框两帧，由同一源图提取；RPGJS事件只在接近状态改变时切animationName并sync，不逐帧重建纹理。侧门640×640保持独立门扇和近端墙截面。所有四向门仍来自door-layout.json，主体世界尺度不因门状态变化。

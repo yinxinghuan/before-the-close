@@ -1,16 +1,4 @@
 {
-  "fund-office": {
-    "room": "fund",
-    "side": "E",
-    "x": 606,
-    "y": 345
-  },
-  "office-fund": {
-    "room": "office",
-    "side": "W",
-    "x": 34,
-    "y": 430
-  },
   "office-records": {
     "room": "office",
     "side": "E",
@@ -33,25 +21,13 @@
     "room": "client",
     "side": "N",
     "x": 340,
-    "y": 88
-  },
-  "fund-meeting": {
-    "room": "fund",
-    "side": "N",
-    "x": 320,
-    "y": 88
-  },
-  "meeting-fund": {
-    "room": "meeting",
-    "side": "S",
-    "x": 320,
-    "y": 576
+    "y": 96
   },
   "office-delivery": {
     "room": "office",
     "side": "N",
     "x": 320,
-    "y": 88
+    "y": 96
   },
   "delivery-office": {
     "room": "delivery",
@@ -63,7 +39,7 @@
     "room": "records",
     "side": "N",
     "x": 320,
-    "y": 88
+    "y": 96
   },
   "channel-records": {
     "room": "channel",
@@ -71,40 +47,76 @@
     "x": 320,
     "y": 576
   },
-  "fund-study": {
-    "room": "fund",
-    "side": "S",
-    "x": 320,
-    "y": 576
-  },
-  "study-fund": {
-    "room": "study",
+  "lobby-meeting": {
+    "room": "lobby",
     "side": "N",
     "x": 320,
-    "y": 88
+    "y": 96
   },
-  "study-archive": {
-    "room": "study",
-    "side": "S",
-    "x": 320,
-    "y": 576
-  },
-  "archive-study": {
-    "room": "archive",
-    "side": "N",
-    "x": 320,
-    "y": 88
-  },
-  "partnerroom-meeting": {
-    "room": "partnerroom",
-    "side": "S",
-    "x": 320,
-    "y": 576
-  },
-  "meeting-partnerroom": {
+  "meeting-lobby": {
     "room": "meeting",
-    "side": "N",
+    "side": "S",
     "x": 320,
-    "y": 88
+    "y": 576
+  },
+  "lobby-study": {
+    "room": "lobby",
+    "side": "W",
+    "x": 34,
+    "y": 420
+  },
+  "study-lobby": {
+    "room": "study",
+    "side": "E",
+    "x": 606,
+    "y": 420
+  },
+  "lobby-archive": {
+    "room": "lobby",
+    "side": "W",
+    "x": 34,
+    "y": 235
+  },
+  "archive-lobby": {
+    "room": "archive",
+    "side": "E",
+    "x": 606,
+    "y": 235
+  },
+  "lobby-fund": {
+    "room": "lobby",
+    "side": "E",
+    "x": 606,
+    "y": 235
+  },
+  "fund-lobby": {
+    "room": "fund",
+    "side": "W",
+    "x": 34,
+    "y": 235
+  },
+  "lobby-partnerroom": {
+    "room": "lobby",
+    "side": "E",
+    "x": 606,
+    "y": 420
+  },
+  "partnerroom-lobby": {
+    "room": "partnerroom",
+    "side": "W",
+    "x": 34,
+    "y": 420
+  },
+  "lobby-office": {
+    "room": "lobby",
+    "side": "S",
+    "x": 320,
+    "y": 576
+  },
+  "office-lobby": {
+    "room": "office",
+    "side": "W",
+    "x": 34,
+    "y": 430
   }
 }

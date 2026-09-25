@@ -85,3 +85,8 @@ foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite m
 
 ### 地图快捷前往候选（等待用户试玩）
 `use-map-gesture.ts`把手势视图写入ref，requestAnimationFrame只更新地图transform；React仅在手势结束更新缩放按钮状态。`map-gesture.ts`负责焦点缩放与边界约束。`map-travel.ts`在提交前检查到访、总部出访项目准入和真实门路线；`arriveAt`统一累积旅程visited、保留时间单调，旧档不猜测外部访问史。地图切换只更新房间/位置，到访不等于收集证据。正面门不再由WorldView距离自动切帧；明确按前往才进入下一房。新地图目前为候选实现，未同步共享技能，也未宣称双指/iPhone实机通过。
+
+
+## 2026-09-26 地图导航改造
+地图手势使用 `src/map-gesture.ts` 的纯模型与 `src/use-map-gesture.ts` 的 React 适配器。拖动只更新 RAF transform，结束时同步按钮缩放状态；支持累计阈值、双指切单指、取消、重新挂载和 resize。快捷前往通过现有旅程权威入口提交，沿已知且畅通的真实门路径检查，不绕过剧情条件。
+本轮回归 45 项通过，构建通过。快捷前往后刷新位置保持；重复请求与陈旧版本有机械测试。手机尺寸浏览器检查与真实 iPhone 双指/持续拖动性能不是同一种证据，后者待试玩。

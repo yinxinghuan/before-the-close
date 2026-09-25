@@ -1,3 +1,4 @@
+import {sideLeafBodies} from './spatial/architecture';
 import {platformArtEnabled} from './art-assets';
 import {applyPlatformRoomLayout,applyPlatformOtherRoomLayout,addPlatformSeats} from './platform-room-layout';
 import {applyFreshRoomLayout} from './fresh-room-layout';
@@ -13,7 +14,7 @@ export type Room={id:SceneId;title:Pair;subtitle:Pair;floor:number;floorAsset?:s
 const placed=(asset:string,x:number,y:number,width:number,obstacles:Rect[]):Prop=>({asset,x,y,width,obstacles});
 const file=(id:RecordId,label:Pair,x:number,y:number):Entity=>({id,kind:'record',record:id,label,at:{x,y},approach:{x:x-7,y:y+24}});
 const npc=(person:PersonId,x:number,y:number):Entity=>({id:person,kind:'person',person,label:['交谈','Talk'],at:{x,y},approach:{x:x-7,y:y+36}});
-const door=(id:string,to:SceneId,label:Pair):Entity=>{const d=doorLayout[id as keyof typeof doorLayout];return {id,kind:'door',to,label,at:{x:d.x,y:d.y},approach:{x:d.side==='W'?38:d.side==='E'?574:d.x-7,y:d.side==='N'?100:d.side==='S'?566:d.y-5}}};
+const door=(id:string,to:SceneId,label:Pair):Entity=>{const d=doorLayout[id as keyof typeof doorLayout];return {id,kind:'door',to,label,at:{x:d.x,y:d.y},approach:{x:d.side==='W'?38:d.side==='E'?574:d.x-7,y:d.side==='N'?d.y+4:d.side==='S'?566:d.y-5}}};
 
 export const rooms:Record<SceneId,Room>={
  lobby:{id:'lobby',title:['Northline · 中央接待区','NORTHLINE · CENTRAL RECEPTION'],subtitle:['办公室与外访','OFFICES & SITE VISITS'],floor:0,props:[placed('fund-furniture-2',320,280,136,[{x:258,y:252,w:124,h:22}]),placed('office-furniture-3',320,400,46,[{x:306,y:375,w:28,h:18}])],entities:[door('lobby-study','study',['去自己的办公室','To your office']),door('lobby-archive','archive',['去基金资料室','To fund archive']),door('lobby-fund','fund',['去项目组办公区','To deal team']),door('lobby-partnerroom','partnerroom',['去合伙人办公室','To partner office']),door('lobby-meeting','meeting',['去投委会会议室','To committee room']),door('lobby-office','office',['外出拜访 RelayOps','Visit RelayOps'])]},
@@ -70,7 +71,7 @@ if(import.meta.env?.DEV&&new URLSearchParams(location.search).get('artTrial')===
 if(platformArtEnabled){applyPlatformRoomLayout(rooms.fund);for(const id of ['office','records','client'] as const)applyPlatformOtherRoomLayout(rooms[id]);for(const room of Object.values(rooms))addPlatformSeats(room);}
 
 const southWall=(room:Room):Rect[]=>{const doors=Object.values(doorLayout).filter(d=>d.room===room.id&&d.side==='S').sort((a,b)=>a.x-b.x);const spans:Rect[]=[];let x=34;for(const d of doors){spans.push({x,y:548,w:d.x-26-x,h:28});x=d.x+26}spans.push({x,y:548,w:606-x,h:28});return spans};
-export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:96,w:572,h:480},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...southWall(room),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
+export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:128,w:572,h:448},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...southWall(room),...sideLeafBodies(room.id),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
 export const spawn=(id:SceneId):Point=>({...world.scenes[id].spawn});
 
 for(const room of Object.values(rooms))for(const entity of room.entities.filter(entity=>entity.kind==='record')){

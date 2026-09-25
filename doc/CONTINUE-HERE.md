@@ -129,3 +129,8 @@ v3门候选：纯文本分别生成front-framed-v3/side-leaf-v3，v2原图拒绝
 
 ## r12 墙体修正（准备发布）
 全部11房高墙面64、薄侧墙8与墙顶约6，新增南墙局部30%透显，人物离开恢复。真实门路线逐房南墙截图见doc/wall-reveal-20260925.md。共享技能已撤回矮厚墙示例并附参数化Pixi实现。未改剧情/人物/家具。发布真源待doc/hub-release-r12.json生成；r11为此前线上版本。
+
+r12已双部署：commit 6ae9e080235628fec61c62e86f8a639512460e0f；实际bundle index-C0-gKUOR.js，SHA256 094a27c0e3a8daad0ce27d2ecb91d4b94edda405b79ddede0f04ddc2f7f1a30c；health 2026-09-25-r12。见doc/hub-release-r12.json。正式版实际走到接待厅南侧外访门，截图release-lobby-platform-layout-390.png。技能包r12机械检查通过，不代表iPhone实机或跨题材美术稳定性通过。
+
+## r13 真实旧街行为对齐（本地验证中）
+用户否决r12：墙仍相对人物矮、硬椭圆不像旧街、侧门可穿。已查旧街源码：南墙56/H31.6、radialGradient中心20%半径40，以及openSideLeafBody 48×4。当前北128/南120、侧8、墙帽6；柔和渐变Sprite遮罩按实际墙段激活；侧叶实体进入碰撞和寻路。38测试通过，实际office东侧门持续输入停在y288，绕端可至y262。新证据doc/wall-parity-20260925.md；不得称用户已认可或全房四角已复验。共享技能已撤回r12示例并同步实现/失败门禁。

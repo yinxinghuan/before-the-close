@@ -76,3 +76,6 @@ free-dialogue.ts通过平台匿名game-chat接口发送NPC身份、已揭示资�
 
 ### 南墙局部透显
 `src/spatial/foreground-reveal.ts`为实际Pixi前景增加一个共享纹理的30%透明副本和椭圆孔遮罩。逐帧只更新位置及可见性，不重绘整房纹理；场景改变销毁旧副本与遮罩。世界人物位置转为墙sprite父节点坐标时扣除anchor×640，避免底部锚点造成揭示孔错位。DEV的wallReview控制使用正常寻路，生产构建不包含该面板。
+
+### r13 对r12遮挡方案的替代
+foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite mask直接应用于南墙，移除硬孔Graphics及半透明副本。architecture.ts共用参数和墙段重叠判定；sideLeafBodies加入world障碍，动态NPC寻路仍从同一world障碍表扩展。开发测试面板可使用正常寻路和持续输入测试门板，生产构建移除。北墙脚点改为128，北门坐标、接近点、室内边界和装配器同时更新；合法旧档保留，落入新墙的旧脚点经已有迁移返回该房出生点。

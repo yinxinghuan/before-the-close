@@ -21,13 +21,13 @@
     "room": "client",
     "side": "N",
     "x": 340,
-    "y": 96
+    "y": 128
   },
   "office-delivery": {
     "room": "office",
     "side": "N",
     "x": 320,
-    "y": 96
+    "y": 128
   },
   "delivery-office": {
     "room": "delivery",
@@ -39,7 +39,7 @@
     "room": "records",
     "side": "N",
     "x": 320,
-    "y": 96
+    "y": 128
   },
   "channel-records": {
     "room": "channel",
@@ -51,7 +51,7 @@
     "room": "lobby",
     "side": "N",
     "x": 320,
-    "y": 96
+    "y": 128
   },
   "meeting-lobby": {
     "room": "meeting",

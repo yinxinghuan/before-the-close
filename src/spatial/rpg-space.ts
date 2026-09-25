@@ -1,3 +1,4 @@
+import {wallOverlapsActor} from './architecture';
 import {createForegroundReveal} from './foreground-reveal';
 import {Direction} from '@rpgjs/common';
 import {startGame,provideClientGlobalConfig,provideClientModules,provideRpg,type RpgClientEngine} from '@rpgjs/client';
@@ -26,7 +27,7 @@ export type SpaceOptions={
 export function createRpgSpace(options:SpaceOptions){
  if(options.host.id!=='rpg')throw new Error('RPG_MOUNT_ID_REQUIRED');
  const {world,host}=options,ids=Object.keys(world.scenes);
- const revealForeground=createForegroundReveal({textureForScene:id=>`/${id}-front.png`,size:{w:640,h:640},center:{x:7,y:-22},radius:{x:34,y:44},opacity:.3,active:position=>position.y+10>500});
+ const revealForeground=createForegroundReveal({textureForScene:id=>`/${id}-front.png`,size:{w:640,h:640},center:{x:7,y:-38},radius:84,opacity:.2,active:wallOverlapsActor});
  const debug=new URLSearchParams(location.search).has('debug');
  let scene=options.scene,pos={...options.position},client:RpgClientEngine|undefined,player:RpgPlayer|undefined;
  let loaded:string|null=null,joined:string|null=null,paused=true,changing=false,last=0,stride=0,stick={x:0,y:0},route:Point[]=[];

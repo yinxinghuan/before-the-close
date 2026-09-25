@@ -884,8 +884,8 @@
     }
   ],
   "wallAssembly": {
-    "northHeight": 64,
-    "southHeight": 64,
+    "northHeight": 128,
+    "southHeight": 120,
     "sideThickness": 8,
     "capHeightApprox": 6,
     "source": "north-wall",
@@ -899,12 +899,20 @@
       0,
       110,
       1518,
+      320
+    ],
+    "trimCrop": [
+      0,
+      320,
+      1518,
       368
     ],
+    "trimHeight": 6,
     "southY": [
-      512,
+      456,
       576
     ],
-    "scale": "uniform after modular strip assembly"
+    "northFoot": 128,
+    "scale": "uniform face and cap strips assembled independently"
   }
 }

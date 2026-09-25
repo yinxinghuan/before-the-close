@@ -23,7 +23,7 @@ export function chapterObjective(j:Journey):Pair|undefined{
  if(has(j,'chapter-confronted')){
   if(!has(j,'delivery-log'))return ['去交付作战室查阅故障交接单','Visit the delivery room for the handover log']
   if(!has(j,'settlement-review'))return ['去渠道结算办公室核对付款链条','Visit the settlement office to reconcile the payment']
-  if(!has(j,'committee-draft'))return ['去基金小会议室查看上次讨论留痕','Visit the fund breakout room for the prior discussion notes']
+  if(!has(j,'committee-draft'))return ['去投委会会议室查看上次讨论留痕','Visit the committee room for the prior discussion notes']
   if(!has(j,'budget-revision'))return ['重访资料会议室的付款台，取修订预算','Revisit the payment schedule in the data room for the revision']
   if(!has(j,'budget-confirmed'))return ['向财务追问修订预算的压力情境','Ask finance what the revised budget still leaves exposed']
   if(!has(j,'acceptance-revision'))return ['重访客户的验收台，取带日期的说明','Revisit the customer’s acceptance note for the dated update']

@@ -3,7 +3,7 @@
   "releaseTarget": "playable",
   "gameProfile": {
     "sessionShape": "chapter",
-    "expectedMinutes": 25,
+    "expectedMinutes": 30,
     "crossSessionContinuity": true,
     "crossDevice": false,
     "directMovement": true,

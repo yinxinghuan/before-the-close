@@ -1,0 +1,17 @@
+{
+  "source": "same-game platform-generated accepted assets",
+  "referencesSentToModel": [],
+  "newGeneration": false,
+  "operations": [
+    "nearest uniform scale",
+    "tile existing floor and wall",
+    "retain north behind side / south over side",
+    "door aperture alpha mask",
+    "reuse independent admitted furniture"
+  ],
+  "rooms": [
+    "study",
+    "archive",
+    "partnerroom"
+  ]
+}

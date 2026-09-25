@@ -70,5 +70,41 @@
     "side": "S",
     "x": 320,
     "y": 576
+  },
+  "fund-study": {
+    "room": "fund",
+    "side": "S",
+    "x": 320,
+    "y": 576
+  },
+  "study-fund": {
+    "room": "study",
+    "side": "N",
+    "x": 320,
+    "y": 88
+  },
+  "study-archive": {
+    "room": "study",
+    "side": "S",
+    "x": 320,
+    "y": 576
+  },
+  "archive-study": {
+    "room": "archive",
+    "side": "N",
+    "x": 320,
+    "y": 88
+  },
+  "partnerroom-meeting": {
+    "room": "partnerroom",
+    "side": "S",
+    "x": 320,
+    "y": 576
+  },
+  "meeting-partnerroom": {
+    "room": "meeting",
+    "side": "N",
+    "x": 320,
+    "y": 88
   }
 }

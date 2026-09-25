@@ -186,7 +186,19 @@
     "meeting-base",
     "meeting-north",
     "meeting-side",
-    "meeting-front"
+    "meeting-front",
+    "study-base",
+    "study-north",
+    "study-side",
+    "study-front",
+    "archive-base",
+    "archive-north",
+    "archive-side",
+    "archive-front",
+    "partnerroom-base",
+    "partnerroom-north",
+    "partnerroom-side",
+    "partnerroom-front"
   ],
   "derivedSources": {
     "fund-base": [

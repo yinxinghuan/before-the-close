@@ -1,0 +1,26 @@
+[
+  {
+    "id": "relayops",
+    "request_id": "4a141621-cd04-4fbb-b1c4-1466bf3e4f90",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "kind": "music",
+    "duration_seconds": 45,
+    "prompt": "Background exploration music for a busy contemporary New York software company under delivery pressure. Restrained minimal electronic instrumental, muted marimba pulses, soft analog bass, brushed percussion and sparse electric piano, 96 BPM. Steady purposeful work rhythm, subtle tension without danger or combat. Quiet background for reading dialogue, no loud drops, no dramatic ending, no vocals, no speech, no sound effects. Gentle opening and ending."
+  },
+  {
+    "id": "customer",
+    "request_id": "ee4cfb8d-f474-44c6-a60e-a80a636888e0",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "kind": "music",
+    "duration_seconds": 45,
+    "prompt": "Background exploration music inside a contemporary New York retail operations office. Warm everyday human activity, understated instrumental jazz with soft nylon guitar, brushed drums and mellow upright bass, 82 BPM. Practical optimistic movement rather than glamour. Quiet accompaniment to reading, consistent dynamics, no big fills, no vocals, no speech, no crowd recording, no sound effects. Gentle opening and ending."
+  },
+  {
+    "id": "settlement",
+    "request_id": "d6840674-71a0-46b9-90f1-f3b6f0bed9b9",
+    "session_id": "233b6970-d7f6-4d54-bc20-4213eefc6ba5",
+    "kind": "music",
+    "duration_seconds": 45,
+    "prompt": "Background exploration music for a quiet contemporary New York payment reconciliation office. Cool precise restrained ambient instrumental, sparse felt-piano notes, soft glassy mallet tones and a low warm synth pulse, 64 BPM. Patient concentration and mild uncertainty, not horror or suspense thriller. Quiet background for reading financial documents, stable soft dynamics, no vocals, no speech, no dramatic rise, no sound effects. Gentle opening and ending."
+  }
+]

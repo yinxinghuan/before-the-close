@@ -53,3 +53,6 @@
 
 /* World coordinates are projected by the RPG camera, never by DOM focus scrolling. */
 .bc-app>.bc-world{overflow:clip}
+.bc-area-switch{display:flex;align-items:center;justify-content:space-between;width:100%;margin-top:12px;background:#f4efdf;color:#293c39;border-color:#999780}.bc-area-title{font-size:15px;margin-top:14px}.bc-area-list{display:grid;gap:10px;margin-top:14px}.bc-area-list button{display:flex;align-items:center;gap:12px;background:#f4efdf;color:#293c39;text-align:left}.bc-area-list button span{flex:1}.bc-area-list small{display:block;color:#53615a;margin-top:5px}.bc-atlas-viewport--hq{height:370px!important}.bc-atlas-viewport--hq .bc-atlas-world button{width:60%;min-height:54px}.bc-atlas-viewport:not(.bc-atlas-viewport--hq) .bc-atlas-world button{width:38%}
+
+.bc-atlas-viewport--hq .bc-atlas-world button svg{width:16px;height:16px}

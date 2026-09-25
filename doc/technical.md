@@ -62,3 +62,9 @@ free-dialogue.ts通过平台匿名game-chat接口发送NPC身份、已揭示资�
 七房由 src/world.ts、door-layout.json 与 public/map 定义，共享布局与碰撞。新增 delivery/channel/meeting 均使用原 RPGJS 渲染路径，不引入新引擎或动态生成服务。src/chapter.ts 定义阶段、修订材料、事实门槛和结局后回应；state.ts 保存 chapterVersion，已结束旧存档继续封存。收集修订材料必须在阶段变化后重访物件；原始证据和结局快照保持独立。
 
 新增素材经 scripts/generate-chapter-art.mjs 调用统一媒体服务，准备/组装脚本与请求记录可追溯；发布 manifest 决定素材覆盖范围，chapter-art-dimensions.json 提供独立家具尺寸。相机容器使用 overflow:clip，防止远处可访问控件聚焦时发生 DOM 横向滚动。
+
+## 大本营与分地点地图
+`headquarters.ts` 提供项目目录、既有关系、委托与归档状态。Journey 标记 projectId，当前只有 relayops，独立旅程不共享证据；这还不是动态多公司运行时。`world.ts` 的十房分属四个物理地点；`locations.ts` 的 areas/areaOf 定义分区，内部图仅连接本地点房门，总览卡片切换地图而不传送。跨区出口打开外访确认，确认后才经原 arriveAt 转场；取消保持原位置。会议室提交意见、合伙人室复盘、资料室归档，均沿用原剧情事实。旧档仍按原位置恢复，已有材料视为委托进行中，旧结局不撤回。
+
+### 地点音频
+`locations.ts` 是房间所属地点的公共真源，地图和 `location-music.ts` 共用。`audio.ts` 在首个手势恢复 AudioContext，以GainNode统一静音并交叉淡化两个BufferSource。解码缓存最多两条，加载令牌拒绝迟到结果；返回原地点会取消过时切曲，文件失败保留当前曲并在下次手势重试。文档隐藏时暂停context与脚步音效。素材生成记录在doc/location-music-20260925，原始音频与音量处理文件分开保留。

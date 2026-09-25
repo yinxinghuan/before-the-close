@@ -1,0 +1,74 @@
+[
+  {
+    "id": "relayops",
+    "duration": 45.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "sha256": "d295f7e07128e87f587893b28544b312be82fc79357749218b425e2561874b1e",
+    "stats": {
+      "input_i": "-20.99",
+      "input_tp": "-7.27",
+      "input_lra": "4.90",
+      "input_thresh": "-31.48",
+      "output_i": "-20.05",
+      "output_tp": "-6.49",
+      "output_lra": "4.90",
+      "output_thresh": "-30.24",
+      "normalization_type": "dynamic",
+      "target_offset": "0.05"
+    },
+    "operations": [
+      "loudness normalization -20 LUFS / -2 dBTP",
+      "0.4s fade-in, 1.2s fade-out"
+    ],
+    "listening": "pending human review"
+  },
+  {
+    "id": "customer",
+    "duration": 45.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "sha256": "daa3197e849a0eb7ddafe07d706ce1e8e8c80c83b27b7530cccd8a01329a37a1",
+    "stats": {
+      "input_i": "-20.39",
+      "input_tp": "-4.17",
+      "input_lra": "3.50",
+      "input_thresh": "-30.86",
+      "output_i": "-19.94",
+      "output_tp": "-3.32",
+      "output_lra": "2.60",
+      "output_thresh": "-30.20",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.06"
+    },
+    "operations": [
+      "loudness normalization -20 LUFS / -2 dBTP",
+      "0.4s fade-in, 1.2s fade-out"
+    ],
+    "listening": "pending human review"
+  },
+  {
+    "id": "settlement",
+    "duration": 45.0,
+    "sampleRate": "44100",
+    "channels": 2,
+    "sha256": "16c01f71e3b07bac5ca021189101540f420da0748a34d94497b069f1b628c53d",
+    "stats": {
+      "input_i": "-22.33",
+      "input_tp": "-2.57",
+      "input_lra": "12.30",
+      "input_thresh": "-33.23",
+      "output_i": "-20.31",
+      "output_tp": "-2.00",
+      "output_lra": "9.00",
+      "output_thresh": "-30.89",
+      "normalization_type": "dynamic",
+      "target_offset": "0.31"
+    },
+    "operations": [
+      "loudness normalization -20 LUFS / -2 dBTP",
+      "0.4s fade-in, 1.2s fade-out"
+    ],
+    "listening": "pending human review"
+  }
+]

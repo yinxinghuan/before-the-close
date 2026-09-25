@@ -46,12 +46,12 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
  south=sorted([d for d in roomdoors.values() if d['side']=='S'],key=lambda d:d['x']);cursor=24
  for d in south:
   tile(front,frontwall,cursor,506,d['x']-26-cursor,80);cursor=d['x']+26
-  # Open doorway: full upright jambs plus a separately depth-sorted open leaf.
-  front.alpha_composite(frontwall.crop((0,0,6,80)),(d['x']-26,506));front.alpha_composite(frontwall.crop((0,0,6,80)),(d['x']+20,506))
+  # Ground trim closes the 10-unit wall extension below the door sill.
+  tile(front,frontwall.crop((0,70,frontwall.width,80)),d['x']-26,576,52,10)
  tile(front,frontwall,cursor,506,616-cursor,80)
  for d in roomdoors.values():
   if d['side']=='N':
-   north.paste((0,0,0,0),(d['x']-26,48,d['x']+26,128));north.alpha_composite(wall.crop((0,0,6,80)),(d['x']-26,48));north.alpha_composite(wall.crop((0,0,6,80)),(d['x']+20,48))
+   north.paste((0,0,0,0),(d['x']-26,58,d['x']+26,128))
  for id,d in roomdoors.items():
   if d['side'] not in ['N','S']:continue
   foot=128 if d['side']=='N' else 576
@@ -59,8 +59,8 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
   tile(base,wall.crop((0,76,40,80)),d['x']-20,foot-8,40,8)
   leaf=Image.new('RGBA',(1280,640))
   for state,source_id in enumerate(['front-framed-v3','front-frame-open-v3']):
-   door=width(Image.open(OUT/(source_id+'.png')).convert('RGBA'),68)
-   leaf.alpha_composite(door,(state*640+d['x']-34,foot-door.height))
+   door=height(Image.open(OUT/(source_id+'.png')).convert('RGBA'),70)
+   leaf.alpha_composite(door,(state*640+d['x']-door.width//2,foot-door.height))
   parts['door-'+id+'-leaf']=leaf
 
  for decor,x in ([('wall-decor-0',115),('wall-decor-2',395)] if scene=='lobby' else [('wall-decor-1',80)] if scene=='office' else [('wall-decor-1',220)] if scene in ['fund','archive'] else [('wall-decor-2',220)] if scene=='meeting' else []):

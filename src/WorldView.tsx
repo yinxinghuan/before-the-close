@@ -21,7 +21,6 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
 
  useEffect(()=>{
   let stopped=false,nearest='',click:((event:MouseEvent)=>void)|undefined;
-  const doorEvents=new Map<string,RpgPlayer>();
   const mount=host.current?.querySelector<HTMLElement>('#rpg');if(!mount)return;
   const personEvents=(roomId:SceneId)=>rooms[roomId].entities.filter(entity=>entity.person).map(entity=>({id:'person-'+entity.id,x:entity.at.x,y:entity.at.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic('npc-'+entity.person!);this.animationName.set('stand');residents.current[roomId][entity.id].event=this;this.syncChanges()}}}));
   const mapEvents=(id:string)=>{const roomId=id as SceneId,room=rooms[roomId];return[
@@ -30,7 +29,7 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
    {id:sideGraphic(roomId),x:0,y:0,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(sideGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
    ...room.props.map(prop=>({id:propGraphic(prop),x:prop.x,y:prop.y,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(propGraphic(prop));this.animationName.set('stand');this.syncChanges()}}})),
    ...personEvents(roomId),
-   ...doorParts.filter(part=>part.scene===roomId).map(part=>({id:part.id,x:0,y:part.depth,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(part.id);this.animationName.set('stand');if(part.front)doorEvents.set(part.portalId,this);this.syncChanges()}}})),
+   ...doorParts.filter(part=>part.scene===roomId).map(part=>({id:part.id,x:0,y:part.depth,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(part.id);this.animationName.set('stand');this.syncChanges()}}})),
    {id:frontGraphic(roomId),x:0,y:640,event:{onInit(this:RpgPlayer){this.setHitbox(1,1);this.through=true;this.animationFixed=true;this.setGraphic(frontGraphic(roomId));this.animationName.set('stand');this.syncChanges()}}},
   ]};
   const dynamicWalkable=(point:Point,id:string)=>walkable(world,id,point)&&!Object.values(residents.current[id as SceneId]||{}).some(resident=>point.x<resident.x+12&&point.x+world.actor.w>resident.x-12&&point.y<resident.y+4&&point.y+world.actor.h>resident.y-10);
@@ -48,7 +47,6 @@ export function WorldView({journeyId,scene,start,locale,paused,known,onNear,onPo
    onReady:runtime=>{if(stopped)return;spaceRef.current=runtime;runtime.pause(latest.current.paused);handle.current={move:(x,y)=>runtime.move(x,y),go:point=>runtime.walkTo(point),approach:entity=>runtime.walkTo(entity.approach),position:runtime.position};const target=desired.current;if(target.scene!==runtime.scene()){setReady(false);void runtime.restore(target.scene,target.start).then(()=>setReady(true)).catch(()=>setError(true))}else setReady(true)},
    onPosition:point=>{const distance=Math.hypot(point.x-lastStep.current.x,point.y-lastStep.current.y);if(distance>.01)footstep(distance);lastStep.current={...point};latest.current.onPosition(point)},
    onFrame:(dt,position,activeScene,isPaused)=>{if(stopped||activeScene!==latest.current.scene)return;const room=rooms[activeScene as SceneId],active=residents.current[activeScene as SceneId];
-    for(const entity of room.entities.filter(item=>item.to)){const event=doorEvents.get(entity.id);if(!event)continue;const pose=Math.hypot(position.x-entity.approach.x,position.y-entity.approach.y)<100?'open':'stand';if(event.animationName()!==pose){event.animationName.set(pose);event.syncChanges()}}
     for(const entity of room.entities.filter(item=>item.person)){const resident=active[entity.id],dx=position.x+7-resident.x,dy=position.y+5-resident.y;resident.moving=false;
      if(Math.hypot(dx,dy)<105||isPaused)resident.facing=Math.abs(dx)>Math.abs(dy)?dx<0?'left':'right':dy<0?'up':'down';
      else if(entity.id==='analyst'){resident.wait-=dt;if(resident.wait<=0){const step=Math.sign(resident.target-resident.x)*Math.min(Math.abs(resident.target-resident.x),22*dt);resident.x+=step;resident.travel+=Math.abs(step);resident.moving=Math.abs(step)>.01;resident.facing=step<0?'left':'right';if(Math.abs(resident.target-resident.x)<.1){resident.wait=.7;resident.target=entity.at.x+(resident.target>entity.at.x?-22:22)}}}

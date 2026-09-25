@@ -62,3 +62,16 @@
 .bc-atlas-viewport--hq [data-room]{width:30%;min-width:0;padding:8px 4px;font-size:12px}.bc-atlas-viewport--hq [data-room] strong{white-space:normal}
 .bc-visit-shortcut{position:absolute;top:166px;right:12px;margin:0;max-width:calc(100% - 24px);font-size:12px}
 .bc-visit-shortcut{top:auto;bottom:100px;right:12px}
+/* Map gesture layer is updated once per animation frame, independently of React. */
+.bc-atlas-world{will-change:transform;transition:none;user-select:none;-webkit-user-select:none}
+.bc-atlas-world button{touch-action:none;cursor:pointer}.bc-atlas-viewport{cursor:grab;isolation:isolate}.bc-atlas-viewport:active{cursor:grabbing}
+.bc-atlas-directions{position:sticky;bottom:-14px;background:#e9e2cf;padding:12px 0 14px;z-index:2;box-shadow:0 -8px 12px #e9e2cf}
+.bc-map-travel{width:100%;display:flex;align-items:center;justify-content:space-between;background:#214f50;color:#fff4d6;border:2px solid #b69a56;min-height:48px;font-weight:700}
+.bc-map-travel:disabled{background:#d5d1c3;color:#59605a;border-color:#aaa797}.bc-atlas-viewport--hq{height:310px!important}
+@media(max-width:350px){.bc-atlas-viewport--hq{height:280px!important}.bc-atlas-directions{bottom:-10px}.bc-atlas-directions p{margin:6px 0}}
+.bc-atlas{display:flex;flex-direction:column;overflow:hidden;max-height:calc(100dvh - 118px)}
+.bc-atlas-location{flex:none}.bc-area-switch{flex:none}.bc-area-title{margin:10px 0 0;flex:none}.bc-atlas-tools{margin-top:8px;flex:none}
+.bc-atlas-viewport,.bc-atlas-viewport--hq{flex:1 1 310px;min-height:155px;height:310px!important}.bc-atlas-hint{flex:none}
+.bc-atlas-directions{position:relative;bottom:auto;flex:none;padding:10px 0 0;margin-top:8px;box-shadow:none}.bc-atlas-directions h3{font-size:14px}.bc-atlas-directions details{max-height:130px;overflow:auto}.bc-atlas-directions details summary{padding:8px 0}.bc-atlas-directions p{font-size:11px;margin-top:6px}
+.bc-area-list{overflow:auto;min-height:0}.bc-map-travel:disabled{opacity:1}.bc-atlas-world button{transition:none}
+@media(max-height:650px){.bc-atlas-location{display:none}.bc-atlas{padding:8px;max-height:calc(100dvh - 108px)}.bc-area-switch{margin:0}.bc-area-title{font-size:12px;margin-top:6px}.bc-atlas-tools{margin-top:4px}.bc-atlas-hint{font-size:10px;margin:4px 0}.bc-atlas-directions>small{display:none}.bc-atlas-directions details summary{min-height:32px;padding:4px 0}.bc-atlas-directions{padding-top:5px;margin-top:5px}}

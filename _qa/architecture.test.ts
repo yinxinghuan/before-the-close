@@ -12,8 +12,16 @@ test('open side leaf blocks its ground line; routes can go around tip and still 
  }
 });
 test('south reveal requires actual wall overlap; door gap and distant actor have no cutaway',()=>{
- assert.ok(architecture.southHeight/67.5>1.7);
+ assert.ok(Math.abs(architecture.southHeight/67.5-64/54.24)<.02);
+ assert.ok(Math.abs(architecture.capHeight/67.5-8/54.24)<.01);
  assert.equal(wallOverlapsActor({x:80,y:538},'lobby'),true);
  assert.equal(wallOverlapsActor({x:80,y:400},'lobby'),false);
  for(const d of Object.values(doors).filter(d=>d.side==='S'))assert.equal(wallOverlapsActor({x:d.x-7,y:550},d.room),false,d.room);
+});
+
+test('feet reach the south floor boundary in all rooms without an invisible early wall',()=>{
+ for(const scene of Object.keys(rooms)){
+ assert.equal(walkable(world,scene,{x:80,y:566}),true,scene);
+ assert.equal(walkable(world,scene,{x:80,y:567}),false,scene);
+ }
 });

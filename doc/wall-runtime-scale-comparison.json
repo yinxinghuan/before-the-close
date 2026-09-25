@@ -1,0 +1,31 @@
+{
+  "oldHero": 54.239999999999995,
+  "newHero": 67.5,
+  "factor": 1.2444690265486726,
+  "old": {
+    "north": 64,
+    "southAboveFloor": 56,
+    "southTotal": 64,
+    "cap": 8,
+    "side": 8,
+    "revealRadius": 40,
+    "revealCenterAboveFoot": 24
+  },
+  "currentR13": {
+    "north": 128,
+    "southTotal": 120,
+    "cap": 6,
+    "side": 8,
+    "revealRadius": 84
+  },
+  "matching": {
+    "north": 79.64601769911505,
+    "southAboveFloor": 69.69026548672566,
+    "southTotal": 79.64601769911505,
+    "cap": 9.955752212389381,
+    "side": 9.955752212389381,
+    "revealRadius": 49.77876106194691,
+    "revealCenterAboveFoot": 29.867256637168143
+  },
+  "failure": "OldStreet runtime passes oldStreetHeroScale=.24; catalog .14 is not used. r13 normalization was wrong. Current south collision stops feet at548, 28 before floor edge576; original permits feet up to actual floor edge."
+}

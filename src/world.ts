@@ -70,8 +70,7 @@ if(import.meta.env?.DEV&&new URLSearchParams(location.search).get('artTrial')===
 
 if(platformArtEnabled){applyPlatformRoomLayout(rooms.fund);for(const id of ['office','records','client'] as const)applyPlatformOtherRoomLayout(rooms[id]);for(const room of Object.values(rooms))addPlatformSeats(room);}
 
-const southWall=(room:Room):Rect[]=>{const doors=Object.values(doorLayout).filter(d=>d.room===room.id&&d.side==='S').sort((a,b)=>a.x-b.x);const spans:Rect[]=[];let x=34;for(const d of doors){spans.push({x,y:548,w:d.x-26-x,h:28});x=d.x+26}spans.push({x,y:548,w:606-x,h:28});return spans};
-export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:128,w:572,h:448},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...southWall(room),...sideLeafBodies(room.id),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
+export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:128,w:572,h:448},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...sideLeafBodies(room.id),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
 export const spawn=(id:SceneId):Point=>({...world.scenes[id].spawn});
 
 for(const room of Object.values(rooms))for(const entity of room.entities.filter(entity=>entity.kind==='record')){

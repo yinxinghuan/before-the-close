@@ -14,11 +14,11 @@ def tile(dst,im,x,y,w,h):
 # Same-run material: independently assemble narrow cap and tall face, no stretch.
 source_wall=load('north-wall')
 def wall_strip(h):
- face=height(source_wall.crop((0,110,source_wall.width,320)),h-12)
+ face=height(source_wall.crop((0,110,source_wall.width,320)),h-16)
  trim=height(source_wall.crop((0,320,source_wall.width,368)),6)
- cap=height(source_wall.crop((0,84,source_wall.width,110)),6)
- out=Image.new('RGBA',(face.width,h));tile(out,cap,0,0,face.width,6);out.alpha_composite(face,(0,6));tile(out,trim,0,h-6,face.width,6);return out
-wall=wall_strip(128);frontwall=wall_strip(120);side=width(load('side-wall'),8)
+ cap=height(source_wall.crop((0,84,source_wall.width,110)),10)
+ out=Image.new('RGBA',(face.width,h));tile(out,cap,0,0,face.width,10);out.alpha_composite(face,(0,10));tile(out,trim,0,h-6,face.width,6);return out
+wall=wall_strip(80);frontwall=wall_strip(80);side=width(load('side-wall'),10)
 doors=json.loads((ROOT/'src/door-layout.json').read_text())
 for scene in ['lobby','fund','study','archive','partnerroom','meeting','office','records','client','delivery','channel']:
  source=scene if scene in ['fund','office','records','client'] else 'records' if scene in ['archive','channel'] else 'office' if scene=='delivery' else 'fund'
@@ -26,29 +26,29 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
  base=blank();tile(base,width(load(source+'-floor'),256),0,0,640,640)
  north=blank();sides=blank();front=blank();parts={}
  roomdoors={k:v for k,v in doors.items() if v['room']==scene}
- tile(north,wall,34,0,572,128)
+ tile(north,wall,34,48,572,80)
  if scene in ['study','partnerroom']:
   window=width(load('office-window'),110)
   for x in [140,440]:north.alpha_composite(window,(x,127-window.height))
- for edge,x in [('W',26),('E',606)]:
-  strip=side if edge=='W' else ImageOps.mirror(side);cursor=0
+ for edge,x in [('W',24),('E',606)]:
+  strip=side if edge=='W' else ImageOps.mirror(side);cursor=48
   for id,d in sorted([(k,v) for k,v in roomdoors.items() if v['side']==edge],key=lambda pair:pair[1]['y']):
    lo=d['y']-34;hi=d['y']+34
-   tile(sides,strip,x,cursor,8,lo-cursor);cursor=hi
-   end=wall.crop((0,0,8,8));sides.alpha_composite(end,(x,lo))
+   tile(sides,strip,x,cursor,10,lo-cursor);cursor=hi
+   end=wall.crop((0,0,10,10));sides.alpha_composite(end,(x,lo))
    # Threshold uses the same wall-top material and lies below the actor.
-   tile(base,wall.crop((0,0,8,4)),x,lo,8,hi-lo)
+   tile(base,wall.crop((0,0,10,4)),x,lo,10,hi-lo)
    near=blank();near.alpha_composite(end,(x,hi));leaf=blank();door=width(Image.open(OUT/'side-leaf-v3.png').convert('RGBA'),48)
    if edge=='W':door=ImageOps.mirror(door)
    leaf.alpha_composite(door,(34 if edge=='W' else 606-door.width,lo-door.height))
    parts['door-'+id+'-near']=near;parts['door-'+id+'-leaf']=leaf
-  tile(sides,strip,x,cursor,8,576-cursor)
- south=sorted([d for d in roomdoors.values() if d['side']=='S'],key=lambda d:d['x']);cursor=26
+  tile(sides,strip,x,cursor,10,576-cursor)
+ south=sorted([d for d in roomdoors.values() if d['side']=='S'],key=lambda d:d['x']);cursor=24
  for d in south:
-  tile(front,frontwall,cursor,456,d['x']-26-cursor,120);cursor=d['x']+26
+  tile(front,frontwall,cursor,506,d['x']-26-cursor,80);cursor=d['x']+26
   # Open doorway: full upright jambs plus a separately depth-sorted open leaf.
-  front.alpha_composite(frontwall.crop((0,0,6,120)),(d['x']-26,456));front.alpha_composite(frontwall.crop((0,0,6,120)),(d['x']+20,456))
- tile(front,frontwall,cursor,456,614-cursor,120)
+  front.alpha_composite(frontwall.crop((0,0,6,80)),(d['x']-26,506));front.alpha_composite(frontwall.crop((0,0,6,80)),(d['x']+20,506))
+ tile(front,frontwall,cursor,506,616-cursor,80)
  for d in roomdoors.values():
   if d['side']=='N':
    north.paste((0,0,0,0),(d['x']-26,48,d['x']+26,128));north.alpha_composite(wall.crop((0,0,6,80)),(d['x']-26,48));north.alpha_composite(wall.crop((0,0,6,80)),(d['x']+20,48))
@@ -56,7 +56,7 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
   if d['side'] not in ['N','S']:continue
   foot=128 if d['side']=='N' else 576
   # Reuse same-run sill material; keep it behind actor and leaf.
-  tile(base,wall.crop((0,124,40,128)),d['x']-20,foot-8,40,8)
+  tile(base,wall.crop((0,76,40,80)),d['x']-20,foot-8,40,8)
   leaf=Image.new('RGBA',(1280,640))
   for state,source_id in enumerate(['front-framed-v3','front-frame-open-v3']):
    door=width(Image.open(OUT/(source_id+'.png')).convert('RGBA'),68)
@@ -70,6 +70,6 @@ for scene in ['lobby','fund','study','archive','partnerroom','meeting','office',
  for name,im in {'base':base,'north':north,'side':sides,'front':front,**parts}.items():
   im.save(OUT/f'{scene}-{name}.png');manifest['coverage'].append(scene+'-'+name) if scene+'-'+name not in manifest['coverage'] else None;manifest['derivedSources'][scene+'-'+name]=([source+'-floor','north-wall'] if name=='base' else ['north-wall'] if name=='front' else ['side-wall','north-wall'] if name=='side' or name.endswith('-near') else (['front-framed-v3','front-frame-open-v3'] if roomdoors[name[5:-5]]['side'] in ['N','S'] else ['side-leaf-v3']) if name.endswith('-leaf') else ['north-wall']+(['office-window'] if scene in ['study','partnerroom'] else ['wall-decor-0','wall-decor-2'] if scene=='lobby' else ['wall-decor-1'] if scene in ['office','fund','archive'] else ['wall-decor-2'] if scene=='meeting' else []))
 
-manifest['wallAssembly']={'northHeight':128,'southHeight':120,'sideThickness':8,'capHeightApprox':6,'source':'north-wall','capCrop':[0,84,source_wall.width,110],'faceCrop':[0,110,source_wall.width,320],'trimCrop':[0,320,source_wall.width,368],'trimHeight':6,'southY':[456,576],'northFoot':128,'scale':'uniform face and cap strips assembled independently'}
+manifest['wallAssembly']={'northHeight':80,'southHeight':80,'sideThickness':10,'capHeightApprox':10,'source':'north-wall','capCrop':[0,84,source_wall.width,110],'faceCrop':[0,110,source_wall.width,320],'trimCrop':[0,320,source_wall.width,368],'trimHeight':6,'southY':[506,586],'northFoot':128,'scale':'uniform face and cap strips assembled independently'}
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
 for ext in ['tmx','tsx']:(ROOT/f'public/map/lobby.{ext}').write_text((ROOT/f'public/map/fund.{ext}').read_text().replace('fund','lobby'))

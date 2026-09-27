@@ -90,3 +90,6 @@ foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite m
 ## 2026-09-26 地图导航改造
 地图手势使用 `src/map-gesture.ts` 的纯模型与 `src/use-map-gesture.ts` 的 React 适配器。拖动只更新 RAF transform，结束时同步按钮缩放状态；支持累计阈值、双指切单指、取消、重新挂载和 resize。快捷前往通过现有旅程权威入口提交，沿已知且畅通的真实门路径检查，不绕过剧情条件。
 本轮回归 45 项通过，构建通过。快捷前往后刷新位置保持；重复请求与陈旧版本有机械测试。手机尺寸浏览器检查与真实 iPhone 双指/持续拖动性能不是同一种证据，后者待试玩。
+
+### 新人序章（2026-09-28）
+`src/prologue.ts` 定义 welcome/role/colleague/brief/check/file/ready 七个持久阶段，沿用 StorySave facts。`newJourney()` 设置 `prologueVersion:1`，旧旅程无该字段，继续原流程。新旅程的 `collect`、`decide`、`arriveAt` 与 `projectAccepted` 共同保护序章条件；地图复用同一许可。`dialogueTopics` 序章内仅返回当前可用引导话题；自由对话上下文使用相同简化资料。基金资料室实际打开摘要才记录回看进度。美术与 RPGJS renderer 无改动。

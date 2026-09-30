@@ -35,12 +35,14 @@ export async function handleApi(request,env){
   try{while(true){const r=await reader.read();if(r.done)break;size+=r.value.byteLength;if(size>16384){await reader.cancel();return fail('BODY_TOO_LARGE',413);}chunks.push(r.value);}}finally{reader.releaseLock();}
   body=new Uint8Array(size);let offset=0;for(const chunk of chunks){body.set(chunk,offset);offset+=chunk.length;}
  }
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),75000);
  try{
-  const response=await fetch(upstream+upstreamBase+'/public'+(path==='/api/health'?'/api/story/info':path)+url.search,{method:request.method,headers,body,redirect:'error',signal:AbortSignal.timeout(75000)});
+  const response=await fetch(upstream+upstreamBase+'/public'+(path==='/api/health'?'/api/story/info':path)+url.search,{method:request.method,headers,body,redirect:'manual',signal:controller.signal});
+  if(response.status>=300&&response.status<400)return fail('UPSTREAM_REDIRECT_REFUSED',502);
   const output=new Headers({'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
   if(response.headers.has('X-Lab-Time'))output.set('X-Lab-Time',response.headers.get('X-Lab-Time'));
   if(setCookie&&response.ok)output.set('Set-Cookie',setCookie);
   if(path==='/api/health')return Response.json({ok:response.ok,game:'before-the-close',release:'finance-public-20260930-r1',backendReady:response.ok},{status:response.status,headers:output});
   return new Response(response.body,{status:response.status,headers:output});
- }catch{return fail('SERVICE_UNAVAILABLE',503);}
+ }catch{return fail('SERVICE_UNAVAILABLE',503);}finally{clearTimeout(timer);}
 }

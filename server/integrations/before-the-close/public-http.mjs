@@ -3,7 +3,7 @@
 import {timingSafeEqual} from 'node:crypto';
 import {AuthorityError} from '../../packages/authority-session/error.mjs';
 import {financeRoute} from './http-routes.mjs';
-export function financePublicHandler({authority,policy,dynamic,sourceHash,config,edgeToken,modelStatus,recoveryNamespace='public-player-v1',now=Date.now}){
+export function financePublicHandler({authority,policy,dynamic,sourceHash,config,edgeToken,modelStatus,recoveryNamespace='public-player-v1',now=Date.now,usage}){
  if(config?.mode!=='public-player-v1'||!/^https:\/\/[a-z0-9.-]+$/.test(config.origin)||!/^\/[0-9a-f-]{36}$/.test(config.base)||!Number.isSafeInteger(config.expiresAt)||!/^\w{64}$/.test(edgeToken??''))throw Error('INVALID_PUBLIC_CONFIG');
  const base=config.base+'/public/api/story',secret=Buffer.from(edgeToken);let active=0;
  return async(req,res)=>{
@@ -25,7 +25,7 @@ export function financePublicHandler({authority,policy,dynamic,sourceHash,config
    // A public world must never expose fixture installation even if a caller
    // accidentally supplies a fixture-enabled runtime.
    if(/\/(fixture|review|approve|reject|inspect)(\/|$)/.test(path))throw new AuthorityError('NOT_FOUND',404);
-   return send(200,await financeRoute({req,path,searchParams:url.searchParams,authority,policy,owner,sourceHash,mode:'public-player-v1',dynamic,modelStatus,now,recoveryNamespace}));
+   return send(200,await financeRoute({req,path,searchParams:url.searchParams,authority,policy,owner,sourceHash,mode:'public-player-v1',dynamic,modelStatus,now,recoveryNamespace,usage}));
   }catch(e){send(e instanceof AuthorityError?e.status:503,{error:e instanceof AuthorityError?e.code:'SERVICE_UNAVAILABLE'});}
   finally{if(entered)active--;}
  };

@@ -8,6 +8,8 @@ const id=v=>{if(typeof v!=='string'||!v.trim()||v.length>256)fail('ASYNC_STORE_S
 const schemaName=v=>{if(typeof v!=='string'||!/^kit_[a-z0-9_]{1,48}$/.test(v))fail('PG_INVALID_SCHEMA');return `"${v}"`;};
 const number=v=>{const n=Number(v);if(!Number.isSafeInteger(n)||n<0)fail('ASYNC_STORE_INTEGER');return n;};
 const ddl=(prefix,integer)=>[
+  `CREATE TABLE IF NOT EXISTS ${prefix}async_player_usage(world TEXT NOT NULL,owner TEXT NOT NULL,kind TEXT NOT NULL,id TEXT NOT NULL,digest TEXT NOT NULL,created ${integer} NOT NULL,deadline ${integer} NOT NULL,status TEXT NOT NULL,PRIMARY KEY(world,owner,kind,id))`,
+  `CREATE INDEX IF NOT EXISTS async_player_usage_time ON ${prefix}async_player_usage(world,owner,created)`,
   `CREATE TABLE IF NOT EXISTS ${prefix}async_journeys(world TEXT NOT NULL,id TEXT NOT NULL,owner TEXT NOT NULL,enrollment TEXT NOT NULL,enrollment_digest TEXT NOT NULL,data TEXT NOT NULL,cursor ${integer} NOT NULL,updated ${integer} NOT NULL,PRIMARY KEY(world,id),UNIQUE(world,owner,enrollment))`,
   `CREATE TABLE IF NOT EXISTS ${prefix}async_receipts(world TEXT NOT NULL,owner TEXT NOT NULL,action TEXT NOT NULL,digest TEXT NOT NULL,response TEXT NOT NULL,PRIMARY KEY(world,owner,action))`,
   `CREATE TABLE IF NOT EXISTS ${prefix}async_journal(world TEXT NOT NULL,session TEXT NOT NULL,cursor ${integer} NOT NULL,action TEXT NOT NULL,event TEXT NOT NULL,PRIMARY KEY(world,session,cursor))`,
@@ -37,6 +39,11 @@ function repository(query,prefix,world,alive){
   const one=async(sql,values)=> (await rows(sql,values))[0];
   const normalized=r=>r?{...r,cursor:number(r.cursor),updated:number(r.updated)}:r;
   return Object.freeze({
+    usageRequest:(owner,kind,id)=>one('SELECT * FROM @async_player_usage WHERE world=? AND owner=? AND kind=? AND id=?',[world,owner,kind,id]),
+    usageRequests:(owner,since)=>rows('SELECT * FROM @async_player_usage WHERE world=? AND owner=? AND created>=? ORDER BY created,id',[world,owner,since]),
+    addUsageRequest:(owner,kind,id,digest,created,deadline)=>q("INSERT INTO @async_player_usage(world,owner,kind,id,digest,created,deadline,status) VALUES(?,?,?,?,?,?,?,'reserved')",[world,owner,kind,id,digest,created,deadline]),
+    settleUsageRequest:(owner,kind,id,status)=>q('UPDATE @async_player_usage SET status=? WHERE world=? AND owner=? AND kind=? AND id=?',[status,world,owner,kind,id]),
+    countModelCall:async budget=>{const r=await q('UPDATE @async_model_budgets SET used=used+1 WHERE world=? AND id=?',[world,budget]);if(r.rowCount!==1)fail('MODEL_APPROVAL_LEDGER_MISSING');},
     session:async(owner,session)=>normalized(await one('SELECT * FROM @async_journeys WHERE world=? AND owner=? AND id=?',[world,owner,session])),
     enrollment:(owner,enrollment)=>one('SELECT id,enrollment_digest FROM @async_journeys WHERE world=? AND owner=? AND enrollment=?',[world,owner,enrollment]),
     sample:()=>one('SELECT data FROM @async_journeys WHERE world=? LIMIT 1',[world]),

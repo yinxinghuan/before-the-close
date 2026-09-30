@@ -13,7 +13,7 @@ import {verificationDraft,fundingDraft} from './dynamic-fixture.mjs';
 import {financeAutomaticAdmission,decideFinanceAdmission} from './automatic-admission.mjs';
 import {financeGoalSeriesVersion} from './goal-series-contract.mjs';
 import {financeGoalAdmission,decideFinanceGoalAdmission} from './goal-admission.mjs';
-export async function createFinanceReviewRuntime({store,source,sourceHash,hashes,contract,runProlog,dynamicMode,gateway,series,dailyApproval,automaticAdmission}){
+export async function createFinanceReviewRuntime({store,source,sourceHash,hashes,contract,runProlog,dynamicMode,gateway,series,dailyApproval,automaticAdmission,requestAllowance=false}){
   if(series!==undefined&&![financeSeriesVersion,financeGoalSeriesVersion].includes(series))throw Error('UNSUPPORTED_REVIEW_SERIES');
   if(series&&!dynamicMode)throw Error('SERIES_REQUIRES_DYNAMIC_MODE');
   if(dailyApproval&&(!series||dynamicMode!=='budgeted-live-v1'))throw Error('DAILY_APPROVAL_REQUIRES_LIVE_SERIES');
@@ -28,7 +28,7 @@ export async function createFinanceReviewRuntime({store,source,sourceHash,hashes
   if(!dynamicMode)return {policy,dynamic:undefined};
   policy=await (series?createFinanceSeriesRuntime:createFinanceDynamicRuntime)({...loaded,worldId:store.worldId,base:policy,loadBound:h=>adoption.loadForHead(h),candidate:series});
   adoption=createAsyncAdoption({store,runtime:policy,runProlog});
-  const proposals=createProposalJobs({store,mode:live?'live':'authored-fixture',fixtureApproval:!live,dailyApproval,...(automaticAdmission?{timeoutMs:goalMode?300000:240000,automaticReview:{policy:admissionPolicy,decide:goalMode?decideFinanceGoalAdmission:decideFinanceAdmission}}:{}),
+  const proposals=createProposalJobs({store,mode:live?'live':'authored-fixture',fixtureApproval:!live,dailyApproval,requestAllowance,...(automaticAdmission?{timeoutMs:goalMode?300000:240000,automaticReview:{policy:admissionPolicy,decide:goalMode?decideFinanceGoalAdmission:decideFinanceAdmission}}:{}),
     validateSource:series?policy.validateProposalSource:validateFinanceProposalSource,
     build:series?(live?policy.proposalBuilder({sourceHash,gateway,worldId:store.worldId,automaticAdmission:Boolean(automaticAdmission)}):({head,cursor})=>policy.prepareDraft({head,cursor,draft:head.binding?fundingDraft:verificationDraft,proposalId:'series-fixture-'+(head.dynamic?.entries?.length??0),semantic:{passed:true,mode:'authored-fixture-only',locales:['en','zh']}})):(live?createFinanceProposalBuilder({source,sourceHash,policy,gateway,worldId:store.worldId}):({head,cursor})=>prepareFinanceFixture({head,cursor,policy})),
     stage:(owner,a)=>adoption.stage(owner,a)});

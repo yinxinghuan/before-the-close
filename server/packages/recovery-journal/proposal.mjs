@@ -2,6 +2,7 @@
 const id=v=>typeof v==='string'&&/^[a-zA-Z0-9-]{16,80}$/.test(v);
 const states=new Set(['running','approving','review_required','ready','failed','rejected','stale']);
 const terminalErrors=new Set(['VERSION_CONFLICT','SESSION_NOT_FOUND','MODEL_UNAVAILABLE','PROPOSAL_GATE_CLOSED','DAILY_LIMIT','SERVICE_BUSY','SESSION_BUSY','PROPOSAL_ID_CONFLICT']);
+for(const code of ['AI_ROOM_DAILY_LIMIT','AI_COOLDOWN','AI_REQUEST_IN_PROGRESS','AI_REQUEST_CONFLICT','AI_RETRY_NEW_REQUEST'])terminalErrors.add(code);
 export class ProposalJournal{
   constructor({storage,prefix,post,get,lock=async(_k,f)=>f()}){Object.assign(this,{storage,prefix,post,get,lock});}
   read(){const raw=this.storage.getItem(this.prefix+'proposal');if(!raw)return null;let b;try{b=JSON.parse(raw);}catch{throw Error('INVALID_PROPOSAL_PENDING');}if(!id(b.request_id)||!id(b.session_id)||!Number.isSafeInteger(b.expected_version)||b.expected_version<0||Object.keys(b).sort().join(',')!=='expected_version,request_id,session_id')throw Error('INVALID_PROPOSAL_PENDING');return b;}

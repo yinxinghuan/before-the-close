@@ -10,6 +10,7 @@ import {createFinanceReviewRuntime} from '../integrations/before-the-close/revie
 import {financeReviewHandler} from '../integrations/before-the-close/review-http.mjs';
 import {financeCloudModelApproval,financeCloudProposalApproval,financePublicQaProposalApproval} from '../integrations/before-the-close/cloud-model-approval.mjs';
 import {createModelGateway,createGameChatTransport} from '../packages/dynamic-pipeline/model-gateway.mjs';
+import {createPlayerUsage,playerUsagePolicy} from '../packages/dynamic-pipeline/player-usage.mjs';
 import {financeSeriesVersion} from '../integrations/before-the-close/series-contract.mjs';
 import {financePublicHandler} from '../integrations/before-the-close/public-http.mjs';
 import {financePublicBudget} from '../integrations/before-the-close/public-budget.mjs';
@@ -42,18 +43,20 @@ if(extra.length)throw Error('INVALID_OPERATOR_COMMAND');
 const live=meta.dynamicMode==='budgeted-live-v1';
 if(operation&&!live)throw Error('LIVE_REVIEW_REQUIRED');
 const approval=live?financeCloudModelApproval(config,meta):null;
+const fairUse=config.aiUsagePolicy===playerUsagePolicy;
+if(config.aiUsagePolicy!==undefined&&!fairUse)throw Error('AI_USAGE_POLICY_REJECTED');
 if(operation==='--reallocate-approved-budget'){
  if(seriesOperation||publicOperation||account||id||artifact_hash||review_hash||reason)throw Error('INVALID_OPERATOR_COMMAND');
  console.log(JSON.stringify(await reallocateFinanceModelBudget({store:db,config,meta})));await db.close();await pool.end();process.exit(0);
 }
 // Only the explicit, one-time operator command can insert an approval ledger.
 // Repeating it preserves used counts. Every service restart requires it exists.
-const gateway=live?await createModelGateway({store:db,...approval,requireExisting:operation!=='--initialize-approved-budget',transport:createGameChatTransport(),timeoutMs:60000}):undefined;
+const gateway=live?await createModelGateway({store:db,...approval,meteringOnly:fairUse,requireExisting:operation!=='--initialize-approved-budget',transport:createGameChatTransport(),timeoutMs:60000}):undefined;
 if(['--initialize-approved-budget','--budget-status'].includes(operation)){
  if(account||id||artifact_hash||review_hash||reason)throw Error('INVALID_OPERATOR_COMMAND');
  console.log(JSON.stringify({model:await gateway.usage(),accounts:await Promise.all(config.accounts.map(async a=>({name:a.name,...await gateway.ownerUsage(a.owner)})))}));await db.close();await pool.end();process.exit(0);
 }
-const runtimeOptions={source,sourceHash:meta.sourceHash,hashes:meta.hashes,contract:meta.contract,runProlog:makeProlog({directory:'/tmp/prolog',utilPath:'-',swipl:'swipl'}),dynamicMode:meta.dynamicMode,gateway};
+const runtimeOptions={source,sourceHash:meta.sourceHash,hashes:meta.hashes,contract:meta.contract,runProlog:makeProlog({directory:'/tmp/prolog',utilPath:'-',swipl:'swipl'}),dynamicMode:meta.dynamicMode,gateway,requestAllowance:fairUse};
 const legacy=await createFinanceReviewRuntime({...runtimeOptions,store:db});
 let seriesDb,seriesRuntime;
 if(meta.series){
@@ -73,10 +76,12 @@ if(config.public){
  const goalPublic=p.series===financeGoalSeriesVersion;
  if(p.series!==undefined&&!goalPublic)throw Error('UNSUPPORTED_PUBLIC_SERIES');
  if(goalPublic)publicDb=financeGoalPublicStore(publicDb);
- publicRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:publicDb,series:goalPublic?financeGoalSeriesVersion:financeSeriesVersion,gateway:financePublicBudget(gateway,config.accounts.find(a=>a.name==='yin').owner),dailyApproval:financePublicQaProposalApproval(config,meta),automaticAdmission:p.automaticAdmission});
+ const publicGateway=financePublicBudget(gateway,config.accounts.find(a=>a.name==='yin').owner);
+ const usage=fairUse?createPlayerUsage({store:publicDb,queuePosition:publicGateway.queuePosition}):undefined;
+ publicRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:publicDb,series:goalPublic?financeGoalSeriesVersion:financeSeriesVersion,gateway:publicGateway,dailyApproval:financePublicQaProposalApproval(config,meta),automaticAdmission:p.automaticAdmission});
  if(goalPublic)publicRuntime.policy=financeGoalPublicPolicy(publicRuntime.policy);
  const secretPath=process.env.FINANCE_PUBLIC_EDGE_SECRET;const st=await lstat(secretPath);if(!st.isFile()||st.isSymbolicLink()||(st.mode&0o077)!==0)throw Error('PRIVATE_EDGE_SECRET_REQUIRED');
- publicHandler=financePublicHandler({authority:new AsyncSessionAuthority(publicDb,publicRuntime.policy),policy:publicRuntime.policy,dynamic:publicRuntime.dynamic,sourceHash:meta.sourceHash,config:p,edgeToken:(await readFile(secretPath,'utf8')).trim(),modelStatus:publicRuntime.modelStatus,recoveryNamespace:goalPublic?financeGoalPublicVersion:'public-player-v1'});
+ publicHandler=financePublicHandler({authority:new AsyncSessionAuthority(publicDb,publicRuntime.policy),policy:publicRuntime.policy,dynamic:publicRuntime.dynamic,sourceHash:meta.sourceHash,config:p,edgeToken:(await readFile(secretPath,'utf8')).trim(),modelStatus:publicRuntime.modelStatus,recoveryNamespace:goalPublic?financeGoalPublicVersion:'public-player-v1',usage});
 }
 const {policy,dynamic,modelStatus}=publicOperation?publicRuntime:seriesOperation?seriesRuntime:legacy;
 if(operation){

@@ -1,5 +1,15 @@
 # 技术文档
 
+## r21 用量与恢复实现（2026-10-01，替代旧累计总额策略）
+
+`async_player_usage` 在同一 PostgreSQL 世界事务下按 owner/kind/request 保存预留、成功、释放，主键保证幂等。对话提交回执与房间 ready/failed 状态用于重启后核对；日额度 1000/100、分钟 20/3，每身份每类一个未完成请求。失败不扣玩家日额度，失败尝试仍占分钟频率。UTC 日界，服务器返回 serverNow/resetAt/retryAt，前端换算本地时间而不自行猜测。
+
+原 `async_model_budgets/async_model_calls` 原样保留。私有配置明确开启 `player-ai-fair-use-v1` 后，model-gateway 改为 meteringOnly：继续累计真实调用、不再执行旧累计最大值，身份白名单、截止和幂等不变。共享模型 FIFO 单进程 4 并发、16 等待、10 秒等待超时；实际传输最多 60 秒，有限生成/复核不变。当前仅单个游戏服务进程；水平扩容前必须换成共享队列，不能把此进程内并发上限当集群全局上限。
+
+公开同源 `GET /api/story/usage` 返回当前身份的两类剩余量、预留数、重置时间和真实队列位置。`AiUsage.tsx` 在设置、对话和动态调查中呈现中英提示；80% 提醒，失败保留草稿，已确认未提交的错误清除待重放信封，结果不明则恢复原 ID。无自动付费重试、无静默本地权威回退。
+
+`stage-finance-public.mjs` 与 `apply-finance-usage-ui.mjs` 可从冻结 r20 候选重建本次前端。原美术源目录未改；正式及 Pages 镜像使用同一 commit，Pages 不连接数据库。当前两房间结构和云预算/截止不变。
+
 ## r20 目标驱动接入
 
 `src/GoalProgress.tsx` 只读权威目标、来源和两处调查的真实完成记录。`series-layouts.json` 使用dyn-goal-1/2，场景只在采纳后显现。`server/integrations/before-the-close/goal-public-scope.mjs` 在原public world中按experienceVersion隔离新版旅程和回执，但不重置owner、日提议计数或AI账本。旧资料不迁入新玩法，原PG数据不删除。

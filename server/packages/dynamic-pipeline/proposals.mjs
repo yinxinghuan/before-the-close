@@ -14,7 +14,9 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
   if(automaticReview&&(mode!=='live'||fixtureApproval||typeof automaticReview.policy!=='string'||!automaticReview.policy||typeof automaticReview.decide!=='function'))fail('PROPOSAL_CONFIGURATION');
   const grant=dailyApproval===undefined?null:structuredClone(dailyApproval);
   if(grant){
-    if(Object.keys(grant).sort().join(',')!=='expiresAt,maximum,owner,startsAt'||grant.maximum!==6||!Number.isSafeInteger(grant.startsAt)||!Number.isSafeInteger(grant.expiresAt)||grant.startsAt>=grant.expiresAt||Math.floor(grant.startsAt/86400000)!==Math.floor((grant.expiresAt-1)/86400000))fail('PROPOSAL_CONFIGURATION');
+    const budgetOnly=mode==='live'&&Object.keys(grant).sort().join(',')==='expiresAt,maximum,modelBudgetId,owner,policy,startsAt'&&grant.maximum===null&&grant.policy==='model-budget-only-v1'&&typeof grant.modelBudgetId==='string'&&grant.modelBudgetId.length>0;
+    const dailySix=Object.keys(grant).sort().join(',')==='expiresAt,maximum,owner,startsAt'&&grant.maximum===6&&Math.floor(grant.startsAt/86400000)===Math.floor((grant.expiresAt-1)/86400000);
+    if((!budgetOnly&&!dailySix)||!Number.isSafeInteger(grant.startsAt)||!Number.isSafeInteger(grant.expiresAt)||grant.startsAt>=grant.expiresAt)fail('PROPOSAL_CONFIGURATION');
     assertOwner(grant.owner);Object.freeze(grant);
   }
   const tasks=new Set();
@@ -30,6 +32,7 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
   const view=(row,d)=>{
     const v={request_id:row.id,session_id:row.session,expected_version:d.version,status:d.stale?'stale':d.status,mode:d.mode,error:d.error??null};
     if(d.status==='ready'){const room=d.artifact.prepared.content.locations.at(-1);Object.assign(v,{artifact_hash:d.artifact.prepared.artifact_hash,label:room.label,detail:room.detail});}
+    if(d.status==='ready'&&d.artifact.goalReceipt?.status==='ready')v.goal={question:structuredClone(d.artifact.goalReceipt.goal.question),reason:structuredClone(d.artifact.goalReceipt.goal.reason),sources:structuredClone(d.artifact.goalSources)};
     return v;
   };
   async function current(r,owner,id){
@@ -120,7 +123,7 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
         let previousRejection;
         for(const old of await r.proposals(owner,b.session_id)){const d=await expire(r,old);if(['running','approving','review_required','ready'].includes(d.status)&&d.sourceHash===hash(head))fail('SESSION_BUSY',429);if(!previousRejection&&d.status==='rejected'&&d.version===head.version&&d.cursor===row.cursor&&d.decision?.reason)previousRejection=d.decision.reason;}
         const time=now(),maximum=grant&&owner===grant.owner&&time>=grant.startsAt&&time<grant.expiresAt?grant.maximum:3;
-        if(await r.proposalCount(owner,Math.floor(time/86400000)*86400000)>=maximum)fail('DAILY_LIMIT',429);
+        if(maximum!==null&&await r.proposalCount(owner,Math.floor(time/86400000)*86400000)>=maximum)fail('DAILY_LIMIT',429);
         const d={status:'running',mode,version:head.version,sourceHash:hash(head),cursor:row.cursor,token:randomUUID(),deadline:now()+timeoutMs};
         await r.addProposal(owner,b.request_id,b.session_id,digest,d.status,now(),d);await audit(r,owner,'proposal-started',b);
         return {view:view({id:b.request_id,session:b.session_id},d),context:{head,cursor:row.cursor,request_id:b.request_id,owner,worldId:store.worldId,previousRejection},token:d.token};

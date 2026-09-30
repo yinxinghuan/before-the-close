@@ -13,6 +13,9 @@ import {createModelGateway,createGameChatTransport} from '../packages/dynamic-pi
 import {financeSeriesVersion} from '../integrations/before-the-close/series-contract.mjs';
 import {financePublicHandler} from '../integrations/before-the-close/public-http.mjs';
 import {financePublicBudget} from '../integrations/before-the-close/public-budget.mjs';
+import {reallocateFinanceModelBudget} from '../integrations/before-the-close/reallocate-model-budget.mjs';
+import {financeGoalSeriesVersion} from '../integrations/before-the-close/goal-series-contract.mjs';
+import {financeGoalPublicStore,financeGoalPublicPolicy,financeGoalPublicVersion} from '../integrations/before-the-close/goal-public-scope.mjs';
 const root=resolve(new URL('..',import.meta.url).pathname);
 if(process.env.FINANCE_REVIEW_ACK!=='isolated-test-only')throw Error('REVIEW_ACK_REQUIRED');
 const config=JSON.parse(await readFile(process.env.FINANCE_REVIEW_CONFIG,'utf8'));
@@ -34,11 +37,15 @@ const [operation,account,id,artifact_hash,review_hash,reason='',...extra]=args;
 if(seriesOperation&&(!meta.series||!operation||['--initialize-approved-budget','--budget-status'].includes(operation)))throw Error('INVALID_SERIES_OPERATOR_COMMAND');
 if(publicOperation&&(!config.public||!operation||['--initialize-approved-budget','--budget-status'].includes(operation)))throw Error('INVALID_PUBLIC_OPERATOR_COMMAND');
 if(meta.series&&meta.series!==financeSeriesVersion)throw Error('UNSUPPORTED_REVIEW_SERIES');
-if(operation&&!['--initialize-approved-budget','--budget-status','--inspect-proposal','--approve-proposal','--reject-proposal'].includes(operation))throw Error('INVALID_OPERATOR_COMMAND');
+if(operation&&!['--reallocate-approved-budget','--initialize-approved-budget','--budget-status','--inspect-proposal','--approve-proposal','--reject-proposal'].includes(operation))throw Error('INVALID_OPERATOR_COMMAND');
 if(extra.length)throw Error('INVALID_OPERATOR_COMMAND');
 const live=meta.dynamicMode==='budgeted-live-v1';
 if(operation&&!live)throw Error('LIVE_REVIEW_REQUIRED');
 const approval=live?financeCloudModelApproval(config,meta):null;
+if(operation==='--reallocate-approved-budget'){
+ if(seriesOperation||publicOperation||account||id||artifact_hash||review_hash||reason)throw Error('INVALID_OPERATOR_COMMAND');
+ console.log(JSON.stringify(await reallocateFinanceModelBudget({store:db,config,meta})));await db.close();await pool.end();process.exit(0);
+}
 // Only the explicit, one-time operator command can insert an approval ledger.
 // Repeating it preserves used counts. Every service restart requires it exists.
 const gateway=live?await createModelGateway({store:db,...approval,requireExisting:operation!=='--initialize-approved-budget',transport:createGameChatTransport(),timeoutMs:60000}):undefined;
@@ -63,9 +70,13 @@ if(config.public){
  const po={...options,worldId:p.gameBase.slice(1)+':public-player-v1'};
  const conn=await pool.connect();try{await registerCandidateWorld(conn,po);}finally{conn.release();}
  publicDb=await openPgAuthorityStore(po);
- publicRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:publicDb,series:financeSeriesVersion,gateway:financePublicBudget(gateway,config.accounts.find(a=>a.name==='yin').owner),dailyApproval:financePublicQaProposalApproval(config,meta),automaticAdmission:p.automaticAdmission});
+ const goalPublic=p.series===financeGoalSeriesVersion;
+ if(p.series!==undefined&&!goalPublic)throw Error('UNSUPPORTED_PUBLIC_SERIES');
+ if(goalPublic)publicDb=financeGoalPublicStore(publicDb);
+ publicRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:publicDb,series:goalPublic?financeGoalSeriesVersion:financeSeriesVersion,gateway:financePublicBudget(gateway,config.accounts.find(a=>a.name==='yin').owner),dailyApproval:financePublicQaProposalApproval(config,meta),automaticAdmission:p.automaticAdmission});
+ if(goalPublic)publicRuntime.policy=financeGoalPublicPolicy(publicRuntime.policy);
  const secretPath=process.env.FINANCE_PUBLIC_EDGE_SECRET;const st=await lstat(secretPath);if(!st.isFile()||st.isSymbolicLink()||(st.mode&0o077)!==0)throw Error('PRIVATE_EDGE_SECRET_REQUIRED');
- publicHandler=financePublicHandler({authority:new AsyncSessionAuthority(publicDb,publicRuntime.policy),policy:publicRuntime.policy,dynamic:publicRuntime.dynamic,sourceHash:meta.sourceHash,config:p,edgeToken:(await readFile(secretPath,'utf8')).trim(),modelStatus:publicRuntime.modelStatus});
+ publicHandler=financePublicHandler({authority:new AsyncSessionAuthority(publicDb,publicRuntime.policy),policy:publicRuntime.policy,dynamic:publicRuntime.dynamic,sourceHash:meta.sourceHash,config:p,edgeToken:(await readFile(secretPath,'utf8')).trim(),modelStatus:publicRuntime.modelStatus,recoveryNamespace:goalPublic?financeGoalPublicVersion:'public-player-v1'});
 }
 const {policy,dynamic,modelStatus}=publicOperation?publicRuntime:seriesOperation?seriesRuntime:legacy;
 if(operation){

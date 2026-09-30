@@ -5,7 +5,11 @@ export function financeCloudModelApproval(config,meta,{now=Date.now}={}){
  if(meta.dynamicMode!=='budgeted-live-v1'||config?.model?.budgetId!=='user-approved-hundred-20260930-cloud1'||config.model.maximum!==100||config.base!=='/e26be59b-9c31-43f2-844e-0dfed527bc71'||meta.sourceHash!=='a0b71d5b3a10e5671fc71e7a6c0cfda109c5a46082e523339f071492b2985cc4'||!Number.isSafeInteger(config.expiresAt)||config.expiresAt>deadline||config.expiresAt<=now())throw Error('CLOUD_MODEL_APPROVAL_MISMATCH');
  const qa=config.accounts.find(a=>a.name==='reviewer-two'),player=config.accounts.find(a=>a.name==='yin');
  if(!qa||!player||qa.owner===player.owner||config.accounts.length!==2)throw Error('CLOUD_MODEL_ACCOUNTS_MISMATCH');
- return {budgetId:config.model.budgetId,maximum:100,expiresAt:config.expiresAt,ownerLimits:{[qa.owner]:30,[player.owner]:70}};
+ const allocation=config.model.allocation;
+ if(allocation!==undefined&&allocation!=='user-approved-qa45-player55-20260930')throw Error('CLOUD_MODEL_ALLOCATION_MISMATCH');
+ const qaBudgetOnly=config.goalQaProposalApproval==='user-approved-qa-budget-only-20261001';
+ if(qaBudgetOnly&&!allocation)throw Error('CLOUD_MODEL_ALLOCATION_MISMATCH');
+ return {budgetId:config.model.budgetId,maximum:100,expiresAt:config.expiresAt,ownerLimits:{[qa.owner]:qaBudgetOnly?100:allocation?45:30,[player.owner]:allocation?55:70}};
 }
 
 // User approved QA-only six proposals on 2026-09-30. Existing rows still count.
@@ -13,7 +17,10 @@ export function financeCloudModelApproval(config,meta,{now=Date.now}={}){
 export function financeCloudProposalApproval(config,meta,options){
  financeCloudModelApproval(config,meta,options);
  if(meta.series!=='finance-two-generation-v1')throw Error('CLOUD_PROPOSAL_APPROVAL_MISMATCH');
- return {owner:config.accounts.find(a=>a.name==='reviewer-two').owner,maximum:6,startsAt:Date.parse('2026-09-30T00:00:00Z'),expiresAt:Math.min(config.expiresAt,Date.parse('2026-09-30T10:02:00Z'))};
+ const grant=config.goalQaProposalApproval;
+ if(grant==='user-approved-qa-budget-only-20261001')return {owner:config.accounts.find(a=>a.name==='reviewer-two').owner,maximum:null,policy:'model-budget-only-v1',modelBudgetId:config.model.budgetId,startsAt:Date.parse('2026-09-30T16:41:24Z'),expiresAt:config.expiresAt};
+ if(grant!==undefined&&grant!=='user-approved-qa6-through-local-midnight-20260930')throw Error('CLOUD_PROPOSAL_APPROVAL_MISMATCH');
+ return {owner:config.accounts.find(a=>a.name==='reviewer-two').owner,maximum:6,startsAt:Date.parse('2026-09-30T00:00:00Z'),expiresAt:Math.min(config.expiresAt,Date.parse(grant?'2026-09-30T16:00:00Z':'2026-09-30T10:02:00Z'))};
 }
 
 // Separate, explicit grant for the EXISTING synthetic public QA identity.

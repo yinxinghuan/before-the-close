@@ -68,7 +68,7 @@ export function createAsyncAdoption({store,runtime,runProlog,now=Date.now}){
       if(parentActionCount<0)fail('DELTA_ARTIFACT_MISMATCH');
       // Never accept a caller's claim that its Prolog report passed.
       a.report=await verifyRuleDelta({prepared:p,sourceState,runProlog,profile:a.profile,
-        ...witnessPaths(p,sourceState,a.profile,parentActionCount)});
+        ...witnessPaths(p,sourceState,a.profile,parentActionCount,{completionActionIds:runtime.completionWitnessActionIds})});
       const digest=hash(a);
       return store.transaction(async repo=>{
         sourceMatches(await repo.session(owner,p.descriptor.source.session_id),a);

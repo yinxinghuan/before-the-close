@@ -1,8 +1,17 @@
 // Read-only views of the versioned native series. No state mutations or rules.
 export const seriesFormat='finance-two-generation-v1';
-export const seriesEntries=h=>h?.binding&&h.dynamic?.format===seriesFormat?h.dynamic.entries:[];
+export const goalFormat='finance-goal-series-v1';
+export const seriesEntries=h=>h?.binding&&[seriesFormat,goalFormat].includes(h.dynamic?.format)?h.dynamic.entries:[];
 export const seriesActions=h=>seriesEntries(h).flatMap(e=>e.actions);
-export const seriesEntryOpen=(h,e)=>Boolean(e)&&h.ended!==true&&h.state.facts[e.investigationId]===false;
+export const seriesEntryOpen=(h,e)=>Boolean(e)&&h.ended!==true&&(h.dynamic?.format===goalFormat?h.state.facts['case-archived']!==true:h.state.facts[e.investigationId]===false);
+export function goalOffer(h,live=false){
+ if(!h||h.ended||h.state.location!=='records'||h.state.facts.decision!=='none'||!h.state.facts['orientation-ready']||h.binding&&h.dynamic?.format!==goalFormat)return null;
+ const entries=seriesEntries(h);if(entries.length>=2||entries.some(e=>!e.goalCompletion))return null;
+ // Affordance only: the server owns the known-source frontier and budget.
+ const sources=['memo','payment','contract','rollout','acceptance','appendix','cash','forecast','reference','channel','delivery-log','settlement-review','committee-draft'].filter(id=>h.state.facts[id]===true);
+ if(sources.length<2)return null;
+ return live?['寻找下一个调查问题','Find the next question']:['准备下一项调查 · 离线测试','Prepare next investigation · offline test'];
+}
 export function seriesOffer(h,live=false){
  if(!h||h.ended||h.state.location!=='records'||h.state.facts.decision!=='none'||!h.state.facts['orientation-ready'])return null;
  if(h.binding&&h.dynamic?.format!==seriesFormat)return null;
@@ -23,6 +32,11 @@ export function seriesAtlas(h){
 }
 export function seriesObjective(h){
  const entries=seriesEntries(h),current=entries.find(e=>e.roomId===h.state.location);
+ if(h.dynamic?.format===goalFormat){
+  if(current)return current.goalCompletion?['本项调查已完成，笔记已保存。可从原门返回资料室。','Investigation complete; notes saved. Return through the same door.']:['按顺序查阅两个调查点；问题与进度见「资料 → 目标」。','Read both investigation points in order. See Case → Goal for the question and progress.'];
+  if(h.state.location!=='records'||h.ended)return null;
+  return entries.some(e=>!e.goalCompletion)?['从右侧入口继续当前调查，完成后再提出新问题。','Continue the current investigation through the right-hand entrance before starting another.']:entries.length>=2?['本轮补充调查已完成。笔记保存在资料夹，原调查可继续。','Supplemental investigations complete. Notes are in Case; continue your original investigation.']:['补充调查已完成，可以根据已读资料提出下一问题。','Investigation complete. You can request another question from your read records.'];
+ }
  if(current){const next=current.actions.find(a=>!h.state.facts[a.doneFact]);return next?['下一步：'+next.label.zh,'Next: '+next.label.en]:['调查笔记已保存，可以原路返回资料室。','Notes saved. Return to the data room through the same door.'];}
  const available=entries.find(e=>seriesEntryOpen(h,e));
  if(h.state.location!=='records'||!available)return null;

@@ -37,8 +37,15 @@ export function decideFinanceAdmission(a){
  const reject=reason=>({passed:false,reason});
  const p=a?.review_packet,c=a?.admission,r=c?.review,known=p?.knownContext,node=known?.activeInvestigation;
  if(p?.format!=='finance-series-review-v1'||!['income','funding'].includes(node?.id)||node.stage!==a?.prepared?.lineage?.depth||node.stage<1||node.stage>2||a.profile?.id!==`finance-series-${node.id}-v1`||a.profile?.caps?.items!==0||a.profile?.caps?.actions!==2)return reject('Automatic admission is restricted to the existing income/funding profile.');
+ return decideSourceCitationAdmission(a,financeAutomaticAdmission);
+}
+// Shared receipt/citation checks only. A domain policy MUST first restrict its
+// profile and goal binding; this is not a standalone admission policy.
+export function decideSourceCitationAdmission(a,policy){
+ const reject=reason=>({passed:false,reason});
+ const p=a?.review_packet,c=a?.admission,r=c?.review,known=p?.knownContext,node=known?.activeInvestigation;
  if(a.semantic?.passed!==true||a.semantic.mode!=='live'||!['en','zh'].every(l=>a.semantic.locales?.includes(l)))return reject('The first independent semantic review did not pass.');
- if(c?.policy!==financeAutomaticAdmission||c.artifact_hash!==a.prepared.artifact_hash||c.packet_hash!==hash(p))return reject('Admission receipt is absent or bound to different content.');
+ if(c?.policy!==policy||c.artifact_hash!==a.prepared.artifact_hash||c.packet_hash!==hash(p))return reject('Admission receipt is absent or bound to different content.');
  try{parseAdmissionReview(JSON.stringify(r));}catch{return reject('Admission review is incomplete or malformed.');}
  if(!r.passed||admissionChecks.some(k=>!r.checks[k])||r.coverage.some(x=>!x.passed))return reject('Independent admission rejected the draft: '+r.reason);
  const records=new Map((known.knownRecords??[]).map(x=>[x.id,x])),seen=new Set(),covered=new Set();

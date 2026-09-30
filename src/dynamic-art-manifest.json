@@ -253,18 +253,18 @@
     "records-series-2-door-series-entry-2-0-near",
     "records-series-2-door-series-entry-2-1-near",
     "records-series-2-door-records-channel-series-2-leaf",
-    "dyn-series-income-base",
-    "dyn-series-income-north",
-    "dyn-series-income-side",
-    "dyn-series-income-front",
-    "dyn-series-income-door-series-exit-0-near",
-    "dyn-series-income-door-series-exit-0-leaf",
-    "dyn-series-funding-base",
-    "dyn-series-funding-north",
-    "dyn-series-funding-side",
-    "dyn-series-funding-front",
-    "dyn-series-funding-door-series-exit-1-near",
-    "dyn-series-funding-door-series-exit-1-leaf"
+    "dyn-goal-1-base",
+    "dyn-goal-1-north",
+    "dyn-goal-1-side",
+    "dyn-goal-1-front",
+    "dyn-goal-1-door-series-exit-0-near",
+    "dyn-goal-1-door-series-exit-0-leaf",
+    "dyn-goal-2-base",
+    "dyn-goal-2-north",
+    "dyn-goal-2-side",
+    "dyn-goal-2-front",
+    "dyn-goal-2-door-series-exit-1-near",
+    "dyn-goal-2-door-series-exit-1-leaf"
   ],
   "derivedSources": {
     "fund-base": [
@@ -722,46 +722,46 @@
       "front-framed-v3",
       "front-frame-open-v3"
     ],
-    "dyn-series-income-base": [
+    "dyn-goal-1-base": [
       "records-floor",
       "north-wall"
     ],
-    "dyn-series-income-north": [
+    "dyn-goal-1-north": [
       "north-wall"
     ],
-    "dyn-series-income-side": [
+    "dyn-goal-1-side": [
       "side-wall",
       "north-wall"
     ],
-    "dyn-series-income-front": [
+    "dyn-goal-1-front": [
       "north-wall"
     ],
-    "dyn-series-income-door-series-exit-0-near": [
+    "dyn-goal-1-door-series-exit-0-near": [
       "side-wall",
       "north-wall"
     ],
-    "dyn-series-income-door-series-exit-0-leaf": [
+    "dyn-goal-1-door-series-exit-0-leaf": [
       "side-leaf-v3"
     ],
-    "dyn-series-funding-base": [
+    "dyn-goal-2-base": [
       "records-floor",
       "north-wall"
     ],
-    "dyn-series-funding-north": [
+    "dyn-goal-2-north": [
       "north-wall"
     ],
-    "dyn-series-funding-side": [
+    "dyn-goal-2-side": [
       "side-wall",
       "north-wall"
     ],
-    "dyn-series-funding-front": [
+    "dyn-goal-2-front": [
       "north-wall"
     ],
-    "dyn-series-funding-door-series-exit-1-near": [
+    "dyn-goal-2-door-series-exit-1-near": [
       "side-wall",
       "north-wall"
     ],
-    "dyn-series-funding-door-series-exit-1-leaf": [
+    "dyn-goal-2-door-series-exit-1-leaf": [
       "side-leaf-v3"
     ]
   },

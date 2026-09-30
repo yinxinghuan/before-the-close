@@ -72,6 +72,8 @@ function repository(query,prefix,world,alive){
     addProposal:(owner,id,session,digest,status,created,data)=>q('INSERT INTO @async_proposals(world,owner,id,session,digest,status,created,data) VALUES(?,?,?,?,?,?,?,?)',[world,owner,id,session,digest,status,created,JSON.stringify(data)]),
     writeProposal:(owner,id,status,data)=>q('UPDATE @async_proposals SET status=?,data=? WHERE world=? AND owner=? AND id=?',[status,JSON.stringify(data),world,owner,id]),
     addModelBudget:(budget,maximum)=>q('INSERT INTO @async_model_budgets(world,id,maximum,used) VALUES(?,?,?,0)',[world,budget,maximum]),
+    // Administrative CAS only. Never changes used, calls, identities or worlds.
+    resizeModelBudget:async(budget,previous,maximum)=>{if(!Number.isSafeInteger(previous)||!Number.isSafeInteger(maximum)||previous<0||maximum<0)fail('MODEL_BUDGET_CONFIG_CONFLICT');const r=await q('UPDATE @async_model_budgets SET maximum=? WHERE world=? AND id=? AND maximum=? AND used<=?',[maximum,world,budget,previous,maximum]);if(r.rowCount!==1)fail('MODEL_BUDGET_CONFIG_CONFLICT');},
     useModelBudget:async budget=>{const r=await q('UPDATE @async_model_budgets SET used=used+1 WHERE world=? AND id=? AND used<maximum',[world,budget]);if(r.rowCount!==1)fail('MODEL_BUDGET_EXHAUSTED');},
     modelCall:(budget,owner,id)=>one('SELECT digest,status,response,error FROM @async_model_calls WHERE world=? AND budget=? AND owner=? AND id=?',[world,budget,owner,id]),
     addModelCall:(budget,owner,id,digest)=>q("INSERT INTO @async_model_calls(world,budget,owner,id,digest,status) VALUES(?,?,?,?,?,'reserved')",[world,budget,owner,id,digest]),

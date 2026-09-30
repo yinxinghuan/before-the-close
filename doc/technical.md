@@ -1,5 +1,13 @@
 # 技术文档
 
+## r20 目标驱动接入
+
+`src/GoalProgress.tsx` 只读权威目标、来源和两处调查的真实完成记录。`series-layouts.json` 使用dyn-goal-1/2，场景只在采纳后显现。`server/integrations/before-the-close/goal-public-scope.mjs` 在原public world中按experienceVersion隔离新版旅程和回执，但不重置owner、日提议计数或AI账本。旧资料不迁入新玩法，原PG数据不删除。
+
+服务器需显式启用public.series=finance-goal-series-v1及finance-goal-evidence-admission-v1。每个提议最多5次模型调用：目标生成、目标复核、房间生成、房间复核、原文引用审查；任何失败均保留费用与失败记录。前端仍由当前UUID推导同源API；Pages为静态源码镜像，不建立第二世界。
+
+2026-10-01 已完成真实模型两代闭环：第二代承接第一代两条真实分析，切换至合同/付款来源，成功生成、采纳、调查及退出；原旅程逐值不变。累计63/100次（含历史失败），本轮成功续代新增5次。先前引用字段错误和房间重名失败原样留档；修复提示词明确允许的引用字段与已有中英名称，未放宽验证器。QA移除每日子限额及45次子上限，只受原100次全局账本与原截止约束；其他玩家每日3提议及55次共享身份上限不变，所有已用计数保留。发布地址和上线核验另见本次发布记录；本版最多两间，非无限世界。
+
 > **2026-09-30 r19 重要替代说明**：当前权威、服务器存档、AI、自动准入与公共入口架构见 [公共试玩技术文档](public-release-20260930.md)。下文记录历次本地版实现沿革，其中“无后台 / 无在线模型 / 浏览器唯一权威 / 不含动态房间”不再描述当前版本。美术、碰撞和作者章节实现仍沿用。
 ## 1. 技术栈
 React 18.3.1、TypeScript 5.9、Vite 8.0.16、RPGJS 5 beta、CanvasEngine 2.2 与 PixiJS 8。Node 24，`npm ci` 后 `npm run build` 输出 `dist/`，`base` 为 `./`。空间层与旧街采用同一套 RPGJS 运行时组合；剧情继续使用当前冻结的 stateful reducer。来源见 `engine-source.json`。

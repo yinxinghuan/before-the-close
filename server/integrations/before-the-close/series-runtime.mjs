@@ -14,6 +14,7 @@ import {financeGenerationMessages,financeReviewMessages,parseFinanceReview,valid
 import {financeKnownRevisions,financeDialogueProgress} from './model-context.mjs';
 import {findingPairs,recordIds} from './rules.mjs';
 import {travelWalkable} from './spatial.mjs';
+import {financeAdmissionAdapter} from './automatic-admission.mjs';
 const hash=x=>sha256(canonical(x)),same=(a,b)=>canonical(a)===canonical(b),copy=structuredClone;
 const fail=code=>{throw new AuthorityError(code,422);};
 const validHash=x=>typeof x==='string'&&/^[a-f0-9]{64}$/.test(x);
@@ -153,8 +154,8 @@ export async function createFinanceSeriesRuntime(options){
    if(candidate.dynamicProof){if(candidate.dynamicProof.scene!==current.state.location)fail('VERSION_CONFLICT');entity(current,candidate.dynamicProof.entity);if(candidate.state.location===current.state.location)candidate.position={...current.position};candidate.npc=copy(current.npc);candidate.npc.analyst.focus=false;candidate.npc.analyst.paused=false;delete candidate.dynamicProof;sync(candidate);return;}
    const n=native(candidate);base.preserveConcurrent(n,native(current));delete candidate.travelProof;delete candidate.entityProof;Object.assign(candidate,merge({head:n},candidate).head);
   },
-  proposalBuilder({gateway,worldId,sourceHash}){
-   return createProposalBuilder({gateway,worldId,sourceHash,adapter:{reviewFormat:'finance-series-review-v1',validateSource:gate,generationMessages:messages,parseDraft:raw=>validateFinanceModelDraft(JSON.parse(raw)),prepareDraft:policy.prepareDraft,
+  proposalBuilder({gateway,worldId,sourceHash,automaticAdmission=false}){
+   return createProposalBuilder({gateway,worldId,sourceHash,adapter:{...(automaticAdmission?{admission:financeAdmissionAdapter}:{}),reviewFormat:'finance-series-review-v1',validateSource:gate,generationMessages:messages,parseDraft:raw=>validateFinanceModelDraft(JSON.parse(raw)),prepareDraft:policy.prepareDraft,
     reviewMessages:(h,draft)=>{const m=financeReviewMessages(source,h,draft,gate(h).id);m[0].content+=' Reject a draft that fails the activeInvestigation goal, ignores its focusRecordIds, or merely repeats a completed investigation under a new room title. Prior analysis is context, not independent evidence. Check payer/payee translations explicitly.';m[1].content=JSON.stringify({knownContext:JSON.parse(messages(h)[1].content),draft});return m;},parseReview:parseFinanceReview,knownContext:m=>JSON.parse(m[1].content)}});
   },
  };

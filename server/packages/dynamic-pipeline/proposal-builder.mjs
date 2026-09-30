@@ -36,6 +36,19 @@ export function createProposalBuilder({sourceHash,worldId,gateway,adapter}){
   // A negative review stays negative. Stage/adopt remain separate operations;
   // this layer never overrides a rejection, authorizes a fork, or writes facts.
   artifact.review_packet={format:adapter.reviewFormat,binding,draft,knownContext:adapter.knownContext(messages),semantic};
+  if(adapter.admission){
+   const audit=adapter.admission;
+   if(typeof audit.policy!=='string'||typeof audit.messages!=='function'||typeof audit.parse!=='function')fail('ADMISSION_CONFIG_INVALID');
+   let review=null;
+   // A rejection never receives an extra paid attempt and cannot be overridden.
+   if(semantic.passed===true){
+    await check();
+    const raw=await gateway.call({owner,id:id('admission-review'),purpose:'semantic-review',payload:{messages:audit.messages(artifact),binding:{...binding,artifact_hash:artifact.prepared.artifact_hash,policy:audit.policy}}});
+    await check();
+    try{review=audit.parse(raw,artifact);}catch{fail('ADMISSION_REVIEW_INVALID');}
+   }
+   artifact.admission={policy:audit.policy,artifact_hash:artifact.prepared.artifact_hash,packet_hash:hash(artifact.review_packet),review};
+  }
   return artifact;
  };
 }

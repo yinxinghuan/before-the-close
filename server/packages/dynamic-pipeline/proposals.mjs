@@ -8,9 +8,10 @@ const fail=(code,status=409)=>{throw new AuthorityError(code,status);};
 const validId=v=>typeof v==='string'&&/^[a-zA-Z0-9-]{16,80}$/.test(v);
 const active=new Set(['running','approving']);
 const terminal=new Set(['failed','rejected','stale']);
-export function createProposalJobs({store,build,stage,validateSource,mode='disabled',now=Date.now,timeoutMs=180000,fixtureApproval=false,dailyApproval}){
+export function createProposalJobs({store,build,stage,validateSource,mode='disabled',now=Date.now,timeoutMs=180000,fixtureApproval=false,dailyApproval,automaticReview}){
   if(store?.environment!=='test'||!['disabled','authored-fixture','live'].includes(mode)||!Number.isSafeInteger(timeoutMs)||timeoutMs<100||timeoutMs>300000)fail('PROPOSAL_CONFIGURATION');
   if(fixtureApproval&&mode!=='authored-fixture')fail('PROPOSAL_CONFIGURATION');
+  if(automaticReview&&(mode!=='live'||fixtureApproval||typeof automaticReview.policy!=='string'||!automaticReview.policy||typeof automaticReview.decide!=='function'))fail('PROPOSAL_CONFIGURATION');
   const grant=dailyApproval===undefined?null:structuredClone(dailyApproval);
   if(grant){
     if(Object.keys(grant).sort().join(',')!=='expiresAt,maximum,owner,startsAt'||grant.maximum!==6||!Number.isSafeInteger(grant.startsAt)||!Number.isSafeInteger(grant.expiresAt)||grant.startsAt>=grant.expiresAt||Math.floor(grant.startsAt/86400000)!==Math.floor((grant.expiresAt-1)/86400000))fail('PROPOSAL_CONFIGURATION');
@@ -19,7 +20,7 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
   const tasks=new Set();
   const audit=(r,owner,kind,subject)=>r.addDynamicAudit(randomUUID(),now(),hash(owner),kind,hash(subject));
   const decode=row=>{if(!row)fail('PROPOSAL_NOT_FOUND',404);return JSON.parse(row.data);};
-  const reviewHash=a=>hash({artifact_hash:a.prepared.artifact_hash,packet:a.review_packet??null,semantic:a.semantic??null});
+  const reviewHash=a=>hash({artifact_hash:a.prepared.artifact_hash,packet:a.review_packet??null,semantic:a.semantic??null,...(a.admission?{admission:a.admission}:{})});
   const save=(r,owner,id,d)=>r.writeProposal(owner,id,d.status,d);
   async function expire(r,row){
     const d=decode(row);
@@ -48,7 +49,7 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
     await store.transaction(async r=>{const row=await r.proposal(owner,id),d=await expire(r,row);if(d.token!==token||!active.has(d.status))return;d.status='failed';d.error=code;delete d.artifact;await save(r,owner,id,d);await audit(r,owner,'proposal-failed',{id,code});});
   }
   // Internal review capability only; deliberately not exposed as a player route.
-  async function review(owner,id,{artifact_hash,review_hash,passed,reason=''}){
+  async function review(owner,id,{artifact_hash,review_hash,passed,reason=''},reviewer='operator'){
     assertOwner(owner);if(!validId(id)||typeof passed!=='boolean'||typeof reason!=='string'||reason.length>1000)fail('INVALID_REVIEW',400);
     const selected=await store.transaction(async r=>{
       const {row,d}=await current(r,owner,id);
@@ -60,8 +61,9 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
       if(d.artifact.prepared.artifact_hash!==artifact_hash)fail('REVIEW_HASH_MISMATCH');
       if(d.artifact.review_packet&&reviewHash(d.artifact)!==review_hash)fail('REVIEW_PACKET_MISMATCH');
       if(passed&&d.artifact.review_packet&&d.artifact.semantic?.passed!==true)fail('SEMANTIC_REVIEW_REQUIRED');
-      d.decision={artifact_hash,review_hash:review_hash??null,passed,reason,at:now()};
-      if(!passed){d.status='rejected';d.error='OPERATOR_REJECTED';delete d.artifact;await save(r,owner,id,d);await audit(r,owner,'proposal-rejected',{id,artifact_hash});return null;}
+      d.decision={artifact_hash,review_hash:review_hash??null,passed,reason,at:now(),reviewer};
+      await audit(r,owner,'proposal-review-decision',{id,...d.decision});
+      if(!passed){d.status='rejected';d.error=reviewer==='operator'?'OPERATOR_REJECTED':'AUTOMATIC_REVIEW_REJECTED';delete d.artifact;await save(r,owner,id,d);await audit(r,owner,'proposal-rejected',{id,artifact_hash});return null;}
       d.status='approving';d.token=randomUUID();d.deadline=now()+timeoutMs;await save(r,owner,id,d);return structuredClone(d);
     });
     if(selected){
@@ -84,12 +86,16 @@ export function createProposalJobs({store,build,stage,validateSource,mode='disab
       // builder's raw-output and compiler/profile limits remain unchanged.
       if(Buffer.byteLength(JSON.stringify(artifact)??'')>4*1024*1024)fail('PROPOSAL_TOO_LARGE');
       if(artifact?.source_head_hash!==hash(context.head)||artifact?.prepared?.descriptor?.source?.session_id!==context.head.id||artifact?.prepared?.descriptor?.source?.cursor!==context.cursor)fail('PROPOSAL_SOURCE_MISMATCH');
+      // The decision function is trusted configuration, never a player/model flag.
+      const auto=automaticReview?.decide(structuredClone(artifact));
+      if(automaticReview&&(!auto||typeof auto.passed!=='boolean'||typeof auto.reason!=='string'||auto.reason.length>1000))fail('AUTOMATIC_REVIEW_INVALID');
       const saved=await store.transaction(async r=>{
         const {d}=await current(r,owner,id);if(d.status!=='running'||d.token!==token)return false;
         if(d.stale){d.status='stale';delete d.artifact;await save(r,owner,id,d);return false;}
         d.status='review_required';d.artifact=artifact;await save(r,owner,id,d);await audit(r,owner,'proposal-review-required',id);return true;
       });
       if(saved&&fixtureApproval)await review(owner,id,{artifact_hash:artifact.prepared.artifact_hash,passed:true});
+      if(saved&&auto)await review(owner,id,{artifact_hash:artifact.prepared.artifact_hash,review_hash:reviewHash(artifact),...auto},automaticReview.policy);
     }catch(e){await failJob(owner,id,token,e instanceof AuthorityError?e.code:'PROPOSAL_GENERATION_FAILED');}
     finally{clearTimeout(timer);}
   }

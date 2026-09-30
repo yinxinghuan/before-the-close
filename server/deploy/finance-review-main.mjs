@@ -8,7 +8,7 @@ import {initializeCandidateSchema,registerCandidateWorld} from '../packages/pg-c
 import {AsyncSessionAuthority,initializeAsyncAuthoritySchema,openPgAuthorityStore} from '../packages/authority-session/async.mjs';
 import {createFinanceReviewRuntime} from '../integrations/before-the-close/review-runtime.mjs';
 import {financeReviewHandler} from '../integrations/before-the-close/review-http.mjs';
-import {financeCloudModelApproval,financeCloudProposalApproval} from '../integrations/before-the-close/cloud-model-approval.mjs';
+import {financeCloudModelApproval,financeCloudProposalApproval,financePublicQaProposalApproval} from '../integrations/before-the-close/cloud-model-approval.mjs';
 import {createModelGateway,createGameChatTransport} from '../packages/dynamic-pipeline/model-gateway.mjs';
 import {financeSeriesVersion} from '../integrations/before-the-close/series-contract.mjs';
 import {financePublicHandler} from '../integrations/before-the-close/public-http.mjs';
@@ -54,7 +54,7 @@ if(meta.series){
  const client=await pool.connect();try{await registerCandidateWorld(client,seriesOptions);}finally{client.release();}
  seriesDb=await openPgAuthorityStore(seriesOptions);
  // Both runtimes use the gateway above and its ORIGINAL store/approval ledger.
- seriesRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:seriesDb,series:meta.series,dailyApproval:live?financeCloudProposalApproval(config,meta):undefined});
+ seriesRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:seriesDb,series:meta.series,dailyApproval:live?financeCloudProposalApproval(config,meta):undefined,automaticAdmission:config.automaticAdmission});
 }
 let publicDb,publicRuntime,publicHandler;
 if(config.public){
@@ -63,7 +63,7 @@ if(config.public){
  const po={...options,worldId:p.gameBase.slice(1)+':public-player-v1'};
  const conn=await pool.connect();try{await registerCandidateWorld(conn,po);}finally{conn.release();}
  publicDb=await openPgAuthorityStore(po);
- publicRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:publicDb,series:financeSeriesVersion,gateway:financePublicBudget(gateway,config.accounts.find(a=>a.name==='yin').owner)});
+ publicRuntime=await createFinanceReviewRuntime({...runtimeOptions,store:publicDb,series:financeSeriesVersion,gateway:financePublicBudget(gateway,config.accounts.find(a=>a.name==='yin').owner),dailyApproval:financePublicQaProposalApproval(config,meta),automaticAdmission:p.automaticAdmission});
  const secretPath=process.env.FINANCE_PUBLIC_EDGE_SECRET;const st=await lstat(secretPath);if(!st.isFile()||st.isSymbolicLink()||(st.mode&0o077)!==0)throw Error('PRIVATE_EDGE_SECRET_REQUIRED');
  publicHandler=financePublicHandler({authority:new AsyncSessionAuthority(publicDb,publicRuntime.policy),policy:publicRuntime.policy,dynamic:publicRuntime.dynamic,sourceHash:meta.sourceHash,config:p,edgeToken:(await readFile(secretPath,'utf8')).trim(),modelStatus:publicRuntime.modelStatus});
 }

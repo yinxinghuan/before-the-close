@@ -15,3 +15,12 @@ export function financeCloudProposalApproval(config,meta,options){
  if(meta.series!=='finance-two-generation-v1')throw Error('CLOUD_PROPOSAL_APPROVAL_MISMATCH');
  return {owner:config.accounts.find(a=>a.name==='reviewer-two').owner,maximum:6,startsAt:Date.parse('2026-09-30T00:00:00Z'),expiresAt:Math.min(config.expiresAt,Date.parse('2026-09-30T10:02:00Z'))};
 }
+
+// Separate, explicit grant for the EXISTING synthetic public QA identity.
+// No actor is embedded in distributable source, and ordinary players stay at 3.
+export function financePublicQaProposalApproval(config,meta,options){
+ const g=config.public?.qaProposalApproval;if(g===undefined)return undefined;
+ financeCloudModelApproval(config,meta,options);
+ if(meta.series!=='finance-two-generation-v1'||!g||Object.keys(g).sort().join(',')!=='approval,owner'||g.approval!=='user-approved-synthetic-qa-20260930'||!/^player-[a-f0-9]{64}$/.test(g.owner??''))throw Error('PUBLIC_QA_PROPOSAL_APPROVAL_MISMATCH');
+ return {owner:g.owner,maximum:6,startsAt:Date.parse('2026-09-30T00:00:00Z'),expiresAt:Math.min(config.expiresAt,Date.parse('2026-09-30T16:00:00Z'))};
+}

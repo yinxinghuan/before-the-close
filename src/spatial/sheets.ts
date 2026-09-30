@@ -1,5 +1,5 @@
 import chapterDimensions from '../chapter-art-dimensions.json';
-import releaseManifest from '../../public/art/platform-v1/manifest.json';
+import releaseManifest from '../dynamic-art-manifest.json';
 import {platformArtEnabled,platformArtRoot} from '../art-assets';
 import doorLayout from '../door-layout.json';
 import platformSample from '../../doc/platform-art-20260923/prepared/sample-manifest.json';
@@ -41,15 +41,18 @@ const dimensions:Record<string,[number,number]>={
 export const propGraphic=(prop:Prop)=>'prop-'+prop.asset;
 export function propSheet(prop:Prop){const [width,height]=prop.asset in chapterDimensions?(chapterDimensions as Record<string,number[]>)[prop.asset]:platformArtEnabled&&prop.asset in platformSample.dimensions?(platformSample.dimensions as Record<string,number[]>)[prop.asset]:artTrial==='room'&&prop.asset.startsWith('fund-')?freshSample.dimensions[prop.asset as keyof typeof freshSample.dimensions]:dimensions[prop.asset],scale=prop.width/width;return{id:propGraphic(prop),image:asset(`./art/${prop.asset}.png`),width,height,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[.5,1],scale)}}}
 export const frontGraphic=(scene:SceneId)=>'front-'+scene;
-export const baseGraphic=(scene:SceneId)=>'base-'+scene;
+export const baseGraphic=(scene:SceneId)=>'base-'+(scene==='records'&&(rooms.records as any).dynamicRoomCount?'records-series-'+(rooms.records as any).dynamicRoomCount:scene);
 export const northGraphic=(scene:SceneId)=>'north-'+scene;
-export const sideGraphic=(scene:SceneId)=>'side-'+scene;
-export function baseSheet(scene:SceneId){return{id:baseGraphic(scene),image:asset(`./map/${scene}-base.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
+export const sideGraphic=(scene:SceneId)=>'side-'+(scene==='records'&&(rooms.records as any).dynamicRoomCount?'records-series-'+(rooms.records as any).dynamicRoomCount:scene);
+export function baseSheet(scene:SceneId){return{id:'base-'+scene,image:asset(`./map/${scene}-base.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
 export function northSheet(scene:SceneId){return{id:northGraphic(scene),image:asset(`./map/${scene}-north.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
-export function sideSheet(scene:SceneId){return{id:sideGraphic(scene),image:asset(`./map/${scene}-side.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
+export function sideSheet(scene:SceneId){return{id:'side-'+scene,image:asset(`./map/${scene}-side.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1)}}}
 export function frontSheet(scene:SceneId){return{id:frontGraphic(scene),image:asset(`./map/${scene}-front.png`),width:640,height:640,framesWidth:1,framesHeight:1,textures:{stand:still(0,0,[0,1],1)}}}
 
 export const spatialSheets=[...Object.values(rooms).flatMap(room=>room.props.map(propSheet)),...(Object.keys(people) as PersonId[]).map(npcSheet),...(Object.keys(rooms) as SceneId[]).flatMap(scene=>[baseSheet(scene),northSheet(scene),sideSheet(scene),frontSheet(scene)])];
 
 export const doorParts=Object.entries(doorLayout).flatMap(([id,d])=>(d.side==='W'||d.side==='E'?['near','leaf']:['leaf']).map(part=>({id:`door-${id}-${part}`,scene:d.room,portalId:id,front:d.side==='N'||d.side==='S',depth:d.side==='N'||d.side==='S'?d.y+12:d.y+(part==='near'?34:-34)})));
-spatialSheets.push(...doorParts.map(part=>({id:part.id,image:asset(`./map/${part.scene}-${part.id}.png`),width:part.front?1280:640,height:640,framesWidth:part.front?2:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1,0,-part.depth),open:still(part.front?1:0,0,[0,0],1,0,-part.depth)}})));
+doorParts.push(...[{"id":"door-series-entry-1-0-near","scene":"records","portalId":"series-entry-1-0","front":false,"depth":386,"artScene":"records-series-1","seriesCount":1},{"id":"door-series-entry-2-0-near","scene":"records","portalId":"series-entry-2-0","front":false,"depth":386,"artScene":"records-series-2","seriesCount":2},{"id":"door-series-entry-2-1-near","scene":"records","portalId":"series-entry-2-1","front":false,"depth":482,"artScene":"records-series-2","seriesCount":2},{"id":"door-series-exit-0-near","scene":"dyn-series-income","portalId":"series-exit-0","front":false,"depth":354,"artScene":"dyn-series-income"},{"id":"door-series-exit-0-leaf","scene":"dyn-series-income","portalId":"series-exit-0","front":false,"depth":286,"artScene":"dyn-series-income"},{"id":"door-series-exit-1-near","scene":"dyn-series-funding","portalId":"series-exit-1","front":false,"depth":354,"artScene":"dyn-series-funding"},{"id":"door-series-exit-1-leaf","scene":"dyn-series-funding","portalId":"series-exit-1","front":false,"depth":286,"artScene":"dyn-series-funding"}] as any);
+ export const activeDoorParts=(scene:SceneId)=>doorParts.filter((p:any)=>p.scene===scene&&(!p.seriesCount||p.seriesCount===(rooms.records as any).dynamicRoomCount));
+ spatialSheets.push(...["records-series-1","records-series-2"].flatMap(scene=>[baseSheet(scene as SceneId),sideSheet(scene as SceneId)]));
+ spatialSheets.push(...doorParts.map(part=>({id:part.id,image:asset(`./map/${(part as any).artScene??part.scene}-${part.id}.png`),width:part.front?1280:640,height:640,framesWidth:part.front?2:1,framesHeight:1,textures:{stand:still(0,0,[0,0],1,0,-part.depth),open:still(part.front?1:0,0,[0,0],1,0,-part.depth)}})));

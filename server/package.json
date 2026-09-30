@@ -1,0 +1,8 @@
+{
+  "name": "before-the-close-authority",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

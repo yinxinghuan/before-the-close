@@ -1,3 +1,5 @@
+import {createSlotSpace} from './kit-spatial-slots.mjs';
+import layouts from './series-layouts.json';
 import {sideLeafBodies} from './spatial/architecture';
 import {platformArtEnabled} from './art-assets';
 import {applyPlatformRoomLayout,applyPlatformOtherRoomLayout,addPlatformSeats} from './platform-room-layout';
@@ -7,7 +9,7 @@ import type {Pair,PersonId,RecordId} from './content';
 import {findPath,walkable,type Point,type Rect,type World} from './spatial/world';
 
 export type SceneId='lobby'|'fund'|'office'|'records'|'client'|'delivery'|'channel'|'meeting'|'study'|'archive'|'partnerroom';
-export type Entity={id:string;kind:'person'|'record'|'door'|'committee'|'projects'|'archive';label:Pair;at:Point;approach:Point;person?:PersonId;record?:RecordId;to?:SceneId};
+export type Entity={id:string;kind:'person'|'record'|'door'|'committee'|'projects'|'archive'|'dynamic';label:Pair;at:Point;approach:Point;person?:PersonId;record?:RecordId;to?:SceneId};
 export type Prop={asset:string;x:number;y:number;width:number;obstacles:Rect[]};
 export type Room={id:SceneId;title:Pair;subtitle:Pair;floor:number;floorAsset?:string;props:Prop[];entities:Entity[]};
 
@@ -70,7 +72,9 @@ if(import.meta.env?.DEV&&new URLSearchParams(location.search).get('artTrial')===
 
 if(platformArtEnabled){applyPlatformRoomLayout(rooms.fund);for(const id of ['office','records','client'] as const)applyPlatformOtherRoomLayout(rooms[id]);for(const room of Object.values(rooms))addPlatformSeats(room);}
 
-export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:128,w:572,h:448},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...sideLeafBodies(room.id),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
+const seriesShells=layouts.map((layout:any)=>createSlotSpace(layout)({id:layout.sceneId,parent_id:'records',label:{zh:'未采纳调查',en:'Unadopted investigation'},escape_action_id:'pending-exit-'+layout.sceneId,enter_action_id:'pending-enter-'+layout.sceneId},[{id:'pending-a-'+layout.sceneId,label:{zh:'笔记',en:'Note'}},{id:'pending-b-'+layout.sceneId,label:{zh:'核对',en:'Review'}}]));
+ for(const shell of seriesShells)rooms[shell.room.id as SceneId]=shell.room as Room;
+ export const world:World={width:640,height:640,step:8,actor:{w:14,h:10},scenes:Object.fromEntries(Object.values(rooms).map(room=>[room.id,{interior:{x:34,y:128,w:572,h:448},spawn:{x:310,y:492},obstacles:[...room.props.flatMap(prop=>prop.obstacles),...sideLeafBodies(room.id),...room.entities.filter(entity=>entity.kind==='person'&&entity.id!=='analyst').map(entity=>({x:entity.at.x-12,y:entity.at.y-10,w:24,h:14}))]}]))};
 export const spawn=(id:SceneId):Point=>({...world.scenes[id].spawn});
 
 for(const room of Object.values(rooms))for(const entity of room.entities.filter(entity=>entity.kind==='record')){
@@ -78,3 +82,5 @@ for(const room of Object.values(rooms))for(const entity of room.entities.filter(
  const candidates=[entity.approach,{x:x-7,y:y+56},{x:x+48,y:y+18},{x:x-62,y:y+18},{x:x+42,y:y-30},{x:x-56,y:y-30}];
  entity.approach=candidates.find(point=>walkable(world,room.id,point)&&findPath(world,room.id,world.scenes[room.id].spawn,point).length>0)||entity.approach;
 }
+
+for(const shell of seriesShells)world.scenes[shell.room.id]=shell.scene;

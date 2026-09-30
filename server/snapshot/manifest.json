@@ -1,0 +1,911 @@
+{
+  "sourceHash": "a0b71d5b3a10e5671fc71e7a6c0cfda109c5a46082e523339f071492b2985cc4",
+  "hashes": {
+    "src/prologue.ts": "0457dd4f5896246e6f6bc60fc447443234ab86eeac83327d279e38b2b9d4e4a1",
+    "src/headquarters.ts": "2c0ea6eb64a5debed837393bd9a4b2a32fb439ec6253a984e225902638cae564",
+    "src/content.ts": "5259c61921205a4ffa10b5ff863e201f20e0020b8da7306ce9533385c308e8a9",
+    "src/chapter.ts": "95c0f3d65c199f161b0bb8f98f5cc606a23b2f912cb4b877958522ff79c9207a",
+    "src/engine-source/types.ts": "eb37aaa9cd984932ee8d1c1aadc3a6b1307df4f9f4b48f98c79fd417d1c1c208",
+    "src/engine-source/i18n.ts": "98bfdc216119828c7a9c849aaf2c1068ba31f24f611137498e1670f3b4613904",
+    "src/engine-source/engine/imageDirector.ts": "af3b23dc56650c46272f299b396a49c58f7032057a870ad099861f1fcd60f82a",
+    "src/engine-source/engine/choiceInput.ts": "4ecbc3d584e8fde0afef422dfd2bba179a92a738252c022d14fa75d8a0784ae8",
+    "src/engine-source/engine/dangerDirector.ts": "bad139024e4d095921961537e468eeb958552a63dab6b90cb005d791bcedaef8",
+    "src/engine-source/engine/continuity.ts": "ed307f6e7b4fc4d001bf2819cdeb04b7a26605853c987a379e1f1d98e75fc20e",
+    "src/engine-source/engine/domainRules.ts": "683c03a89dce94fba4e299efcb3b453822a7fe7be7e1d8007272fb5c29297b02",
+    "src/engine-source/engine/authoredTurns.ts": "c64a8a05238ced0c4bb97643c3265330e1912df983c871289a02832a46af53f1",
+    "src/engine-source/engine/characterContinuity.ts": "8cbd51d3d5154bbd6684735edc874b4b8a15627d7435b87885823fb9a7f98bb0",
+    "src/engine-source/engine/turnConsistency.ts": "0db87784ce940b5cb14638e4e96720890eb10e38be60acc809c878ade1798c91",
+    "src/engine-source/engine/presetEventDirector.ts": "4a40e8686c6bed1a48f23a724c20e8a8e555d7bff24f1cc335c5beb8b575e363",
+    "src/engine-source/engine/reducer.ts": "10921f7c81f85e4a694034527322b75911f730102b4b9189b8e50a5c525a3cf2",
+    "src/door-layout.json": "1629715fe97e93b937c0d7d1a0bce0eff701e494a026adcdd8a721bf9ca2be31",
+    "src/spatial/architecture.ts": "82acfe83f3ca15cb4e2e1a639dda31bb639e6861de983ee9c76ac3234a1f9e39",
+    "doc/platform-art-20260923/prepared/sample-manifest.json": "9c6c5e496909e041582388b26897c3e033780b3f825c641253913241318266db",
+    "src/art-assets.ts": "64d6099cce76fe487a75b36f983e34741f87aef3dd13df07f197c5290acfa2dd",
+    "src/platform-room-layout.ts": "06f84c0c5518bd6e0511e7a773fed988e8932d5f6c12030593522e581bd03884",
+    "src/fresh-room-layout.ts": "10aa1af00e9df2d1344787343e84959bf9819b334366be2e5906baa0de1d4465",
+    "src/spatial/world.ts": "f223794f32d608b3da584be7d7e170370dc0134310c888710f1e7ebc6be08aef",
+    "src/world.ts": "2cade67f7a90c4232e0e677308f021b9c8bf26c534777f2f4e05570b2f10dc7c",
+    "src/game-id.ts": "a5b39037694084828e9213d4f679b1d0d0771c12c2a48edce500e56e3df08099",
+    "src/state.ts": "57ddc98f2a6baa425707488bb34306b22a32b9b736341f4b1b6bf78a456ab7fa",
+    "src/conversation-flow.ts": "b04333367b78f106d2f87c40ac120a092be66b2197b9782f7e6fa06cd169f5a5",
+    "src/conversation-topics.ts": "deefcfe510e096babf9f116bfac5468eec848c5b57f0ec526fc6793fdd6f504d",
+    "src/location-rooms.json": "13ce76adabdb207a57f3259611e11780762bdc63df951b0da2db489a4861d86b",
+    "src/locations.ts": "165475a1bc346c46b3a55a154a6fbb11b539cbe465a1fd44124289d082df49f8",
+    "src/map-route.ts": "d58b221b2c015b19d06164769f9d275524b3f3f1bf57dca3669343d2abd93183",
+    "src/map-travel.ts": "c7cff6cfbbc2cdabe44f1340b952a0db272dec0f7528dc9ce87063a4f258caa2",
+    "src/main.tsx": "fedbe51c07980e36d80cf87937a7282ad0b33d13903e70d54e6694326e5ea3d5",
+    "src/WorldView.tsx": "0334fedf7f07ff2ee6e852cb68a5db00b209456b1920c04746c41e03f97a9482",
+    "src/map-gesture.ts": "9c8a96793f5c8d55836d8ba7e48d049d5452f81c4543eb684ae48b1ecb9b923b",
+    "src/use-map-gesture.ts": "1dd553e3f1f6a6e6b0faaf61807503f9b8450d8894f874c2bdb1f88af4643436"
+  },
+  "bundleHash": "c78d66c285a3a5e8c2709c5193ed33219654f0408e7c7e417fb321926e125c87",
+  "contract": {
+    "format": "finance-spatial-source-v1",
+    "prologueVersion": 1,
+    "world": {
+      "width": 640,
+      "height": 640,
+      "step": 8,
+      "actor": {
+        "w": 14,
+        "h": 10
+      },
+      "scenes": {
+        "lobby": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 258,
+              "y": 252,
+              "w": 124,
+              "h": 22
+            },
+            {
+              "x": 306,
+              "y": 375,
+              "w": 28,
+              "h": 18
+            },
+            {
+              "x": 34,
+              "y": 384,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 34,
+              "y": 199,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 558,
+              "y": 199,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 558,
+              "y": 384,
+              "w": 48,
+              "h": 4
+            }
+          ]
+        },
+        "fund": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 108,
+              "y": 242,
+              "w": 114,
+              "h": 32
+            },
+            {
+              "x": 368,
+              "y": 192,
+              "w": 124,
+              "h": 22
+            },
+            {
+              "x": 371,
+              "y": 431,
+              "w": 188,
+              "h": 54
+            },
+            {
+              "x": 151,
+              "y": 480,
+              "w": 26,
+              "h": 14
+            },
+            {
+              "x": 157,
+              "y": 475,
+              "w": 20,
+              "h": 8
+            },
+            {
+              "x": 384,
+              "y": 514,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 524,
+              "y": 514,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 34,
+              "y": 199,
+              "w": 48,
+              "h": 4
+            }
+          ]
+        },
+        "office": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 107.4,
+              "y": 247,
+              "w": 115.2,
+              "h": 28
+            },
+            {
+              "x": 408.8,
+              "y": 217,
+              "w": 122.4,
+              "h": 28
+            },
+            {
+              "x": 408.8,
+              "y": 465,
+              "w": 122.4,
+              "h": 28
+            },
+            {
+              "x": 150.74,
+              "y": 475,
+              "w": 28.52,
+              "h": 18
+            },
+            {
+              "x": 129,
+              "y": 320,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 459,
+              "y": 294,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 558,
+              "y": 284,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 34,
+              "y": 394,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 343,
+              "y": 340,
+              "w": 24,
+              "h": 14
+            }
+          ]
+        },
+        "records": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 125.2,
+              "y": 260,
+              "w": 129.6,
+              "h": 28
+            },
+            {
+              "x": 423.8,
+              "y": 185,
+              "w": 122.4,
+              "h": 28
+            },
+            {
+              "x": 412.4,
+              "y": 435,
+              "w": 115.2,
+              "h": 28
+            },
+            {
+              "x": 131.4,
+              "y": 490,
+              "w": 37.2,
+              "h": 18
+            },
+            {
+              "x": 139,
+              "y": 325,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 217,
+              "y": 325,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 34,
+              "y": 284,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 303,
+              "y": 325,
+              "w": 24,
+              "h": 14
+            }
+          ]
+        },
+        "client": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 103.8,
+              "y": 250,
+              "w": 122.4,
+              "h": 28
+            },
+            {
+              "x": 401.6,
+              "y": 250,
+              "w": 136.8,
+              "h": 28
+            },
+            {
+              "x": 155.08,
+              "y": 490,
+              "w": 19.84,
+              "h": 18
+            },
+            {
+              "x": 425,
+              "y": 480,
+              "w": 90,
+              "h": 28
+            },
+            {
+              "x": 224,
+              "y": 284,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 524,
+              "y": 328,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 303,
+              "y": 325,
+              "w": 24,
+              "h": 14
+            }
+          ]
+        },
+        "delivery": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 223,
+              "y": 274,
+              "w": 154,
+              "h": 29
+            },
+            {
+              "x": 423,
+              "y": 187,
+              "w": 114,
+              "h": 26
+            },
+            {
+              "x": 127,
+              "y": 423,
+              "w": 26,
+              "h": 17
+            },
+            {
+              "x": 267,
+              "y": 351,
+              "w": 22,
+              "h": 12
+            }
+          ]
+        },
+        "channel": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 182,
+              "y": 248,
+              "w": 136,
+              "h": 26
+            },
+            {
+              "x": 418,
+              "y": 179,
+              "w": 104,
+              "h": 26
+            },
+            {
+              "x": 450,
+              "y": 411,
+              "w": 40,
+              "h": 18
+            },
+            {
+              "x": 224,
+              "y": 322,
+              "w": 22,
+              "h": 12
+            }
+          ]
+        },
+        "meeting": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 220,
+              "y": 282,
+              "w": 200,
+              "h": 50
+            },
+            {
+              "x": 445,
+              "y": 154,
+              "w": 90,
+              "h": 21
+            },
+            {
+              "x": 229,
+              "y": 382,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 389,
+              "y": 382,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 110,
+              "y": 182,
+              "w": 30,
+              "h": 18
+            }
+          ]
+        },
+        "study": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 153,
+              "y": 241,
+              "w": 114,
+              "h": 32
+            },
+            {
+              "x": 199,
+              "y": 319,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 408,
+              "y": 182,
+              "w": 124,
+              "h": 22
+            },
+            {
+              "x": 111,
+              "y": 410,
+              "w": 28,
+              "h": 18
+            },
+            {
+              "x": 558,
+              "y": 384,
+              "w": 48,
+              "h": 4
+            }
+          ]
+        },
+        "archive": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 99,
+              "y": 183,
+              "w": 122,
+              "h": 30
+            },
+            {
+              "x": 408,
+              "y": 190,
+              "w": 124,
+              "h": 22
+            },
+            {
+              "x": 242,
+              "y": 358,
+              "w": 136,
+              "h": 26
+            },
+            {
+              "x": 299,
+              "y": 428,
+              "w": 22,
+              "h": 12
+            },
+            {
+              "x": 558,
+              "y": 199,
+              "w": 48,
+              "h": 4
+            }
+          ]
+        },
+        "partnerroom": {
+          "interior": {
+            "x": 34,
+            "y": 128,
+            "w": 572,
+            "h": 448
+          },
+          "spawn": {
+            "x": 310,
+            "y": 492
+          },
+          "obstacles": [
+            {
+              "x": 178,
+              "y": 241,
+              "w": 114,
+              "h": 32
+            },
+            {
+              "x": 418,
+              "y": 185,
+              "w": 124,
+              "h": 22
+            },
+            {
+              "x": 130,
+              "y": 417,
+              "w": 30,
+              "h": 16
+            },
+            {
+              "x": 471,
+              "y": 430,
+              "w": 28,
+              "h": 18
+            },
+            {
+              "x": 34,
+              "y": 384,
+              "w": 48,
+              "h": 4
+            },
+            {
+              "x": 343,
+              "y": 325,
+              "w": 24,
+              "h": 14
+            }
+          ]
+        }
+      }
+    },
+    "doors": [
+      {
+        "id": "lobby-study",
+        "from": "lobby",
+        "to": "study",
+        "at": {
+          "x": 34,
+          "y": 420
+        },
+        "approach": {
+          "x": 38,
+          "y": 415
+        }
+      },
+      {
+        "id": "lobby-archive",
+        "from": "lobby",
+        "to": "archive",
+        "at": {
+          "x": 34,
+          "y": 235
+        },
+        "approach": {
+          "x": 38,
+          "y": 230
+        }
+      },
+      {
+        "id": "lobby-fund",
+        "from": "lobby",
+        "to": "fund",
+        "at": {
+          "x": 606,
+          "y": 235
+        },
+        "approach": {
+          "x": 574,
+          "y": 230
+        }
+      },
+      {
+        "id": "lobby-partnerroom",
+        "from": "lobby",
+        "to": "partnerroom",
+        "at": {
+          "x": 606,
+          "y": 420
+        },
+        "approach": {
+          "x": 574,
+          "y": 415
+        }
+      },
+      {
+        "id": "lobby-meeting",
+        "from": "lobby",
+        "to": "meeting",
+        "at": {
+          "x": 320,
+          "y": 128
+        },
+        "approach": {
+          "x": 313,
+          "y": 132
+        }
+      },
+      {
+        "id": "lobby-office",
+        "from": "lobby",
+        "to": "office",
+        "at": {
+          "x": 320,
+          "y": 576
+        },
+        "approach": {
+          "x": 313,
+          "y": 566
+        }
+      },
+      {
+        "id": "fund-lobby",
+        "from": "fund",
+        "to": "lobby",
+        "at": {
+          "x": 34,
+          "y": 235
+        },
+        "approach": {
+          "x": 38,
+          "y": 230
+        }
+      },
+      {
+        "id": "office-delivery",
+        "from": "office",
+        "to": "delivery",
+        "at": {
+          "x": 320,
+          "y": 128
+        },
+        "approach": {
+          "x": 313,
+          "y": 132
+        }
+      },
+      {
+        "id": "office-lobby",
+        "from": "office",
+        "to": "lobby",
+        "at": {
+          "x": 34,
+          "y": 430
+        },
+        "approach": {
+          "x": 38,
+          "y": 425
+        }
+      },
+      {
+        "id": "office-records",
+        "from": "office",
+        "to": "records",
+        "at": {
+          "x": 606,
+          "y": 320
+        },
+        "approach": {
+          "x": 574,
+          "y": 315
+        }
+      },
+      {
+        "id": "office-client",
+        "from": "office",
+        "to": "client",
+        "at": {
+          "x": 340,
+          "y": 576
+        },
+        "approach": {
+          "x": 333,
+          "y": 566
+        }
+      },
+      {
+        "id": "records-channel",
+        "from": "records",
+        "to": "channel",
+        "at": {
+          "x": 320,
+          "y": 128
+        },
+        "approach": {
+          "x": 313,
+          "y": 132
+        }
+      },
+      {
+        "id": "records-office",
+        "from": "records",
+        "to": "office",
+        "at": {
+          "x": 34,
+          "y": 320
+        },
+        "approach": {
+          "x": 38,
+          "y": 315
+        }
+      },
+      {
+        "id": "client-office",
+        "from": "client",
+        "to": "office",
+        "at": {
+          "x": 340,
+          "y": 128
+        },
+        "approach": {
+          "x": 333,
+          "y": 132
+        }
+      },
+      {
+        "id": "delivery-office",
+        "from": "delivery",
+        "to": "office",
+        "at": {
+          "x": 320,
+          "y": 576
+        },
+        "approach": {
+          "x": 313,
+          "y": 566
+        }
+      },
+      {
+        "id": "channel-records",
+        "from": "channel",
+        "to": "records",
+        "at": {
+          "x": 320,
+          "y": 576
+        },
+        "approach": {
+          "x": 313,
+          "y": 566
+        }
+      },
+      {
+        "id": "meeting-lobby",
+        "from": "meeting",
+        "to": "lobby",
+        "at": {
+          "x": 320,
+          "y": 576
+        },
+        "approach": {
+          "x": 313,
+          "y": 566
+        }
+      },
+      {
+        "id": "study-lobby",
+        "from": "study",
+        "to": "lobby",
+        "at": {
+          "x": 606,
+          "y": 420
+        },
+        "approach": {
+          "x": 574,
+          "y": 415
+        }
+      },
+      {
+        "id": "archive-lobby",
+        "from": "archive",
+        "to": "lobby",
+        "at": {
+          "x": 606,
+          "y": 235
+        },
+        "approach": {
+          "x": 574,
+          "y": 230
+        }
+      },
+      {
+        "id": "partnerroom-lobby",
+        "from": "partnerroom",
+        "to": "lobby",
+        "at": {
+          "x": 34,
+          "y": 420
+        },
+        "approach": {
+          "x": 38,
+          "y": 415
+        }
+      }
+    ],
+    "areas": {
+      "lobby": "northline",
+      "fund": "northline",
+      "office": "relayops",
+      "records": "relayops",
+      "client": "customer",
+      "delivery": "relayops",
+      "channel": "settlement",
+      "meeting": "northline",
+      "study": "northline",
+      "archive": "northline",
+      "partnerroom": "northline"
+    },
+    "headquarters": [
+      "lobby",
+      "study",
+      "fund",
+      "archive",
+      "partnerroom",
+      "meeting"
+    ],
+    "arrivalMinutes": {
+      "lobby": 1000,
+      "fund": 1000,
+      "office": 1040,
+      "records": 1085,
+      "client": 1150,
+      "delivery": 1100,
+      "channel": 1120,
+      "meeting": 1000,
+      "study": 1000,
+      "archive": 1000,
+      "partnerroom": 1000
+    }
+  },
+  "dynamicMode": "budgeted-live-v1",
+  "series": "finance-two-generation-v1"
+}

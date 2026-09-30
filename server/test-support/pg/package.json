@@ -1,0 +1,1 @@
+{"name":"kit-pg-isolated-test-support","version":"0.0.0","private":true,"type":"module","dependencies":{"@electric-sql/pglite":"0.5.8","pg":"8.23.0"}}

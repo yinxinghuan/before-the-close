@@ -1,0 +1,12 @@
+// Trusted domain configuration, never player/model configuration. Funding is
+// a local candidate, not enabled by adding this file to a deployed snapshot.
+const incomeProfile={version:1,id:'finance-verification-room-v1',gameId:'before-the-close',strictness:'slots-v1',parents:['records'],gateFacts:['orientation-ready','contract','payment'],completion:{action:'conclude-income',fact:'income'},caps:{locations:1,items:0,facts:4,actions:2},maxChainDepth:1,rewards:{items:[],stats:{}},entryRejection:{zh:'先读客户合同与银行回单，再回资料会议室核验。',en:'Read the customer contract and bank receipt, then return to the data room.'},semanticReview:{required:true,disabledReason:''},limits:{perSessionConcurrent:1,perOwnerDaily:{default:3,max:3},proposalAttempts:{default:3,max:3},serviceConcurrent:{default:2,max:2}}};
+const nodes={
+ usage:{id:'usage',finding:'usage',requiredOrigins:['contract','rollout'],profile:{...structuredClone(incomeProfile),id:'finance-rollout-room-v1',gateFacts:['orientation-ready','contract','rollout'],completion:{action:'conclude-usage',fact:'usage'},entryRejection:{zh:'先读客户合同与部署记录，再回资料会议室核验。',en:'Read the customer contract and rollout record, then return to the data room.'}},playerGoal:'Compare contracted scope with documented rollout status. Planned stores are not operating or accepted stores. Preserve unresolved customer acceptance and do not create a growth finding automatically.'},
+ income:{id:'income',finding:'income',requiredOrigins:['payment','contract'],profile:incomeProfile,playerGoal:'Check what cash receipt and contract establish, and what must still be verified.'},
+ funding:{id:'funding',finding:'funding',requiredOrigins:['cash','forecast'],profile:{...structuredClone(incomeProfile),id:'finance-funding-room-v1',gateFacts:['orientation-ready','cash','forecast'],completion:{action:'conclude-funding',fact:'funding'},entryRejection:{zh:'先读现金记录与财务预测，再回资料会议室核验。',en:'Read the cash record and forecast, then return to the data room.'}},playerGoal:'Compare available cash with documented near-term obligations. Separate forecasts, conditional committee support and unsigned payment extensions from funds actually available. Preserve uncertainty and do not infer that founder consent makes obligations payable.'},
+};
+export function financeInvestigation(id='income'){
+ if(!Object.hasOwn(nodes,id))throw Error('FINANCE_INVESTIGATION_UNKNOWN');
+ return structuredClone(nodes[id]);
+}

@@ -122,3 +122,6 @@ foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite m
 `dialogue-questions.json` 是四个过度预设初始问题的双语呈现修订；服务端保存问句与客户端按钮使用同一份内容（发布时逐字校验）。稳定 topicKey、作者回复、编译规则和 mapVersion 不变。`conversation-topics.ts` 同时保留原问答及新问答精确别名，兼容无 topicKey 的旧历史。
 
 `dialogue-reading.ts` 保存按当前部署 session、旅程和人物隔离的 exchangeId/page/locale；正文始终从服务器已保存历史查找，不另造剧情。新回应立即记录未读位置，续页更新，末页展示后清除；重新打开先恢复同一回应。切换语言重新读这轮，旧存档不伪造阅读位置。它是当前设备的展示恢复，不是跨设备已读证明。
+# 2026-10-01 固定截止撤销
+
+公共代理需显式私有绑定 `RPG_PUBLIC_TIME_POLICY=user-approved-budget-only-20261001` 和 `RPG_PUBLIC_EXPIRES_AT=none`；缺少/错误授权标记仍拒绝配置，非授权部署仍遵循原固定期限。公共服务同样要求批准标记及 null 期限。模型网关仅移除固定 expiresAt，不更换既有预算 ID 或清空调用总账，metering-only 策略不变。原 QA 截止仍保留；过期 QA handler 可构造但请求返回 410，避免同进程公共服务重启失败。Cookie 30 天有限续期仍使用原 HMAC/同游戏 scope/HttpOnly/Secure/SameSite=Strict；只在成功 bootstrap GET 续期原签名身份，写入缺失身份仍拒绝。75 秒公共代理和 60 秒模型超时不变。

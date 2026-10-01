@@ -1,0 +1,6 @@
+{
+  "partner:relationship": ["你是怎样认识这位创始人的？", "How did you come to know the founder?"],
+  "analyst:payer": ["你建议我先核查什么？", "What should I verify first?"],
+  "analyst:growth": ["怎样了解这家公司实际做得如何？", "How can I check how the business is really doing?"],
+  "finance:scope": ["这些财务材料能告诉我什么？", "What can these financial records tell me?"]
+}

@@ -117,3 +117,8 @@ foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite m
 
 2026-10-01 自由对话修复：权威运行时不再把 free-talk 当作 main-flow 拦截；序章中已介绍且在交互距离内的人物可聊天，聊天无规则效果，不推进引导事实。其他主线动作的序章条件保持不变。客户端把 PROLOGUE_REQUIRED 作为确定拒绝清除待处理信封，保留输入与进度，并给出准确提示，不再伪装成网络故障。
 `src/prologue.ts` 定义 welcome/role/colleague/brief/check/file/ready 七个持久阶段，沿用 StorySave facts。`newJourney()` 设置 `prologueVersion:1`，旧旅程无该字段，继续原流程。新旅程的 `collect`、`decide`、`arriveAt` 与 `projectAccepted` 共同保护序章条件；地图复用同一许可。`dialogueTopics` 序章内仅返回当前可用引导话题；自由对话上下文使用相同简化资料。基金资料室实际打开摘要才记录回看进度。美术与 RPGJS renderer 无改动。
+# 2026-10-01 选项知情与对白续读修复
+
+`dialogue-questions.json` 是四个过度预设初始问题的双语呈现修订；服务端保存问句与客户端按钮使用同一份内容（发布时逐字校验）。稳定 topicKey、作者回复、编译规则和 mapVersion 不变。`conversation-topics.ts` 同时保留原问答及新问答精确别名，兼容无 topicKey 的旧历史。
+
+`dialogue-reading.ts` 保存按当前部署 session、旅程和人物隔离的 exchangeId/page/locale；正文始终从服务器已保存历史查找，不另造剧情。新回应立即记录未读位置，续页更新，末页展示后清除；重新打开先恢复同一回应。切换语言重新读这轮，旧存档不伪造阅读位置。它是当前设备的展示恢复，不是跨设备已读证明。

@@ -20,6 +20,7 @@ export function useAiUsage(refreshKey:string,active:boolean){
 export type AiUsageState=ReturnType<typeof useAiUsage>;
 export function aiErrorText(code:string,locale:'zh'|'en'){
  const t=(pair:[string,string])=>pair[locale==='zh'?0:1];
+ if(code==='PROLOGUE_REQUIRED')return t(['这个剧情动作需要先完成眼前的引导。进度和输入已保留；这不是网络故障。自由聊天不需要完成整个序章。','This story action requires the current introduction step first. Your progress and draft are kept; this is not a network failure. Free conversation does not require completing the prologue.']);
  if(code==='AI_DIALOGUE_DAILY_LIMIT')return t(['今天的自由对话额度已用完。你写的话保留在输入框；额度恢复后可再发送，现在仍可探索或选择原有话题。','Today’s free-dialogue allowance is used up. Your draft is kept; send it after the reset. You can still explore and choose existing topics.']);
  if(code==='AI_ROOM_DAILY_LIMIT'||code==='DAILY_LIMIT')return t(['今天的新房间提议额度已用完。已有房间和原调查仍可继续，恢复时间见下方。','Today’s new-room allowance is used up. Existing rooms and the original investigation remain playable. See the reset time below.']);
  if(code==='AI_COOLDOWN')return t(['请求比较密集，请稍等片刻再发送。输入和原进度保留，不需要重新开始游戏。','Requests are arriving quickly. Please wait briefly before sending again. Your draft and progress are kept; no restart is needed.']);

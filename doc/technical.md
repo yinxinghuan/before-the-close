@@ -112,4 +112,6 @@ foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite m
 本轮回归 45 项通过，构建通过。快捷前往后刷新位置保持；重复请求与陈旧版本有机械测试。手机尺寸浏览器检查与真实 iPhone 双指/持续拖动性能不是同一种证据，后者待试玩。
 
 ### 新人序章（2026-09-28）
+
+2026-10-01 自由对话修复：权威运行时不再把 free-talk 当作 main-flow 拦截；序章中已介绍且在交互距离内的人物可聊天，聊天无规则效果，不推进引导事实。其他主线动作的序章条件保持不变。客户端把 PROLOGUE_REQUIRED 作为确定拒绝清除待处理信封，保留输入与进度，并给出准确提示，不再伪装成网络故障。
 `src/prologue.ts` 定义 welcome/role/colleague/brief/check/file/ready 七个持久阶段，沿用 StorySave facts。`newJourney()` 设置 `prologueVersion:1`，旧旅程无该字段，继续原流程。新旅程的 `collect`、`decide`、`arriveAt` 与 `projectAccepted` 共同保护序章条件；地图复用同一许可。`dialogueTopics` 序章内仅返回当前可用引导话题；自由对话上下文使用相同简化资料。基金资料室实际打开摘要才记录回看进度。美术与 RPGJS renderer 无改动。

@@ -3,6 +3,14 @@ export const seriesFormat='finance-two-generation-v1';
 export const goalFormat='finance-goal-series-v1';
 export const seriesEntries=h=>h?.binding&&[seriesFormat,goalFormat].includes(h.dynamic?.format)?h.dynamic.entries:[];
 export const seriesActions=h=>seriesEntries(h).flatMap(e=>e.actions);
+// UI affordance over the server-owned ordered reading slots, not rule authority.
+export function seriesInteraction(h,id){
+ const entry=seriesEntries(h).find(e=>e.actions.some(a=>a.id===id));
+ if(!entry)return {status:'ready',ordinal:null,prerequisite:null};
+ const index=entry.actions.findIndex(a=>a.id===id),action=entry.actions[index];
+ const prerequisite=entry.actions.slice(0,index).find(a=>h.state.facts[a.doneFact]!==true);
+ return {status:h.state.facts[action.doneFact]===true?'read':prerequisite?'locked':'ready',ordinal:index+1,prerequisite:prerequisite?.label??null};
+}
 export const seriesEntryOpen=(h,e)=>Boolean(e)&&h.ended!==true&&(h.dynamic?.format===goalFormat?h.state.facts['case-archived']!==true:h.state.facts[e.investigationId]===false);
 export function goalOffer(h,live=false){
  if(!h||h.ended||h.state.location!=='records'||h.state.facts.decision!=='none'||!h.state.facts['orientation-ready']||h.binding&&h.dynamic?.format!==goalFormat)return null;
@@ -33,7 +41,7 @@ export function seriesAtlas(h){
 export function seriesObjective(h){
  const entries=seriesEntries(h),current=entries.find(e=>e.roomId===h.state.location);
  if(h.dynamic?.format===goalFormat){
-  if(current)return current.goalCompletion?['本项调查已完成，笔记已保存。可从原门返回资料室。','Investigation complete; notes saved. Return through the same door.']:['按顺序查阅两个调查点；问题与进度见「资料 → 目标」。','Read both investigation points in order. See Case → Goal for the question and progress.'];
+  if(current){const next=current.actions.find(a=>!h.state.facts[a.doneFact]);return current.goalCompletion||!next?['本项调查已完成，笔记已保存。可从原门返回资料室。','Investigation complete; notes saved. Return through the same door.']:['下一步：'+next.label.zh,'Next: '+next.label.en];}
   if(h.state.location!=='records'||h.ended)return null;
   return entries.some(e=>!e.goalCompletion)?['从右侧入口继续当前调查，完成后再提出新问题。','Continue the current investigation through the right-hand entrance before starting another.']:entries.length>=2?['本轮补充调查已完成。笔记保存在资料夹，原调查可继续。','Supplemental investigations complete. Notes are in Case; continue your original investigation.']:['补充调查已完成，可以根据已读资料提出下一问题。','Investigation complete. You can request another question from your read records.'];
  }

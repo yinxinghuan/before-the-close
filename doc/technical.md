@@ -113,5 +113,7 @@ foreground-reveal已改为一次生成512方形渐变alpha纹理，Pixi Sprite m
 
 ### 新人序章（2026-09-28）
 
+`DialogueCoach.tsx` 在人物已介绍、回应可用时展示开放提问邀请；成功状态来自服务端 history 的 `topicKey: free-talk` 标记，介绍和预写话题不算成功，刷新不重置。旧无标记记录不推测为 AI 成功；再进行一次真实交流即可完成邀请。提示不写剧情事实，不增加通关前置。
+
 2026-10-01 自由对话修复：权威运行时不再把 free-talk 当作 main-flow 拦截；序章中已介绍且在交互距离内的人物可聊天，聊天无规则效果，不推进引导事实。其他主线动作的序章条件保持不变。客户端把 PROLOGUE_REQUIRED 作为确定拒绝清除待处理信封，保留输入与进度，并给出准确提示，不再伪装成网络故障。
 `src/prologue.ts` 定义 welcome/role/colleague/brief/check/file/ready 七个持久阶段，沿用 StorySave facts。`newJourney()` 设置 `prologueVersion:1`，旧旅程无该字段，继续原流程。新旅程的 `collect`、`decide`、`arriveAt` 与 `projectAccepted` 共同保护序章条件；地图复用同一许可。`dialogueTopics` 序章内仅返回当前可用引导话题；自由对话上下文使用相同简化资料。基金资料室实际打开摘要才记录回看进度。美术与 RPGJS renderer 无改动。

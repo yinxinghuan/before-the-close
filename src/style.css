@@ -50,6 +50,7 @@
 
 .bc-interaction--composing .bc-turn,.bc-interaction--composing .bc-greeting,.bc-interaction--composing .bc-topics>small,.bc-interaction--composing .bc-topics>details{display:none}.bc-interaction--composing .bc-compose{border-top:0;padding-top:0}
 .bc-interaction--composing .bc-topics>button,.bc-interaction--composing .bc-topics>h3,.bc-interaction--composing .bc-topics>.bc-muted{display:none}
+.bc-dialogue-coach{border-left:3px solid #bba372;padding:0 0 0 12px;margin:4px 0 16px;font-size:16px;line-height:1.5;overflow-wrap:anywhere}.bc-dialogue-coach p{font-size:16px;margin:8px 0}.bc-dialogue-coach button{display:block;width:100%;min-height:44px;margin:8px 0;background:#eee4cf;color:#20343c}.bc-dialogue-coach small{display:block;font-size:14px;line-height:1.5;color:#d4dacf}
 
 /* World coordinates are projected by the RPG camera, never by DOM focus scrolling. */
 .bc-app>.bc-world{overflow:clip}
